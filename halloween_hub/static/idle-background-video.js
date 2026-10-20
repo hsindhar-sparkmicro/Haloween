@@ -3,7 +3,7 @@ export class IdleBackgroundVideo {
  constructor(backgrounds){
   this.backgrounds=backgrounds;this.items=new Map();this.allowed=false;
   this.lastActivity=performance.now();this.nextDue=this.lastActivity+20000;
-  this.dashboard=document.querySelector('#dashboard');this.fadeMs=2000;
+  this.dashboard=document.querySelector('#dashboard');this.fadeMs=3500;
   this.layer=document.createElement('div');this.layer.className='idle-background-video';
   this.layer.setAttribute('aria-hidden','true');
   document.querySelector('#welcome-atmosphere').before(this.layer);
@@ -31,6 +31,7 @@ export class IdleBackgroundVideo {
   const video=document.createElement('video');this.video=video;this.fading=false;
   video.dataset.cutsceneId=item.id;this.layer.dataset.videoId=item.id;this.layer.dataset.state='loading';
   video.muted=true;video.defaultMuted=true;video.volume=0;video.playsInline=true;
+  video.playbackRate=.5;video.defaultPlaybackRate=.5;
   video.preload='auto';video.disablePictureInPicture=true;video.tabIndex=-1;
   this.layer.replaceChildren(video);this.backgrounds.hold=true;
   const current=()=>this.video===video&&!this.fading;
@@ -49,14 +50,13 @@ export class IdleBackgroundVideo {
     else requestAnimationFrame(()=>requestAnimationFrame(()=>{if(video.readyState>=2)reveal();}));
    }
   };
-  // Short six-second clips need a shorter fade so their actual motion remains visible.
-  video.onloadedmetadata=()=>{if(current())this.fadeMs=Number.isFinite(video.duration)?Math.min(2000,Math.max(800,video.duration*200)):2000;};
-  video.ontimeupdate=()=>{if(current()&&Number.isFinite(video.duration)&&video.duration-video.currentTime<=this.fadeMs/1000+.4)this.stop(this.fadeMs);};
+  // Compare wall time, since the media clock advances at half speed.
+  video.ontimeupdate=()=>{if(current()&&Number.isFinite(video.duration)&&(video.duration-video.currentTime)/video.playbackRate<=this.fadeMs/1000+.4)this.stop(this.fadeMs);};
   video.onwaiting=()=>{if(current()){clearTimeout(this.stallTimer);this.stallTimer=setTimeout(()=>this.stop(600),2000);}};
   video.onended=()=>{if(current())this.stop(600);};
   video.onerror=()=>{if(current())this.stop(600);};
   this.loadTimer=setTimeout(()=>this.stop(600),12000);
-  this.runTimer=setTimeout(()=>this.stop(2000),90000);
+  this.runTimer=setTimeout(()=>this.stop(this.fadeMs),90000);
   video.src=!video.canPlayType('video/mp4; codecs="avc1.640029,mp4a.40.2"')&&item.webm_url?item.webm_url:item.url;
   video.play().catch(()=>{if(current())this.stop(600);});
  }

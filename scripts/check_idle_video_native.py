@@ -22,7 +22,7 @@ with sync_playwright() as p:
   let last=0;const sample=()=>{const layer=document.querySelector('.idle-background-video'),video=layer.querySelector('video');
    if(video){nativeIdle.seen=true;const opacity=Number(getComputedStyle(layer).opacity),artwork=Number(getComputedStyle(document.querySelector('.pumpkin-artwork')).opacity);
     nativeIdle.maxOpacity=Math.max(nativeIdle.maxOpacity,opacity);nativeIdle.minArtwork=Math.min(nativeIdle.minArtwork,artwork);
-    if(performance.now()-last>150){last=performance.now();const q=video.getVideoPlaybackQuality();nativeIdle.samples.push({state:layer.dataset.state,opacity,artwork,time:video.currentTime,duration:video.duration,id:video.dataset.cutsceneId,decoded:q.totalVideoFrames,dropped:q.droppedVideoFrames});}
+    if(performance.now()-last>150){last=performance.now();const q=video.getVideoPlaybackQuality();nativeIdle.samples.push({state:layer.dataset.state,opacity,artwork,wall:performance.now(),rate:video.playbackRate,fade:getComputedStyle(layer).transitionDuration,time:video.currentTime,duration:video.duration,id:video.dataset.cutsceneId,decoded:q.totalVideoFrames,dropped:q.droppedVideoFrames});}
    }else if(nativeIdle.seen)nativeIdle.completed=true;
    requestAnimationFrame(sample);
   };sample();}''')
@@ -33,6 +33,11 @@ with sync_playwright() as p:
  frames=[s for s in report['samples'] if s['decoded']>0]
  assert len(frames)>3 and frames[-1]['decoded']>frames[0]['decoded'],report
  assert any(s['opacity']>.95 and s['time']>3 for s in frames),report
+ assert all(s['rate']==.5 for s in frames),report
+ assert all(s['fade']=='3.5s' for s in frames if s['state'] in ['playing','fading']),report
+ assert frames[-1]['wall']-frames[0]['wall']>10000,report
+ fades=[s for s in frames if s['state']=='fading']
+ assert fades and 3.2<(fades[0]['duration']-fades[0]['time'])/.5<=4.0,report
  assert page.locator('.pumpkin-artwork').evaluate('e=>Number(getComputedStyle(e).opacity)')>.95
  assert not errors,errors
  (out/'report.json').write_text(json.dumps(report,indent=2));print('Actual native kiosk: video frames advance, artwork fades, dashboard stays available, image returns.',flush=True)

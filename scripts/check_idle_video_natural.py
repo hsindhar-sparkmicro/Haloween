@@ -30,7 +30,7 @@ with sync_playwright() as p:
  pg.wait_for_function('()=>idleSamples.fadeRemaining!==null',timeout=25000)
  pg.screenshot(path=str(out/'fade-out.png'))
  pg.wait_for_function('()=>idleSamples.completed',timeout=5000)
- samples=pg.evaluate('()=>idleSamples');assert samples['fadeRemaining']>=1.1,samples
+ samples=pg.evaluate('()=>idleSamples');assert 1.6<=samples['fadeRemaining']<=2.0,samples
  print('Natural dashboard replay passed',flush=True)
  for mode in ['touch','dialog','other-screen','reduced-motion','hidden']:
   pg.emulate_media(reduced_motion='no-preference');pg.goto(args.url);pg.mouse.move(0,0)

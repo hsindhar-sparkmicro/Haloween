@@ -36,13 +36,14 @@ with sync_playwright() as p:
   pg.evaluate('''index=>{const {backgrounds:b,idle}=check;check.transitions=[];b.hold=false;b.offset=0;b.draw(index*23+5);idle.lastActivity=-1e9;idle.nextDue=0;idle.update();}''',index)
   pg.wait_for_function('clip=>{const e=document.querySelector(".idle-background-video");return e.dataset.videoId===clip&&e.dataset.state==="playing"}',arg=clip)
   pg.wait_for_timeout(1100)
-  data=pg.evaluate('''()=>{const {backgrounds:b,idle}=check,v=idle.video,rect=document.querySelector('#pumpkin').getBoundingClientRect();return {id:v.dataset.cutsceneId,muted:v.muted,time:v.currentTime,opacity:Number(getComputedStyle(idle.layer).opacity),held:b.hold,foregroundAboveVideo:document.elementFromPoint(rect.x+rect.width/2,rect.y+rect.height/2).closest('#pumpkin')!==null};}''')
+  data=pg.evaluate('''()=>{const {backgrounds:b,idle}=check,v=idle.video,rect=document.querySelector('#pumpkin').getBoundingClientRect();return {id:v.dataset.cutsceneId,muted:v.muted,time:v.currentTime,rate:v.playbackRate,fade:getComputedStyle(idle.layer).transitionDuration,opacity:Number(getComputedStyle(idle.layer).opacity),held:b.hold,foregroundAboveVideo:document.elementFromPoint(rect.x+rect.width/2,rect.y+rect.height/2).closest('#pumpkin')!==null};}''')
+  assert data['rate']==.5 and data['fade']=='3.5s',data
   assert data['muted'] and data['held'] and data['foregroundAboveVideo'] and data['opacity']>0,data
   assert pg.evaluate('''()=>{const b=check.backgrounds,id=b.current.id,phase=b.phase;b.draw(b.lastTime+30);return b.current.id===id&&b.phase===phase;}''')
   pg.screenshot(path=str(out/f'{clip}-fade-in.png'))
   pg.wait_for_function('()=>check.transitions.some(item=>item.state==="fading")',timeout=12000)
   fade=pg.evaluate('()=>check.transitions.find(item=>item.state==="fading")')
-  assert fade['remaining']>=1.1,fade
+  assert 1.6<=fade['remaining']<=2.0,fade
   pg.wait_for_timeout(300)
   pg.screenshot(path=str(out/f'{clip}-fade-out.png'))
   pg.wait_for_function('()=>!check.idle.video',timeout=5000)

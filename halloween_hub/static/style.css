@@ -133,9 +133,9 @@ body.welcome-fullscreen.welcome-controls #app>header,body.welcome-fullscreen.wel
 .welcome-countdown h1.message-steady .message-ghost{display:none}
 
 /* Video is inserted above the stills and below atmosphere, vignette and all controls. */
-.idle-background-video{position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity 2s ease-in-out;will-change:opacity;overflow:hidden}
+.idle-background-video{position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity 3.5s ease-in-out;will-change:opacity;overflow:hidden}
 .idle-background-video video{display:block;width:100%;height:100%;object-fit:cover;object-position:center 30%;pointer-events:none}
 
 /* Keep the adventure button/caption available while revealing the moving pumpkin below. */
-#dashboard .pumpkin-artwork{position:absolute;inset:0;pointer-events:none;opacity:1;transition:opacity var(--idle-fade-duration,1200ms) ease-in-out}
+#dashboard .pumpkin-artwork{position:absolute;inset:0;pointer-events:none;opacity:1;transition:opacity var(--idle-fade-duration,3500ms) ease-in-out}
 #dashboard.idle-video-playing .pumpkin-artwork{opacity:0}
