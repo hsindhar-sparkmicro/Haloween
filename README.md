@@ -199,6 +199,10 @@ Omit `--webm` if unavailable. On the Pi, app data is `/home/spark/HalloweenHub-2
 
 ## Background and cutscene rotation
 
+When the Dashboard has had no touch, mouse movement, keypress or scrolling for **45 seconds**, its current settled background can briefly come alive. Wicked Nun plays **Nun**, Dracula plays **Dracula**, and the original pumpkin scene plays **Pumpkin Scare**. Replays are silent and leave the foreground pumpkin, countdown, weather and controls in front. A decoded video frame fades in over two seconds; the video fades back to the matching still starting about 3.2 seconds before its end. The matching image remains mounted and background rotation holds throughout, then resumes from the same point. There is a random **90–150 second** wait before another replay becomes eligible, and interaction must again have been quiet for 45 seconds.
+
+Touch, mouse movement, a keypress or scrolling fades the replay away in 0.6 seconds without intercepting the action. Opening a dialog, leaving the Dashboard, hiding the page or enabling reduced motion releases playback immediately. Missing, blocked or stalled media keeps the image visible and skips the replay. Only one background video is decoded at a time and its resources are released after the fade. Imported images without an explicit video pairing continue as stills. Manual pumpkin adventures keep their existing behavior and audio.
+
 The welcome background keeps the original haunted-house scene and rotates through imported PNG images: 20 seconds still, then a 3-second crossfade. Rotation pauses off-screen, behind dialogs, and in reduced-motion mode. New images preload before entering rotation; unavailable images are skipped. The foreground pumpkin lowers by 30% of its own height as an imported PNG fades in and returns as the original scene reappears; its touch target and caption stay anchored.
 
 Pumpkin taps cycle the installed cutscenes in order, returning to the adventure menu after each. The last selection is remembered in that browser, so reloading does not reset the cycle. The Pi currently has **Welcome**, **Dracula**, **Nun**, and **Pumpkin Scare**, plus two full-size imported PNG backgrounds (Dracula and Wicked Nun) alongside the original scene. The former WebP backgrounds have been removed.
@@ -221,3 +225,12 @@ Welcome text effects are original adaptations inspired by [Prismic’s text-anim
 The welcome overlay containers stay anchored; individual headings, countdown values, weather lines, sound lines and pumpkin instructions move separately. Some remain visible while others fade. Playback/location buttons remain visible, and keyboard focus steadies the focused line. Dialogs, hidden screens and reduced motion pause the shared animation clock.
 
 Imported backgrounds display at full opacity without the additional dark gradient, with lighter edge shading and reduced generated fog. The original scene keeps its existing rendering. Background PNGs are imported directly at their original resolution.
+
+Idle-video browser checks (use an isolated server with the three paired clips and two PNGs installed):
+
+```bash
+.venv/bin/python scripts/check_idle_video.py --url http://127.0.0.1:8094
+.venv/bin/python scripts/check_idle_video_natural.py --url http://127.0.0.1:8094
+```
+
+The first check backdates inactivity in an isolated browser fixture but plays the real clips and fades in real time. The second checks the natural idle schedule in the full Dashboard, then backdates inactivity for interruption checks. Both support `--cdp` for a Raspberry Pi Chromium instance and `--output` for evidence.

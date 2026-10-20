@@ -396,7 +396,7 @@ function renderCountdown() {
 function render() {
 
   const settings=state.settings;
-  welcomeAtmosphere.configure(settings,state.backgrounds||[]);
+  welcomeAtmosphere.configure(settings,state.backgrounds||[],state.cutscene?.items||[]);
   const hash=JSON.stringify(settings);
   if(hash!==settingsHash) {
     settingsHash=hash;

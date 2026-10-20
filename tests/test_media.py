@@ -55,3 +55,15 @@ class MediaTests(unittest.TestCase):
     self.assertEqual(client.get('/api/cutscenes/missing.mp4').status_code,404)
     self.assertEqual(client.get('/api/backgrounds/missing.png').status_code,404)
    finally:app.extensions['camera'].close();app.extensions['simulation'].close()
+
+ def test_background_video_pairing_and_unmatched_image(self):
+  from halloween_hub.gallery import backgrounds
+  with tempfile.TemporaryDirectory() as root:
+   directory=Path(root)/'backgrounds';directory.mkdir()
+   expected={
+    '009045cb02d9164961af0df50811db59f4e951a7322cbb9d390f6979c088badb':'nun',
+    '0438919254cd3b10cf52f4a7be6ebffc24ac4f0fa56d2ce723625c039895791e':'dracula',
+    'unrelated':None,
+   }
+   for name in expected:(directory/(name+'.png')).write_bytes(b'image')
+   self.assertEqual({item['id']:item['video_id'] for item in backgrounds(Path(root))},expected)

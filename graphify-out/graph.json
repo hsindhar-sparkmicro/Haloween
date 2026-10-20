@@ -421,7 +421,7 @@
       "label": "backgrounds()",
       "file_type": "code",
       "source_file": "halloween_hub/gallery.py",
-      "source_location": "L11",
+      "source_location": "L19",
       "id": "halloween_hub_gallery_backgrounds",
       "community": 0,
       "norm_label": "backgrounds()"
@@ -994,6 +994,78 @@
       "norm_label": ".next()"
     },
     {
+      "label": "idle-background-video.js",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/idle-background-video.js",
+      "source_location": "L1",
+      "id": "static_idle_background_video",
+      "community": 38,
+      "norm_label": "idle-background-video.js"
+    },
+    {
+      "label": "IdleBackgroundVideo",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/idle-background-video.js",
+      "source_location": "L2",
+      "id": "static_idle_background_video_idlebackgroundvideo",
+      "community": 38,
+      "norm_label": "idlebackgroundvideo"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/idle-background-video.js",
+      "source_location": "L3",
+      "id": "static_idle_background_video_idlebackgroundvideo_constructor",
+      "community": 38,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".configure()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/idle-background-video.js",
+      "source_location": "L12",
+      "id": "static_idle_background_video_idlebackgroundvideo_configure",
+      "community": 38,
+      "norm_label": ".configure()"
+    },
+    {
+      "label": ".setAllowed()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/idle-background-video.js",
+      "source_location": "L16",
+      "id": "static_idle_background_video_idlebackgroundvideo_setallowed",
+      "community": 38,
+      "norm_label": ".setallowed()"
+    },
+    {
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/idle-background-video.js",
+      "source_location": "L21",
+      "id": "static_idle_background_video_idlebackgroundvideo_update",
+      "community": 38,
+      "norm_label": ".update()"
+    },
+    {
+      "label": ".start()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/idle-background-video.js",
+      "source_location": "L29",
+      "id": "static_idle_background_video_idlebackgroundvideo_start",
+      "community": 38,
+      "norm_label": ".start()"
+    },
+    {
+      "label": ".stop()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/idle-background-video.js",
+      "source_location": "L58",
+      "id": "static_idle_background_video_idlebackgroundvideo_stop",
+      "community": 38,
+      "norm_label": ".stop()"
+    },
+    {
       "label": "scene-player.js",
       "file_type": "code",
       "source_file": "halloween_hub/static/scene-player.js",
@@ -1429,7 +1501,7 @@
       "label": "WelcomeAtmosphere",
       "file_type": "code",
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
-      "source_location": "L5",
+      "source_location": "L6",
       "id": "static_welcome_atmosphere_welcomeatmosphere",
       "community": 38,
       "norm_label": "welcomeatmosphere"
@@ -1438,7 +1510,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
-      "source_location": "L6",
+      "source_location": "L7",
       "id": "static_welcome_atmosphere_welcomeatmosphere_constructor",
       "community": 38,
       "norm_label": ".constructor()"
@@ -1447,7 +1519,7 @@
       "label": ".configure()",
       "file_type": "code",
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
-      "source_location": "L18",
+      "source_location": "L19",
       "id": "static_welcome_atmosphere_welcomeatmosphere_configure",
       "community": 38,
       "norm_label": ".configure()"
@@ -1456,7 +1528,7 @@
       "label": ".resize()",
       "file_type": "code",
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
-      "source_location": "L19",
+      "source_location": "L20",
       "id": "static_welcome_atmosphere_welcomeatmosphere_resize",
       "community": 38,
       "norm_label": ".resize()"
@@ -1465,7 +1537,7 @@
       "label": ".refresh()",
       "file_type": "code",
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
-      "source_location": "L20",
+      "source_location": "L21",
       "id": "static_welcome_atmosphere_welcomeatmosphere_refresh",
       "community": 38,
       "norm_label": ".refresh()"
@@ -1474,7 +1546,7 @@
       "label": ".glow()",
       "file_type": "code",
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
-      "source_location": "L32",
+      "source_location": "L34",
       "id": "static_welcome_atmosphere_welcomeatmosphere_glow",
       "community": 38,
       "norm_label": ".glow()"
@@ -1483,7 +1555,7 @@
       "label": ".spawnGhost()",
       "file_type": "code",
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
-      "source_location": "L36",
+      "source_location": "L38",
       "id": "static_welcome_atmosphere_welcomeatmosphere_spawnghost",
       "community": 38,
       "norm_label": ".spawnghost()"
@@ -1492,7 +1564,7 @@
       "label": ".draw()",
       "file_type": "code",
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
-      "source_location": "L37",
+      "source_location": "L39",
       "id": "static_welcome_atmosphere_welcomeatmosphere_draw",
       "community": 38,
       "norm_label": ".draw()"
@@ -2133,6 +2205,42 @@
       "id": "scripts_check_hidden_camera_rationale_1",
       "community": 34,
       "norm_label": "pi scan/rest lifecycle; numerical state only, no captured images."
+    },
+    {
+      "label": "check_idle_video.py",
+      "file_type": "code",
+      "source_file": "scripts/check_idle_video.py",
+      "source_location": "L1",
+      "id": "scripts_check_idle_video",
+      "community": 53,
+      "norm_label": "check_idle_video.py"
+    },
+    {
+      "label": "Exercise actual idle clips and crossfades in an isolated browser fixture.  Use a",
+      "file_type": "rationale",
+      "source_file": "scripts/check_idle_video.py",
+      "source_location": "L1",
+      "id": "scripts_check_idle_video_rationale_1",
+      "community": 53,
+      "norm_label": "exercise actual idle clips and crossfades in an isolated browser fixture.  use a"
+    },
+    {
+      "label": "check_idle_video_natural.py",
+      "file_type": "code",
+      "source_file": "scripts/check_idle_video_natural.py",
+      "source_location": "L1",
+      "id": "scripts_check_idle_video_natural",
+      "community": 54,
+      "norm_label": "check_idle_video_natural.py"
+    },
+    {
+      "label": "Check the real dashboard idle schedule and interruptions with installed media.",
+      "file_type": "rationale",
+      "source_file": "scripts/check_idle_video_natural.py",
+      "source_location": "L1",
+      "id": "scripts_check_idle_video_natural_rationale_1",
+      "community": 54,
+      "norm_label": "check the real dashboard idle schedule and interruptions with installed media."
     },
     {
       "label": "check_immersive.py",
@@ -2979,6 +3087,15 @@
       "id": "tests_test_media_mediatests_test_gallery_preserves_original_and_adds_named_media",
       "community": 0,
       "norm_label": ".test_gallery_preserves_original_and_adds_named_media()"
+    },
+    {
+      "label": ".test_background_video_pairing_and_unmatched_image()",
+      "file_type": "code",
+      "source_file": "tests/test_media.py",
+      "source_location": "L59",
+      "id": "tests_test_media_mediatests_test_background_video_pairing_and_unmatched_image",
+      "community": 0,
+      "norm_label": ".test_background_video_pairing_and_unmatched_image()"
     },
     {
       "label": "API.md",
@@ -4969,6 +5086,28 @@
       "target": "halloween_hub_gallery"
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_media.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "tests_test_media",
+      "target": "halloween_hub_gallery_backgrounds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_media.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "tests_test_media_mediatests_test_background_video_pairing_and_unmatched_image",
+      "target": "halloween_hub_gallery_backgrounds"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "halloween_hub/media.py",
@@ -6186,6 +6325,131 @@
       "confidence_score": 1.0,
       "source": "static_effect_shuffle_effectshuffle",
       "target": "static_effect_shuffle_effectshuffle_next"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/idle-background-video.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "static_idle_background_video",
+      "target": "static_idle_background_video_idlebackgroundvideo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/welcome-atmosphere.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "static_welcome_atmosphere",
+      "target": "static_idle_background_video",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/idle-background-video.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "static_idle_background_video_idlebackgroundvideo",
+      "target": "static_idle_background_video_idlebackgroundvideo_configure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/idle-background-video.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "static_idle_background_video_idlebackgroundvideo",
+      "target": "static_idle_background_video_idlebackgroundvideo_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/idle-background-video.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "static_idle_background_video_idlebackgroundvideo",
+      "target": "static_idle_background_video_idlebackgroundvideo_setallowed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/idle-background-video.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "static_idle_background_video_idlebackgroundvideo",
+      "target": "static_idle_background_video_idlebackgroundvideo_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/idle-background-video.js",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "static_idle_background_video_idlebackgroundvideo",
+      "target": "static_idle_background_video_idlebackgroundvideo_stop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/idle-background-video.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "static_idle_background_video_idlebackgroundvideo",
+      "target": "static_idle_background_video_idlebackgroundvideo_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/welcome-atmosphere.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "static_welcome_atmosphere",
+      "target": "static_idle_background_video_idlebackgroundvideo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/idle-background-video.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "static_idle_background_video_idlebackgroundvideo_configure",
+      "target": "static_idle_background_video_idlebackgroundvideo_stop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/idle-background-video.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "static_idle_background_video_idlebackgroundvideo_setallowed",
+      "target": "static_idle_background_video_idlebackgroundvideo_stop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/idle-background-video.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "static_idle_background_video_idlebackgroundvideo_update",
+      "target": "static_idle_background_video_idlebackgroundvideo_start",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -8417,6 +8681,26 @@
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/check_idle_video.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_check_idle_video_rationale_1",
+      "target": "scripts_check_idle_video",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check_idle_video_natural.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_check_idle_video_natural_rationale_1",
+      "target": "scripts_check_idle_video_natural",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
       "source_file": "scripts/check_immersive.py",
       "source_location": "L1",
       "weight": 1.0,
@@ -9121,6 +9405,16 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_media.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "tests_test_media_mediatests",
+      "target": "tests_test_media_mediatests_test_background_video_pairing_and_unmatched_image",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_media.py",
       "source_location": "L40",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -9473,9 +9767,9 @@
       "source_file": "VALIDATION.md",
       "source_location": "L202",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "validation_validation_record_october_14_2026",
-      "target": "validation_raspberry_pi_boot_autostart_2026_10_20",
-      "confidence_score": 1.0
+      "target": "validation_raspberry_pi_boot_autostart_2026_10_20"
     },
     {
       "relation": "contains",
@@ -9659,5 +9953,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "e0a7913f800cf659cff47b4800bc66111537f5f5"
+  "built_at_commit": "aa4fa5dfc25f7d43cb71249da88b0b38127df0b0"
 }

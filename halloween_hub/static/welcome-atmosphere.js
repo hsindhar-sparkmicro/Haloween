@@ -1,11 +1,12 @@
 import {WelcomeFloat} from './welcome-float.js';
 import {WelcomeMessages} from './welcome-messages.js';
 import {BackgroundRotation} from './background-rotation.js';
+import {IdleBackgroundVideo} from './idle-background-video.js';
 // Locally rendered atmosphere. Cached sprites keep the Pi's per-frame work small.
 export class WelcomeAtmosphere {
  constructor(canvas){
   this.canvas=canvas;this.ctx=canvas.getContext('2d');this.settings={};this.frame=0;this.draws=0;this.elapsed=0;this.last=0;this.visible=false;
-  this.backgrounds=new BackgroundRotation();this.messages=new WelcomeMessages();this.float=new WelcomeFloat();
+  this.backgrounds=new BackgroundRotation();this.idleVideo=new IdleBackgroundVideo(this.backgrounds);this.messages=new WelcomeMessages();this.float=new WelcomeFloat();
   this.glows=new Map();this.ghosts=[];this.nextGhost=2;this.low=true;
   this.art=new Image();this.art.src='/static/assets/art-sheet.png';this.art.onload=()=>{this.ghostSprite=document.createElement('canvas');this.ghostSprite.width=this.ghostSprite.height=192;const c=this.ghostSprite.getContext('2d'),sw=this.art.naturalWidth/3,sh=this.art.naturalHeight/2;c.drawImage(this.art,0,sh,sw,sh,0,0,192,192);c.globalCompositeOperation='destination-in';const g=c.createRadialGradient(96,96,30,96,96,94);g.addColorStop(0,'#000');g.addColorStop(.35,'#000');g.addColorStop(1,'transparent');c.fillStyle=g;c.fillRect(0,0,192,192);this.draw();};
   this.clouds=Array.from({length:18},()=>({x:Math.random(),y:.53+Math.random()*.43,r:.14+Math.random()*.21,speed:.003+Math.random()*.012,phase:Math.random()*6.28,alpha:.11+Math.random()*.19}));
@@ -15,11 +16,12 @@ export class WelcomeAtmosphere {
   this.observer=new MutationObserver(()=>this.refresh());this.observer.observe(document.body,{subtree:true,attributes:true,attributeFilter:['class','open']});
   document.addEventListener('visibilitychange',()=>this.refresh());this.resize();
  }
- configure(settings,backgrounds=[]){this.backgrounds.configure(backgrounds);this.settings=settings;const low=settings.quality==='low'||settings.quality==='auto'&&innerWidth<=1000;if(this.low!==low){this.low=low;this.resize();}this.refresh();}
+ configure(settings,backgrounds=[],cutscenes=[]){this.backgrounds.configure(backgrounds);this.idleVideo.configure(cutscenes);this.settings=settings;const low=settings.quality==='low'||settings.quality==='auto'&&innerWidth<=1000;if(this.low!==low){this.low=low;this.resize();}this.refresh();}
  resize(){const r=this.canvas.getBoundingClientRect();if(!r.width||!r.height)return;this.width=r.width;this.height=r.height;const dpr=this.low?1:Math.min(devicePixelRatio,1.5);this.canvas.width=Math.round(r.width*dpr);this.canvas.height=Math.round(r.height*dpr);this.ctx.setTransform(dpr,0,0,dpr,0,0);this.draw();}
  refresh(){
   const visible=document.querySelector('#dashboard').classList.contains('active')&&!document.hidden&&!document.querySelector('dialog[open]');
   const reduced=this.settings.reduced_motion||this.motion.matches;
+  this.idleVideo.setAllowed(visible&&!reduced);
   const changed=visible!==this.visible||reduced!==this.reduced;this.visible=visible;this.reduced=reduced;
   document.querySelector('#dashboard').classList.toggle('atmosphere-paused',!visible);
   if(!visible||reduced){cancelAnimationFrame(this.frame);this.frame=0;this.last=0;if(visible&&changed)this.draw();return;}
@@ -38,6 +40,7 @@ export class WelcomeAtmosphere {
   if(!this.width||!this.height)return;
   const c=this.ctx,w=this.width,h=this.height,t=this.elapsed;this.draws++;c.clearRect(0,0,w,h);
   const imported=this.backgrounds.draw(t,!this.settings.reduced_motion&&!this.motion.matches);
+  this.idleVideo.update();
   this.messages.draw(t,!this.settings.reduced_motion&&!this.motion.matches);
   this.float.draw(t,!this.settings.reduced_motion&&!this.motion.matches);
   this.glow(w*.49,h*.63,h*.61,'#ed773b',.1+Math.sin(t*.38)*.025);
