@@ -85,8 +85,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/README.md": {
-    "mtime": 1792100989.002615,
-    "ast_hash": "474f9b8685e69181489de5a1440e5984",
+    "mtime": 1792518590.2143075,
+    "ast_hash": "8710702b4394345b71dc72f1cdf46222",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/assets/FONT-LICENSE.txt": {
@@ -130,8 +130,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/VALIDATION.md": {
-    "mtime": 1792100744.7707555,
-    "ast_hash": "79bc59369a385aaced646cbb2675008b",
+    "mtime": 1792518630.6558254,
+    "ast_hash": "718cc5c3c67081791407b1be920ecc6f",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/API.md": {
@@ -422,6 +422,11 @@
   "/home/hsindhar/github/Haloween/scripts/check_png_backgrounds.py": {
     "mtime": 1792100698.9148717,
     "ast_hash": "2f234e074d1983ed4f9e31b9a511691e",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/scripts/pi_autostart.py": {
+    "mtime": 1792518630.655212,
+    "ast_hash": "24c857b02fd8ef76277c56b3e5725bda",
     "semantic_hash": ""
   }
 }

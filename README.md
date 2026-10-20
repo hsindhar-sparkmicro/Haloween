@@ -34,7 +34,32 @@ On the Pi's graphical desktop, launch the server in one terminal and kiosk in an
 ./kiosk.sh
 ```
 
-The kiosk has its own Chromium profile and does not require creating a desktop keyring. The header **−** button minimizes the native kiosk window to the desktop; restore it from the desktop task switcher. The **⛶** button separately toggles browser document fullscreen. Use **Alt+F4** to close it. Use **Ctrl+C** in the server terminal to stop the server. No startup service is installed.
+The kiosk has its own Chromium profile and does not require creating a desktop keyring. The header **−** button minimizes the native kiosk window to the desktop; restore it from the desktop task switcher. The **⛶** button separately toggles browser document fullscreen. Use **Alt+F4** to close it. Use **Ctrl+C** in the server terminal to stop the server.
+
+## Raspberry Pi autostart on boot
+
+Run once as the Pi's normal desktop user (without `sudo`), after preparing dependencies with `./run.sh`:
+
+```bash
+.venv/bin/python scripts/pi_autostart.py install --port 8088
+```
+
+Enable **Desktop Autologin** in Raspberry Pi Configuration (or `sudo raspi-config`, System Options → Boot / Auto Login → Desktop Autologin). On boot, the user service starts the server and the desktop opens Chromium in kiosk mode after the server responds. The installer starts the server immediately; Chromium opens at the next desktop login. No dependency downloads occur during boot. The app uses the deployment's `data/` folder, preserving existing Pi records and media. Run the installer from a permanent location; reinstall after moving the folder. The server stays on loopback.
+
+Check status and logs:
+
+```bash
+systemctl --user status halloween-hub
+journalctl --user -u halloween-hub -b
+```
+
+Remove autostart and stop its server:
+
+```bash
+.venv/bin/python scripts/pi_autostart.py remove
+```
+
+Close any open kiosk with **Alt+F4**. Removing autostart preserves application data and the Pi's desktop login settings. Stop any manually launched Halloween Hub server before installing to avoid a port conflict. For a different port, supply `--port` when installing; the browser uses the same port.
 
 ## Remote / headless
 

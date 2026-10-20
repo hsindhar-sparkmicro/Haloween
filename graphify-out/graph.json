@@ -2621,6 +2621,42 @@
       "norm_label": "portable source package, manifest generated from its exact inventory."
     },
     {
+      "label": "pi_autostart.py",
+      "file_type": "code",
+      "source_file": "scripts/pi_autostart.py",
+      "source_location": "L1",
+      "id": "scripts_pi_autostart",
+      "community": 52,
+      "norm_label": "pi_autostart.py"
+    },
+    {
+      "label": "quoted()",
+      "file_type": "code",
+      "source_file": "scripts/pi_autostart.py",
+      "source_location": "L16",
+      "id": "scripts_pi_autostart_quoted",
+      "community": 52,
+      "norm_label": "quoted()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/pi_autostart.py",
+      "source_location": "L24",
+      "id": "scripts_pi_autostart_main",
+      "community": 52,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Install per-user Raspberry Pi desktop autostart; no root access required.",
+      "file_type": "rationale",
+      "source_file": "scripts/pi_autostart.py",
+      "source_location": "L1",
+      "id": "scripts_pi_autostart_rationale_1",
+      "community": 52,
+      "norm_label": "install per-user raspberry pi desktop autostart; no root access required."
+    },
+    {
       "label": "soak.py",
       "file_type": "code",
       "source_file": "scripts/soak.py",
@@ -3062,10 +3098,19 @@
       "norm_label": "start"
     },
     {
-      "label": "Remote / headless",
+      "label": "Raspberry Pi autostart on boot",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L39",
+      "id": "readme_raspberry_pi_autostart_on_boot",
+      "community": 4,
+      "norm_label": "raspberry pi autostart on boot"
+    },
+    {
+      "label": "Remote / headless",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L64",
       "id": "readme_remote_headless",
       "community": 4,
       "norm_label": "remote / headless"
@@ -3074,7 +3119,7 @@
       "label": "Four screens",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L57",
+      "source_location": "L82",
       "id": "readme_four_screens",
       "community": 4,
       "norm_label": "four screens"
@@ -3083,7 +3128,7 @@
       "label": "Audio and data",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L74",
+      "source_location": "L99",
       "id": "readme_audio_and_data",
       "community": 4,
       "norm_label": "audio and data"
@@ -3092,7 +3137,7 @@
       "label": "Validation and development",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L90",
+      "source_location": "L115",
       "id": "readme_validation_and_development",
       "community": 4,
       "norm_label": "validation and development"
@@ -3101,7 +3146,7 @@
       "label": "Asset provenance",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L111",
+      "source_location": "L136",
       "id": "readme_asset_provenance",
       "community": 4,
       "norm_label": "asset provenance"
@@ -3110,7 +3155,7 @@
       "label": "Hidden camera and visitor adventures",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L115",
+      "source_location": "L140",
       "id": "readme_hidden_camera_and_visitor_adventures",
       "community": 4,
       "norm_label": "hidden camera and visitor adventures"
@@ -3119,7 +3164,7 @@
       "label": "Halloween music and offline shuffle",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L131",
+      "source_location": "L156",
       "id": "readme_halloween_music_and_offline_shuffle",
       "community": 4,
       "norm_label": "halloween music and offline shuffle"
@@ -3128,7 +3173,7 @@
       "label": "Imported scene sound effects",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L137",
+      "source_location": "L162",
       "id": "readme_imported_scene_sound_effects",
       "community": 4,
       "norm_label": "imported scene sound effects"
@@ -3137,7 +3182,7 @@
       "label": "Immersive welcome screen",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L151",
+      "source_location": "L176",
       "id": "readme_immersive_welcome_screen",
       "community": 4,
       "norm_label": "immersive welcome screen"
@@ -3146,7 +3191,7 @@
       "label": "Spooky Sounds uses your imported effects",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L157",
+      "source_location": "L182",
       "id": "readme_spooky_sounds_uses_your_imported_effects",
       "community": 4,
       "norm_label": "spooky sounds uses your imported effects"
@@ -3155,7 +3200,7 @@
       "label": "Pumpkin welcome cutscene",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L161",
+      "source_location": "L186",
       "id": "readme_pumpkin_welcome_cutscene",
       "community": 4,
       "norm_label": "pumpkin welcome cutscene"
@@ -3164,7 +3209,7 @@
       "label": "Background and cutscene rotation",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L175",
+      "source_location": "L200",
       "id": "readme_background_and_cutscene_rotation",
       "community": 4,
       "norm_label": "background and cutscene rotation"
@@ -3393,6 +3438,24 @@
       "id": "validation_png_only_background_gallery",
       "community": 20,
       "norm_label": "png-only background gallery"
+    },
+    {
+      "label": "Raise pumpkin on imported backgrounds",
+      "file_type": "document",
+      "source_file": "VALIDATION.md",
+      "source_location": "L197",
+      "id": "validation_raise_pumpkin_on_imported_backgrounds",
+      "community": 20,
+      "norm_label": "raise pumpkin on imported backgrounds"
+    },
+    {
+      "label": "Raspberry Pi boot autostart (2026-10-20)",
+      "file_type": "document",
+      "source_file": "VALIDATION.md",
+      "source_location": "L202",
+      "id": "validation_raspberry_pi_boot_autostart_2026_10_20",
+      "community": 20,
+      "norm_label": "raspberry pi boot autostart (2026-10-20)"
     },
     {
       "label": "Shared simulation boundary. No GPIO or sensor access.",
@@ -8642,6 +8705,47 @@
       "target": "scripts_package"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pi_autostart.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_pi_autostart",
+      "target": "scripts_pi_autostart_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pi_autostart.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_pi_autostart",
+      "target": "scripts_pi_autostart_quoted"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pi_autostart.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_pi_autostart_rationale_1",
+      "target": "scripts_pi_autostart"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/pi_autostart.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_pi_autostart_main",
+      "target": "scripts_pi_autostart_quoted"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "scripts/soak.py",
@@ -9251,6 +9355,16 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "readme_halloween_hub",
+      "target": "readme_raspberry_pi_autostart_on_boot"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_halloween_hub",
       "target": "readme_remote_headless"
     },
     {
@@ -9352,6 +9466,16 @@
       "confidence_score": 1.0,
       "source": "validation_validation_record_october_14_2026",
       "target": "validation_pi_deployment_and_endurance"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "VALIDATION.md",
+      "source_location": "L202",
+      "weight": 1.0,
+      "source": "validation_validation_record_october_14_2026",
+      "target": "validation_raspberry_pi_boot_autostart_2026_10_20",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -9459,9 +9583,9 @@
       "source_file": "VALIDATION.md",
       "source_location": "L191",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "validation_hidden_camera_and_visitor_adventures_supersedes_preview_mirror_behavior_above",
-      "target": "validation_png_only_background_gallery",
-      "confidence_score": 1.0
+      "target": "validation_png_only_background_gallery"
     },
     {
       "relation": "contains",
@@ -9482,6 +9606,16 @@
       "confidence_score": 1.0,
       "source": "validation_hidden_camera_and_visitor_adventures_supersedes_preview_mirror_behavior_above",
       "target": "validation_pumpkin_welcome_cutscene_october_15_2026"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "VALIDATION.md",
+      "source_location": "L197",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "validation_hidden_camera_and_visitor_adventures_supersedes_preview_mirror_behavior_above",
+      "target": "validation_raise_pumpkin_on_imported_backgrounds"
     },
     {
       "relation": "contains",
@@ -9524,5 +9658,6 @@
       "target": "validation_welcome_spooky_sounds_shuffle"
     }
   ],
-  "hyperedges": []
+  "hyperedges": [],
+  "built_at_commit": "e0a7913f800cf659cff47b4800bc66111537f5f5"
 }

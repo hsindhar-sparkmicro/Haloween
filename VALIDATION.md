@@ -197,3 +197,8 @@ All **23 backend tests** passed locally and on Pi, including PNG catalog/serving
 ### Raise pumpkin on imported backgrounds
 
 Raised the foreground pumpkin by 20% of its own rendered height from its previous imported-background position: the conditional offset is now 30% below default instead of 50%. The original/default background position is unchanged. Pi Chromium measured the artwork and face at all three target sizes, checked the halfway crossfade position and default return, and confirmed the touch target stays anchored. See [position evidence](validation/pi-pumpkin-raised/report.json). This is a frontend positioning change; backend, Windows installation and soak tests were not repeated.
+
+
+## Raspberry Pi boot autostart (2026-10-20)
+
+Installed the per-user `halloween-hub.service` and XDG desktop autostart entry on the existing Pi deployment at `/home/spark/HalloweenHub-20261014`, using port 8088 and its existing `data/` directory. Desktop autologin was already enabled for `spark` in LightDM. The systemd unit and desktop entry passed `systemd-analyze --user verify` and `desktop-file-validate`; the service is enabled and active, listens only on `127.0.0.1:8088`, and returned HTTP 200. The readiness launcher opened the native Chromium kiosk in the existing Wayland desktop session. All 23 local backend tests passed. No reboot was performed, so the complete boot sequence remains unverified. Earlier statements about manual startup describe previous validation snapshots.
