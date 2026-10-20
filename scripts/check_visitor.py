@@ -1,6 +1,7 @@
 """SPARK Halloween showcase: real visitor flow, touch, keyboard and offline assets."""
 import argparse,json
 from pathlib import Path
+from urllib.parse import urlsplit
 from playwright.sync_api import sync_playwright
 parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--url',default='http://127.0.0.1:8094');parser.add_argument('--cdp');parser.add_argument('--output',default='validation/spark-showcase/checks');args=parser.parse_args();out=Path(args.output);out.mkdir(parents=True,exist_ok=True)
 with sync_playwright() as p:
@@ -27,11 +28,16 @@ with sync_playwright() as p:
  pg.emulate_media(reduced_motion='reduce');pg.focus('#pumpkin');pg.keyboard.press('Enter');pg.wait_for_selector('[data-product="sr1120"]');assert not pg.locator('#visitor-cutscene-video,.reveal-pumpkin').count();pg.focus('[data-product="mouse"]');pg.keyboard.press('Enter');pg.wait_for_selector('.spark-all-products');pg.keyboard.press('Escape');pg.wait_for_function('()=>!document.querySelector("#pumpkin").disabled');pg.emulate_media(reduced_motion='no-preference')
  # A failed intro still leads to products, and a late media event cannot reopen it.
  pg.route('**/api/cutscenes/**',lambda route:route.fulfill(status=404,body='Unavailable'));pg.click('#pumpkin');pg.wait_for_selector('[data-product="sr1120"]');assert pg.locator('.spark-notice').count()==1;finish();pg.unroute('**/api/cutscenes/**')
- # Brand and product images load without any website/CDN requests, even offline.
- pg.emulate_media(reduced_motion='reduce');enter();ctx.set_offline(True)
+ # Block internet requests while keeping the local kiosk server reachable.
+ pg.emulate_media(reduced_motion='reduce');enter()
+ local_origin=urlsplit(args.url).netloc
+ def offline_route(route):
+  if urlsplit(route.request.url).netloc==local_origin:route.continue_()
+  else:route.abort()
+ ctx.route('**/*',offline_route)
  for product in ['sr1120','mouse','keyboard','headset']:
   pg.click(f'[data-product="{product}"]');check_layout();pg.click('.spark-all-products')
- ctx.set_offline(False);finish();pg.emulate_media(reduced_motion='no-preference')
+ ctx.unroute('**/*',offline_route);finish();pg.emulate_media(reduced_motion='no-preference')
  assert not errors,errors
  assert all('/static/assets/spark/' not in url or url.startswith(args.url) for url in requests),requests
  assert not any('sparkmicro.com' in url for url in requests),requests

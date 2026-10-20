@@ -191,6 +191,11 @@ On the test Pi the music and effects are stored under `/home/spark/HalloweenHub-
 
 The main screen is a single haunted-house backdrop with a large tappable pumpkin, an emerging/fading Halloween countdown, floating weather, and a bottom ambience control. Dashboard cards and candy controls have been removed; existing stored data is preserved. The four screens and Settings remain in the navigation.
 
+The main screen's **Night atmosphere** cycles between a quiet misty night, gusts of tumbling autumn leaves, and drifting winter flurries. The first leaf gust begins after about six visible seconds; subsequent leaf periods last 20–28 seconds, flurries 28–36 seconds, with quiet 9–15 second gaps. Each active season eases in and out over four seconds. Winter brings a subtle cool tint while warm ember glow recedes. These are decorative conditions; the location's live forecast stays separate.
+
+Leaves and snow use cached local canvas sprites on the existing welcome animation clock, with no network downloads. A foreground canvas lets particles pass across the pumpkin while the countdown/weather controls remain readable and the touch target remains reachable. Low/auto-on-Pi quality caps the scene at 28 leaves or 90 snowflakes; higher quality uses at most 54 or 180. Off-screen pages and open dialogs pause the effects. Reduced-motion mode shows a still night without moving weather. Browser coverage: `.venv/bin/python scripts/check_night_weather.py`; native Pi coverage: `.venv/bin/python scripts/check_night_weather_native.py` through a temporary loopback CDP tunnel.
+
+
 Locally drawn fog drifts at randomized speeds, lighting slowly breathes, embers rise, and ghosts cross at random intervals, directions, sizes and heights. The Pi uses reduced particle density and cached glow/ghost sprites. The welcome canvas and countdown pause off-screen or behind any dialog. Reduced motion keeps the scene static and the countdown visible. Weather remains live with explicit loading/stale/offline status and a location button; ambience still requires an explicit tap.
 
 ### Spooky Sounds uses your imported effects

@@ -2,11 +2,12 @@ import {WelcomeFloat} from './welcome-float.js';
 import {WelcomeMessages} from './welcome-messages.js';
 import {BackgroundRotation} from './background-rotation.js';
 import {IdleBackgroundVideo} from './idle-background-video.js';
+import {NightWeather} from './night-weather.js';
 // Locally rendered atmosphere. Cached sprites keep the Pi's per-frame work small.
 export class WelcomeAtmosphere {
  constructor(canvas){
   this.canvas=canvas;this.ctx=canvas.getContext('2d');this.settings={};this.frame=0;this.draws=0;this.elapsed=0;this.last=0;this.visible=false;
-  this.backgrounds=new BackgroundRotation();this.idleVideo=new IdleBackgroundVideo(this.backgrounds);this.messages=new WelcomeMessages();this.float=new WelcomeFloat();
+  this.weatherCanvas=document.querySelector('#night-weather-canvas');this.weatherCtx=this.weatherCanvas.getContext('2d');this.weather=new NightWeather(this.weatherCanvas);this.backgrounds=new BackgroundRotation();this.idleVideo=new IdleBackgroundVideo(this.backgrounds);this.messages=new WelcomeMessages();this.float=new WelcomeFloat();
   this.glows=new Map();this.ghosts=[];this.nextGhost=2;this.low=true;
   this.art=new Image();this.art.src='/static/assets/art-sheet.png';this.art.onload=()=>{this.ghostSprite=document.createElement('canvas');this.ghostSprite.width=this.ghostSprite.height=192;const c=this.ghostSprite.getContext('2d'),sw=this.art.naturalWidth/3,sh=this.art.naturalHeight/2;c.drawImage(this.art,0,sh,sw,sh,0,0,192,192);c.globalCompositeOperation='destination-in';const g=c.createRadialGradient(96,96,30,96,96,94);g.addColorStop(0,'#000');g.addColorStop(.35,'#000');g.addColorStop(1,'transparent');c.fillStyle=g;c.fillRect(0,0,192,192);this.draw();};
   this.clouds=Array.from({length:18},()=>({x:Math.random(),y:.53+Math.random()*.43,r:.14+Math.random()*.21,speed:.003+Math.random()*.012,phase:Math.random()*6.28,alpha:.11+Math.random()*.19}));
@@ -17,7 +18,7 @@ export class WelcomeAtmosphere {
   document.addEventListener('visibilitychange',()=>this.refresh());this.resize();
  }
  configure(settings,backgrounds=[],cutscenes=[]){this.backgrounds.configure(backgrounds);this.idleVideo.configure(cutscenes);this.settings=settings;const low=settings.quality==='low'||settings.quality==='auto'&&innerWidth<=1000;if(this.low!==low){this.low=low;this.resize();}this.refresh();}
- resize(){const r=this.canvas.getBoundingClientRect();if(!r.width||!r.height)return;this.width=r.width;this.height=r.height;const dpr=this.low?1:Math.min(devicePixelRatio,1.5);this.canvas.width=Math.round(r.width*dpr);this.canvas.height=Math.round(r.height*dpr);this.ctx.setTransform(dpr,0,0,dpr,0,0);this.draw();}
+ resize(){const r=this.canvas.getBoundingClientRect();if(!r.width||!r.height)return;this.width=r.width;this.height=r.height;const dpr=this.low?1:Math.min(devicePixelRatio,1.5);for(const canvas of [this.canvas,this.weatherCanvas]){canvas.width=Math.round(r.width*dpr);canvas.height=Math.round(r.height*dpr);canvas.getContext('2d').setTransform(dpr,0,0,dpr,0,0);}this.draw();}
  refresh(){
   const visible=document.querySelector('#dashboard').classList.contains('active')&&!document.hidden&&!document.querySelector('dialog[open]');
   const reduced=this.settings.reduced_motion||this.motion.matches;
@@ -39,17 +40,17 @@ export class WelcomeAtmosphere {
  draw(){
   if(!this.width||!this.height)return;
   const c=this.ctx,w=this.width,h=this.height,t=this.elapsed;this.draws++;c.clearRect(0,0,w,h);
+  const moving=!this.settings.reduced_motion&&!this.motion.matches;this.weather.advance(t,moving,this.low);
   const imported=this.backgrounds.draw(t,!this.settings.reduced_motion&&!this.motion.matches);
   this.idleVideo.update();
   this.messages.draw(t,!this.settings.reduced_motion&&!this.motion.matches);
   this.float.draw(t,!this.settings.reduced_motion&&!this.motion.matches);
-  this.glow(w*.49,h*.63,h*.61,'#ed773b',.1+Math.sin(t*.38)*.025);
+  this.glow(w*.49,h*.63,h*.61,'#ed773b',(.1+Math.sin(t*.38)*.025)*(1-this.weather.winter*.75));
   this.glow(w*.84,h*.19,h*.42,'#827ed8',.09+Math.sin(t*.23+2)*.025);
   for(const cloud of this.clouds.slice(0,this.low?9:18)){
    const x=((cloud.x+t*cloud.speed)%1.5-.25)*w,y=(cloud.y+Math.sin(t*.15+cloud.phase)*.05)*h;
    this.glow(x,y,cloud.r*w,'#aaa0c6',cloud.alpha*(.7+Math.sin(t*.21+cloud.phase)*.3)*(1-imported*.45));
   }
-  const moving=!this.settings.reduced_motion&&!this.motion.matches;
   if(moving&&t>=this.nextGhost&&this.ghosts.length<(this.low?2:3)){this.spawnGhost();this.nextGhost=t+9+Math.random()*11;}
   this.ghosts=this.ghosts.filter(ghost=>t-ghost.born<ghost.duration);
   for(const ghost of this.ghosts){
@@ -58,6 +59,7 @@ export class WelcomeAtmosphere {
    if(this.ghostSprite)c.drawImage(this.ghostSprite,-size/2,-size/2,size,size);
    c.restore();
   }
-  for(const ember of this.embers.slice(0,this.low?12:30)){const x=(ember.x+Math.sin(t*.15+ember.phase)*.03)*w,y=((ember.y-t*ember.speed)%1+1)%1*h;c.globalAlpha=.12+Math.sin(t*.4+ember.phase)**2*.36;c.fillStyle='#ffba7d';c.beginPath();c.arc(x,y,1.2,0,Math.PI*2);c.fill();}c.globalAlpha=1;
+  for(const ember of this.embers.slice(0,this.low?12:30)){const x=(ember.x+Math.sin(t*.15+ember.phase)*.03)*w,y=((ember.y-t*ember.speed)%1+1)%1*h;c.globalAlpha=(.12+Math.sin(t*.4+ember.phase)**2*.36)*(1-this.weather.winter);c.fillStyle='#ffba7d';c.beginPath();c.arc(x,y,1.2,0,Math.PI*2);c.fill();}c.globalAlpha=1;
+  this.weatherCtx.clearRect(0,0,w,h);this.weather.draw(this.weatherCtx,w,h,moving);
  }
 }

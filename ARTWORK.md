@@ -30,3 +30,8 @@ Official SPARK Microsystems imagery downloaded on October 20, 2026, at the user'
 Sources: [SPARK Microsystems](https://www.sparkmicro.com/), [SR1120](https://www.sparkmicro.com/products/sr1120/), [Gaming](https://www.sparkmicro.com/applications/gaming/), [Reference Designs](https://www.sparkmicro.com/reference-designs/).
 
 Full-resolution originals are also bundled unchanged as `sr1120-full.png` (1254×1254) and `mouse-full.png`, `keyboard-full.png`, `headset-full.png` (1672×941). Their direct URLs, dimensions and hashes are included in the same source manifest. The browser selects the appropriate local variant and caps image display size at its actual pixel density; these assets have not been enlarged or AI-upscaled.
+
+
+## Decorative night weather
+
+Autumn leaves are original procedural shapes (maple-like, oval and lobed) cached into 128×128 canvas sprites in three warm colors. Snowflakes use a cached soft radial sprite. They are generated locally by `night-weather.js`, with no external imagery or weather data. Seasonal tint, wind, tumble and flurry motion are rendered at runtime; the live forecast is not altered.

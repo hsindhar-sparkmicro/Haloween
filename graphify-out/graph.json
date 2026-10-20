@@ -1102,6 +1102,114 @@
       "norm_label": ".stop()"
     },
     {
+      "label": "night-weather.js",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L1",
+      "id": "static_night_weather",
+      "community": 60,
+      "norm_label": "night-weather.js"
+    },
+    {
+      "label": "random()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L2",
+      "id": "static_night_weather_random",
+      "community": 60,
+      "norm_label": "random()"
+    },
+    {
+      "label": "smooth()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L3",
+      "id": "static_night_weather_smooth",
+      "community": 60,
+      "norm_label": "smooth()"
+    },
+    {
+      "label": "NightWeather",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L4",
+      "id": "static_night_weather_nightweather",
+      "community": 60,
+      "norm_label": "nightweather"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L5",
+      "id": "static_night_weather_nightweather_constructor",
+      "community": 60,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".leaf()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L12",
+      "id": "static_night_weather_nightweather_leaf",
+      "community": 60,
+      "norm_label": ".leaf()"
+    },
+    {
+      "label": ".change()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L21",
+      "id": "static_night_weather_nightweather_change",
+      "community": 60,
+      "norm_label": ".change()"
+    },
+    {
+      "label": ".advance()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L26",
+      "id": "static_night_weather_nightweather_advance",
+      "community": 60,
+      "norm_label": ".advance()"
+    },
+    {
+      "label": ".spawn()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L45",
+      "id": "static_night_weather_nightweather_spawn",
+      "community": 60,
+      "norm_label": ".spawn()"
+    },
+    {
+      "label": ".describe()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L49",
+      "id": "static_night_weather_nightweather_describe",
+      "community": 60,
+      "norm_label": ".describe()"
+    },
+    {
+      "label": ".draw()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L53",
+      "id": "static_night_weather_nightweather_draw",
+      "community": 60,
+      "norm_label": ".draw()"
+    },
+    {
+      "label": ".winter()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L65",
+      "id": "static_night_weather_nightweather_winter",
+      "community": 60,
+      "norm_label": ".winter()"
+    },
+    {
       "label": "scene-player.js",
       "file_type": "code",
       "source_file": "halloween_hub/static/scene-player.js",
@@ -1618,7 +1726,7 @@
       "label": "WelcomeAtmosphere",
       "file_type": "code",
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
-      "source_location": "L6",
+      "source_location": "L7",
       "id": "static_welcome_atmosphere_welcomeatmosphere",
       "community": 38,
       "norm_label": "welcomeatmosphere"
@@ -1627,7 +1735,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
-      "source_location": "L7",
+      "source_location": "L8",
       "id": "static_welcome_atmosphere_welcomeatmosphere_constructor",
       "community": 38,
       "norm_label": ".constructor()"
@@ -1636,7 +1744,7 @@
       "label": ".configure()",
       "file_type": "code",
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
-      "source_location": "L19",
+      "source_location": "L20",
       "id": "static_welcome_atmosphere_welcomeatmosphere_configure",
       "community": 38,
       "norm_label": ".configure()"
@@ -1645,7 +1753,7 @@
       "label": ".resize()",
       "file_type": "code",
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
-      "source_location": "L20",
+      "source_location": "L21",
       "id": "static_welcome_atmosphere_welcomeatmosphere_resize",
       "community": 38,
       "norm_label": ".resize()"
@@ -1654,7 +1762,7 @@
       "label": ".refresh()",
       "file_type": "code",
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
-      "source_location": "L21",
+      "source_location": "L22",
       "id": "static_welcome_atmosphere_welcomeatmosphere_refresh",
       "community": 38,
       "norm_label": ".refresh()"
@@ -1663,7 +1771,7 @@
       "label": ".glow()",
       "file_type": "code",
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
-      "source_location": "L34",
+      "source_location": "L35",
       "id": "static_welcome_atmosphere_welcomeatmosphere_glow",
       "community": 38,
       "norm_label": ".glow()"
@@ -1672,7 +1780,7 @@
       "label": ".spawnGhost()",
       "file_type": "code",
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
-      "source_location": "L38",
+      "source_location": "L39",
       "id": "static_welcome_atmosphere_welcomeatmosphere_spawnghost",
       "community": 38,
       "norm_label": ".spawnghost()"
@@ -1681,7 +1789,7 @@
       "label": ".draw()",
       "file_type": "code",
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
-      "source_location": "L39",
+      "source_location": "L40",
       "id": "static_welcome_atmosphere_welcomeatmosphere_draw",
       "community": 38,
       "norm_label": ".draw()"
@@ -2414,6 +2522,51 @@
       "norm_label": "verify independent line motion/fades in the actual pi browser."
     },
     {
+      "label": "check_night_weather.py",
+      "file_type": "code",
+      "source_file": "scripts/check_night_weather.py",
+      "source_location": "L1",
+      "id": "scripts_check_night_weather",
+      "community": 62,
+      "norm_label": "check_night_weather.py"
+    },
+    {
+      "label": "Accelerated seasonal-physics checks and screenshots; no app settings are changed",
+      "file_type": "rationale",
+      "source_file": "scripts/check_night_weather.py",
+      "source_location": "L1",
+      "id": "scripts_check_night_weather_rationale_1",
+      "community": 62,
+      "norm_label": "accelerated seasonal-physics checks and screenshots; no app settings are changed"
+    },
+    {
+      "label": "check_night_weather_native.py",
+      "file_type": "code",
+      "source_file": "scripts/check_night_weather_native.py",
+      "source_location": "L1",
+      "id": "scripts_check_night_weather_native",
+      "community": 61,
+      "norm_label": "check_night_weather_native.py"
+    },
+    {
+      "label": "measure()",
+      "file_type": "code",
+      "source_file": "scripts/check_night_weather_native.py",
+      "source_location": "L9",
+      "id": "scripts_check_night_weather_native_measure",
+      "community": 61,
+      "norm_label": "measure()"
+    },
+    {
+      "label": "Observe natural weather changes, frame pacing and pause behavior on the native P",
+      "file_type": "rationale",
+      "source_file": "scripts/check_night_weather_native.py",
+      "source_location": "L1",
+      "id": "scripts_check_night_weather_native_rationale_1",
+      "community": 61,
+      "norm_label": "observe natural weather changes, frame pacing and pause behavior on the native p"
+    },
+    {
       "label": "check_overlay_float.py",
       "file_type": "code",
       "source_file": "scripts/check_overlay_float.py",
@@ -2696,7 +2849,7 @@
       "label": "enter()",
       "file_type": "code",
       "source_file": "scripts/check_visitor.py",
-      "source_location": "L8",
+      "source_location": "L9",
       "id": "scripts_check_visitor_enter",
       "community": 33,
       "norm_label": "enter()"
@@ -2705,7 +2858,7 @@
       "label": "finish()",
       "file_type": "code",
       "source_file": "scripts/check_visitor.py",
-      "source_location": "L13",
+      "source_location": "L14",
       "id": "scripts_check_visitor_finish",
       "community": 33,
       "norm_label": "finish()"
@@ -2714,10 +2867,19 @@
       "label": "check_layout()",
       "file_type": "code",
       "source_file": "scripts/check_visitor.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "id": "scripts_check_visitor_check_layout",
       "community": 33,
       "norm_label": "check_layout()"
+    },
+    {
+      "label": "offline_route()",
+      "file_type": "code",
+      "source_file": "scripts/check_visitor.py",
+      "source_location": "L34",
+      "id": "scripts_check_visitor_offline_route",
+      "community": 33,
+      "norm_label": "offline_route()"
     },
     {
       "label": "SPARK Halloween showcase: real visitor flow, touch, keyboard and offline assets.",
@@ -3377,6 +3539,15 @@
       "norm_label": "spark product showcase"
     },
     {
+      "label": "Decorative night weather",
+      "file_type": "document",
+      "source_file": "ARTWORK.md",
+      "source_location": "L35",
+      "id": "artwork_decorative_night_weather",
+      "community": 9,
+      "norm_label": "decorative night weather"
+    },
+    {
       "label": "README.md",
       "file_type": "document",
       "source_file": "README.md",
@@ -3506,7 +3677,7 @@
       "label": "Spooky Sounds uses your imported effects",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L196",
+      "source_location": "L201",
       "id": "readme_spooky_sounds_uses_your_imported_effects",
       "community": 4,
       "norm_label": "spooky sounds uses your imported effects"
@@ -3515,7 +3686,7 @@
       "label": "Pumpkin welcome cutscene",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L200",
+      "source_location": "L205",
       "id": "readme_pumpkin_welcome_cutscene",
       "community": 4,
       "norm_label": "pumpkin welcome cutscene"
@@ -3524,7 +3695,7 @@
       "label": "Background and cutscene rotation",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L214",
+      "source_location": "L219",
       "id": "readme_background_and_cutscene_rotation",
       "community": 4,
       "norm_label": "background and cutscene rotation"
@@ -3816,6 +3987,15 @@
       "id": "validation_original_resolution_product_images_and_tv_layouts_2026_10_20",
       "community": 20,
       "norm_label": "original-resolution product images and tv layouts (2026-10-20)"
+    },
+    {
+      "label": "Variable night weather: autumn gusts and winter flurries (2026-10-20)",
+      "file_type": "document",
+      "source_file": "VALIDATION.md",
+      "source_location": "L254",
+      "id": "validation_variable_night_weather_autumn_gusts_and_winter_flurries_2026_10_20",
+      "community": 20,
+      "norm_label": "variable night weather: autumn gusts and winter flurries (2026-10-20)"
     },
     {
       "label": "touch_check()",
@@ -6745,6 +6925,215 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "static_night_weather",
+      "target": "static_night_weather_nightweather",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "static_night_weather",
+      "target": "static_night_weather_random",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "static_night_weather",
+      "target": "static_night_weather_smooth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/welcome-atmosphere.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "static_welcome_atmosphere",
+      "target": "static_night_weather",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "static_night_weather_nightweather_change",
+      "target": "static_night_weather_random",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "static_night_weather_nightweather_spawn",
+      "target": "static_night_weather_random",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "static_night_weather_nightweather_advance",
+      "target": "static_night_weather_smooth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "static_night_weather_nightweather_draw",
+      "target": "static_night_weather_smooth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "static_night_weather_nightweather",
+      "target": "static_night_weather_nightweather_advance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "static_night_weather_nightweather",
+      "target": "static_night_weather_nightweather_change",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "static_night_weather_nightweather",
+      "target": "static_night_weather_nightweather_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "static_night_weather_nightweather",
+      "target": "static_night_weather_nightweather_describe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "static_night_weather_nightweather",
+      "target": "static_night_weather_nightweather_draw",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "static_night_weather_nightweather",
+      "target": "static_night_weather_nightweather_leaf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "static_night_weather_nightweather",
+      "target": "static_night_weather_nightweather_spawn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "static_night_weather_nightweather",
+      "target": "static_night_weather_nightweather_winter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/welcome-atmosphere.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "static_welcome_atmosphere",
+      "target": "static_night_weather_nightweather",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "static_night_weather_nightweather_advance",
+      "target": "static_night_weather_nightweather_change",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "static_night_weather_nightweather_advance",
+      "target": "static_night_weather_nightweather_describe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "static_night_weather_nightweather_advance",
+      "target": "static_night_weather_nightweather_spawn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "halloween_hub/static/scene-player.js",
       "source_location": "L2",
       "weight": 1.0,
@@ -7159,9 +7548,9 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_spark_showcase",
-      "target": "static_spark_showcase_productimage",
-      "confidence_score": 1.0
+      "target": "static_spark_showcase_productimage"
     },
     {
       "relation": "contains",
@@ -7212,9 +7601,9 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_spark_showcase_productimage",
-      "target": "static_spark_showcase_asset",
-      "confidence_score": 1.0
+      "target": "static_spark_showcase_asset"
     },
     {
       "relation": "calls",
@@ -7234,9 +7623,9 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_spark_showcase_sparkshowcase_detail",
-      "target": "static_spark_showcase_productimage",
-      "confidence_score": 1.0
+      "target": "static_spark_showcase_productimage"
     },
     {
       "relation": "calls",
@@ -9190,6 +9579,36 @@
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/check_night_weather.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_check_night_weather_rationale_1",
+      "target": "scripts_check_night_weather",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check_night_weather_native.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "scripts_check_night_weather_native",
+      "target": "scripts_check_night_weather_native_measure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check_night_weather_native.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_check_night_weather_native_rationale_1",
+      "target": "scripts_check_night_weather_native",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
       "source_file": "scripts/check_overlay_float.py",
       "source_location": "L1",
       "weight": 1.0,
@@ -9303,9 +9722,9 @@
       "source_file": "scripts/check_showcase_resolution.py",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_check_showcase_resolution",
-      "target": "scripts_check_showcase_resolution_images",
-      "confidence_score": 1.0
+      "target": "scripts_check_showcase_resolution_images"
     },
     {
       "relation": "rationale_for",
@@ -9313,9 +9732,9 @@
       "source_file": "scripts/check_showcase_resolution.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_check_showcase_resolution_rationale_1",
-      "target": "scripts_check_showcase_resolution",
-      "confidence_score": 1.0
+      "target": "scripts_check_showcase_resolution"
     },
     {
       "relation": "rationale_for",
@@ -9376,6 +9795,16 @@
       "confidence_score": 1.0,
       "source": "scripts_check_visitor",
       "target": "scripts_check_visitor_finish"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check_visitor.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "scripts_check_visitor",
+      "target": "scripts_check_visitor_offline_route",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -10024,6 +10453,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "ARTWORK.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "artwork_artwork_generation",
+      "target": "artwork_decorative_night_weather",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARTWORK.md",
       "source_location": "L9",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -10216,9 +10655,9 @@
       "source_file": "README.md",
       "source_location": "L146",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_spark_halloween_showcase_and_hidden_camera",
-      "target": "readme_larger_monitors_and_tvs",
-      "confidence_score": 1.0
+      "target": "readme_larger_monitors_and_tvs"
     },
     {
       "relation": "contains",
@@ -10326,9 +10765,9 @@
       "source_file": "VALIDATION.md",
       "source_location": "L243",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "validation_validation_record_october_14_2026",
-      "target": "validation_original_resolution_product_images_and_tv_layouts_2026_10_20",
-      "confidence_score": 1.0
+      "target": "validation_original_resolution_product_images_and_tv_layouts_2026_10_20"
     },
     {
       "relation": "contains",
@@ -10359,6 +10798,16 @@
       "confidence_score": 1.0,
       "source": "validation_validation_record_october_14_2026",
       "target": "validation_spark_halloween_product_showcase_2026_10_20"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "VALIDATION.md",
+      "source_location": "L254",
+      "weight": 1.0,
+      "source": "validation_validation_record_october_14_2026",
+      "target": "validation_variable_night_weather_autumn_gusts_and_winter_flurries_2026_10_20",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -10542,5 +10991,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c08d8813dae9e57c6c6423cf22cf90aaefd2121d"
+  "built_at_commit": "bff495c12475bba5842b88f82cccf756de4a9b4b"
 }
