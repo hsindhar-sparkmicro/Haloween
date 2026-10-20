@@ -42,11 +42,11 @@ with sync_playwright() as p:
   pg.screenshot(path=str(out/f'{clip}-fade-in.png'))
   pg.wait_for_function('()=>check.transitions.some(item=>item.state==="fading")',timeout=12000)
   fade=pg.evaluate('()=>check.transitions.find(item=>item.state==="fading")')
-  assert fade['remaining']>=2.5,fade
+  assert fade['remaining']>=1.1,fade
   pg.wait_for_timeout(300)
   pg.screenshot(path=str(out/f'{clip}-fade-out.png'))
   pg.wait_for_function('()=>!check.idle.video',timeout=5000)
-  assert pg.evaluate('()=>!check.backgrounds.hold&&check.idle.nextDue-performance.now()>=85000')
+  assert pg.evaluate('()=>!check.backgrounds.hold&&check.idle.nextDue-performance.now()>=40000')
   reports.append(data);print(clip+' replay/fade passed',flush=True)
  for w,h in [(800,480),(1280,720),(1920,1080)]:
   pg.set_viewport_size({'width':w,'height':h});pg.screenshot(path=str(out/f'foreground-{w}.png'))

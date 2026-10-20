@@ -30,11 +30,11 @@ with sync_playwright() as p:
  pg.wait_for_function('()=>idleSamples.fadeRemaining!==null',timeout=25000)
  pg.screenshot(path=str(out/'fade-out.png'))
  pg.wait_for_function('()=>idleSamples.completed',timeout=5000)
- samples=pg.evaluate('()=>idleSamples');assert samples['fadeRemaining']>=2.5,samples
+ samples=pg.evaluate('()=>idleSamples');assert samples['fadeRemaining']>=1.1,samples
  print('Natural dashboard replay passed',flush=True)
  for mode in ['touch','dialog','other-screen','reduced-motion','hidden']:
   pg.emulate_media(reduced_motion='no-preference');pg.goto(args.url);pg.mouse.move(0,0)
-  pg.wait_for_timeout(3500);pg.evaluate('()=>window.idleOffset=46000')
+  pg.wait_for_timeout(3500);pg.evaluate('()=>window.idleOffset=21000')
   pg.wait_for_function('()=>document.querySelector(".idle-background-video").dataset.state==="playing"',timeout=15000)
   if mode=='touch':pg.locator('.welcome-space').dispatch_event('pointerdown')
   elif mode=='dialog':pg.evaluate('()=>document.querySelector("#settings-dialog").showModal()')

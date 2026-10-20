@@ -2,7 +2,8 @@
 export class IdleBackgroundVideo {
  constructor(backgrounds){
   this.backgrounds=backgrounds;this.items=new Map();this.allowed=false;
-  this.lastActivity=performance.now();this.nextDue=this.lastActivity+45000;
+  this.lastActivity=performance.now();this.nextDue=this.lastActivity+20000;
+  this.dashboard=document.querySelector('#dashboard');this.fadeMs=2000;
   this.layer=document.createElement('div');this.layer.className='idle-background-video';
   this.layer.setAttribute('aria-hidden','true');
   document.querySelector('#welcome-atmosphere').before(this.layer);
@@ -22,7 +23,7 @@ export class IdleBackgroundVideo {
   if(this.video||!this.allowed)return;
   const now=performance.now(),background=this.backgrounds;
   // Start only on a settled image, with enough room before its next crossfade.
-  if(now-this.lastActivity<45000||now<this.nextDue||background.phase<3||background.phase>16||background.progress)return;
+  if(now-this.lastActivity<20000||now<this.nextDue||background.phase<3||background.phase>16||background.progress)return;
   const item=this.items.get(background.current?.video_id);
   if(item)this.start(item);
  }
@@ -35,7 +36,9 @@ export class IdleBackgroundVideo {
   const current=()=>this.video===video&&!this.fading;
   const reveal=()=>{
    if(!current())return;
-   clearTimeout(this.loadTimer);this.layer.style.transitionDuration='2000ms';
+   clearTimeout(this.loadTimer);this.layer.style.transitionDuration=`${this.fadeMs}ms`;
+   this.dashboard.style.setProperty('--idle-fade-duration',`${this.fadeMs}ms`);
+   this.dashboard.classList.add('idle-video-playing');
    this.layer.style.opacity='1';this.layer.dataset.state='playing';
   };
   // A decoded/presented frame must exist before the video becomes visible.
@@ -46,7 +49,9 @@ export class IdleBackgroundVideo {
     else requestAnimationFrame(()=>requestAnimationFrame(()=>{if(video.readyState>=2)reveal();}));
    }
   };
-  video.ontimeupdate=()=>{if(current()&&Number.isFinite(video.duration)&&video.duration-video.currentTime<=3.2)this.stop(2000);};
+  // Short six-second clips need a shorter fade so their actual motion remains visible.
+  video.onloadedmetadata=()=>{if(current())this.fadeMs=Number.isFinite(video.duration)?Math.min(2000,Math.max(800,video.duration*200)):2000;};
+  video.ontimeupdate=()=>{if(current()&&Number.isFinite(video.duration)&&video.duration-video.currentTime<=this.fadeMs/1000+.4)this.stop(this.fadeMs);};
   video.onwaiting=()=>{if(current()){clearTimeout(this.stallTimer);this.stallTimer=setTimeout(()=>this.stop(600),2000);}};
   video.onended=()=>{if(current())this.stop(600);};
   video.onerror=()=>{if(current())this.stop(600);};
@@ -61,13 +66,15 @@ export class IdleBackgroundVideo {
   if(this.fading&&duration!==0)return;
   const visible=this.layer.dataset.state==='playing'||this.layer.dataset.state==='fading';
   this.fading=true;clearTimeout(this.loadTimer);clearTimeout(this.stallTimer);clearTimeout(this.runTimer);clearTimeout(this.releaseTimer);
+  this.dashboard.style.setProperty('--idle-fade-duration',`${duration}ms`);
+  this.dashboard.classList.remove('idle-video-playing');
   this.layer.style.transitionDuration=`${duration}ms`;this.layer.style.opacity='0';this.layer.dataset.state='fading';
   const release=()=>{
    if(this.video!==video)return;
-   video.onplaying=video.ontimeupdate=video.onwaiting=video.onended=video.onerror=null;
+   video.onplaying=video.ontimeupdate=video.onwaiting=video.onended=video.onerror=video.onloadedmetadata=null;
    video.pause();video.removeAttribute('src');video.load();video.remove();
    this.video=null;this.fading=false;this.backgrounds.hold=false;this.layer.dataset.state='idle';
-   this.nextDue=performance.now()+90000+Math.random()*60000;
+   this.nextDue=performance.now()+45000+Math.random()*30000;
   };
   // Leave the last decoded frame mounted until its fade has fully completed.
   if(!visible||!duration)release();else this.releaseTimer=setTimeout(release,duration+100);

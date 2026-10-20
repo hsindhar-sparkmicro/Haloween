@@ -1024,7 +1024,7 @@
       "label": ".configure()",
       "file_type": "code",
       "source_file": "halloween_hub/static/idle-background-video.js",
-      "source_location": "L12",
+      "source_location": "L13",
       "id": "static_idle_background_video_idlebackgroundvideo_configure",
       "community": 38,
       "norm_label": ".configure()"
@@ -1033,7 +1033,7 @@
       "label": ".setAllowed()",
       "file_type": "code",
       "source_file": "halloween_hub/static/idle-background-video.js",
-      "source_location": "L16",
+      "source_location": "L17",
       "id": "static_idle_background_video_idlebackgroundvideo_setallowed",
       "community": 38,
       "norm_label": ".setallowed()"
@@ -1042,7 +1042,7 @@
       "label": ".update()",
       "file_type": "code",
       "source_file": "halloween_hub/static/idle-background-video.js",
-      "source_location": "L21",
+      "source_location": "L22",
       "id": "static_idle_background_video_idlebackgroundvideo_update",
       "community": 38,
       "norm_label": ".update()"
@@ -1051,7 +1051,7 @@
       "label": ".start()",
       "file_type": "code",
       "source_file": "halloween_hub/static/idle-background-video.js",
-      "source_location": "L29",
+      "source_location": "L30",
       "id": "static_idle_background_video_idlebackgroundvideo_start",
       "community": 38,
       "norm_label": ".start()"
@@ -1060,7 +1060,7 @@
       "label": ".stop()",
       "file_type": "code",
       "source_file": "halloween_hub/static/idle-background-video.js",
-      "source_location": "L58",
+      "source_location": "L63",
       "id": "static_idle_background_video_idlebackgroundvideo_stop",
       "community": 38,
       "norm_label": ".stop()"
@@ -1503,7 +1503,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L6",
       "id": "static_welcome_atmosphere_welcomeatmosphere",
-      "community": 38,
+      "community": 55,
       "norm_label": "welcomeatmosphere"
     },
     {
@@ -1512,7 +1512,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L7",
       "id": "static_welcome_atmosphere_welcomeatmosphere_constructor",
-      "community": 38,
+      "community": 55,
       "norm_label": ".constructor()"
     },
     {
@@ -1521,7 +1521,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L19",
       "id": "static_welcome_atmosphere_welcomeatmosphere_configure",
-      "community": 38,
+      "community": 55,
       "norm_label": ".configure()"
     },
     {
@@ -1530,7 +1530,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L20",
       "id": "static_welcome_atmosphere_welcomeatmosphere_resize",
-      "community": 38,
+      "community": 55,
       "norm_label": ".resize()"
     },
     {
@@ -1539,7 +1539,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L21",
       "id": "static_welcome_atmosphere_welcomeatmosphere_refresh",
-      "community": 38,
+      "community": 55,
       "norm_label": ".refresh()"
     },
     {
@@ -1548,7 +1548,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L34",
       "id": "static_welcome_atmosphere_welcomeatmosphere_glow",
-      "community": 38,
+      "community": 55,
       "norm_label": ".glow()"
     },
     {
@@ -1557,7 +1557,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L38",
       "id": "static_welcome_atmosphere_welcomeatmosphere_spawnghost",
-      "community": 38,
+      "community": 55,
       "norm_label": ".spawnghost()"
     },
     {
@@ -1566,7 +1566,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L39",
       "id": "static_welcome_atmosphere_welcomeatmosphere_draw",
-      "community": 38,
+      "community": 55,
       "norm_label": ".draw()"
     },
     {
@@ -2223,6 +2223,24 @@
       "id": "scripts_check_idle_video_rationale_1",
       "community": 53,
       "norm_label": "exercise actual idle clips and crossfades in an isolated browser fixture.  use a"
+    },
+    {
+      "label": "check_idle_video_native.py",
+      "file_type": "code",
+      "source_file": "scripts/check_idle_video_native.py",
+      "source_location": "L1",
+      "id": "scripts_check_idle_video_native",
+      "community": 56,
+      "norm_label": "check_idle_video_native.py"
+    },
+    {
+      "label": "Observe the actual Pi kiosk page through a temporary loopback CDP connection.  U",
+      "file_type": "rationale",
+      "source_file": "scripts/check_idle_video_native.py",
+      "source_location": "L1",
+      "id": "scripts_check_idle_video_native_rationale_1",
+      "community": 56,
+      "norm_label": "observe the actual pi kiosk page through a temporary loopback cdp connection.  u"
     },
     {
       "label": "check_idle_video_natural.py",
@@ -3573,6 +3591,24 @@
       "id": "validation_raspberry_pi_boot_autostart_2026_10_20",
       "community": 20,
       "norm_label": "raspberry pi boot autostart (2026-10-20)"
+    },
+    {
+      "label": "Idle background video replay (2026-10-20)",
+      "file_type": "document",
+      "source_file": "VALIDATION.md",
+      "source_location": "L207",
+      "id": "validation_idle_background_video_replay_2026_10_20",
+      "community": 20,
+      "norm_label": "idle background video replay (2026-10-20)"
+    },
+    {
+      "label": "Idle video visibility correction (2026-10-20)",
+      "file_type": "document",
+      "source_file": "VALIDATION.md",
+      "source_location": "L216",
+      "id": "validation_idle_video_visibility_correction_2026_10_20",
+      "community": 20,
+      "norm_label": "idle video visibility correction (2026-10-20)"
     },
     {
       "label": "Shared simulation boundary. No GPIO or sensor access.",
@@ -5092,9 +5128,9 @@
       "source_file": "tests/test_media.py",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_media",
-      "target": "halloween_hub_gallery_backgrounds",
-      "confidence_score": 1.0
+      "target": "halloween_hub_gallery_backgrounds"
     },
     {
       "relation": "calls",
@@ -6332,9 +6368,9 @@
       "source_file": "halloween_hub/static/idle-background-video.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_idle_background_video",
-      "target": "static_idle_background_video_idlebackgroundvideo",
-      "confidence_score": 1.0
+      "target": "static_idle_background_video_idlebackgroundvideo"
     },
     {
       "relation": "imports_from",
@@ -6343,9 +6379,9 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_welcome_atmosphere",
-      "target": "static_idle_background_video",
-      "confidence_score": 1.0
+      "target": "static_idle_background_video"
     },
     {
       "relation": "method",
@@ -6353,9 +6389,9 @@
       "source_file": "halloween_hub/static/idle-background-video.js",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_idle_background_video_idlebackgroundvideo",
-      "target": "static_idle_background_video_idlebackgroundvideo_configure",
-      "confidence_score": 1.0
+      "target": "static_idle_background_video_idlebackgroundvideo_configure"
     },
     {
       "relation": "method",
@@ -6363,9 +6399,9 @@
       "source_file": "halloween_hub/static/idle-background-video.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_idle_background_video_idlebackgroundvideo",
-      "target": "static_idle_background_video_idlebackgroundvideo_constructor",
-      "confidence_score": 1.0
+      "target": "static_idle_background_video_idlebackgroundvideo_constructor"
     },
     {
       "relation": "method",
@@ -6373,9 +6409,9 @@
       "source_file": "halloween_hub/static/idle-background-video.js",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_idle_background_video_idlebackgroundvideo",
-      "target": "static_idle_background_video_idlebackgroundvideo_setallowed",
-      "confidence_score": 1.0
+      "target": "static_idle_background_video_idlebackgroundvideo_setallowed"
     },
     {
       "relation": "method",
@@ -6383,9 +6419,9 @@
       "source_file": "halloween_hub/static/idle-background-video.js",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_idle_background_video_idlebackgroundvideo",
-      "target": "static_idle_background_video_idlebackgroundvideo_start",
-      "confidence_score": 1.0
+      "target": "static_idle_background_video_idlebackgroundvideo_start"
     },
     {
       "relation": "method",
@@ -6393,9 +6429,9 @@
       "source_file": "halloween_hub/static/idle-background-video.js",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_idle_background_video_idlebackgroundvideo",
-      "target": "static_idle_background_video_idlebackgroundvideo_stop",
-      "confidence_score": 1.0
+      "target": "static_idle_background_video_idlebackgroundvideo_stop"
     },
     {
       "relation": "method",
@@ -6403,9 +6439,9 @@
       "source_file": "halloween_hub/static/idle-background-video.js",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_idle_background_video_idlebackgroundvideo",
-      "target": "static_idle_background_video_idlebackgroundvideo_update",
-      "confidence_score": 1.0
+      "target": "static_idle_background_video_idlebackgroundvideo_update"
     },
     {
       "relation": "imports",
@@ -6414,9 +6450,9 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_welcome_atmosphere",
-      "target": "static_idle_background_video_idlebackgroundvideo",
-      "confidence_score": 1.0
+      "target": "static_idle_background_video_idlebackgroundvideo"
     },
     {
       "relation": "calls",
@@ -6425,9 +6461,9 @@
       "source_file": "halloween_hub/static/idle-background-video.js",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_idle_background_video_idlebackgroundvideo_configure",
-      "target": "static_idle_background_video_idlebackgroundvideo_stop",
-      "confidence_score": 1.0
+      "target": "static_idle_background_video_idlebackgroundvideo_stop"
     },
     {
       "relation": "calls",
@@ -6436,9 +6472,9 @@
       "source_file": "halloween_hub/static/idle-background-video.js",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_idle_background_video_idlebackgroundvideo_setallowed",
-      "target": "static_idle_background_video_idlebackgroundvideo_stop",
-      "confidence_score": 1.0
+      "target": "static_idle_background_video_idlebackgroundvideo_stop"
     },
     {
       "relation": "calls",
@@ -6447,9 +6483,9 @@
       "source_file": "halloween_hub/static/idle-background-video.js",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_idle_background_video_idlebackgroundvideo_update",
-      "target": "static_idle_background_video_idlebackgroundvideo_start",
-      "confidence_score": 1.0
+      "target": "static_idle_background_video_idlebackgroundvideo_start"
     },
     {
       "relation": "contains",
@@ -8684,8 +8720,18 @@
       "source_file": "scripts/check_idle_video.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_check_idle_video_rationale_1",
-      "target": "scripts_check_idle_video",
+      "target": "scripts_check_idle_video"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check_idle_video_native.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_check_idle_video_native_rationale_1",
+      "target": "scripts_check_idle_video_native",
       "confidence_score": 1.0
     },
     {
@@ -8694,9 +8740,9 @@
       "source_file": "scripts/check_idle_video_natural.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_check_idle_video_natural_rationale_1",
-      "target": "scripts_check_idle_video_natural",
-      "confidence_score": 1.0
+      "target": "scripts_check_idle_video_natural"
     },
     {
       "relation": "rationale_for",
@@ -9407,9 +9453,9 @@
       "source_file": "tests/test_media.py",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_media_mediatests",
-      "target": "tests_test_media_mediatests_test_background_video_pairing_and_unmatched_image",
-      "confidence_score": 1.0
+      "target": "tests_test_media_mediatests_test_background_video_pairing_and_unmatched_image"
     },
     {
       "relation": "method",
@@ -9745,6 +9791,26 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "VALIDATION.md",
+      "source_location": "L207",
+      "weight": 1.0,
+      "source": "validation_validation_record_october_14_2026",
+      "target": "validation_idle_background_video_replay_2026_10_20",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "VALIDATION.md",
+      "source_location": "L216",
+      "weight": 1.0,
+      "source": "validation_validation_record_october_14_2026",
+      "target": "validation_idle_video_visibility_correction_2026_10_20",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "VALIDATION.md",
       "source_location": "L66",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -9953,5 +10019,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "aa4fa5dfc25f7d43cb71249da88b0b38127df0b0"
+  "built_at_commit": "a25101d3405d1e259a8f12166588bf45874366d1"
 }
