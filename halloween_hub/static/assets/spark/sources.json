@@ -1,0 +1,36 @@
+{
+  "retrieved": "2026-10-20",
+  "images_unmodified": true,
+  "assets": [
+    {
+      "file": "spark-logo.png",
+      "source": "https://www.sparkmicro.com/wp-content/uploads/2026/06/SPARK-thumbnail.png",
+      "page": "https://www.sparkmicro.com/",
+      "sha256": "bc7d05df4a04d54720e216578fcfacc0450a4c63c4d887926e82212925801019"
+    },
+    {
+      "file": "sr1120.png",
+      "source": "https://www.sparkmicro.com/wp-content/uploads/2026/09/SR1120-red-768x768.png",
+      "page": "https://www.sparkmicro.com/products/sr1120/",
+      "sha256": "986c4683eb7bdc26fcab58a5224205d58eb2ee23c5bcc73a97344526349c7b2e"
+    },
+    {
+      "file": "keyboard.png",
+      "source": "https://www.sparkmicro.com/wp-content/uploads/2026/07/614-1024x576.png",
+      "page": "https://www.sparkmicro.com/applications/gaming/",
+      "sha256": "9da1be54f4327a95c0da31b7385032a191c160b1b5e94a1892eacf5bb6f7c835"
+    },
+    {
+      "file": "mouse.png",
+      "source": "https://www.sparkmicro.com/wp-content/uploads/2026/07/615-1024x576.png",
+      "page": "https://www.sparkmicro.com/applications/gaming/",
+      "sha256": "33f15d379fc823cb4138bc1c5ec818611686928d8ab4565c36328c0f65aeb90f"
+    },
+    {
+      "file": "headset.png",
+      "source": "https://www.sparkmicro.com/wp-content/uploads/2026/07/612-1024x576.png",
+      "page": "https://www.sparkmicro.com/applications/gaming/",
+      "sha256": "af23d601a74dde20735bc09e346778663ca113f25e8605763f82c3c36cb270f8"
+    }
+  ]
+}

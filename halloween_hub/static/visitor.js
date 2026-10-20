@@ -1,4 +1,5 @@
 import {stories,riddles} from './visitor-content.js';
+import {SparkShowcase} from './spark-showcase.js';
 const $=q=>document.querySelector(q);
 // Inline SVG avoids missing emoji fonts on minimal Pi installations.
 const icons={pumpkin:'<path d="M12 6V2m-2 4C1 3 1 21 10 21h4c9 0 9-18 0-15M6 11l2-3 2 3m4 0 2-3 2 3M7 15q5 5 10 0"/>',book:'<path d="M12 5v16M12 5Q6 1 2 4v15q5-2 10 2 5-4 10-2V4q-4-3-10 1Z"/>',ghost:'<path d="M4 21V10a8 8 0 0 1 16 0v11l-4-3-4 3-4-3Z"/><path d="M9 9v2m6-2v2m-4 4h2"/>',brush:'<path d="m9 15 9-12q3-2 3 2L11 17M9 15q-6-1-6 6 6 0 8-4Z"/>',key:'<circle cx="8" cy="8" r="5"/><path d="m12 12 9 9m-3-3 3-3m-6 0 3-3"/>',train:'<rect x="5" y="2" width="14" height="17" rx="4"/><path d="M5 10h14M9 5h6M8 22l2-3m6 3-2-3M8 14h1m6 0h1"/>',chest:'<path d="M3 10V7q0-4 4-4h10q4 0 4 4v3M3 10h18v11H3ZM10 9h4v5h-4ZM6 21v-7m12 7v-7"/>'};
@@ -7,7 +8,7 @@ const monsterNames=['Friendly ghost','Count Candlewick','Moonlit werewolf','Moss
 export class Visitor {
  constructor(callbacks){
   this.callbacks=callbacks;this.id=null;this.mode='idle';this.lastIntro=null;try{this.lastIntro=localStorage.getItem('halloween.last-intro');}catch{}this.timer=0;this.gameTimer=0;this.lastActivity=Date.now();
-  this.dialog=$('#visitor-dialog');this.content=$('#visitor-content');
+  this.dialog=$('#visitor-dialog');this.content=$('#visitor-content');this.showcase=new SparkShowcase(this.content);
   $('#visitor-back').onclick=()=>this.finish();
   this.dialog.addEventListener('cancel',event=>{event.preventDefault();this.finish();});
   this.dialog.addEventListener('close',()=>{document.body.classList.remove('visitor-playing');if(this.id!==null&&this.mode!=='scene')this.finish();});
@@ -44,9 +45,9 @@ export class Visitor {
   this.callbacks.introStart?.();const audio=this.callbacks.audio?.()||{enabled:false,volume:0};this.setVideoAudio(audio.enabled,audio.volume);
   const id=this.id;
   const complete=notice=>{if(this.id!==id||this.video!==video||this.mode!=='cutscene')return;this.lobby(notice);};
-  video.onended=()=>complete('');video.onerror=()=>complete('The intro could not play. Choose an adventure.');
-  video.onloadedmetadata=()=>{clearTimeout(this.timer);this.timer=setTimeout(()=>complete('The intro timed out. Choose an adventure.'),Math.min(120000,Math.max(30000,(video.duration+15)*1000)));};
-  this.timer=setTimeout(()=>complete('The intro could not load. Choose an adventure.'),30000);
+  video.onended=()=>complete('');video.onerror=()=>complete('The intro could not play. Explore the SPARK showcase.');
+  video.onloadedmetadata=()=>{clearTimeout(this.timer);this.timer=setTimeout(()=>complete('The intro timed out. Explore the SPARK showcase.'),Math.min(120000,Math.max(30000,(video.duration+15)*1000)));};
+  this.timer=setTimeout(()=>complete('The intro could not load. Explore the SPARK showcase.'),30000);
   this.introAbort=new AbortController();
   fetch(video.src,{method:'HEAD',cache:'no-store',signal:this.introAbort.signal}).then(response=>{
    if(this.video!==video||this.id!==id)return;
@@ -54,8 +55,8 @@ export class Visitor {
    video.preload='auto';return video.play();
   }).catch(async error=>{
    if(this.video!==video||this.id!==id)return;
-   if(error.name==='NotAllowedError'){this.videoForcedMuted=true;video.muted=true;try{await video.play();}catch{complete('The intro could not play. Choose an adventure.');}}
-   else complete('The intro could not play. Choose an adventure.');
+   if(error.name==='NotAllowedError'){this.videoForcedMuted=true;video.muted=true;try{await video.play();}catch{complete('The intro could not play. Explore the SPARK showcase.');}}
+   else complete('The intro could not play. Explore the SPARK showcase.');
   });
  }
  setVideoAudio(enabled,volume){if(this.video){this.video.muted=!enabled||this.videoForcedMuted;this.video.volume=Math.max(0,Math.min(1,volume));}}
@@ -69,9 +70,7 @@ export class Visitor {
  }
  sceneFinished(){if(this.mode==='scene')this.finish();}
  lobby(notice=''){
-  this.clear();this.mode='choose';this.content.className='visitor-lobby';
-  this.content.innerHTML=`<div class="visitor-host monster-art" role="img" aria-label="${monsterNames[this.monster]}"></div><div class="visitor-menu">${notice?`<p class="intro-notice" role="status">${notice}</p>`:''}<p class="visitor-eyebrow">TRICK OR TREAT</p><h1>Choose your little adventure.</h1><div class="visitor-choices"><button data-choice="play"><span>${icon("pumpkin")}</span>Play<small>A quick Halloween game</small></button><button data-choice="story"><span>${icon("book")}</span>Story<small>A tale with your choices</small></button><button data-choice="surprise"><span>✦</span>Surprise<small>Let the monsters choose</small></button></div></div>`;
-  this.content.querySelectorAll('[data-choice]').forEach(el=>el.onclick=()=>this.choose(el.dataset.choice));
+  this.clear();this.mode='showcase';this.showcase.show(notice);
  }
  choose(choice){
   this.lastActivity=Date.now();

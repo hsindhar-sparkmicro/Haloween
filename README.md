@@ -137,11 +137,13 @@ See [VALIDATION.md](VALIDATION.md) for actual results, platform boundaries, Pi d
 
 `halloween_hub/static/assets/art-sheet.png` was generated with the built-in imagegen tool, then bundled locally. It contains six moody black-background illustrations: an uncarved pumpkin, Edison bulb, fog machine, lavender ghost, purple speaker, and moonlit house; SVG overlays animate the pumpkin's face. Full generation prompt: [ARTWORK.md](ARTWORK.md). Fonts are DejaVu with the bundled license. Ambient WAV files are original deterministic synthesis from `scripts/generate_audio.py`.
 
-## Hidden camera and visitor adventures
+## SPARK Halloween showcase and hidden camera
 
-Tap/click the Dashboard pumpkin (or press Enter when focused) to play the installed welcome cutscene, then choose **Play**, **Story**, or **Surprise**. Play includes Find the Ghosts, Pumpkin Painter, and Candy Quest. Story includes three original branching tales. Surprise chooses a game, story, or immersive scene. Only the small Back overlay exits the adventure; completed stories/games also offer Done. Reduced-motion mode skips the touch intro and opens the menu directly. Camera/test welcomes retain their monster reveal and configured follow-up. Rewards are virtual and do not change the physical candy inventory.
+Tap/click the Dashboard pumpkin (or press Enter when focused) to play the installed welcome cutscene, then explore the **SPARK Halloween showcase**. The former Play / Story / Surprise menu is replaced by four touchable exhibits: **SR1120**, **Gaming mouse**, **Gaming keyboard**, and **Wireless headset**. Each exhibit opens a larger product/application image with a short Halloween-themed story and two factual highlights. **All products** returns to the gallery; the small **Back** overlay or **Escape** returns to the Dashboard. Party Hub's Trick or Treat action opens the same showcase. Reduced motion or an unavailable intro opens the products directly. Camera/test welcomes retain their monster reveal and configured follow-up; the default choice now opens products.
 
-Open **Haunted House → Camera** or Settings to configure the optional Pi motion trigger. **Arm welcome** enables short motion scans; **Disarm** stops capture. **Test welcome** runs the same monster reveal without opening the camera. Choose what follows the reveal: visitor choice, Play, Story, or Surprise. Existing manual scenes are not interrupted. Camera arming and active adventures never resume after restart.
+The official SPARK logo, chip render and gaming application images are bundled in `halloween_hub/static/assets/spark/`. The photographs and logo remain unchanged; warm orange/violet lighting, a spiderweb, exhibit numbers and Halloween wording are applied in the interface. Product assets need no internet access. Their original URLs, page sources and SHA-256 hashes are recorded in [sources.json](halloween_hub/static/assets/spark/sources.json). Reference-design and demo specifications describe the corresponding SPARK designs, rather than measurements made by this kiosk. Sources: [SR1120](https://www.sparkmicro.com/products/sr1120/), [Gaming](https://www.sparkmicro.com/applications/gaming/), [Reference designs](https://www.sparkmicro.com/reference-designs/).
+
+Open **Haunted House → Camera** or Settings to configure the optional Pi motion trigger. **Arm welcome** enables short motion scans; **Disarm** stops capture. **Test welcome** runs the same monster reveal without opening the camera. Choose what follows the reveal: SPARK showcase, Play, Story, or Surprise. Existing manual scenes are not interrupted. Camera arming and active adventures never resume after restart.
 
 The camera is completely hidden: no video elements, previews, mirror, JPEG export, recordings, or image archives. Frames exist only briefly inside the capture worker for motion analysis; only numerical motion scores reach the server. The retired frame endpoint returns 410. Capture rotates 90° clockwise before analysis. Motion can include pets or lighting changes; it does not identify people or measure distance.
 
@@ -149,7 +151,7 @@ Defaults are **180 seconds scanning, then 45 seconds resting**, configurable to 
 
 A conservative app policy pauses scans at **70°C Pi board temperature** and resumes at **65°C**. This is not a camera sensor reading or manufacturer-prescribed camera cooldown. The [Picamera2 manual](https://datasheets.raspberrypi.com/camera/picamera2-manual.pdf) documents stop/close lifecycle operations; it does not prescribe an IMX219 scan/rest interval. [Raspberry Pi thermal documentation](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#frequency-management-and-thermal-control) describes the board's separate thermal throttling. Keep normal ventilation and board cooling appropriate to the enclosure.
 
-Pi capture uses a separate **system Python** process with Picamera2/libcamera and NumPy, keeping portable dependencies unchanged. Install missing camera packages through the OS package manager. `HALLOWEEN_CAMERA_PYTHON` overrides `/usr/bin/python3`. Windows and ordinary Linux retain all touch adventures; CSI motion capture is Pi-specific.
+Pi capture uses a separate **system Python** process with Picamera2/libcamera and NumPy, keeping portable dependencies unchanged. Install missing camera packages through the OS package manager. `HALLOWEEN_CAMERA_PYTHON` overrides `/usr/bin/python3`. Windows and ordinary Linux retain the touch showcase; CSI motion capture is Pi-specific.
 
 Visitor UI checks: `.venv/bin/python scripts/check_visitor.py`. Pi-only physical scan/rest checks use `scripts/check_hidden_camera.py` against a separate test server on port 8092, never the main kiosk data.
 
@@ -185,7 +187,7 @@ The welcome screen's **Play spooky sounds** control plays the saved effect libra
 
 ## Pumpkin welcome cutscene
 
-The supplied 15-second clip replaces the spinning reveal for manual pumpkin/Trick or Treat activation. It plays full-screen with one small Back overlay, then fades into the adventure menu. The menu always appears after a manual intro, regardless of the automatic camera follow-up setting. Back/Escape stops and releases the video. Background music and Spooky Sounds pause during the intro, then resume if still enabled. Video audio follows shared volume and Mute; browser audio restrictions fall back to muted video. Reduced motion skips the clip. A missing/unplayable intro opens the menu instead.
+The supplied 15-second clip replaces the spinning reveal for manual pumpkin/Trick or Treat activation. It plays full-screen with one small Back overlay, then fades into the SPARK product showcase. The showcase always appears after a manual intro, regardless of the automatic camera follow-up setting. Back/Escape stops and releases the video. Background music and Spooky Sounds pause during the intro, then resume if still enabled. Video audio follows shared volume and Mute; browser audio restrictions fall back to muted video. Reduced motion skips the clip. A missing/unplayable intro opens the showcase instead.
 
 Videos are stored privately in app data as `cutscenes/welcome.mp4` and optional `welcome.webm`, and are excluded from the source archive. The original `/home/hsindhar/Music/cutscenes/generated_video.mp4` was preserved. The installed MP4 is stream-copied with fast-start metadata; a smaller 800-pixel VP8/Opus WebM supports browsers without H.264 decoding. No ffmpeg installation is needed at playback time.
 
@@ -195,7 +197,7 @@ To install already browser-compatible files:
 python3 scripts/import_cutscene.py /path/to/welcome.mp4 --webm /path/to/welcome.webm --data-dir /path/to/app-data
 ```
 
-Omit `--webm` if unavailable. On the Pi, app data is `/home/spark/HalloweenHub-20261014/data`. The importer copies files atomically and leaves sources untouched. Without an installed clip, manual activation opens the adventure menu directly.
+Omit `--webm` if unavailable. On the Pi, app data is `/home/spark/HalloweenHub-20261014/data`. The importer copies files atomically and leaves sources untouched. Without an installed clip, manual activation opens the SPARK showcase directly.
 
 ## Background and cutscene rotation
 
@@ -205,7 +207,7 @@ Touch, mouse movement, a keypress or scrolling fades the replay away in 0.6 seco
 
 The welcome background keeps the original haunted-house scene and rotates through imported PNG images: 20 seconds still, then a 3-second crossfade. Rotation pauses off-screen, behind dialogs, and in reduced-motion mode. New images preload before entering rotation; unavailable images are skipped. The foreground pumpkin lowers by 30% of its own height as an imported PNG fades in and returns as the original scene reappears; its touch target and caption stay anchored.
 
-Pumpkin taps cycle the installed cutscenes in order, returning to the adventure menu after each. The last selection is remembered in that browser, so reloading does not reset the cycle. The Pi currently has **Welcome**, **Dracula**, **Nun**, and **Pumpkin Scare**, plus two full-size imported PNG backgrounds (Dracula and Wicked Nun) alongside the original scene. The former WebP backgrounds have been removed.
+Pumpkin taps cycle the installed cutscenes in order, opening the SPARK showcase after each. The last selection is remembered in that browser, so reloading does not reset the cycle. The Pi currently has **Welcome**, **Dracula**, **Nun**, and **Pumpkin Scare**, plus two full-size imported PNG backgrounds (Dracula and Wicked Nun) alongside the original scene. The former WebP backgrounds have been removed.
 
 Import additional media without replacing Welcome:
 

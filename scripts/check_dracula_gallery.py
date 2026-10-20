@@ -20,7 +20,7 @@ with sync_playwright() as p:
    pg.wait_for_function('()=>document.querySelector("#visitor-cutscene-video")?.videoWidth>0&&document.querySelector("#visitor-cutscene-video").currentTime>.2')
    assert pg.locator('#visitor-cutscene-video').evaluate('v=>v.currentSrc.includes("dracula.mp4")')
    assert pg.locator('#visitor-dialog button:visible').count()==1
-   pg.screenshot(path=str(out/f'dracula-{w}.png'));pg.wait_for_selector('[data-choice="play"]',timeout=15000)
+   pg.screenshot(path=str(out/f'dracula-{w}.png'));pg.wait_for_selector('[data-product="sr1120"]',timeout=15000)
    ended=pg.evaluate('videoEnds.at(-1)');assert ended['time']>=ended['duration']-.1;videos.append({'viewport':[w,h],**ended})
    pg.locator('#visitor-back').click();pg.wait_for_function('()=>!document.querySelector("#pumpkin").disabled')
    print('Dracula naturally completed at',w,flush=True)

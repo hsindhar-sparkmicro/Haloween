@@ -80,13 +80,13 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/ARTWORK.md": {
-    "mtime": 1792012801.431741,
-    "ast_hash": "ece606314411f18aa40233a06c6faa18",
+    "mtime": 1792526076.4208562,
+    "ast_hash": "73fe6495f3824e9aa3f0b0f5a74acb45",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/README.md": {
-    "mtime": 1792523294.7914634,
-    "ast_hash": "3e315ac7687de3760aaf447546f133d6",
+    "mtime": 1792526187.0216086,
+    "ast_hash": "b7281c5f51872666025f689a44e79e09",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/assets/FONT-LICENSE.txt": {
@@ -95,8 +95,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/index.html": {
-    "mtime": 1792523128.5381033,
-    "ast_hash": "ef4228f16147ab022dfcde1e67c9337b",
+    "mtime": 1792526187.0214224,
+    "ast_hash": "0a37a46172196a8b2d5ca02fef071cc5",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/requirements-dev.txt": {
@@ -130,8 +130,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/VALIDATION.md": {
-    "mtime": 1792523320.5757399,
-    "ast_hash": "abecfbf0983b9b29bd17dd428d500ade",
+    "mtime": 1792526267.4341953,
+    "ast_hash": "19d2898eb5dbcb03eda43cc606816239",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/API.md": {
@@ -260,8 +260,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/scripts/check_welcome.py": {
-    "mtime": 1792012810.6503098,
-    "ast_hash": "1a176b816d69d03a2aa235cab0fd8d39",
+    "mtime": 1792526232.5979207,
+    "ast_hash": "1fad40d224634b0f8d013c4d644d09cb",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/visitor-content.js": {
@@ -270,8 +270,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/visitor.js": {
-    "mtime": 1792080614.7236054,
-    "ast_hash": "6da9008db9c9746c35061954c114eb3d",
+    "mtime": 1792525946.381235,
+    "ast_hash": "e2872316a768f7fcfcf71902039902ee",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/scripts/check_hidden_camera.py": {
@@ -280,8 +280,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/scripts/check_visitor.py": {
-    "mtime": 1792012670.5325563,
-    "ast_hash": "d13e84cf1d622628ea2a4948d37de520",
+    "mtime": 1792526030.8296633,
+    "ast_hash": "7f6424603c152811bf23cbcec2688e0a",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/assets/monsters.png": {
@@ -320,8 +320,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/scripts/check_welcome_screen.py": {
-    "mtime": 1792015396.5113907,
-    "ast_hash": "5cfece86297cdb25b1ee8511397d936f",
+    "mtime": 1792526030.8465614,
+    "ast_hash": "00c379432dceb3b529496ec5b81771b0",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/effect-shuffle.js": {
@@ -335,8 +335,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/scripts/check_cutscene.py": {
-    "mtime": 1792080926.2900608,
-    "ast_hash": "b0eec8d54a19c05247501eed84e58314",
+    "mtime": 1792526030.8463054,
+    "ast_hash": "686b1ad378b96d8a76f006061aafa143",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/scripts/import_cutscene.py": {
@@ -410,8 +410,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/scripts/check_dracula_gallery.py": {
-    "mtime": 1792099695.9588566,
-    "ast_hash": "1e83531443eba72171bfd92c7ba0df7c",
+    "mtime": 1792526030.8464482,
+    "ast_hash": "01d6d99da5870c600b1264e54a60bcf1",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/scripts/check_background_clarity.py": {
@@ -447,6 +447,46 @@
   "/home/hsindhar/github/Haloween/scripts/check_idle_video_native.py": {
     "mtime": 1792523294.7912416,
     "ast_hash": "066a73549bfd6a6dbf169006cd1db1a3",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/halloween_hub/static/assets/spark/sources.json": {
+    "mtime": 1792525974.633399,
+    "ast_hash": "b47d5b132cafe0761bd19e62341aef88",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/halloween_hub/static/spark-showcase.js": {
+    "mtime": 1792526147.866006,
+    "ast_hash": "18c3df83270da92cf89213a70586c190",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/scripts/check_spark_native.py": {
+    "mtime": 1792526159.7812517,
+    "ast_hash": "7a5b06b56485e408ca8847c0aeff2419",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/halloween_hub/static/assets/spark/headset.png": {
+    "mtime": 1792525946.3591957,
+    "ast_hash": "6b6f1c291dcd8c38b07395438c01669c",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/halloween_hub/static/assets/spark/keyboard.png": {
+    "mtime": 1792525974.6317623,
+    "ast_hash": "b613b848f44d1152541c27ca9e3706a9",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/halloween_hub/static/assets/spark/mouse.png": {
+    "mtime": 1792525946.358611,
+    "ast_hash": "f22a17ab28bee16a5c871aad431caae2",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/halloween_hub/static/assets/spark/spark-logo.png": {
+    "mtime": 1792525946.3569455,
+    "ast_hash": "501b5da1405f6bf1572d9a7505e6243c",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/halloween_hub/static/assets/spark/sr1120.png": {
+    "mtime": 1792525946.3573182,
+    "ast_hash": "4b9d4cda25d10c6bc822ac4a2ec4dec7",
     "semantic_hash": ""
   }
 }
