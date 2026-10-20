@@ -1,16 +1,16 @@
 # Graph Report - Haloween  (2026-10-20)
 
 ## Corpus Check
-- 74 files · ~402,968 words
+- 75 files · ~701,724 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 432 nodes · 622 edges · 59 communities (18 shown, 41 thin omitted)
+- 438 nodes · 629 edges · 60 communities (18 shown, 42 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.65)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `ec22bd6c`
+- Built from commit: `c08d8813`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -69,6 +69,7 @@
 - [[_COMMUNITY_Community 56|Community 56]]
 - [[_COMMUNITY_Community 57|Community 57]]
 - [[_COMMUNITY_Community 58|Community 58]]
+- [[_COMMUNITY_Community 59|Community 59]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `$()` - 62 edges
@@ -97,7 +98,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (59 total, 41 thin omitted)
+## Communities (60 total, 42 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.08
@@ -113,7 +114,7 @@ Nodes (48): $(), action(), ambience, ambientControl(), ambientShuffle, api(), cu
 
 ### Community 4 - "Community 4"
 Cohesion: 0.11
-Nodes (17): Asset provenance, Audio and data, Background and cutscene rotation, Camera haunt (optional Raspberry Pi feature), Four screens, Halloween Hub, Halloween music and offline shuffle, Hidden camera and visitor adventures (+9 more)
+Nodes (18): Asset provenance, Audio and data, Background and cutscene rotation, Camera haunt (optional Raspberry Pi feature), Four screens, Halloween Hub, Halloween music and offline shuffle, Hidden camera and visitor adventures (+10 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.29
@@ -125,7 +126,7 @@ Nodes (4): Artwork generation, Immersive scene backgrounds, Monster reveal atlas
 
 ### Community 20 - "Community 20"
 Cohesion: 0.06
-Nodes (30): Added background and cutscene rotation, Added Dracula backgrounds and cutscene, Animated scene player correction, Camera orientation correction, Clearly visible floating weather, sound details and countdown, Completed checks, Explicit validation boundaries, Floating welcome overlays and spooky messages (+22 more)
+Nodes (31): Added background and cutscene rotation, Added Dracula backgrounds and cutscene, Animated scene player correction, Camera orientation correction, Clearly visible floating weather, sound details and countdown, Completed checks, Explicit validation boundaries, Floating welcome overlays and spooky messages (+23 more)
 
 ### Community 21 - "Community 21"
 Cohesion: 0.29
@@ -145,28 +146,28 @@ Nodes (3): main(), quoted(), Install per-user Raspberry Pi desktop autostart; no
 
 ### Community 55 - "Community 55"
 Cohesion: 0.39
-Nodes (4): asset(), masthead(), products, SparkShowcase
+Nodes (5): asset(), masthead(), productImage(), products, SparkShowcase
 
 ### Community 57 - "Community 57"
 Cohesion: 0.50
 Nodes (3): assets, images_unmodified, retrieved
 
 ## Knowledge Gaps
-- **74 isolated node(s):** `lastRotation`, `player`, `ambience`, `effect`, `cue` (+69 more)
+- **75 isolated node(s):** `lastRotation`, `player`, `ambience`, `effect`, `cue` (+70 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **41 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **42 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `$()` connect `Community 2` to `Community 32`, `Community 3`, `Community 38`?**
-  _High betweenness centrality (0.101) - this node is a cross-community bridge._
+  _High betweenness centrality (0.100) - this node is a cross-community bridge._
 - **Why does `create_app()` connect `Community 0` to `Community 1`, `Community 26`, `Community 27`, `Community 5`?**
-  _High betweenness centrality (0.029) - this node is a cross-community bridge._
+  _High betweenness centrality (0.028) - this node is a cross-community bridge._
 - **Why does `Visitor` connect `Community 32` to `Community 2`?**
-  _High betweenness centrality (0.027) - this node is a cross-community bridge._
+  _High betweenness centrality (0.026) - this node is a cross-community bridge._
 - **What connects `Halloween Hub: offline-first entertainment kiosk.`, `Hidden motion scans with physical capture shutdown between scan windows.`, `Hidden Pi motion scan. Only numerical scores leave this process.` to the rest of the system?**
-  _123 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _125 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.07624113475177305 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

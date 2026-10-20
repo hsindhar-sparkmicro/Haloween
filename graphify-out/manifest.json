@@ -80,13 +80,13 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/ARTWORK.md": {
-    "mtime": 1792526076.4208562,
-    "ast_hash": "73fe6495f3824e9aa3f0b0f5a74acb45",
+    "mtime": 1792526548.8488455,
+    "ast_hash": "11cbce3c7aa0ab6f683b48449a3ed92c",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/README.md": {
-    "mtime": 1792526187.0216086,
-    "ast_hash": "b7281c5f51872666025f689a44e79e09",
+    "mtime": 1792526548.8487039,
+    "ast_hash": "2c23043fc79397ad5e63b36b6b16cdcb",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/assets/FONT-LICENSE.txt": {
@@ -130,8 +130,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/VALIDATION.md": {
-    "mtime": 1792526267.4341953,
-    "ast_hash": "19d2898eb5dbcb03eda43cc606816239",
+    "mtime": 1792526578.9128783,
+    "ast_hash": "1567b08dc33a362e5f0d1f11b071e6dd",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/API.md": {
@@ -450,13 +450,13 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/assets/spark/sources.json": {
-    "mtime": 1792525974.633399,
-    "ast_hash": "b47d5b132cafe0761bd19e62341aef88",
+    "mtime": 1792526441.7038558,
+    "ast_hash": "5172a93de6baaf07236821ad60edc22b",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/spark-showcase.js": {
-    "mtime": 1792526147.866006,
-    "ast_hash": "18c3df83270da92cf89213a70586c190",
+    "mtime": 1792526441.7039948,
+    "ast_hash": "405ecae07ab863bf54d54f1fa36951ea",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/scripts/check_spark_native.py": {
@@ -487,6 +487,31 @@
   "/home/hsindhar/github/Haloween/halloween_hub/static/assets/spark/sr1120.png": {
     "mtime": 1792525946.3573182,
     "ast_hash": "4b9d4cda25d10c6bc822ac4a2ec4dec7",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/scripts/check_showcase_resolution.py": {
+    "mtime": 1792526473.7277334,
+    "ast_hash": "c05df65a80bb2b75f53301f97cc5e7c9",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/halloween_hub/static/assets/spark/headset-full.png": {
+    "mtime": 1792526441.70002,
+    "ast_hash": "894c6b989ef032a9199f0709b23ef46e",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/halloween_hub/static/assets/spark/keyboard-full.png": {
+    "mtime": 1792526441.6950493,
+    "ast_hash": "01e7b858d7b08ecbc137936c18414667",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/halloween_hub/static/assets/spark/mouse-full.png": {
+    "mtime": 1792526441.6974764,
+    "ast_hash": "c07c9f52ef0a93aa61cbf9dda605db49",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/halloween_hub/static/assets/spark/sr1120-full.png": {
+    "mtime": 1792526441.6927865,
+    "ast_hash": "c4df9db7f65bde48e09269b77a397fb6",
     "semantic_hash": ""
   }
 }

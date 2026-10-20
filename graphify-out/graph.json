@@ -1282,10 +1282,19 @@
       "norm_label": "products"
     },
     {
+      "label": "productImage()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/spark-showcase.js",
+      "source_location": "L11",
+      "id": "static_spark_showcase_productimage",
+      "community": 55,
+      "norm_label": "productimage()"
+    },
+    {
       "label": "masthead()",
       "file_type": "code",
       "source_file": "halloween_hub/static/spark-showcase.js",
-      "source_location": "L10",
+      "source_location": "L16",
       "id": "static_spark_showcase_masthead",
       "community": 55,
       "norm_label": "masthead()"
@@ -1294,7 +1303,7 @@
       "label": "SparkShowcase",
       "file_type": "code",
       "source_file": "halloween_hub/static/spark-showcase.js",
-      "source_location": "L12",
+      "source_location": "L18",
       "id": "static_spark_showcase_sparkshowcase",
       "community": 55,
       "norm_label": "sparkshowcase"
@@ -1303,7 +1312,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "halloween_hub/static/spark-showcase.js",
-      "source_location": "L13",
+      "source_location": "L19",
       "id": "static_spark_showcase_sparkshowcase_constructor",
       "community": 55,
       "norm_label": ".constructor()"
@@ -1312,7 +1321,7 @@
       "label": ".show()",
       "file_type": "code",
       "source_file": "halloween_hub/static/spark-showcase.js",
-      "source_location": "L14",
+      "source_location": "L29",
       "id": "static_spark_showcase_sparkshowcase_show",
       "community": 55,
       "norm_label": ".show()"
@@ -1321,7 +1330,7 @@
       "label": ".detail()",
       "file_type": "code",
       "source_file": "halloween_hub/static/spark-showcase.js",
-      "source_location": "L19",
+      "source_location": "L34",
       "id": "static_spark_showcase_sparkshowcase_detail",
       "community": 55,
       "norm_label": ".detail()"
@@ -2603,6 +2612,33 @@
       "norm_label": "compatibility entry point; current visual checks use the immersive player."
     },
     {
+      "label": "check_showcase_resolution.py",
+      "file_type": "code",
+      "source_file": "scripts/check_showcase_resolution.py",
+      "source_location": "L1",
+      "id": "scripts_check_showcase_resolution",
+      "community": 59,
+      "norm_label": "check_showcase_resolution.py"
+    },
+    {
+      "label": "images()",
+      "file_type": "code",
+      "source_file": "scripts/check_showcase_resolution.py",
+      "source_location": "L10",
+      "id": "scripts_check_showcase_resolution_images",
+      "community": 59,
+      "norm_label": "images()"
+    },
+    {
+      "label": "Check sharp local images and responsive layout through 4K and high-DPI displays.",
+      "file_type": "rationale",
+      "source_file": "scripts/check_showcase_resolution.py",
+      "source_location": "L1",
+      "id": "scripts_check_showcase_resolution_rationale_1",
+      "community": 59,
+      "norm_label": "check sharp local images and responsive layout through 4k and high-dpi displays."
+    },
+    {
       "label": "check_spark_native.py",
       "file_type": "code",
       "source_file": "scripts/check_spark_native.py",
@@ -3431,10 +3467,19 @@
       "norm_label": "spark halloween showcase and hidden camera"
     },
     {
+      "label": "Larger monitors and TVs",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L146",
+      "id": "readme_larger_monitors_and_tvs",
+      "community": 4,
+      "norm_label": "larger monitors and tvs"
+    },
+    {
       "label": "Halloween music and offline shuffle",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L158",
+      "source_location": "L170",
       "id": "readme_halloween_music_and_offline_shuffle",
       "community": 4,
       "norm_label": "halloween music and offline shuffle"
@@ -3443,7 +3488,7 @@
       "label": "Imported scene sound effects",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L164",
+      "source_location": "L176",
       "id": "readme_imported_scene_sound_effects",
       "community": 4,
       "norm_label": "imported scene sound effects"
@@ -3452,7 +3497,7 @@
       "label": "Immersive welcome screen",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L178",
+      "source_location": "L190",
       "id": "readme_immersive_welcome_screen",
       "community": 4,
       "norm_label": "immersive welcome screen"
@@ -3461,7 +3506,7 @@
       "label": "Spooky Sounds uses your imported effects",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L184",
+      "source_location": "L196",
       "id": "readme_spooky_sounds_uses_your_imported_effects",
       "community": 4,
       "norm_label": "spooky sounds uses your imported effects"
@@ -3470,7 +3515,7 @@
       "label": "Pumpkin welcome cutscene",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L188",
+      "source_location": "L200",
       "id": "readme_pumpkin_welcome_cutscene",
       "community": 4,
       "norm_label": "pumpkin welcome cutscene"
@@ -3479,7 +3524,7 @@
       "label": "Background and cutscene rotation",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L202",
+      "source_location": "L214",
       "id": "readme_background_and_cutscene_rotation",
       "community": 4,
       "norm_label": "background and cutscene rotation"
@@ -3762,6 +3807,15 @@
       "id": "validation_spark_halloween_product_showcase_2026_10_20",
       "community": 20,
       "norm_label": "spark halloween product showcase (2026-10-20)"
+    },
+    {
+      "label": "Original-resolution product images and TV layouts (2026-10-20)",
+      "file_type": "document",
+      "source_file": "VALIDATION.md",
+      "source_location": "L243",
+      "id": "validation_original_resolution_product_images_and_tv_layouts_2026_10_20",
+      "community": 20,
+      "norm_label": "original-resolution product images and tv layouts (2026-10-20)"
     },
     {
       "label": "touch_check()",
@@ -6447,9 +6501,9 @@
       "source_file": "halloween_hub/static/assets/spark/sources.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spark_sources",
-      "target": "spark_sources_assets",
-      "confidence_score": 1.0
+      "target": "spark_sources_assets"
     },
     {
       "relation": "contains",
@@ -6457,9 +6511,9 @@
       "source_file": "halloween_hub/static/assets/spark/sources.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spark_sources",
-      "target": "spark_sources_images_unmodified",
-      "confidence_score": 1.0
+      "target": "spark_sources_images_unmodified"
     },
     {
       "relation": "contains",
@@ -6467,9 +6521,9 @@
       "source_file": "halloween_hub/static/assets/spark/sources.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spark_sources",
-      "target": "spark_sources_retrieved",
-      "confidence_score": 1.0
+      "target": "spark_sources_retrieved"
     },
     {
       "relation": "contains",
@@ -7085,9 +7139,9 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_spark_showcase",
-      "target": "static_spark_showcase_asset",
-      "confidence_score": 1.0
+      "target": "static_spark_showcase_asset"
     },
     {
       "relation": "contains",
@@ -7095,8 +7149,18 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_spark_showcase",
-      "target": "static_spark_showcase_masthead",
+      "target": "static_spark_showcase_masthead"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/spark-showcase.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "static_spark_showcase",
+      "target": "static_spark_showcase_productimage",
       "confidence_score": 1.0
     },
     {
@@ -7105,9 +7169,9 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_spark_showcase",
-      "target": "static_spark_showcase_products",
-      "confidence_score": 1.0
+      "target": "static_spark_showcase_products"
     },
     {
       "relation": "contains",
@@ -7115,9 +7179,9 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_spark_showcase",
-      "target": "static_spark_showcase_sparkshowcase",
-      "confidence_score": 1.0
+      "target": "static_spark_showcase_sparkshowcase"
     },
     {
       "relation": "imports_from",
@@ -7126,9 +7190,9 @@
       "source_file": "halloween_hub/static/visitor.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_visitor",
-      "target": "static_spark_showcase",
-      "confidence_score": 1.0
+      "target": "static_spark_showcase"
     },
     {
       "relation": "calls",
@@ -7137,7 +7201,18 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_spark_showcase_masthead",
+      "target": "static_spark_showcase_asset"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/spark-showcase.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "static_spark_showcase_productimage",
       "target": "static_spark_showcase_asset",
       "confidence_score": 1.0
     },
@@ -7148,8 +7223,19 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_spark_showcase_sparkshowcase_detail",
-      "target": "static_spark_showcase_asset",
+      "target": "static_spark_showcase_asset"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/spark-showcase.js",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "static_spark_showcase_sparkshowcase_detail",
+      "target": "static_spark_showcase_productimage",
       "confidence_score": 1.0
     },
     {
@@ -7159,9 +7245,9 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_spark_showcase_sparkshowcase_detail",
-      "target": "static_spark_showcase_masthead",
-      "confidence_score": 1.0
+      "target": "static_spark_showcase_masthead"
     },
     {
       "relation": "calls",
@@ -7170,9 +7256,9 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_spark_showcase_sparkshowcase_show",
-      "target": "static_spark_showcase_masthead",
-      "confidence_score": 1.0
+      "target": "static_spark_showcase_masthead"
     },
     {
       "relation": "method",
@@ -7180,9 +7266,9 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_spark_showcase_sparkshowcase",
-      "target": "static_spark_showcase_sparkshowcase_constructor",
-      "confidence_score": 1.0
+      "target": "static_spark_showcase_sparkshowcase_constructor"
     },
     {
       "relation": "method",
@@ -7190,9 +7276,9 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_spark_showcase_sparkshowcase",
-      "target": "static_spark_showcase_sparkshowcase_detail",
-      "confidence_score": 1.0
+      "target": "static_spark_showcase_sparkshowcase_detail"
     },
     {
       "relation": "method",
@@ -7200,9 +7286,9 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_spark_showcase_sparkshowcase",
-      "target": "static_spark_showcase_sparkshowcase_show",
-      "confidence_score": 1.0
+      "target": "static_spark_showcase_sparkshowcase_show"
     },
     {
       "relation": "imports",
@@ -7211,9 +7297,9 @@
       "source_file": "halloween_hub/static/visitor.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_visitor",
-      "target": "static_spark_showcase_sparkshowcase",
-      "confidence_score": 1.0
+      "target": "static_spark_showcase_sparkshowcase"
     },
     {
       "relation": "imports_from",
@@ -9212,14 +9298,34 @@
       "target": "scripts_check_scene_visuals"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check_showcase_resolution.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "scripts_check_showcase_resolution",
+      "target": "scripts_check_showcase_resolution_images",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check_showcase_resolution.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_check_showcase_resolution_rationale_1",
+      "target": "scripts_check_showcase_resolution",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "scripts/check_spark_native.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_check_spark_native_rationale_1",
-      "target": "scripts_check_spark_native",
-      "confidence_score": 1.0
+      "target": "scripts_check_spark_native"
     },
     {
       "relation": "contains",
@@ -9247,9 +9353,9 @@
       "source_file": "scripts/check_visitor.py",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_check_visitor",
-      "target": "scripts_check_visitor_check_layout",
-      "confidence_score": 1.0
+      "target": "scripts_check_visitor_check_layout"
     },
     {
       "relation": "contains",
@@ -9940,9 +10046,9 @@
       "source_file": "ARTWORK.md",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "artwork_artwork_generation",
-      "target": "artwork_spark_product_showcase",
-      "confidence_score": 1.0
+      "target": "artwork_spark_product_showcase"
     },
     {
       "relation": "contains",
@@ -10080,9 +10186,9 @@
       "source_file": "README.md",
       "source_location": "L140",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_halloween_hub",
-      "target": "readme_spark_halloween_showcase_and_hidden_camera",
-      "confidence_score": 1.0
+      "target": "readme_spark_halloween_showcase_and_hidden_camera"
     },
     {
       "relation": "contains",
@@ -10103,6 +10209,16 @@
       "confidence_score": 1.0,
       "source": "readme_halloween_hub",
       "target": "readme_validation_and_development"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "readme_spark_halloween_showcase_and_hidden_camera",
+      "target": "readme_larger_monitors_and_tvs",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -10208,6 +10324,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "VALIDATION.md",
+      "source_location": "L243",
+      "weight": 1.0,
+      "source": "validation_validation_record_october_14_2026",
+      "target": "validation_original_resolution_product_images_and_tv_layouts_2026_10_20",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "VALIDATION.md",
       "source_location": "L14",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -10230,9 +10356,9 @@
       "source_file": "VALIDATION.md",
       "source_location": "L232",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "validation_validation_record_october_14_2026",
-      "target": "validation_spark_halloween_product_showcase_2026_10_20",
-      "confidence_score": 1.0
+      "target": "validation_spark_halloween_product_showcase_2026_10_20"
     },
     {
       "relation": "contains",
@@ -10416,5 +10542,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "ec22bd6cc98b5684b516c07d19f5c86025676049"
+  "built_at_commit": "c08d8813dae9e57c6c6423cf22cf90aaefd2121d"
 }

@@ -154,3 +154,21 @@ body.welcome-fullscreen.welcome-controls #app>header,body.welcome-fullscreen.wel
 @media(max-width:700px){#visitor-content.spark-showcase{height:auto;min-height:100dvh;overflow:auto}.spark-heading{display:block}.spark-invitation{text-align:left;margin-top:10px}.spark-products{grid-template-columns:repeat(2,minmax(0,1fr));flex:none}.spark-card-image{height:140px;flex:none}.spark-edition{font-size:8px;letter-spacing:1px}.spark-edition b{margin-left:5px}.spark-detail{grid-template-columns:1fr}.spark-detail-image{height:220px}.spark-detail-copy{padding-bottom:12px}.spark-web{width:120px;height:120px}.spark-footer{font-size:7px;letter-spacing:.5px}}
 
 @media(max-width:480px){.spark-edition{display:none}}
+/* Preserve source detail at native output resolution, including Retina/4K displays. */
+.spark-card-image,.spark-detail-image{display:flex;align-items:center;justify-content:center}
+.spark-card-image img,.spark-detail-image img{width:100%;height:100%;max-width:calc(var(--spark-native-width) / var(--spark-pixel-ratio,1));max-height:calc(var(--spark-native-height) / var(--spark-pixel-ratio,1));object-fit:contain;flex-shrink:1}
+.spark-card-keyboard .spark-card-image img{object-fit:contain}.spark-card:hover img{transform:none}
+.spark-logo img{max-width:calc(250px / var(--spark-pixel-ratio,1));max-height:calc(75px / var(--spark-pixel-ratio,1))}
+@media(min-width:2560px) and (min-height:1000px){
+ #visitor-content.spark-showcase{padding:32px clamp(76px,4vw,152px);gap:clamp(24px,1.2vw,46px)}
+ #visitor-content.spark-showcase h1{font-size:clamp(64px,2.9vw,112px)}
+ .spark-masthead{min-height:70px}.spark-logo img{width:250px;height:75px}.spark-edition{font-size:18px;letter-spacing:4px}
+ .spark-kicker{font-size:clamp(13px,.45vw,18px)!important;letter-spacing:4px}.spark-invitation{font-size:clamp(18px,.65vw,24px)}
+ .spark-products{gap:40px}.spark-card-copy{padding:clamp(28px,1.2vw,46px)}.spark-kind{font-size:clamp(12px,.4vw,16px);letter-spacing:3px;margin-bottom:16px}
+ .spark-card-copy h2{font-size:clamp(34px,1.5vw,58px)}.spark-card-copy p{font-size:clamp(20px,.7vw,27px);margin:16px 0 26px}.spark-card-link{font-size:clamp(18px,.65vw,24px)}
+ .spark-number{font-size:18px;left:24px;top:22px}.spark-card-symbol{font-size:32px;right:24px;top:16px}.spark-web{width:350px;height:350px}
+ .spark-detail{gap:100px}.spark-detail-copy h2{font-size:clamp(32px,1.2vw,46px)}.spark-detail-copy>p{font-size:clamp(22px,.85vw,32px)}
+ .spark-facts{gap:30px;padding:32px 0;margin:35px 0}.spark-facts dt{font-size:clamp(16px,.6vw,23px)}.spark-facts dd{font-size:clamp(32px,1.4vw,54px)}
+ .spark-all-products{font-size:22px;min-height:72px;min-width:240px}.spark-footer{font-size:16px;padding-top:20px}.spark-detail-caption{font-size:16px;left:28px;bottom:24px}
+}
+@media(min-width:2560px) and (min-height:1000px){#visitor-back{font-size:22px;min-width:120px;min-height:72px;top:24px;left:24px}.spark-card-link b{font-size:32px}}

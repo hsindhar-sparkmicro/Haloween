@@ -143,6 +143,18 @@ Tap/click the Dashboard pumpkin (or press Enter when focused) to play the instal
 
 The official SPARK logo, chip render and gaming application images are bundled in `halloween_hub/static/assets/spark/`. The photographs and logo remain unchanged; warm orange/violet lighting, a spiderweb, exhibit numbers and Halloween wording are applied in the interface. Product assets need no internet access. Their original URLs, page sources and SHA-256 hashes are recorded in [sources.json](halloween_hub/static/assets/spark/sources.json). Reference-design and demo specifications describe the corresponding SPARK designs, rather than measurements made by this kiosk. Sources: [SR1120](https://www.sparkmicro.com/products/sr1120/), [Gaming](https://www.sparkmicro.com/applications/gaming/), [Reference designs](https://www.sparkmicro.com/reference-designs/).
 
+### Larger monitors and TVs
+
+The showcase supports 800×480, 1080p, 1440p and 4K layouts, including high-DPI/Retina displays. Local `srcset` variants select the thumbnail or original SPARK PNG for the available image size and pixel density. Originals are **1254×1254** (SR1120) and **1672×941** (mouse, keyboard and headset). Product images keep their aspect ratio and are capped at native pixel detail, so a large panel may show space around the image instead of stretching a small source. The 250×75 logo is similarly limited to its source detail. Typography, frames and SVG decoration render at the display's native resolution, with larger type and controls for TV layouts. Moving a window between displays updates the density limits automatically.
+
+For a connected Pi monitor/TV, select its **native HDMI resolution** in the desktop's display settings. The kiosk launcher uses fullscreen without forcing an 800×480 window. Application layout cannot add pixels if the operating system is still outputting 800×480. The current bench Pi has only its 800×480 DSI output connected; HDMI/TV modes have been checked in browser rendering rather than on a physically connected 4K TV. Existing Halloween PNGs/videos retain their original source resolution; this change does not create new detail in those files.
+
+Reproduce the image-quality checks with an isolated server and installed intro media:
+
+```bash
+.venv/bin/python scripts/check_showcase_resolution.py --url http://127.0.0.1:8094
+```
+
 Open **Haunted House → Camera** or Settings to configure the optional Pi motion trigger. **Arm welcome** enables short motion scans; **Disarm** stops capture. **Test welcome** runs the same monster reveal without opening the camera. Choose what follows the reveal: SPARK showcase, Play, Story, or Surprise. Existing manual scenes are not interrupted. Camera arming and active adventures never resume after restart.
 
 The camera is completely hidden: no video elements, previews, mirror, JPEG export, recordings, or image archives. Frames exist only briefly inside the capture worker for motion analysis; only numerical motion scores reach the server. The retired frame endpoint returns 410. Capture rotates 90° clockwise before analysis. Motion can include pets or lighting changes; it does not identify people or measure distance.
