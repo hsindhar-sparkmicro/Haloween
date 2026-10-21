@@ -1,12 +1,12 @@
 {
   "/home/hsindhar/github/Haloween/ARTWORK.md": {
-    "mtime": 1792608703.7022474,
-    "ast_hash": "a158cfeeff7a815c62eb91e5c21f9f5d",
+    "mtime": 1792610007.35994,
+    "ast_hash": "07d5cf7dee05bf260f6f9d88c1076954",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/README.md": {
-    "mtime": 1792608703.7020075,
-    "ast_hash": "f5eb7092ecd2bbdae8b2b7cf7acc2e3e",
+    "mtime": 1792610007.3597937,
+    "ast_hash": "4b6133d2a047129f2f7d5358c8399877",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/requirements-dev.txt": {
@@ -15,18 +15,18 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/scripts/build_web.py": {
-    "mtime": 1792608651.1914263,
-    "ast_hash": "e3afe7448f6ba4d2f49b3d5f953bdd7b",
+    "mtime": 1792609977.1337783,
+    "ast_hash": "bc4938988693f54030adf1bdd8af6754",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/tests/web/test_web.py": {
-    "mtime": 1792609242.319703,
-    "ast_hash": "068b889d6c025947560341f8bec2964e",
+    "mtime": 1792610135.7297907,
+    "ast_hash": "f8f08b851c4aad86443da42bd5d46d38",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/web/app.js": {
-    "mtime": 1792608464.4833322,
-    "ast_hash": "804dde3475d91b2c5495384f28e63cf0",
+    "mtime": 1792610007.359687,
+    "ast_hash": "ec8f16c0915b77147214eff95748d3d7",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/web/background-rotation.js": {
@@ -35,8 +35,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/web/browser-service.js": {
-    "mtime": 1792608538.0685863,
-    "ast_hash": "bd2a449a51b5b5e2ff81fc8c90e4b1d5",
+    "mtime": 1792609977.1327784,
+    "ast_hash": "a3e8c9b95d8bcd80ef0e78e9999dcf0e",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/web/effect-shuffle.js": {
@@ -70,8 +70,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/web/sw.js": {
-    "mtime": 1792608780.173859,
-    "ast_hash": "4d724f09b401eb74828fa5a80e64ca94",
+    "mtime": 1792609977.1337783,
+    "ast_hash": "8ad0d7aec81e87513f362544ab217d9d",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/web/visitor-content.js": {
@@ -110,8 +110,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/BROWSER.md": {
-    "mtime": 1792608703.7021596,
-    "ast_hash": "93de20343940c257f9068447adf378ec",
+    "mtime": 1792610072.7969928,
+    "ast_hash": "b7a179eaabea67dffe1346ea6e5eac0c",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/web/assets/FONT-LICENSE.txt": {
@@ -120,8 +120,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/web/index.html": {
-    "mtime": 1792608464.4829502,
-    "ast_hash": "0c54f1965713cc9d4ae31e02b2fdf6b9",
+    "mtime": 1792610007.359444,
+    "ast_hash": "be0ba5e7e2510b5aef72a719df16800e",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/web/assets/art-sheet.png": {
@@ -247,6 +247,91 @@
   "/home/hsindhar/github/Haloween/web/media/welcome.webm": {
     "mtime": 1792608464.5640166,
     "ast_hash": "17f707a27e37686ba8cd689106fa3122",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/web/audio-manifest.js": {
+    "mtime": 1792609977.1246161,
+    "ast_hash": "1d9ac12d47c61b19c16ac7d003160d1b",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/web/audio/effects/alesiadavina-scary-female-halloween-horror-laughter-vol-006-165223.mp3": {
+    "mtime": 1792014326.453057,
+    "ast_hash": "1b8ea330774aec54751e648906691327",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/web/audio/effects/charlie_raven-halloween-impact-01-93805.mp3": {
+    "mtime": 1792014611.2700615,
+    "ast_hash": "385fd830eee8b9782c510e9336ef67c0",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/web/audio/effects/charlie_raven-halloween-impact-05-93808.mp3": {
+    "mtime": 1792014305.9009871,
+    "ast_hash": "f073ff047cda3d15775d7c4b096c52b8",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/web/audio/effects/dragon-studio-halloween-wind-410540.mp3": {
+    "mtime": 1792014270.1657624,
+    "ast_hash": "32db0d1f98f8205d76254f2420eb703b",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/web/audio/effects/dragon-studio-halloween-wolf-howling-410542.mp3": {
+    "mtime": 1792014262.7550752,
+    "ast_hash": "1a5c59195c59be735c833158f2c1db87",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/web/audio/effects/dragon-studio-spooky-halloween-intro-410549.mp3": {
+    "mtime": 1792014293.8852592,
+    "ast_hash": "41b9d47e34ee6aac29eecd322faf2ad9",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/web/audio/effects/idoberg-creepy-halloween-bells-loop-408748.mp3": {
+    "mtime": 1792014286.242078,
+    "ast_hash": "eff26119e0f08e62f51abcf9c7def4b0",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/web/audio/effects/mfcc-halloween-halloween-music-597345.mp3": {
+    "mtime": 1792014238.2244368,
+    "ast_hash": "5cc49f2acb98bd6477fe85ae14ced6ae",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/web/audio/effects/placidplace-spooky-halloween-effects-with-thunder-121665.mp3": {
+    "mtime": 1792014278.7048287,
+    "ast_hash": "4fc1386a952983176fdf98e4cb71eb11",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/web/audio/effects/starostin-halloween-halloween-music-616106.mp3": {
+    "mtime": 1792014255.441628,
+    "ast_hash": "2f37ce2ed93a0a3088f7d75a0a7a6679",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/web/audio/tracks/alex-morgan-halloween-horror-dark-ritual-music-587400.mp3": {
+    "mtime": 1792014179.9654853,
+    "ast_hash": "8d34d3ffed136aa181af24cf60e22aeb",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/web/audio/tracks/nastelbom-halloween-halloween-horror-616999.mp3": {
+    "mtime": 1792014110.1875944,
+    "ast_hash": "cd00e162c7e54b2c69dc3f31b0aff21c",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/web/audio/tracks/nastelbom-spoky-halloween-617000.mp3": {
+    "mtime": 1792014129.601215,
+    "ast_hash": "803f93aef6b01a0d50e9cdf74f6f1f9e",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/web/audio/tracks/sigmamusicart-halloween-background-music-425891.mp3": {
+    "mtime": 1792014187.8096433,
+    "ast_hash": "7bfa9bbf4a99bb479d1278235406dcd5",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/web/audio/tracks/soulfuljamtracks-spooky-halloween-586106.mp3": {
+    "mtime": 1792014205.1769586,
+    "ast_hash": "e77de1afc722ab3292eef2e7d033ecf8",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/web/audio/tracks/starostin-halloween-halloween-music-597399.mp3": {
+    "mtime": 1792014213.7690978,
+    "ast_hash": "082dd6e0cff8a7e2f096d6d853b88c71",
     "semantic_hash": ""
   }
 }

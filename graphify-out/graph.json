@@ -76,10 +76,19 @@
       "norm_label": ".log_message()"
     },
     {
+      "label": ".copyfile()",
+      "file_type": "code",
+      "source_file": "tests/web/test_web.py",
+      "source_location": "L37",
+      "id": "web_test_web_handler_copyfile",
+      "community": 5,
+      "norm_label": ".copyfile()"
+    },
+    {
       "label": "WebTests",
       "file_type": "code",
       "source_file": "tests/web/test_web.py",
-      "source_location": "L38",
+      "source_location": "L44",
       "id": "web_test_web_webtests",
       "community": 5,
       "norm_label": "webtests"
@@ -88,7 +97,7 @@
       "label": ".setUpClass()",
       "file_type": "code",
       "source_file": "tests/web/test_web.py",
-      "source_location": "L40",
+      "source_location": "L46",
       "id": "web_test_web_webtests_setupclass",
       "community": 5,
       "norm_label": ".setupclass()"
@@ -97,7 +106,7 @@
       "label": ".tearDownClass()",
       "file_type": "code",
       "source_file": "tests/web/test_web.py",
-      "source_location": "L50",
+      "source_location": "L56",
       "id": "web_test_web_webtests_teardownclass",
       "community": 5,
       "norm_label": ".teardownclass()"
@@ -106,7 +115,7 @@
       "label": ".setUp()",
       "file_type": "code",
       "source_file": "tests/web/test_web.py",
-      "source_location": "L56",
+      "source_location": "L62",
       "id": "web_test_web_webtests_setup",
       "community": 5,
       "norm_label": ".setup()"
@@ -115,7 +124,7 @@
       "label": ".tearDown()",
       "file_type": "code",
       "source_file": "tests/web/test_web.py",
-      "source_location": "L65",
+      "source_location": "L71",
       "id": "web_test_web_webtests_teardown",
       "community": 5,
       "norm_label": ".teardown()"
@@ -124,7 +133,7 @@
       "label": ".hub()",
       "file_type": "code",
       "source_file": "tests/web/test_web.py",
-      "source_location": "L70",
+      "source_location": "L76",
       "id": "web_test_web_webtests_hub",
       "community": 5,
       "norm_label": ".hub()"
@@ -133,7 +142,7 @@
       "label": ".test_adventures_and_keyboard()",
       "file_type": "code",
       "source_file": "tests/web/test_web.py",
-      "source_location": "L73",
+      "source_location": "L79",
       "id": "web_test_web_webtests_test_adventures_and_keyboard",
       "community": 5,
       "norm_label": ".test_adventures_and_keyboard()"
@@ -142,7 +151,7 @@
       "label": ".test_persistence_audio_and_stopped_restart()",
       "file_type": "code",
       "source_file": "tests/web/test_web.py",
-      "source_location": "L109",
+      "source_location": "L115",
       "id": "web_test_web_webtests_test_persistence_audio_and_stopped_restart",
       "community": 5,
       "norm_label": ".test_persistence_audio_and_stopped_restart()"
@@ -151,7 +160,7 @@
       "label": ".test_simulation_completion_logs_and_dates()",
       "file_type": "code",
       "source_file": "tests/web/test_web.py",
-      "source_location": "L146",
+      "source_location": "L152",
       "id": "web_test_web_webtests_test_simulation_completion_logs_and_dates",
       "community": 5,
       "norm_label": ".test_simulation_completion_logs_and_dates()"
@@ -160,7 +169,7 @@
       "label": ".test_weather_and_network_failure()",
       "file_type": "code",
       "source_file": "tests/web/test_web.py",
-      "source_location": "L170",
+      "source_location": "L176",
       "id": "web_test_web_webtests_test_weather_and_network_failure",
       "community": 5,
       "norm_label": ".test_weather_and_network_failure()"
@@ -169,7 +178,7 @@
       "label": ".test_storage_denied_and_quota_atomicity()",
       "file_type": "code",
       "source_file": "tests/web/test_web.py",
-      "source_location": "L184",
+      "source_location": "L190",
       "id": "web_test_web_webtests_test_storage_denied_and_quota_atomicity",
       "community": 5,
       "norm_label": ".test_storage_denied_and_quota_atomicity()"
@@ -178,16 +187,25 @@
       "label": ".test_offline_shell()",
       "file_type": "code",
       "source_file": "tests/web/test_web.py",
-      "source_location": "L203",
+      "source_location": "L209",
       "id": "web_test_web_webtests_test_offline_shell",
       "community": 5,
       "norm_label": ".test_offline_shell()"
     },
     {
+      "label": ".test_included_audio_offline_ranges_and_restore()",
+      "file_type": "code",
+      "source_file": "tests/web/test_web.py",
+      "source_location": "L221",
+      "id": "web_test_web_webtests_test_included_audio_offline_ranges_and_restore",
+      "community": 5,
+      "norm_label": ".test_included_audio_offline_ranges_and_restore()"
+    },
+    {
       "label": ".test_responsive_layouts()",
       "file_type": "code",
       "source_file": "tests/web/test_web.py",
-      "source_location": "L215",
+      "source_location": "L264",
       "id": "web_test_web_webtests_test_responsive_layouts",
       "community": 5,
       "norm_label": ".test_responsive_layouts()"
@@ -196,7 +214,7 @@
       "label": ".test_media_intro_and_idle_fades()",
       "file_type": "code",
       "source_file": "tests/web/test_web.py",
-      "source_location": "L226",
+      "source_location": "L275",
       "id": "web_test_web_webtests_test_media_intro_and_idle_fades",
       "community": 5,
       "norm_label": ".test_media_intro_and_idle_fades()"
@@ -205,7 +223,7 @@
       "label": ".test_missing_media_and_user_cancellation()",
       "file_type": "code",
       "source_file": "tests/web/test_web.py",
-      "source_location": "L251",
+      "source_location": "L300",
       "id": "web_test_web_webtests_test_missing_media_and_user_cancellation",
       "community": 5,
       "norm_label": ".test_missing_media_and_user_cancellation()"
@@ -634,6 +652,24 @@
       "norm_label": "sync()"
     },
     {
+      "label": "audio-manifest.js",
+      "file_type": "code",
+      "source_file": "web/audio-manifest.js",
+      "source_location": "L1",
+      "id": "web_audio_manifest",
+      "community": 1,
+      "norm_label": "audio-manifest.js"
+    },
+    {
+      "label": "BUNDLED_AUDIO",
+      "file_type": "code",
+      "source_file": "web/audio-manifest.js",
+      "source_location": "L2",
+      "id": "web_audio_manifest_bundled_audio",
+      "community": 1,
+      "norm_label": "bundled_audio"
+    },
+    {
       "label": "background-rotation.js",
       "file_type": "code",
       "source_file": "web/background-rotation.js",
@@ -691,7 +727,7 @@
       "label": "clone()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L4",
+      "source_location": "L5",
       "id": "web_browser_service_clone",
       "community": 1,
       "norm_label": "clone()"
@@ -700,7 +736,7 @@
       "label": "pick()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L5",
+      "source_location": "L6",
       "id": "web_browser_service_pick",
       "community": 1,
       "norm_label": "pick()"
@@ -709,7 +745,7 @@
       "label": "rooms",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L6",
+      "source_location": "L7",
       "id": "web_browser_service_rooms",
       "community": 1,
       "norm_label": "rooms"
@@ -718,7 +754,7 @@
       "label": "DEFAULTS",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L7",
+      "source_location": "L8",
       "id": "web_browser_service_defaults",
       "community": 1,
       "norm_label": "defaults"
@@ -727,7 +763,7 @@
       "label": "formatters",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L14",
+      "source_location": "L15",
       "id": "web_browser_service_formatters",
       "community": 1,
       "norm_label": "formatters"
@@ -736,7 +772,7 @@
       "label": "parts()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L15",
+      "source_location": "L16",
       "id": "web_browser_service_parts",
       "community": 1,
       "norm_label": "parts()"
@@ -745,7 +781,7 @@
       "label": "zonedEpoch()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L25",
+      "source_location": "L26",
       "id": "web_browser_service_zonedepoch",
       "community": 1,
       "norm_label": "zonedepoch()"
@@ -754,7 +790,7 @@
       "label": "parseParty()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L37",
+      "source_location": "L38",
       "id": "web_browser_service_parseparty",
       "community": 1,
       "norm_label": "parseparty()"
@@ -763,7 +799,7 @@
       "label": "countdown()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L42",
+      "source_location": "L43",
       "id": "web_browser_service_countdown",
       "community": 1,
       "norm_label": "countdown()"
@@ -772,7 +808,7 @@
       "label": "BrowserHub",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L50",
+      "source_location": "L51",
       "id": "web_browser_service_browserhub",
       "community": 1,
       "norm_label": "browserhub"
@@ -781,7 +817,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L51",
+      "source_location": "L52",
       "id": "web_browser_service_browserhub_constructor",
       "community": 1,
       "norm_label": ".constructor()"
@@ -790,7 +826,7 @@
       "label": ".open()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L65",
+      "source_location": "L66",
       "id": "web_browser_service_browserhub_open",
       "community": 1,
       "norm_label": ".open()"
@@ -799,7 +835,7 @@
       "label": ".read()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L89",
+      "source_location": "L90",
       "id": "web_browser_service_browserhub_read",
       "community": 1,
       "norm_label": ".read()"
@@ -808,7 +844,7 @@
       "label": ".write()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L95",
+      "source_location": "L96",
       "id": "web_browser_service_browserhub_write",
       "community": 1,
       "norm_label": ".write()"
@@ -817,7 +853,7 @@
       "label": ".save()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L104",
+      "source_location": "L105",
       "id": "web_browser_service_browserhub_save",
       "community": 1,
       "norm_label": ".save()"
@@ -826,7 +862,7 @@
       "label": ".settings()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L108",
+      "source_location": "L109",
       "id": "web_browser_service_browserhub_settings",
       "community": 1,
       "norm_label": ".settings()"
@@ -835,7 +871,7 @@
       "label": ".command()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L123",
+      "source_location": "L124",
       "id": "web_browser_service_browserhub_command",
       "community": 1,
       "norm_label": ".command()"
@@ -844,7 +880,7 @@
       "label": ".stepScene()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L148",
+      "source_location": "L149",
       "id": "web_browser_service_browserhub_stepscene",
       "community": 1,
       "norm_label": ".stepscene()"
@@ -853,7 +889,7 @@
       "label": ".encounter()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L159",
+      "source_location": "L160",
       "id": "web_browser_service_browserhub_encounter",
       "community": 1,
       "norm_label": ".encounter()"
@@ -862,7 +898,7 @@
       "label": ".tick()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L169",
+      "source_location": "L170",
       "id": "web_browser_service_browserhub_tick",
       "community": 1,
       "norm_label": ".tick()"
@@ -871,7 +907,7 @@
       "label": ".fetchJson()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L184",
+      "source_location": "L185",
       "id": "web_browser_service_browserhub_fetchjson",
       "community": 1,
       "norm_label": ".fetchjson()"
@@ -880,7 +916,7 @@
       "label": ".weather()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L189",
+      "source_location": "L190",
       "id": "web_browser_service_browserhub_weather",
       "community": 1,
       "norm_label": ".weather()"
@@ -889,7 +925,7 @@
       "label": ".locations()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L205",
+      "source_location": "L206",
       "id": "web_browser_service_browserhub_locations",
       "community": 1,
       "norm_label": ".locations()"
@@ -898,7 +934,7 @@
       "label": ".importAudio()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L212",
+      "source_location": "L213",
       "id": "web_browser_service_browserhub_importaudio",
       "community": 1,
       "norm_label": ".importaudio()"
@@ -907,7 +943,7 @@
       "label": ".removeAudio()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L222",
+      "source_location": "L228",
       "id": "web_browser_service_browserhub_removeaudio",
       "community": 1,
       "norm_label": ".removeaudio()"
@@ -916,7 +952,7 @@
       "label": ".snapshot()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L228",
+      "source_location": "L238",
       "id": "web_browser_service_browserhub_snapshot",
       "community": 1,
       "norm_label": ".snapshot()"
@@ -925,7 +961,7 @@
       "label": ".request()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L236",
+      "source_location": "L249",
       "id": "web_browser_service_browserhub_request",
       "community": 1,
       "norm_label": ".request()"
@@ -934,7 +970,7 @@
       "label": ".exportLogs()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L275",
+      "source_location": "L289",
       "id": "web_browser_service_browserhub_exportlogs",
       "community": 1,
       "norm_label": ".exportlogs()"
@@ -943,7 +979,7 @@
       "label": "hub",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L282",
+      "source_location": "L296",
       "id": "web_browser_service_hub",
       "community": 1,
       "norm_label": "hub"
@@ -952,7 +988,7 @@
       "label": "mediaUrl()",
       "file_type": "code",
       "source_file": "web/browser-service.js",
-      "source_location": "L283",
+      "source_location": "L297",
       "id": "web_browser_service_mediaurl",
       "community": 0,
       "norm_label": "mediaurl()"
@@ -1089,7 +1125,7 @@
       "source_file": "web/night-weather.js",
       "source_location": "L1",
       "id": "web_night_weather",
-      "community": 2,
+      "community": 7,
       "norm_label": "night-weather.js"
     },
     {
@@ -1098,7 +1134,7 @@
       "source_file": "web/night-weather.js",
       "source_location": "L2",
       "id": "web_night_weather_random",
-      "community": 2,
+      "community": 7,
       "norm_label": "random()"
     },
     {
@@ -1107,7 +1143,7 @@
       "source_file": "web/night-weather.js",
       "source_location": "L3",
       "id": "web_night_weather_smooth",
-      "community": 2,
+      "community": 7,
       "norm_label": "smooth()"
     },
     {
@@ -1116,7 +1152,7 @@
       "source_file": "web/night-weather.js",
       "source_location": "L4",
       "id": "web_night_weather_nightweather",
-      "community": 2,
+      "community": 7,
       "norm_label": "nightweather"
     },
     {
@@ -1125,7 +1161,7 @@
       "source_file": "web/night-weather.js",
       "source_location": "L5",
       "id": "web_night_weather_nightweather_constructor",
-      "community": 2,
+      "community": 7,
       "norm_label": ".constructor()"
     },
     {
@@ -1134,7 +1170,7 @@
       "source_file": "web/night-weather.js",
       "source_location": "L12",
       "id": "web_night_weather_nightweather_leaf",
-      "community": 2,
+      "community": 7,
       "norm_label": ".leaf()"
     },
     {
@@ -1143,7 +1179,7 @@
       "source_file": "web/night-weather.js",
       "source_location": "L21",
       "id": "web_night_weather_nightweather_change",
-      "community": 2,
+      "community": 7,
       "norm_label": ".change()"
     },
     {
@@ -1152,7 +1188,7 @@
       "source_file": "web/night-weather.js",
       "source_location": "L26",
       "id": "web_night_weather_nightweather_advance",
-      "community": 2,
+      "community": 7,
       "norm_label": ".advance()"
     },
     {
@@ -1161,7 +1197,7 @@
       "source_file": "web/night-weather.js",
       "source_location": "L45",
       "id": "web_night_weather_nightweather_spawn",
-      "community": 2,
+      "community": 7,
       "norm_label": ".spawn()"
     },
     {
@@ -1170,7 +1206,7 @@
       "source_file": "web/night-weather.js",
       "source_location": "L49",
       "id": "web_night_weather_nightweather_describe",
-      "community": 2,
+      "community": 7,
       "norm_label": ".describe()"
     },
     {
@@ -1179,7 +1215,7 @@
       "source_file": "web/night-weather.js",
       "source_location": "L53",
       "id": "web_night_weather_nightweather_draw",
-      "community": 2,
+      "community": 7,
       "norm_label": ".draw()"
     },
     {
@@ -1188,7 +1224,7 @@
       "source_file": "web/night-weather.js",
       "source_location": "L65",
       "id": "web_night_weather_nightweather_winter",
-      "community": 2,
+      "community": 7,
       "norm_label": ".winter()"
     },
     {
@@ -1379,6 +1415,15 @@
       "id": "web_sw_shell",
       "community": 13,
       "norm_label": "shell"
+    },
+    {
+      "label": "audioRange()",
+      "file_type": "code",
+      "source_file": "web/sw.js",
+      "source_location": "L20",
+      "id": "web_sw_audiorange",
+      "community": 13,
+      "norm_label": "audiorange()"
     },
     {
       "label": "visitor-content.js",
@@ -1818,7 +1863,7 @@
       "source_file": "web/welcome-messages.js",
       "source_location": "L1",
       "id": "web_welcome_messages",
-      "community": 8,
+      "community": 2,
       "norm_label": "welcome-messages.js"
     },
     {
@@ -1827,7 +1872,7 @@
       "source_file": "web/welcome-messages.js",
       "source_location": "L2",
       "id": "web_welcome_messages_messages",
-      "community": 8,
+      "community": 2,
       "norm_label": "messages"
     },
     {
@@ -1836,7 +1881,7 @@
       "source_file": "web/welcome-messages.js",
       "source_location": "L12",
       "id": "web_welcome_messages_effects",
-      "community": 8,
+      "community": 2,
       "norm_label": "effects"
     },
     {
@@ -1845,7 +1890,7 @@
       "source_file": "web/welcome-messages.js",
       "source_location": "L13",
       "id": "web_welcome_messages_shufflebag",
-      "community": 8,
+      "community": 2,
       "norm_label": "shufflebag"
     },
     {
@@ -1854,7 +1899,7 @@
       "source_file": "web/welcome-messages.js",
       "source_location": "L14",
       "id": "web_welcome_messages_shufflebag_constructor",
-      "community": 8,
+      "community": 2,
       "norm_label": ".constructor()"
     },
     {
@@ -1863,7 +1908,7 @@
       "source_file": "web/welcome-messages.js",
       "source_location": "L15",
       "id": "web_welcome_messages_shufflebag_next",
-      "community": 8,
+      "community": 2,
       "norm_label": ".next()"
     },
     {
@@ -1872,7 +1917,7 @@
       "source_file": "web/welcome-messages.js",
       "source_location": "L24",
       "id": "web_welcome_messages_welcomemessages",
-      "community": 8,
+      "community": 2,
       "norm_label": "welcomemessages"
     },
     {
@@ -1881,7 +1926,7 @@
       "source_file": "web/welcome-messages.js",
       "source_location": "L25",
       "id": "web_welcome_messages_welcomemessages_constructor",
-      "community": 8,
+      "community": 2,
       "norm_label": ".constructor()"
     },
     {
@@ -1890,7 +1935,7 @@
       "source_file": "web/welcome-messages.js",
       "source_location": "L29",
       "id": "web_welcome_messages_welcomemessages_select",
-      "community": 8,
+      "community": 2,
       "norm_label": ".select()"
     },
     {
@@ -1899,7 +1944,7 @@
       "source_file": "web/welcome-messages.js",
       "source_location": "L48",
       "id": "web_welcome_messages_welcomemessages_draw",
-      "community": 8,
+      "community": 2,
       "norm_label": ".draw()"
     },
     {
@@ -1969,7 +2014,7 @@
       "label": "Local preview and checks",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L21",
+      "source_location": "L23",
       "id": "readme_local_preview_and_checks",
       "community": 4,
       "norm_label": "local preview and checks"
@@ -1978,7 +2023,7 @@
       "label": "Publishing",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L41",
+      "source_location": "L43",
       "id": "readme_publishing",
       "community": 4,
       "norm_label": "publishing"
@@ -2222,7 +2267,7 @@
       "file_type": "document",
       "source_file": "VALIDATION.md",
       "source_location": "L1",
-      "community": 7,
+      "community": 20,
       "norm_label": "validation.md",
       "id": "validation"
     },
@@ -2231,7 +2276,7 @@
       "file_type": "document",
       "source_file": "VALIDATION.md",
       "source_location": "L1",
-      "community": 7,
+      "community": 20,
       "norm_label": "validation record \u2014 october 14, 2026",
       "id": "validation_validation_record_october_14_2026"
     },
@@ -2240,7 +2285,7 @@
       "file_type": "document",
       "source_file": "VALIDATION.md",
       "source_location": "L3",
-      "community": 7,
+      "community": 20,
       "norm_label": "completed checks",
       "id": "validation_completed_checks"
     },
@@ -2249,7 +2294,7 @@
       "file_type": "document",
       "source_file": "VALIDATION.md",
       "source_location": "L17",
-      "community": 7,
+      "community": 20,
       "norm_label": "pi deployment and endurance",
       "id": "validation_pi_deployment_and_endurance"
     },
@@ -2258,7 +2303,7 @@
       "file_type": "document",
       "source_file": "VALIDATION.md",
       "source_location": "L49",
-      "community": 7,
+      "community": 20,
       "norm_label": "explicit validation boundaries",
       "id": "validation_explicit_validation_boundaries"
     },
@@ -2267,7 +2312,7 @@
       "file_type": "document",
       "source_file": "VALIDATION.md",
       "source_location": "L58",
-      "community": 7,
+      "community": 20,
       "norm_label": "animated scene player correction",
       "id": "validation_animated_scene_player_correction"
     },
@@ -2276,7 +2321,7 @@
       "file_type": "document",
       "source_file": "VALIDATION.md",
       "source_location": "L66",
-      "community": 7,
+      "community": 20,
       "norm_label": "immersive scenes and optional camera update",
       "id": "validation_immersive_scenes_and_optional_camera_update"
     },
@@ -2285,7 +2330,7 @@
       "file_type": "document",
       "source_file": "VALIDATION.md",
       "source_location": "L79",
-      "community": 7,
+      "community": 20,
       "norm_label": "camera orientation correction",
       "id": "validation_camera_orientation_correction"
     },
@@ -2456,7 +2501,7 @@
       "file_type": "document",
       "source_file": "VALIDATION.md",
       "source_location": "L202",
-      "community": 7,
+      "community": 20,
       "norm_label": "raspberry pi boot autostart (2026-10-20)",
       "id": "validation_raspberry_pi_boot_autostart_2026_10_20"
     },
@@ -2465,7 +2510,7 @@
       "file_type": "document",
       "source_file": "VALIDATION.md",
       "source_location": "L207",
-      "community": 7,
+      "community": 20,
       "norm_label": "idle background video replay (2026-10-20)",
       "id": "validation_idle_background_video_replay_2026_10_20"
     },
@@ -2474,7 +2519,7 @@
       "file_type": "document",
       "source_file": "VALIDATION.md",
       "source_location": "L216",
-      "community": 7,
+      "community": 20,
       "norm_label": "idle video visibility correction (2026-10-20)",
       "id": "validation_idle_video_visibility_correction_2026_10_20"
     },
@@ -2483,7 +2528,7 @@
       "file_type": "document",
       "source_file": "VALIDATION.md",
       "source_location": "L225",
-      "community": 7,
+      "community": 20,
       "norm_label": "half-speed idle video and longer fades (2026-10-20)",
       "id": "validation_half_speed_idle_video_and_longer_fades_2026_10_20"
     },
@@ -2492,7 +2537,7 @@
       "file_type": "document",
       "source_file": "VALIDATION.md",
       "source_location": "L232",
-      "community": 7,
+      "community": 20,
       "norm_label": "spark halloween product showcase (2026-10-20)",
       "id": "validation_spark_halloween_product_showcase_2026_10_20"
     },
@@ -2501,7 +2546,7 @@
       "file_type": "document",
       "source_file": "VALIDATION.md",
       "source_location": "L243",
-      "community": 7,
+      "community": 20,
       "norm_label": "original-resolution product images and tv layouts (2026-10-20)",
       "id": "validation_original_resolution_product_images_and_tv_layouts_2026_10_20"
     },
@@ -2510,7 +2555,7 @@
       "file_type": "document",
       "source_file": "VALIDATION.md",
       "source_location": "L254",
-      "community": 7,
+      "community": 20,
       "norm_label": "variable night weather: autumn gusts and winter flurries (2026-10-20)",
       "id": "validation_variable_night_weather_autumn_gusts_and_winter_flurries_2026_10_20"
     },
@@ -2549,9 +2594,9 @@
       "source_file": "scripts/build_web.py",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_web",
-      "target": "scripts_build_web_build",
-      "confidence_score": 1.0
+      "target": "scripts_build_web_build"
     },
     {
       "relation": "rationale_for",
@@ -2559,9 +2604,9 @@
       "source_file": "scripts/build_web.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_build_web_rationale_1",
-      "target": "scripts_build_web",
-      "confidence_score": 1.0
+      "target": "scripts_build_web"
     },
     {
       "relation": "contains",
@@ -2569,9 +2614,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web",
-      "target": "web_test_web_handler",
-      "confidence_score": 1.0
+      "target": "web_test_web_handler"
     },
     {
       "relation": "contains",
@@ -2579,9 +2624,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web",
-      "target": "web_test_web_webtests",
-      "confidence_score": 1.0
+      "target": "web_test_web_webtests"
     },
     {
       "relation": "rationale_for",
@@ -2589,8 +2634,18 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_rationale_1",
-      "target": "web_test_web",
+      "target": "web_test_web"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/web/test_web.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "web_test_web_handler",
+      "target": "web_test_web_handler_copyfile",
       "confidence_score": 1.0
     },
     {
@@ -2599,9 +2654,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_handler",
-      "target": "web_test_web_handler_do_get",
-      "confidence_score": 1.0
+      "target": "web_test_web_handler_do_get"
     },
     {
       "relation": "method",
@@ -2609,9 +2664,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_handler",
-      "target": "web_test_web_handler_do_head",
-      "confidence_score": 1.0
+      "target": "web_test_web_handler_do_head"
     },
     {
       "relation": "method",
@@ -2619,9 +2674,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_handler",
-      "target": "web_test_web_handler_log_message",
-      "confidence_score": 1.0
+      "target": "web_test_web_handler_log_message"
     },
     {
       "relation": "method",
@@ -2629,9 +2684,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_webtests",
-      "target": "web_test_web_webtests_hub",
-      "confidence_score": 1.0
+      "target": "web_test_web_webtests_hub"
     },
     {
       "relation": "method",
@@ -2639,9 +2694,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_webtests",
-      "target": "web_test_web_webtests_setup",
-      "confidence_score": 1.0
+      "target": "web_test_web_webtests_setup"
     },
     {
       "relation": "method",
@@ -2649,9 +2704,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_webtests",
-      "target": "web_test_web_webtests_setupclass",
-      "confidence_score": 1.0
+      "target": "web_test_web_webtests_setupclass"
     },
     {
       "relation": "method",
@@ -2659,9 +2714,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_webtests",
-      "target": "web_test_web_webtests_teardown",
-      "confidence_score": 1.0
+      "target": "web_test_web_webtests_teardown"
     },
     {
       "relation": "method",
@@ -2669,9 +2724,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_webtests",
-      "target": "web_test_web_webtests_teardownclass",
-      "confidence_score": 1.0
+      "target": "web_test_web_webtests_teardownclass"
     },
     {
       "relation": "method",
@@ -2679,8 +2734,18 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_webtests",
-      "target": "web_test_web_webtests_test_adventures_and_keyboard",
+      "target": "web_test_web_webtests_test_adventures_and_keyboard"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/web/test_web.py",
+      "source_location": "L221",
+      "weight": 1.0,
+      "source": "web_test_web_webtests",
+      "target": "web_test_web_webtests_test_included_audio_offline_ranges_and_restore",
       "confidence_score": 1.0
     },
     {
@@ -2689,9 +2754,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L226",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_webtests",
-      "target": "web_test_web_webtests_test_media_intro_and_idle_fades",
-      "confidence_score": 1.0
+      "target": "web_test_web_webtests_test_media_intro_and_idle_fades"
     },
     {
       "relation": "method",
@@ -2699,9 +2764,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L251",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_webtests",
-      "target": "web_test_web_webtests_test_missing_media_and_user_cancellation",
-      "confidence_score": 1.0
+      "target": "web_test_web_webtests_test_missing_media_and_user_cancellation"
     },
     {
       "relation": "method",
@@ -2709,9 +2774,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L203",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_webtests",
-      "target": "web_test_web_webtests_test_offline_shell",
-      "confidence_score": 1.0
+      "target": "web_test_web_webtests_test_offline_shell"
     },
     {
       "relation": "method",
@@ -2719,9 +2784,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_webtests",
-      "target": "web_test_web_webtests_test_persistence_audio_and_stopped_restart",
-      "confidence_score": 1.0
+      "target": "web_test_web_webtests_test_persistence_audio_and_stopped_restart"
     },
     {
       "relation": "method",
@@ -2729,9 +2794,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L215",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_webtests",
-      "target": "web_test_web_webtests_test_responsive_layouts",
-      "confidence_score": 1.0
+      "target": "web_test_web_webtests_test_responsive_layouts"
     },
     {
       "relation": "method",
@@ -2739,9 +2804,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L146",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_webtests",
-      "target": "web_test_web_webtests_test_simulation_completion_logs_and_dates",
-      "confidence_score": 1.0
+      "target": "web_test_web_webtests_test_simulation_completion_logs_and_dates"
     },
     {
       "relation": "method",
@@ -2749,9 +2814,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L184",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_webtests",
-      "target": "web_test_web_webtests_test_storage_denied_and_quota_atomicity",
-      "confidence_score": 1.0
+      "target": "web_test_web_webtests_test_storage_denied_and_quota_atomicity"
     },
     {
       "relation": "method",
@@ -2759,9 +2824,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L170",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_webtests",
-      "target": "web_test_web_webtests_test_weather_and_network_failure",
-      "confidence_score": 1.0
+      "target": "web_test_web_webtests_test_weather_and_network_failure"
     },
     {
       "relation": "calls",
@@ -2770,7 +2835,18 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_webtests_test_adventures_and_keyboard",
+      "target": "web_test_web_webtests_hub"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/web/test_web.py",
+      "source_location": "L222",
+      "weight": 1.0,
+      "source": "web_test_web_webtests_test_included_audio_offline_ranges_and_restore",
       "target": "web_test_web_webtests_hub",
       "confidence_score": 1.0
     },
@@ -2781,9 +2857,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L210",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_webtests_test_offline_shell",
-      "target": "web_test_web_webtests_hub",
-      "confidence_score": 1.0
+      "target": "web_test_web_webtests_hub"
     },
     {
       "relation": "calls",
@@ -2792,9 +2868,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L110",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_webtests_test_persistence_audio_and_stopped_restart",
-      "target": "web_test_web_webtests_hub",
-      "confidence_score": 1.0
+      "target": "web_test_web_webtests_hub"
     },
     {
       "relation": "calls",
@@ -2803,9 +2879,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L147",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_webtests_test_simulation_completion_logs_and_dates",
-      "target": "web_test_web_webtests_hub",
-      "confidence_score": 1.0
+      "target": "web_test_web_webtests_hub"
     },
     {
       "relation": "calls",
@@ -2814,9 +2890,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L185",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_webtests_test_storage_denied_and_quota_atomicity",
-      "target": "web_test_web_webtests_hub",
-      "confidence_score": 1.0
+      "target": "web_test_web_webtests_hub"
     },
     {
       "relation": "calls",
@@ -2825,9 +2901,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L173",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_webtests_test_weather_and_network_failure",
-      "target": "web_test_web_webtests_hub",
-      "confidence_score": 1.0
+      "target": "web_test_web_webtests_hub"
     },
     {
       "relation": "contains",
@@ -2845,9 +2921,9 @@
       "source_file": "web/app.js",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_action",
-      "confidence_score": 1.0
+      "target": "web_app_action"
     },
     {
       "relation": "contains",
@@ -2855,9 +2931,9 @@
       "source_file": "web/app.js",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_ambience",
-      "confidence_score": 1.0
+      "target": "web_app_ambience"
     },
     {
       "relation": "calls",
@@ -2866,9 +2942,9 @@
       "source_location": "L135",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "web_app_ambientcontrol",
-      "target": "web_app",
-      "confidence_score": 1.0
+      "target": "web_app"
     },
     {
       "relation": "contains",
@@ -2876,9 +2952,9 @@
       "source_file": "web/app.js",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_ambientshuffle",
-      "confidence_score": 1.0
+      "target": "web_app_ambientshuffle"
     },
     {
       "relation": "contains",
@@ -2886,9 +2962,9 @@
       "source_file": "web/app.js",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_api",
-      "confidence_score": 1.0
+      "target": "web_app_api"
     },
     {
       "relation": "calls",
@@ -2897,9 +2973,9 @@
       "source_location": "L96",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "web_app_changeface",
-      "target": "web_app",
-      "confidence_score": 1.0
+      "target": "web_app"
     },
     {
       "relation": "contains",
@@ -2907,9 +2983,9 @@
       "source_file": "web/app.js",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_cue",
-      "confidence_score": 1.0
+      "target": "web_app_cue"
     },
     {
       "relation": "contains",
@@ -2917,9 +2993,9 @@
       "source_file": "web/app.js",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_effect",
-      "confidence_score": 1.0
+      "target": "web_app_effect"
     },
     {
       "relation": "contains",
@@ -2927,9 +3003,9 @@
       "source_file": "web/app.js",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_expressions",
-      "confidence_score": 1.0
+      "target": "web_app_expressions"
     },
     {
       "relation": "calls",
@@ -2938,9 +3014,9 @@
       "source_location": "L255",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "web_app_fillsettings",
-      "target": "web_app",
-      "confidence_score": 1.0
+      "target": "web_app"
     },
     {
       "relation": "contains",
@@ -2948,9 +3024,9 @@
       "source_file": "web/app.js",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_introresume",
-      "confidence_score": 1.0
+      "target": "web_app_introresume"
     },
     {
       "relation": "contains",
@@ -2958,9 +3034,9 @@
       "source_file": "web/app.js",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_lastrotation",
-      "confidence_score": 1.0
+      "target": "web_app_lastrotation"
     },
     {
       "relation": "calls",
@@ -2969,9 +3045,9 @@
       "source_location": "L129",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "web_app_muteaudio",
-      "target": "web_app",
-      "confidence_score": 1.0
+      "target": "web_app"
     },
     {
       "relation": "contains",
@@ -2979,9 +3055,9 @@
       "source_file": "web/app.js",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_navigate",
-      "confidence_score": 1.0
+      "target": "web_app_navigate"
     },
     {
       "relation": "contains",
@@ -2989,9 +3065,9 @@
       "source_file": "web/app.js",
       "source_location": "L139",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_nextambienteffect",
-      "confidence_score": 1.0
+      "target": "web_app_nextambienteffect"
     },
     {
       "relation": "contains",
@@ -2999,9 +3075,9 @@
       "source_file": "web/app.js",
       "source_location": "L198",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_nexttrackindex",
-      "confidence_score": 1.0
+      "target": "web_app_nexttrackindex"
     },
     {
       "relation": "calls",
@@ -3010,9 +3086,9 @@
       "source_location": "L78",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "web_app_opendialog",
-      "target": "web_app",
-      "confidence_score": 1.0
+      "target": "web_app"
     },
     {
       "relation": "contains",
@@ -3020,9 +3096,9 @@
       "source_file": "web/app.js",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_player",
-      "confidence_score": 1.0
+      "target": "web_app_player"
     },
     {
       "relation": "contains",
@@ -3030,9 +3106,9 @@
       "source_file": "web/app.js",
       "source_location": "L165",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_playrandomcue",
-      "confidence_score": 1.0
+      "target": "web_app_playrandomcue"
     },
     {
       "relation": "calls",
@@ -3041,9 +3117,9 @@
       "source_location": "L234",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "web_app_playscene",
-      "target": "web_app",
-      "confidence_score": 1.0
+      "target": "web_app"
     },
     {
       "relation": "calls",
@@ -3052,9 +3128,9 @@
       "source_location": "L210",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "web_app_playtrack",
-      "target": "web_app",
-      "confidence_score": 1.0
+      "target": "web_app"
     },
     {
       "relation": "contains",
@@ -3062,9 +3138,9 @@
       "source_file": "web/app.js",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_recipes",
-      "confidence_score": 1.0
+      "target": "web_app_recipes"
     },
     {
       "relation": "calls",
@@ -3073,9 +3149,9 @@
       "source_location": "L377",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "web_app_render",
-      "target": "web_app",
-      "confidence_score": 1.0
+      "target": "web_app"
     },
     {
       "relation": "calls",
@@ -3084,9 +3160,9 @@
       "source_location": "L365",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "web_app_rendercountdown",
-      "target": "web_app",
-      "confidence_score": 1.0
+      "target": "web_app"
     },
     {
       "relation": "calls",
@@ -3095,9 +3171,9 @@
       "source_location": "L186",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "web_app_rendereffects",
-      "target": "web_app",
-      "confidence_score": 1.0
+      "target": "web_app"
     },
     {
       "relation": "contains",
@@ -3105,9 +3181,9 @@
       "source_file": "web/app.js",
       "source_location": "L319",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_renderlogrows",
-      "confidence_score": 1.0
+      "target": "web_app_renderlogrows"
     },
     {
       "relation": "calls",
@@ -3116,9 +3192,9 @@
       "source_location": "L331",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "web_app_renderlogs",
-      "target": "web_app",
-      "confidence_score": 1.0
+      "target": "web_app"
     },
     {
       "relation": "calls",
@@ -3127,9 +3203,9 @@
       "source_location": "L287",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "web_app_renderrecords",
-      "target": "web_app",
-      "confidence_score": 1.0
+      "target": "web_app"
     },
     {
       "relation": "calls",
@@ -3138,9 +3214,9 @@
       "source_location": "L309",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "web_app_rendertracks",
-      "target": "web_app",
-      "confidence_score": 1.0
+      "target": "web_app"
     },
     {
       "relation": "calls",
@@ -3149,9 +3225,9 @@
       "source_location": "L336",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "web_app_renderweather",
-      "target": "web_app",
-      "confidence_score": 1.0
+      "target": "web_app"
     },
     {
       "relation": "contains",
@@ -3159,9 +3235,9 @@
       "source_file": "web/app.js",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_sceneplayer",
-      "confidence_score": 1.0
+      "target": "web_app_sceneplayer"
     },
     {
       "relation": "contains",
@@ -3169,9 +3245,9 @@
       "source_file": "web/app.js",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_screens",
-      "confidence_score": 1.0
+      "target": "web_app_screens"
     },
     {
       "relation": "calls",
@@ -3180,9 +3256,9 @@
       "source_location": "L21",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "web_app_showscene",
-      "target": "web_app",
-      "confidence_score": 1.0
+      "target": "web_app"
     },
     {
       "relation": "calls",
@@ -3191,9 +3267,9 @@
       "source_location": "L155",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "web_app_startequalizer",
-      "target": "web_app",
-      "confidence_score": 1.0
+      "target": "web_app"
     },
     {
       "relation": "contains",
@@ -3201,9 +3277,9 @@
       "source_file": "web/app.js",
       "source_location": "L138",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_stopambience",
-      "confidence_score": 1.0
+      "target": "web_app_stopambience"
     },
     {
       "relation": "contains",
@@ -3211,9 +3287,9 @@
       "source_file": "web/app.js",
       "source_location": "L164",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_stopcues",
-      "confidence_score": 1.0
+      "target": "web_app_stopcues"
     },
     {
       "relation": "contains",
@@ -3221,9 +3297,9 @@
       "source_file": "web/app.js",
       "source_location": "L240",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_stopscene",
-      "confidence_score": 1.0
+      "target": "web_app_stopscene"
     },
     {
       "relation": "calls",
@@ -3232,9 +3308,9 @@
       "source_location": "L437",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "web_app_sync",
-      "target": "web_app",
-      "confidence_score": 1.0
+      "target": "web_app"
     },
     {
       "relation": "contains",
@@ -3242,9 +3318,9 @@
       "source_file": "web/app.js",
       "source_location": "L332",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_temperature",
-      "confidence_score": 1.0
+      "target": "web_app_temperature"
     },
     {
       "relation": "calls",
@@ -3253,9 +3329,9 @@
       "source_location": "L57",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "web_app_toast",
-      "target": "web_app",
-      "confidence_score": 1.0
+      "target": "web_app"
     },
     {
       "relation": "calls",
@@ -3264,9 +3340,9 @@
       "source_location": "L40",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "web_app_triggervisitor",
-      "target": "web_app",
-      "confidence_score": 1.0
+      "target": "web_app"
     },
     {
       "relation": "calls",
@@ -3275,9 +3351,9 @@
       "source_location": "L113",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "web_app_unlockaudio",
-      "target": "web_app",
-      "confidence_score": 1.0
+      "target": "web_app"
     },
     {
       "relation": "contains",
@@ -3285,9 +3361,9 @@
       "source_file": "web/app.js",
       "source_location": "L117",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_updatevolume",
-      "confidence_score": 1.0
+      "target": "web_app_updatevolume"
     },
     {
       "relation": "contains",
@@ -3295,9 +3371,9 @@
       "source_file": "web/app.js",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_visitor",
-      "confidence_score": 1.0
+      "target": "web_app_visitor"
     },
     {
       "relation": "contains",
@@ -3305,9 +3381,9 @@
       "source_file": "web/app.js",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_app_welcomeatmosphere",
-      "confidence_score": 1.0
+      "target": "web_app_welcomeatmosphere"
     },
     {
       "relation": "imports_from",
@@ -3316,9 +3392,9 @@
       "source_file": "web/app.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_browser_service",
-      "confidence_score": 1.0
+      "target": "web_browser_service"
     },
     {
       "relation": "imports",
@@ -3327,9 +3403,9 @@
       "source_file": "web/app.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_browser_service_hub",
-      "confidence_score": 1.0
+      "target": "web_browser_service_hub"
     },
     {
       "relation": "imports",
@@ -3338,9 +3414,9 @@
       "source_file": "web/app.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_browser_service_mediaurl",
-      "confidence_score": 1.0
+      "target": "web_browser_service_mediaurl"
     },
     {
       "relation": "imports_from",
@@ -3349,9 +3425,9 @@
       "source_file": "web/app.js",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_effect_shuffle",
-      "confidence_score": 1.0
+      "target": "web_effect_shuffle"
     },
     {
       "relation": "imports",
@@ -3360,9 +3436,9 @@
       "source_file": "web/app.js",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_effect_shuffle_effectshuffle",
-      "confidence_score": 1.0
+      "target": "web_effect_shuffle_effectshuffle"
     },
     {
       "relation": "imports_from",
@@ -3371,9 +3447,9 @@
       "source_file": "web/app.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_scene_player",
-      "confidence_score": 1.0
+      "target": "web_scene_player"
     },
     {
       "relation": "imports",
@@ -3382,9 +3458,9 @@
       "source_file": "web/app.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_scene_player_sceneplayer",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer"
     },
     {
       "relation": "imports_from",
@@ -3393,9 +3469,9 @@
       "source_file": "web/app.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_visitor",
-      "confidence_score": 1.0
+      "target": "web_visitor"
     },
     {
       "relation": "imports",
@@ -3404,9 +3480,9 @@
       "source_file": "web/app.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_visitor_visitor",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor"
     },
     {
       "relation": "imports_from",
@@ -3415,9 +3491,9 @@
       "source_file": "web/app.js",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_welcome_atmosphere",
-      "confidence_score": 1.0
+      "target": "web_welcome_atmosphere"
     },
     {
       "relation": "imports",
@@ -3426,9 +3502,9 @@
       "source_file": "web/app.js",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_welcome_atmosphere_welcomeatmosphere",
-      "confidence_score": 1.0
+      "target": "web_welcome_atmosphere_welcomeatmosphere"
     },
     {
       "relation": "imports_from",
@@ -3437,9 +3513,9 @@
       "source_file": "web/app.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_welcome_chrome",
-      "confidence_score": 1.0
+      "target": "web_welcome_chrome"
     },
     {
       "relation": "imports",
@@ -3448,9 +3524,9 @@
       "source_file": "web/app.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app",
-      "target": "web_welcome_chrome_setupwelcomechrome",
-      "confidence_score": 1.0
+      "target": "web_welcome_chrome_setupwelcomechrome"
     },
     {
       "relation": "calls",
@@ -3459,9 +3535,9 @@
       "source_file": "web/app.js",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_triggervisitor",
-      "target": "web_app_action",
-      "confidence_score": 1.0
+      "target": "web_app_action"
     },
     {
       "relation": "calls",
@@ -3470,9 +3546,9 @@
       "source_file": "web/app.js",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_triggervisitor",
-      "target": "web_app_unlockaudio",
-      "confidence_score": 1.0
+      "target": "web_app_unlockaudio"
     },
     {
       "relation": "calls",
@@ -3481,9 +3557,9 @@
       "source_file": "web/app.js",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_action",
-      "target": "web_app_toast",
-      "confidence_score": 1.0
+      "target": "web_app_toast"
     },
     {
       "relation": "calls",
@@ -3492,9 +3568,9 @@
       "source_file": "web/app.js",
       "source_location": "L142",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_nextambienteffect",
-      "target": "web_app_toast",
-      "confidence_score": 1.0
+      "target": "web_app_toast"
     },
     {
       "relation": "calls",
@@ -3503,9 +3579,9 @@
       "source_file": "web/app.js",
       "source_location": "L439",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_sync",
-      "target": "web_app_toast",
-      "confidence_score": 1.0
+      "target": "web_app_toast"
     },
     {
       "relation": "calls",
@@ -3514,9 +3590,9 @@
       "source_file": "web/app.js",
       "source_location": "L436",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_sync",
-      "target": "web_app_api",
-      "confidence_score": 1.0
+      "target": "web_app_api"
     },
     {
       "relation": "calls",
@@ -3525,9 +3601,9 @@
       "source_file": "web/app.js",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_action",
-      "target": "web_app_render",
-      "confidence_score": 1.0
+      "target": "web_app_render"
     },
     {
       "relation": "calls",
@@ -3536,9 +3612,9 @@
       "source_file": "web/app.js",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_action",
-      "target": "web_app_sync",
-      "confidence_score": 1.0
+      "target": "web_app_sync"
     },
     {
       "relation": "calls",
@@ -3547,9 +3623,9 @@
       "source_file": "web/app.js",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_opendialog",
-      "target": "web_app_action",
-      "confidence_score": 1.0
+      "target": "web_app_action"
     },
     {
       "relation": "calls",
@@ -3558,9 +3634,9 @@
       "source_file": "web/app.js",
       "source_location": "L235",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_playscene",
-      "target": "web_app_action",
-      "confidence_score": 1.0
+      "target": "web_app_action"
     },
     {
       "relation": "calls",
@@ -3569,9 +3645,9 @@
       "source_file": "web/app.js",
       "source_location": "L244",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_stopscene",
-      "target": "web_app_action",
-      "confidence_score": 1.0
+      "target": "web_app_action"
     },
     {
       "relation": "calls",
@@ -3580,9 +3656,9 @@
       "source_file": "web/app.js",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_navigate",
-      "target": "web_app_startequalizer",
-      "confidence_score": 1.0
+      "target": "web_app_startequalizer"
     },
     {
       "relation": "calls",
@@ -3591,9 +3667,9 @@
       "source_file": "web/app.js",
       "source_location": "L402",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_render",
-      "target": "web_app_navigate",
-      "confidence_score": 1.0
+      "target": "web_app_navigate"
     },
     {
       "relation": "calls",
@@ -3602,9 +3678,9 @@
       "source_file": "web/app.js",
       "source_location": "L142",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_nextambienteffect",
-      "target": "web_app_opendialog",
-      "confidence_score": 1.0
+      "target": "web_app_opendialog"
     },
     {
       "relation": "calls",
@@ -3613,9 +3689,9 @@
       "source_file": "web/app.js",
       "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_opendialog",
-      "target": "web_app_fillsettings",
-      "confidence_score": 1.0
+      "target": "web_app_fillsettings"
     },
     {
       "relation": "calls",
@@ -3624,9 +3700,9 @@
       "source_file": "web/app.js",
       "source_location": "L206",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_playtrack",
-      "target": "web_app_opendialog",
-      "confidence_score": 1.0
+      "target": "web_app_opendialog"
     },
     {
       "relation": "calls",
@@ -3635,9 +3711,9 @@
       "source_file": "web/app.js",
       "source_location": "L233",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_playscene",
-      "target": "web_app_unlockaudio",
-      "confidence_score": 1.0
+      "target": "web_app_unlockaudio"
     },
     {
       "relation": "calls",
@@ -3646,9 +3722,9 @@
       "source_file": "web/app.js",
       "source_location": "L207",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_playtrack",
-      "target": "web_app_unlockaudio",
-      "confidence_score": 1.0
+      "target": "web_app_unlockaudio"
     },
     {
       "relation": "calls",
@@ -3657,9 +3733,9 @@
       "source_file": "web/app.js",
       "source_location": "L115",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_unlockaudio",
-      "target": "web_app_startequalizer",
-      "confidence_score": 1.0
+      "target": "web_app_startequalizer"
     },
     {
       "relation": "calls",
@@ -3668,9 +3744,9 @@
       "source_file": "web/app.js",
       "source_location": "L114",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_unlockaudio",
-      "target": "web_app_updatevolume",
-      "confidence_score": 1.0
+      "target": "web_app_updatevolume"
     },
     {
       "relation": "calls",
@@ -3679,9 +3755,9 @@
       "source_file": "web/app.js",
       "source_location": "L378",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_render",
-      "target": "web_app_updatevolume",
-      "confidence_score": 1.0
+      "target": "web_app_updatevolume"
     },
     {
       "relation": "calls",
@@ -3690,9 +3766,9 @@
       "source_file": "web/app.js",
       "source_location": "L125",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_muteaudio",
-      "target": "web_app_stopambience",
-      "confidence_score": 1.0
+      "target": "web_app_stopambience"
     },
     {
       "relation": "calls",
@@ -3701,9 +3777,9 @@
       "source_file": "web/app.js",
       "source_location": "L125",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_muteaudio",
-      "target": "web_app_stopcues",
-      "confidence_score": 1.0
+      "target": "web_app_stopcues"
     },
     {
       "relation": "calls",
@@ -3712,9 +3788,9 @@
       "source_file": "web/app.js",
       "source_location": "L138",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_stopambience",
-      "target": "web_app_ambientcontrol",
-      "confidence_score": 1.0
+      "target": "web_app_ambientcontrol"
     },
     {
       "relation": "calls",
@@ -3723,9 +3799,9 @@
       "source_file": "web/app.js",
       "source_location": "L142",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_nextambienteffect",
-      "target": "web_app_stopambience",
-      "confidence_score": 1.0
+      "target": "web_app_stopambience"
     },
     {
       "relation": "calls",
@@ -3734,9 +3810,9 @@
       "source_file": "web/app.js",
       "source_location": "L144",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_nextambienteffect",
-      "target": "web_browser_service_mediaurl",
-      "confidence_score": 1.0
+      "target": "web_browser_service_mediaurl"
     },
     {
       "relation": "calls",
@@ -3745,9 +3821,9 @@
       "source_file": "web/app.js",
       "source_location": "L419",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_render",
-      "target": "web_app_stopcues",
-      "confidence_score": 1.0
+      "target": "web_app_stopcues"
     },
     {
       "relation": "calls",
@@ -3756,9 +3832,9 @@
       "source_file": "web/app.js",
       "source_location": "L241",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_stopscene",
-      "target": "web_app_stopcues",
-      "confidence_score": 1.0
+      "target": "web_app_stopcues"
     },
     {
       "relation": "calls",
@@ -3767,9 +3843,9 @@
       "source_file": "web/app.js",
       "source_location": "L171",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_playrandomcue",
-      "target": "web_browser_service_mediaurl",
-      "confidence_score": 1.0
+      "target": "web_browser_service_mediaurl"
     },
     {
       "relation": "calls",
@@ -3778,9 +3854,9 @@
       "source_file": "web/app.js",
       "source_location": "L420",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_render",
-      "target": "web_app_playrandomcue",
-      "confidence_score": 1.0
+      "target": "web_app_playrandomcue"
     },
     {
       "relation": "calls",
@@ -3789,9 +3865,9 @@
       "source_file": "web/app.js",
       "source_location": "L192",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_rendereffects",
-      "target": "web_browser_service_mediaurl",
-      "confidence_score": 1.0
+      "target": "web_browser_service_mediaurl"
     },
     {
       "relation": "calls",
@@ -3800,9 +3876,9 @@
       "source_file": "web/app.js",
       "source_location": "L209",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_playtrack",
-      "target": "web_browser_service_mediaurl",
-      "confidence_score": 1.0
+      "target": "web_browser_service_mediaurl"
     },
     {
       "relation": "calls",
@@ -3811,9 +3887,9 @@
       "source_file": "web/app.js",
       "source_location": "L331",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_renderlogs",
-      "target": "web_app_renderlogrows",
-      "confidence_score": 1.0
+      "target": "web_app_renderlogrows"
     },
     {
       "relation": "calls",
@@ -3822,9 +3898,9 @@
       "source_file": "web/app.js",
       "source_location": "L426",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_render",
-      "target": "web_app_temperature",
-      "confidence_score": 1.0
+      "target": "web_app_temperature"
     },
     {
       "relation": "calls",
@@ -3833,9 +3909,9 @@
       "source_file": "web/app.js",
       "source_location": "L344",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_renderweather",
-      "target": "web_app_temperature",
-      "confidence_score": 1.0
+      "target": "web_app_temperature"
     },
     {
       "relation": "calls",
@@ -3844,9 +3920,9 @@
       "source_file": "web/app.js",
       "source_location": "L388",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_render",
-      "target": "web_app_renderweather",
-      "confidence_score": 1.0
+      "target": "web_app_renderweather"
     },
     {
       "relation": "calls",
@@ -3855,9 +3931,9 @@
       "source_file": "web/app.js",
       "source_location": "L388",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_render",
-      "target": "web_app_rendercountdown",
-      "confidence_score": 1.0
+      "target": "web_app_rendercountdown"
     },
     {
       "relation": "calls",
@@ -3866,9 +3942,9 @@
       "source_file": "web/app.js",
       "source_location": "L436",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_app_sync",
-      "target": "web_app_render",
-      "confidence_score": 1.0
+      "target": "web_app_render"
     },
     {
       "relation": "calls",
@@ -3884,12 +3960,44 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "web/audio-manifest.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "web_audio_manifest",
+      "target": "web_audio_manifest_bundled_audio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/browser-service.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "web_browser_service",
+      "target": "web_audio_manifest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/browser-service.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "web_browser_service",
+      "target": "web_audio_manifest_bundled_audio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "web/background-rotation.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_background_rotation",
-      "target": "web_background_rotation_backgroundrotation",
-      "confidence_score": 1.0
+      "target": "web_background_rotation_backgroundrotation"
     },
     {
       "relation": "imports_from",
@@ -3898,9 +4006,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere",
-      "target": "web_background_rotation",
-      "confidence_score": 1.0
+      "target": "web_background_rotation"
     },
     {
       "relation": "method",
@@ -3908,9 +4016,9 @@
       "source_file": "web/background-rotation.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_background_rotation_backgroundrotation",
-      "target": "web_background_rotation_backgroundrotation_configure",
-      "confidence_score": 1.0
+      "target": "web_background_rotation_backgroundrotation_configure"
     },
     {
       "relation": "method",
@@ -3918,9 +4026,9 @@
       "source_file": "web/background-rotation.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_background_rotation_backgroundrotation",
-      "target": "web_background_rotation_backgroundrotation_constructor",
-      "confidence_score": 1.0
+      "target": "web_background_rotation_backgroundrotation_constructor"
     },
     {
       "relation": "method",
@@ -3928,9 +4036,9 @@
       "source_file": "web/background-rotation.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_background_rotation_backgroundrotation",
-      "target": "web_background_rotation_backgroundrotation_draw",
-      "confidence_score": 1.0
+      "target": "web_background_rotation_backgroundrotation_draw"
     },
     {
       "relation": "imports",
@@ -3939,9 +4047,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere",
-      "target": "web_background_rotation_backgroundrotation",
-      "confidence_score": 1.0
+      "target": "web_background_rotation_backgroundrotation"
     },
     {
       "relation": "contains",
@@ -3949,9 +4057,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service",
-      "target": "web_browser_service_browserhub",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub"
     },
     {
       "relation": "contains",
@@ -3959,9 +4067,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service",
-      "target": "web_browser_service_clone",
-      "confidence_score": 1.0
+      "target": "web_browser_service_clone"
     },
     {
       "relation": "contains",
@@ -3969,9 +4077,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service",
-      "target": "web_browser_service_countdown",
-      "confidence_score": 1.0
+      "target": "web_browser_service_countdown"
     },
     {
       "relation": "contains",
@@ -3979,9 +4087,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service",
-      "target": "web_browser_service_defaults",
-      "confidence_score": 1.0
+      "target": "web_browser_service_defaults"
     },
     {
       "relation": "contains",
@@ -3989,9 +4097,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service",
-      "target": "web_browser_service_formatters",
-      "confidence_score": 1.0
+      "target": "web_browser_service_formatters"
     },
     {
       "relation": "contains",
@@ -3999,9 +4107,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L282",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service",
-      "target": "web_browser_service_hub",
-      "confidence_score": 1.0
+      "target": "web_browser_service_hub"
     },
     {
       "relation": "contains",
@@ -4009,9 +4117,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L283",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service",
-      "target": "web_browser_service_mediaurl",
-      "confidence_score": 1.0
+      "target": "web_browser_service_mediaurl"
     },
     {
       "relation": "contains",
@@ -4019,9 +4127,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service",
-      "target": "web_browser_service_parseparty",
-      "confidence_score": 1.0
+      "target": "web_browser_service_parseparty"
     },
     {
       "relation": "contains",
@@ -4029,9 +4137,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service",
-      "target": "web_browser_service_parts",
-      "confidence_score": 1.0
+      "target": "web_browser_service_parts"
     },
     {
       "relation": "contains",
@@ -4039,9 +4147,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service",
-      "target": "web_browser_service_pick",
-      "confidence_score": 1.0
+      "target": "web_browser_service_pick"
     },
     {
       "relation": "contains",
@@ -4049,9 +4157,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service",
-      "target": "web_browser_service_rooms",
-      "confidence_score": 1.0
+      "target": "web_browser_service_rooms"
     },
     {
       "relation": "contains",
@@ -4059,9 +4167,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service",
-      "target": "web_browser_service_zonedepoch",
-      "confidence_score": 1.0
+      "target": "web_browser_service_zonedepoch"
     },
     {
       "relation": "imports_from",
@@ -4070,9 +4178,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service",
-      "target": "web_media_manifest",
-      "confidence_score": 1.0
+      "target": "web_media_manifest"
     },
     {
       "relation": "imports",
@@ -4081,9 +4189,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service",
-      "target": "web_media_manifest_media",
-      "confidence_score": 1.0
+      "target": "web_media_manifest_media"
     },
     {
       "relation": "imports_from",
@@ -4092,9 +4200,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service",
-      "target": "web_scenes",
-      "confidence_score": 1.0
+      "target": "web_scenes"
     },
     {
       "relation": "imports",
@@ -4103,9 +4211,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service",
-      "target": "web_scenes_scenes",
-      "confidence_score": 1.0
+      "target": "web_scenes_scenes"
     },
     {
       "relation": "calls",
@@ -4114,9 +4222,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L146",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_command",
-      "target": "web_browser_service_clone",
-      "confidence_score": 1.0
+      "target": "web_browser_service_clone"
     },
     {
       "relation": "calls",
@@ -4125,9 +4233,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_constructor",
-      "target": "web_browser_service_clone",
-      "confidence_score": 1.0
+      "target": "web_browser_service_clone"
     },
     {
       "relation": "calls",
@@ -4136,9 +4244,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_encounter",
-      "target": "web_browser_service_clone",
-      "confidence_score": 1.0
+      "target": "web_browser_service_clone"
     },
     {
       "relation": "calls",
@@ -4147,9 +4255,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L244",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_request",
-      "target": "web_browser_service_clone",
-      "confidence_score": 1.0
+      "target": "web_browser_service_clone"
     },
     {
       "relation": "calls",
@@ -4158,9 +4266,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L106",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_save",
-      "target": "web_browser_service_clone",
-      "confidence_score": 1.0
+      "target": "web_browser_service_clone"
     },
     {
       "relation": "calls",
@@ -4169,9 +4277,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L121",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_settings",
-      "target": "web_browser_service_clone",
-      "confidence_score": 1.0
+      "target": "web_browser_service_clone"
     },
     {
       "relation": "calls",
@@ -4180,9 +4288,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L229",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_snapshot",
-      "target": "web_browser_service_clone",
-      "confidence_score": 1.0
+      "target": "web_browser_service_clone"
     },
     {
       "relation": "calls",
@@ -4191,9 +4299,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L203",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_weather",
-      "target": "web_browser_service_clone",
-      "confidence_score": 1.0
+      "target": "web_browser_service_clone"
     },
     {
       "relation": "calls",
@@ -4202,9 +4310,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L128",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_command",
-      "target": "web_browser_service_pick",
-      "confidence_score": 1.0
+      "target": "web_browser_service_pick"
     },
     {
       "relation": "calls",
@@ -4213,9 +4321,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L179",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_tick",
-      "target": "web_browser_service_pick",
-      "confidence_score": 1.0
+      "target": "web_browser_service_pick"
     },
     {
       "relation": "calls",
@@ -4224,9 +4332,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L116",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_settings",
-      "target": "web_browser_service_parts",
-      "confidence_score": 1.0
+      "target": "web_browser_service_parts"
     },
     {
       "relation": "calls",
@@ -4235,9 +4343,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_countdown",
-      "target": "web_browser_service_parts",
-      "confidence_score": 1.0
+      "target": "web_browser_service_parts"
     },
     {
       "relation": "calls",
@@ -4246,9 +4354,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_zonedepoch",
-      "target": "web_browser_service_parts",
-      "confidence_score": 1.0
+      "target": "web_browser_service_parts"
     },
     {
       "relation": "calls",
@@ -4257,9 +4365,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L118",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_settings",
-      "target": "web_browser_service_zonedepoch",
-      "confidence_score": 1.0
+      "target": "web_browser_service_zonedepoch"
     },
     {
       "relation": "calls",
@@ -4268,9 +4376,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_countdown",
-      "target": "web_browser_service_zonedepoch",
-      "confidence_score": 1.0
+      "target": "web_browser_service_zonedepoch"
     },
     {
       "relation": "calls",
@@ -4279,9 +4387,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L118",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_settings",
-      "target": "web_browser_service_parseparty",
-      "confidence_score": 1.0
+      "target": "web_browser_service_parseparty"
     },
     {
       "relation": "calls",
@@ -4290,9 +4398,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_countdown",
-      "target": "web_browser_service_parseparty",
-      "confidence_score": 1.0
+      "target": "web_browser_service_parseparty"
     },
     {
       "relation": "calls",
@@ -4301,9 +4409,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L232",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_snapshot",
-      "target": "web_browser_service_countdown",
-      "confidence_score": 1.0
+      "target": "web_browser_service_countdown"
     },
     {
       "relation": "method",
@@ -4311,9 +4419,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L123",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub",
-      "target": "web_browser_service_browserhub_command",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_command"
     },
     {
       "relation": "method",
@@ -4321,9 +4429,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub",
-      "target": "web_browser_service_browserhub_constructor",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_constructor"
     },
     {
       "relation": "method",
@@ -4331,9 +4439,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L159",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub",
-      "target": "web_browser_service_browserhub_encounter",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_encounter"
     },
     {
       "relation": "method",
@@ -4341,9 +4449,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L275",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub",
-      "target": "web_browser_service_browserhub_exportlogs",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_exportlogs"
     },
     {
       "relation": "method",
@@ -4351,9 +4459,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L184",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub",
-      "target": "web_browser_service_browserhub_fetchjson",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_fetchjson"
     },
     {
       "relation": "method",
@@ -4361,9 +4469,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L212",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub",
-      "target": "web_browser_service_browserhub_importaudio",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_importaudio"
     },
     {
       "relation": "method",
@@ -4371,9 +4479,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L205",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub",
-      "target": "web_browser_service_browserhub_locations",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_locations"
     },
     {
       "relation": "method",
@@ -4381,9 +4489,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub",
-      "target": "web_browser_service_browserhub_open",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_open"
     },
     {
       "relation": "method",
@@ -4391,9 +4499,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub",
-      "target": "web_browser_service_browserhub_read",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_read"
     },
     {
       "relation": "method",
@@ -4401,9 +4509,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L222",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub",
-      "target": "web_browser_service_browserhub_removeaudio",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_removeaudio"
     },
     {
       "relation": "method",
@@ -4411,9 +4519,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L236",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub",
-      "target": "web_browser_service_browserhub_request",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_request"
     },
     {
       "relation": "method",
@@ -4421,9 +4529,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L104",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub",
-      "target": "web_browser_service_browserhub_save",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_save"
     },
     {
       "relation": "method",
@@ -4431,9 +4539,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L108",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub",
-      "target": "web_browser_service_browserhub_settings",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_settings"
     },
     {
       "relation": "method",
@@ -4441,9 +4549,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L228",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub",
-      "target": "web_browser_service_browserhub_snapshot",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_snapshot"
     },
     {
       "relation": "method",
@@ -4451,9 +4559,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L148",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub",
-      "target": "web_browser_service_browserhub_stepscene",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_stepscene"
     },
     {
       "relation": "method",
@@ -4461,9 +4569,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L169",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub",
-      "target": "web_browser_service_browserhub_tick",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_tick"
     },
     {
       "relation": "method",
@@ -4471,9 +4579,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L189",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub",
-      "target": "web_browser_service_browserhub_weather",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_weather"
     },
     {
       "relation": "method",
@@ -4481,9 +4589,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L95",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub",
-      "target": "web_browser_service_browserhub_write",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_write"
     },
     {
       "relation": "calls",
@@ -4492,9 +4600,42 @@
       "source_file": "web/browser-service.js",
       "source_location": "L82",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_open",
-      "target": "web_browser_service_browserhub_read",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_read"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "web/browser-service.js",
+      "source_location": "L218",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "web_browser_service_browserhub_importaudio",
+      "target": "web_browser_service_browserhub_write"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "web/browser-service.js",
+      "source_location": "L224",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "web_browser_service_browserhub_removeaudio",
+      "target": "web_browser_service_browserhub_write"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "web/browser-service.js",
+      "source_location": "L105",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "web_browser_service_browserhub_save",
+      "target": "web_browser_service_browserhub_write"
     },
     {
       "relation": "calls",
@@ -4504,7 +4645,7 @@
       "source_location": "L218",
       "weight": 1.0,
       "source": "web_browser_service_browserhub_importaudio",
-      "target": "web_browser_service_browserhub_write",
+      "target": "web_browser_service_browserhub_save",
       "confidence_score": 1.0
     },
     {
@@ -4512,21 +4653,10 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "web/browser-service.js",
-      "source_location": "L224",
+      "source_location": "L230",
       "weight": 1.0,
       "source": "web_browser_service_browserhub_removeaudio",
-      "target": "web_browser_service_browserhub_write",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "web/browser-service.js",
-      "source_location": "L105",
-      "weight": 1.0,
-      "source": "web_browser_service_browserhub_save",
-      "target": "web_browser_service_browserhub_write",
+      "target": "web_browser_service_browserhub_save",
       "confidence_score": 1.0
     },
     {
@@ -4536,9 +4666,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L250",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_request",
-      "target": "web_browser_service_browserhub_save",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_save"
     },
     {
       "relation": "calls",
@@ -4547,9 +4677,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_settings",
-      "target": "web_browser_service_browserhub_save",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_save"
     },
     {
       "relation": "calls",
@@ -4558,9 +4688,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L180",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_tick",
-      "target": "web_browser_service_browserhub_save",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_save"
     },
     {
       "relation": "calls",
@@ -4569,9 +4699,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L239",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_request",
-      "target": "web_browser_service_browserhub_settings",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_settings"
     },
     {
       "relation": "calls",
@@ -4580,9 +4710,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L136",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_command",
-      "target": "web_browser_service_browserhub_stepscene",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_stepscene"
     },
     {
       "relation": "calls",
@@ -4591,9 +4721,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L240",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_request",
-      "target": "web_browser_service_browserhub_command",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_command"
     },
     {
       "relation": "calls",
@@ -4602,9 +4732,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L170",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_tick",
-      "target": "web_browser_service_browserhub_stepscene",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_stepscene"
     },
     {
       "relation": "calls",
@@ -4613,9 +4743,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L241",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_request",
-      "target": "web_browser_service_browserhub_encounter",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_encounter"
     },
     {
       "relation": "calls",
@@ -4624,9 +4754,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L238",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_request",
-      "target": "web_browser_service_browserhub_tick",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_tick"
     },
     {
       "relation": "calls",
@@ -4635,9 +4765,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L208",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_locations",
-      "target": "web_browser_service_browserhub_fetchjson",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_fetchjson"
     },
     {
       "relation": "calls",
@@ -4646,9 +4776,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L197",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_weather",
-      "target": "web_browser_service_browserhub_fetchjson",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_fetchjson"
     },
     {
       "relation": "calls",
@@ -4657,9 +4787,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L232",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_snapshot",
-      "target": "web_browser_service_browserhub_weather",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_weather"
     },
     {
       "relation": "calls",
@@ -4668,9 +4798,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L247",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_request",
-      "target": "web_browser_service_browserhub_locations",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_locations"
     },
     {
       "relation": "calls",
@@ -4679,9 +4809,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L271",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_request",
-      "target": "web_browser_service_browserhub_importaudio",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_importaudio"
     },
     {
       "relation": "calls",
@@ -4690,9 +4820,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L272",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_request",
-      "target": "web_browser_service_browserhub_removeaudio",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_removeaudio"
     },
     {
       "relation": "calls",
@@ -4701,9 +4831,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L238",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_request",
-      "target": "web_browser_service_browserhub_snapshot",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_snapshot"
     },
     {
       "relation": "contains",
@@ -4711,9 +4841,9 @@
       "source_file": "web/effect-shuffle.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_effect_shuffle",
-      "target": "web_effect_shuffle_effectshuffle",
-      "confidence_score": 1.0
+      "target": "web_effect_shuffle_effectshuffle"
     },
     {
       "relation": "method",
@@ -4721,9 +4851,9 @@
       "source_file": "web/effect-shuffle.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_effect_shuffle_effectshuffle",
-      "target": "web_effect_shuffle_effectshuffle_constructor",
-      "confidence_score": 1.0
+      "target": "web_effect_shuffle_effectshuffle_constructor"
     },
     {
       "relation": "method",
@@ -4731,9 +4861,9 @@
       "source_file": "web/effect-shuffle.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_effect_shuffle_effectshuffle",
-      "target": "web_effect_shuffle_effectshuffle_next",
-      "confidence_score": 1.0
+      "target": "web_effect_shuffle_effectshuffle_next"
     },
     {
       "relation": "contains",
@@ -4741,9 +4871,9 @@
       "source_file": "web/idle-background-video.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_idle_background_video",
-      "target": "web_idle_background_video_idlebackgroundvideo",
-      "confidence_score": 1.0
+      "target": "web_idle_background_video_idlebackgroundvideo"
     },
     {
       "relation": "imports_from",
@@ -4752,9 +4882,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere",
-      "target": "web_idle_background_video",
-      "confidence_score": 1.0
+      "target": "web_idle_background_video"
     },
     {
       "relation": "method",
@@ -4762,9 +4892,9 @@
       "source_file": "web/idle-background-video.js",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_idle_background_video_idlebackgroundvideo",
-      "target": "web_idle_background_video_idlebackgroundvideo_configure",
-      "confidence_score": 1.0
+      "target": "web_idle_background_video_idlebackgroundvideo_configure"
     },
     {
       "relation": "method",
@@ -4772,9 +4902,9 @@
       "source_file": "web/idle-background-video.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_idle_background_video_idlebackgroundvideo",
-      "target": "web_idle_background_video_idlebackgroundvideo_constructor",
-      "confidence_score": 1.0
+      "target": "web_idle_background_video_idlebackgroundvideo_constructor"
     },
     {
       "relation": "method",
@@ -4782,9 +4912,9 @@
       "source_file": "web/idle-background-video.js",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_idle_background_video_idlebackgroundvideo",
-      "target": "web_idle_background_video_idlebackgroundvideo_setallowed",
-      "confidence_score": 1.0
+      "target": "web_idle_background_video_idlebackgroundvideo_setallowed"
     },
     {
       "relation": "method",
@@ -4792,9 +4922,9 @@
       "source_file": "web/idle-background-video.js",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_idle_background_video_idlebackgroundvideo",
-      "target": "web_idle_background_video_idlebackgroundvideo_start",
-      "confidence_score": 1.0
+      "target": "web_idle_background_video_idlebackgroundvideo_start"
     },
     {
       "relation": "method",
@@ -4802,9 +4932,9 @@
       "source_file": "web/idle-background-video.js",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_idle_background_video_idlebackgroundvideo",
-      "target": "web_idle_background_video_idlebackgroundvideo_stop",
-      "confidence_score": 1.0
+      "target": "web_idle_background_video_idlebackgroundvideo_stop"
     },
     {
       "relation": "method",
@@ -4812,9 +4942,9 @@
       "source_file": "web/idle-background-video.js",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_idle_background_video_idlebackgroundvideo",
-      "target": "web_idle_background_video_idlebackgroundvideo_update",
-      "confidence_score": 1.0
+      "target": "web_idle_background_video_idlebackgroundvideo_update"
     },
     {
       "relation": "imports",
@@ -4823,9 +4953,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere",
-      "target": "web_idle_background_video_idlebackgroundvideo",
-      "confidence_score": 1.0
+      "target": "web_idle_background_video_idlebackgroundvideo"
     },
     {
       "relation": "calls",
@@ -4834,9 +4964,9 @@
       "source_file": "web/idle-background-video.js",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_idle_background_video_idlebackgroundvideo_configure",
-      "target": "web_idle_background_video_idlebackgroundvideo_stop",
-      "confidence_score": 1.0
+      "target": "web_idle_background_video_idlebackgroundvideo_stop"
     },
     {
       "relation": "calls",
@@ -4845,9 +4975,9 @@
       "source_file": "web/idle-background-video.js",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_idle_background_video_idlebackgroundvideo_setallowed",
-      "target": "web_idle_background_video_idlebackgroundvideo_stop",
-      "confidence_score": 1.0
+      "target": "web_idle_background_video_idlebackgroundvideo_stop"
     },
     {
       "relation": "calls",
@@ -4856,9 +4986,9 @@
       "source_file": "web/idle-background-video.js",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_idle_background_video_idlebackgroundvideo_update",
-      "target": "web_idle_background_video_idlebackgroundvideo_start",
-      "confidence_score": 1.0
+      "target": "web_idle_background_video_idlebackgroundvideo_start"
     },
     {
       "relation": "contains",
@@ -4866,9 +4996,9 @@
       "source_file": "web/media-manifest.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_media_manifest",
-      "target": "web_media_manifest_media",
-      "confidence_score": 1.0
+      "target": "web_media_manifest_media"
     },
     {
       "relation": "contains",
@@ -4876,9 +5006,9 @@
       "source_file": "web/night-weather.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_night_weather",
-      "target": "web_night_weather_nightweather",
-      "confidence_score": 1.0
+      "target": "web_night_weather_nightweather"
     },
     {
       "relation": "contains",
@@ -4886,9 +5016,9 @@
       "source_file": "web/night-weather.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_night_weather",
-      "target": "web_night_weather_random",
-      "confidence_score": 1.0
+      "target": "web_night_weather_random"
     },
     {
       "relation": "contains",
@@ -4896,9 +5026,9 @@
       "source_file": "web/night-weather.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_night_weather",
-      "target": "web_night_weather_smooth",
-      "confidence_score": 1.0
+      "target": "web_night_weather_smooth"
     },
     {
       "relation": "imports_from",
@@ -4907,9 +5037,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere",
-      "target": "web_night_weather",
-      "confidence_score": 1.0
+      "target": "web_night_weather"
     },
     {
       "relation": "calls",
@@ -4918,9 +5048,9 @@
       "source_file": "web/night-weather.js",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_night_weather_nightweather_change",
-      "target": "web_night_weather_random",
-      "confidence_score": 1.0
+      "target": "web_night_weather_random"
     },
     {
       "relation": "calls",
@@ -4929,9 +5059,9 @@
       "source_file": "web/night-weather.js",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_night_weather_nightweather_spawn",
-      "target": "web_night_weather_random",
-      "confidence_score": 1.0
+      "target": "web_night_weather_random"
     },
     {
       "relation": "calls",
@@ -4940,9 +5070,9 @@
       "source_file": "web/night-weather.js",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_night_weather_nightweather_advance",
-      "target": "web_night_weather_smooth",
-      "confidence_score": 1.0
+      "target": "web_night_weather_smooth"
     },
     {
       "relation": "calls",
@@ -4951,9 +5081,9 @@
       "source_file": "web/night-weather.js",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_night_weather_nightweather_draw",
-      "target": "web_night_weather_smooth",
-      "confidence_score": 1.0
+      "target": "web_night_weather_smooth"
     },
     {
       "relation": "method",
@@ -4961,9 +5091,9 @@
       "source_file": "web/night-weather.js",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_night_weather_nightweather",
-      "target": "web_night_weather_nightweather_advance",
-      "confidence_score": 1.0
+      "target": "web_night_weather_nightweather_advance"
     },
     {
       "relation": "method",
@@ -4971,9 +5101,9 @@
       "source_file": "web/night-weather.js",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_night_weather_nightweather",
-      "target": "web_night_weather_nightweather_change",
-      "confidence_score": 1.0
+      "target": "web_night_weather_nightweather_change"
     },
     {
       "relation": "method",
@@ -4981,9 +5111,9 @@
       "source_file": "web/night-weather.js",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_night_weather_nightweather",
-      "target": "web_night_weather_nightweather_constructor",
-      "confidence_score": 1.0
+      "target": "web_night_weather_nightweather_constructor"
     },
     {
       "relation": "method",
@@ -4991,9 +5121,9 @@
       "source_file": "web/night-weather.js",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_night_weather_nightweather",
-      "target": "web_night_weather_nightweather_describe",
-      "confidence_score": 1.0
+      "target": "web_night_weather_nightweather_describe"
     },
     {
       "relation": "method",
@@ -5001,9 +5131,9 @@
       "source_file": "web/night-weather.js",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_night_weather_nightweather",
-      "target": "web_night_weather_nightweather_draw",
-      "confidence_score": 1.0
+      "target": "web_night_weather_nightweather_draw"
     },
     {
       "relation": "method",
@@ -5011,9 +5141,9 @@
       "source_file": "web/night-weather.js",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_night_weather_nightweather",
-      "target": "web_night_weather_nightweather_leaf",
-      "confidence_score": 1.0
+      "target": "web_night_weather_nightweather_leaf"
     },
     {
       "relation": "method",
@@ -5021,9 +5151,9 @@
       "source_file": "web/night-weather.js",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_night_weather_nightweather",
-      "target": "web_night_weather_nightweather_spawn",
-      "confidence_score": 1.0
+      "target": "web_night_weather_nightweather_spawn"
     },
     {
       "relation": "method",
@@ -5031,9 +5161,9 @@
       "source_file": "web/night-weather.js",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_night_weather_nightweather",
-      "target": "web_night_weather_nightweather_winter",
-      "confidence_score": 1.0
+      "target": "web_night_weather_nightweather_winter"
     },
     {
       "relation": "imports",
@@ -5042,9 +5172,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere",
-      "target": "web_night_weather_nightweather",
-      "confidence_score": 1.0
+      "target": "web_night_weather_nightweather"
     },
     {
       "relation": "calls",
@@ -5053,9 +5183,9 @@
       "source_file": "web/night-weather.js",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_night_weather_nightweather_advance",
-      "target": "web_night_weather_nightweather_change",
-      "confidence_score": 1.0
+      "target": "web_night_weather_nightweather_change"
     },
     {
       "relation": "calls",
@@ -5064,9 +5194,9 @@
       "source_file": "web/night-weather.js",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_night_weather_nightweather_advance",
-      "target": "web_night_weather_nightweather_describe",
-      "confidence_score": 1.0
+      "target": "web_night_weather_nightweather_describe"
     },
     {
       "relation": "calls",
@@ -5075,9 +5205,9 @@
       "source_file": "web/night-weather.js",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_night_weather_nightweather_advance",
-      "target": "web_night_weather_nightweather_spawn",
-      "confidence_score": 1.0
+      "target": "web_night_weather_nightweather_spawn"
     },
     {
       "relation": "contains",
@@ -5085,9 +5215,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player",
-      "target": "web_scene_player_sceneplayer",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer"
     },
     {
       "relation": "method",
@@ -5095,9 +5225,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer",
-      "target": "web_scene_player_sceneplayer_backdrop",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_backdrop"
     },
     {
       "relation": "method",
@@ -5105,9 +5235,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer",
-      "target": "web_scene_player_sceneplayer_bat",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_bat"
     },
     {
       "relation": "method",
@@ -5115,9 +5245,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer",
-      "target": "web_scene_player_sceneplayer_buster",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_buster"
     },
     {
       "relation": "method",
@@ -5125,9 +5255,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer",
-      "target": "web_scene_player_sceneplayer_constructor",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_constructor"
     },
     {
       "relation": "method",
@@ -5135,9 +5265,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L151",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer",
-      "target": "web_scene_player_sceneplayer_draw",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_draw"
     },
     {
       "relation": "method",
@@ -5145,9 +5275,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer",
-      "target": "web_scene_player_sceneplayer_ghost",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_ghost"
     },
     {
       "relation": "method",
@@ -5155,9 +5285,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer",
-      "target": "web_scene_player_sceneplayer_glow",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_glow"
     },
     {
       "relation": "method",
@@ -5165,9 +5295,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L130",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer",
-      "target": "web_scene_player_sceneplayer_graveyard",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_graveyard"
     },
     {
       "relation": "method",
@@ -5175,9 +5305,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer",
-      "target": "web_scene_player_sceneplayer_pumpkin",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_pumpkin"
     },
     {
       "relation": "method",
@@ -5185,9 +5315,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer",
-      "target": "web_scene_player_sceneplayer_schedule",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_schedule"
     },
     {
       "relation": "method",
@@ -5195,9 +5325,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer",
-      "target": "web_scene_player_sceneplayer_show",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_show"
     },
     {
       "relation": "method",
@@ -5205,9 +5335,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L139",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer",
-      "target": "web_scene_player_sceneplayer_train",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_train"
     },
     {
       "relation": "method",
@@ -5215,9 +5345,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer",
-      "target": "web_scene_player_sceneplayer_update",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_update"
     },
     {
       "relation": "method",
@@ -5225,9 +5355,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer",
-      "target": "web_scene_player_sceneplayer_vampire",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_vampire"
     },
     {
       "relation": "method",
@@ -5235,9 +5365,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L119",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer",
-      "target": "web_scene_player_sceneplayer_witch",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_witch"
     },
     {
       "relation": "calls",
@@ -5246,9 +5376,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer_update",
-      "target": "web_scene_player_sceneplayer_schedule",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_schedule"
     },
     {
       "relation": "calls",
@@ -5257,9 +5387,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer_show",
-      "target": "web_scene_player_sceneplayer_schedule",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_schedule"
     },
     {
       "relation": "calls",
@@ -5268,9 +5398,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer_schedule",
-      "target": "web_scene_player_sceneplayer_draw",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_draw"
     },
     {
       "relation": "calls",
@@ -5279,9 +5409,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L117",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer_buster",
-      "target": "web_scene_player_sceneplayer_glow",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_glow"
     },
     {
       "relation": "calls",
@@ -5290,9 +5420,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L161",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer_draw",
-      "target": "web_scene_player_sceneplayer_glow",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_glow"
     },
     {
       "relation": "calls",
@@ -5301,9 +5431,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L141",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer_train",
-      "target": "web_scene_player_sceneplayer_glow",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_glow"
     },
     {
       "relation": "calls",
@@ -5312,9 +5442,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L121",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer_witch",
-      "target": "web_scene_player_sceneplayer_glow",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_glow"
     },
     {
       "relation": "calls",
@@ -5323,9 +5453,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L169",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer_draw",
-      "target": "web_scene_player_sceneplayer_bat",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_bat"
     },
     {
       "relation": "calls",
@@ -5334,9 +5464,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L107",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer_vampire",
-      "target": "web_scene_player_sceneplayer_bat",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_bat"
     },
     {
       "relation": "calls",
@@ -5345,9 +5475,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L111",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer_buster",
-      "target": "web_scene_player_sceneplayer_ghost",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_ghost"
     },
     {
       "relation": "calls",
@@ -5356,9 +5486,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L162",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer_draw",
-      "target": "web_scene_player_sceneplayer_ghost",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_ghost"
     },
     {
       "relation": "calls",
@@ -5367,9 +5497,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L137",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer_graveyard",
-      "target": "web_scene_player_sceneplayer_ghost",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_ghost"
     },
     {
       "relation": "calls",
@@ -5378,9 +5508,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L145",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer_train",
-      "target": "web_scene_player_sceneplayer_ghost",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_ghost"
     },
     {
       "relation": "calls",
@@ -5389,9 +5519,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L163",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer_draw",
-      "target": "web_scene_player_sceneplayer_pumpkin",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_pumpkin"
     },
     {
       "relation": "calls",
@@ -5400,9 +5530,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L157",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer_draw",
-      "target": "web_scene_player_sceneplayer_backdrop",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_backdrop"
     },
     {
       "relation": "calls",
@@ -5411,9 +5541,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L164",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer_draw",
-      "target": "web_scene_player_sceneplayer_vampire",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_vampire"
     },
     {
       "relation": "calls",
@@ -5422,9 +5552,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L165",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer_draw",
-      "target": "web_scene_player_sceneplayer_buster",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_buster"
     },
     {
       "relation": "calls",
@@ -5433,9 +5563,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L166",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer_draw",
-      "target": "web_scene_player_sceneplayer_witch",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_witch"
     },
     {
       "relation": "calls",
@@ -5444,9 +5574,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer_draw",
-      "target": "web_scene_player_sceneplayer_graveyard",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_graveyard"
     },
     {
       "relation": "calls",
@@ -5455,9 +5585,9 @@
       "source_file": "web/scene-player.js",
       "source_location": "L168",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scene_player_sceneplayer_draw",
-      "target": "web_scene_player_sceneplayer_train",
-      "confidence_score": 1.0
+      "target": "web_scene_player_sceneplayer_train"
     },
     {
       "relation": "contains",
@@ -5465,8 +5595,18 @@
       "source_file": "web/scenes.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_scenes",
-      "target": "web_scenes_scenes",
+      "target": "web_scenes_scenes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/sw.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "web_sw",
+      "target": "web_sw_audiorange",
       "confidence_score": 1.0
     },
     {
@@ -5475,9 +5615,9 @@
       "source_file": "web/sw.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_sw",
-      "target": "web_sw_shell",
-      "confidence_score": 1.0
+      "target": "web_sw_shell"
     },
     {
       "relation": "imports_from",
@@ -5486,9 +5626,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor",
-      "target": "web_visitor_content",
-      "confidence_score": 1.0
+      "target": "web_visitor_content"
     },
     {
       "relation": "contains",
@@ -5496,9 +5636,9 @@
       "source_file": "web/visitor-content.js",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_content",
-      "target": "web_visitor_content_riddles",
-      "confidence_score": 1.0
+      "target": "web_visitor_content_riddles"
     },
     {
       "relation": "contains",
@@ -5506,9 +5646,9 @@
       "source_file": "web/visitor-content.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_content",
-      "target": "web_visitor_content_stories",
-      "confidence_score": 1.0
+      "target": "web_visitor_content_stories"
     },
     {
       "relation": "imports",
@@ -5517,9 +5657,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor",
-      "target": "web_visitor_content_stories",
-      "confidence_score": 1.0
+      "target": "web_visitor_content_stories"
     },
     {
       "relation": "imports",
@@ -5528,9 +5668,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor",
-      "target": "web_visitor_content_riddles",
-      "confidence_score": 1.0
+      "target": "web_visitor_content_riddles"
     },
     {
       "relation": "contains",
@@ -5548,9 +5688,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor",
-      "target": "web_visitor_icon",
-      "confidence_score": 1.0
+      "target": "web_visitor_icon"
     },
     {
       "relation": "contains",
@@ -5558,9 +5698,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor",
-      "target": "web_visitor_icons",
-      "confidence_score": 1.0
+      "target": "web_visitor_icons"
     },
     {
       "relation": "contains",
@@ -5568,9 +5708,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor",
-      "target": "web_visitor_monsternames",
-      "confidence_score": 1.0
+      "target": "web_visitor_monsternames"
     },
     {
       "relation": "contains",
@@ -5578,9 +5718,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor",
-      "target": "web_visitor_visitor",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor"
     },
     {
       "relation": "calls",
@@ -5589,9 +5729,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L87",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_bindmenu",
-      "target": "web_visitor",
-      "confidence_score": 1.0
+      "target": "web_visitor"
     },
     {
       "relation": "calls",
@@ -5600,9 +5740,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_constructor",
-      "target": "web_visitor",
-      "confidence_score": 1.0
+      "target": "web_visitor"
     },
     {
       "relation": "calls",
@@ -5611,9 +5751,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L106",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_drawpumpkin",
-      "target": "web_visitor",
-      "confidence_score": 1.0
+      "target": "web_visitor"
     },
     {
       "relation": "calls",
@@ -5622,9 +5762,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_paintgame",
-      "target": "web_visitor",
-      "confidence_score": 1.0
+      "target": "web_visitor"
     },
     {
       "relation": "calls",
@@ -5633,9 +5773,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L124",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_reward",
-      "target": "web_visitor",
-      "confidence_score": 1.0
+      "target": "web_visitor"
     },
     {
       "relation": "calls",
@@ -5644,9 +5784,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_story",
-      "target": "web_visitor",
-      "confidence_score": 1.0
+      "target": "web_visitor"
     },
     {
       "relation": "calls",
@@ -5655,9 +5795,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_gamepicker",
-      "target": "web_visitor_icon",
-      "confidence_score": 1.0
+      "target": "web_visitor_icon"
     },
     {
       "relation": "calls",
@@ -5666,9 +5806,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_lobby",
-      "target": "web_visitor_icon",
-      "confidence_score": 1.0
+      "target": "web_visitor_icon"
     },
     {
       "relation": "calls",
@@ -5677,9 +5817,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_questgame",
-      "target": "web_visitor_icon",
-      "confidence_score": 1.0
+      "target": "web_visitor_icon"
     },
     {
       "relation": "method",
@@ -5687,9 +5827,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor",
-      "target": "web_visitor_visitor_active",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_active"
     },
     {
       "relation": "method",
@@ -5697,9 +5837,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L87",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor",
-      "target": "web_visitor_visitor_bindmenu",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_bindmenu"
     },
     {
       "relation": "method",
@@ -5707,9 +5847,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor",
-      "target": "web_visitor_visitor_choose",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_choose"
     },
     {
       "relation": "method",
@@ -5717,9 +5857,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor",
-      "target": "web_visitor_visitor_clear",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_clear"
     },
     {
       "relation": "method",
@@ -5727,9 +5867,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor",
-      "target": "web_visitor_visitor_constructor",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_constructor"
     },
     {
       "relation": "method",
@@ -5737,9 +5877,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L104",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor",
-      "target": "web_visitor_visitor_drawpumpkin",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_drawpumpkin"
     },
     {
       "relation": "method",
@@ -5747,9 +5887,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor",
-      "target": "web_visitor_visitor_finish",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_finish"
     },
     {
       "relation": "method",
@@ -5757,9 +5897,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L92",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor",
-      "target": "web_visitor_visitor_game",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_game"
     },
     {
       "relation": "method",
@@ -5767,9 +5907,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L88",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor",
-      "target": "web_visitor_visitor_gamepicker",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_gamepicker"
     },
     {
       "relation": "method",
@@ -5777,9 +5917,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L93",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor",
-      "target": "web_visitor_visitor_ghostgame",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_ghostgame"
     },
     {
       "relation": "method",
@@ -5787,9 +5927,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor",
-      "target": "web_visitor_visitor_lobby",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_lobby"
     },
     {
       "relation": "method",
@@ -5797,9 +5937,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L86",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor",
-      "target": "web_visitor_visitor_menubutton",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_menubutton"
     },
     {
       "relation": "method",
@@ -5807,9 +5947,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor",
-      "target": "web_visitor_visitor_paintgame",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_paintgame"
     },
     {
       "relation": "method",
@@ -5817,9 +5957,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor",
-      "target": "web_visitor_visitor_playintro",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_playintro"
     },
     {
       "relation": "method",
@@ -5827,9 +5967,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L108",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor",
-      "target": "web_visitor_visitor_questgame",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_questgame"
     },
     {
       "relation": "method",
@@ -5837,9 +5977,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L122",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor",
-      "target": "web_visitor_visitor_reward",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_reward"
     },
     {
       "relation": "method",
@@ -5847,9 +5987,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor",
-      "target": "web_visitor_visitor_scenefinished",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_scenefinished"
     },
     {
       "relation": "method",
@@ -5857,9 +5997,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor",
-      "target": "web_visitor_visitor_setvideoaudio",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_setvideoaudio"
     },
     {
       "relation": "method",
@@ -5867,9 +6007,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor",
-      "target": "web_visitor_visitor_start",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_start"
     },
     {
       "relation": "method",
@@ -5877,9 +6017,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor",
-      "target": "web_visitor_visitor_stopintro",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_stopintro"
     },
     {
       "relation": "method",
@@ -5887,9 +6027,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L116",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor",
-      "target": "web_visitor_visitor_story",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_story"
     },
     {
       "relation": "method",
@@ -5897,9 +6037,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L112",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor",
-      "target": "web_visitor_visitor_storypicker",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_storypicker"
     },
     {
       "relation": "calls",
@@ -5908,9 +6048,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_start",
-      "target": "web_visitor_visitor_lobby",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_lobby"
     },
     {
       "relation": "calls",
@@ -5919,9 +6059,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_start",
-      "target": "web_visitor_visitor_playintro",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_playintro"
     },
     {
       "relation": "calls",
@@ -5930,9 +6070,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_playintro",
-      "target": "web_visitor_visitor_setvideoaudio",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_setvideoaudio"
     },
     {
       "relation": "calls",
@@ -5941,9 +6081,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_clear",
-      "target": "web_visitor_visitor_stopintro",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_stopintro"
     },
     {
       "relation": "calls",
@@ -5952,9 +6092,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L68",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_finish",
-      "target": "web_visitor_visitor_clear",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_clear"
     },
     {
       "relation": "calls",
@@ -5963,9 +6103,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L92",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_game",
-      "target": "web_visitor_visitor_clear",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_clear"
     },
     {
       "relation": "calls",
@@ -5974,9 +6114,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_lobby",
-      "target": "web_visitor_visitor_clear",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_clear"
     },
     {
       "relation": "calls",
@@ -5985,9 +6125,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L123",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_reward",
-      "target": "web_visitor_visitor_clear",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_clear"
     },
     {
       "relation": "calls",
@@ -5996,9 +6136,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L113",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_storypicker",
-      "target": "web_visitor_visitor_clear",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_clear"
     },
     {
       "relation": "calls",
@@ -6007,9 +6147,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_scenefinished",
-      "target": "web_visitor_visitor_finish",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_finish"
     },
     {
       "relation": "calls",
@@ -6018,9 +6158,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_choose",
-      "target": "web_visitor_visitor_gamepicker",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_gamepicker"
     },
     {
       "relation": "calls",
@@ -6029,9 +6169,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_choose",
-      "target": "web_visitor_visitor_storypicker",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_storypicker"
     },
     {
       "relation": "calls",
@@ -6040,9 +6180,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_gamepicker",
-      "target": "web_visitor_visitor_menubutton",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_menubutton"
     },
     {
       "relation": "calls",
@@ -6051,9 +6191,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_ghostgame",
-      "target": "web_visitor_visitor_menubutton",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_menubutton"
     },
     {
       "relation": "calls",
@@ -6062,9 +6202,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L101",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_paintgame",
-      "target": "web_visitor_visitor_menubutton",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_menubutton"
     },
     {
       "relation": "calls",
@@ -6073,9 +6213,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_questgame",
-      "target": "web_visitor_visitor_menubutton",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_menubutton"
     },
     {
       "relation": "calls",
@@ -6084,9 +6224,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L119",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_story",
-      "target": "web_visitor_visitor_menubutton",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_menubutton"
     },
     {
       "relation": "calls",
@@ -6095,9 +6235,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L113",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_storypicker",
-      "target": "web_visitor_visitor_menubutton",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_menubutton"
     },
     {
       "relation": "calls",
@@ -6106,9 +6246,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L90",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_gamepicker",
-      "target": "web_visitor_visitor_bindmenu",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_bindmenu"
     },
     {
       "relation": "calls",
@@ -6117,9 +6257,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L97",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_ghostgame",
-      "target": "web_visitor_visitor_bindmenu",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_bindmenu"
     },
     {
       "relation": "calls",
@@ -6128,9 +6268,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_paintgame",
-      "target": "web_visitor_visitor_bindmenu",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_bindmenu"
     },
     {
       "relation": "calls",
@@ -6139,9 +6279,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L110",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_questgame",
-      "target": "web_visitor_visitor_bindmenu",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_bindmenu"
     },
     {
       "relation": "calls",
@@ -6150,9 +6290,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_story",
-      "target": "web_visitor_visitor_bindmenu",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_bindmenu"
     },
     {
       "relation": "calls",
@@ -6161,9 +6301,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L114",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_storypicker",
-      "target": "web_visitor_visitor_bindmenu",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_bindmenu"
     },
     {
       "relation": "calls",
@@ -6172,9 +6312,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L92",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_game",
-      "target": "web_visitor_visitor_ghostgame",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_ghostgame"
     },
     {
       "relation": "calls",
@@ -6183,9 +6323,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L92",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_game",
-      "target": "web_visitor_visitor_paintgame",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_paintgame"
     },
     {
       "relation": "calls",
@@ -6194,9 +6334,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L92",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_game",
-      "target": "web_visitor_visitor_questgame",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_questgame"
     },
     {
       "relation": "calls",
@@ -6205,9 +6345,9 @@
       "source_file": "web/visitor.js",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_visitor_visitor_paintgame",
-      "target": "web_visitor_visitor_drawpumpkin",
-      "confidence_score": 1.0
+      "target": "web_visitor_visitor_drawpumpkin"
     },
     {
       "relation": "contains",
@@ -6215,9 +6355,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere",
-      "target": "web_welcome_atmosphere_welcomeatmosphere",
-      "confidence_score": 1.0
+      "target": "web_welcome_atmosphere_welcomeatmosphere"
     },
     {
       "relation": "imports_from",
@@ -6226,9 +6366,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere",
-      "target": "web_welcome_float",
-      "confidence_score": 1.0
+      "target": "web_welcome_float"
     },
     {
       "relation": "imports",
@@ -6237,9 +6377,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere",
-      "target": "web_welcome_float_welcomefloat",
-      "confidence_score": 1.0
+      "target": "web_welcome_float_welcomefloat"
     },
     {
       "relation": "imports_from",
@@ -6248,9 +6388,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere",
-      "target": "web_welcome_messages",
-      "confidence_score": 1.0
+      "target": "web_welcome_messages"
     },
     {
       "relation": "imports",
@@ -6259,9 +6399,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere",
-      "target": "web_welcome_messages_welcomemessages",
-      "confidence_score": 1.0
+      "target": "web_welcome_messages_welcomemessages"
     },
     {
       "relation": "method",
@@ -6269,9 +6409,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere_welcomeatmosphere",
-      "target": "web_welcome_atmosphere_welcomeatmosphere_configure",
-      "confidence_score": 1.0
+      "target": "web_welcome_atmosphere_welcomeatmosphere_configure"
     },
     {
       "relation": "method",
@@ -6279,9 +6419,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere_welcomeatmosphere",
-      "target": "web_welcome_atmosphere_welcomeatmosphere_constructor",
-      "confidence_score": 1.0
+      "target": "web_welcome_atmosphere_welcomeatmosphere_constructor"
     },
     {
       "relation": "method",
@@ -6289,9 +6429,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere_welcomeatmosphere",
-      "target": "web_welcome_atmosphere_welcomeatmosphere_draw",
-      "confidence_score": 1.0
+      "target": "web_welcome_atmosphere_welcomeatmosphere_draw"
     },
     {
       "relation": "method",
@@ -6299,9 +6439,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere_welcomeatmosphere",
-      "target": "web_welcome_atmosphere_welcomeatmosphere_glow",
-      "confidence_score": 1.0
+      "target": "web_welcome_atmosphere_welcomeatmosphere_glow"
     },
     {
       "relation": "method",
@@ -6309,9 +6449,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere_welcomeatmosphere",
-      "target": "web_welcome_atmosphere_welcomeatmosphere_refresh",
-      "confidence_score": 1.0
+      "target": "web_welcome_atmosphere_welcomeatmosphere_refresh"
     },
     {
       "relation": "method",
@@ -6319,9 +6459,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere_welcomeatmosphere",
-      "target": "web_welcome_atmosphere_welcomeatmosphere_resize",
-      "confidence_score": 1.0
+      "target": "web_welcome_atmosphere_welcomeatmosphere_resize"
     },
     {
       "relation": "method",
@@ -6329,9 +6469,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere_welcomeatmosphere",
-      "target": "web_welcome_atmosphere_welcomeatmosphere_spawnghost",
-      "confidence_score": 1.0
+      "target": "web_welcome_atmosphere_welcomeatmosphere_spawnghost"
     },
     {
       "relation": "calls",
@@ -6340,9 +6480,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere_welcomeatmosphere_constructor",
-      "target": "web_welcome_atmosphere_welcomeatmosphere_resize",
-      "confidence_score": 1.0
+      "target": "web_welcome_atmosphere_welcomeatmosphere_resize"
     },
     {
       "relation": "calls",
@@ -6351,9 +6491,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere_welcomeatmosphere_configure",
-      "target": "web_welcome_atmosphere_welcomeatmosphere_refresh",
-      "confidence_score": 1.0
+      "target": "web_welcome_atmosphere_welcomeatmosphere_refresh"
     },
     {
       "relation": "calls",
@@ -6362,9 +6502,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere_welcomeatmosphere_configure",
-      "target": "web_welcome_atmosphere_welcomeatmosphere_resize",
-      "confidence_score": 1.0
+      "target": "web_welcome_atmosphere_welcomeatmosphere_resize"
     },
     {
       "relation": "calls",
@@ -6373,9 +6513,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere_welcomeatmosphere_resize",
-      "target": "web_welcome_atmosphere_welcomeatmosphere_draw",
-      "confidence_score": 1.0
+      "target": "web_welcome_atmosphere_welcomeatmosphere_draw"
     },
     {
       "relation": "calls",
@@ -6384,9 +6524,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere_welcomeatmosphere_refresh",
-      "target": "web_welcome_atmosphere_welcomeatmosphere_draw",
-      "confidence_score": 1.0
+      "target": "web_welcome_atmosphere_welcomeatmosphere_draw"
     },
     {
       "relation": "calls",
@@ -6395,9 +6535,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere_welcomeatmosphere_draw",
-      "target": "web_welcome_atmosphere_welcomeatmosphere_glow",
-      "confidence_score": 1.0
+      "target": "web_welcome_atmosphere_welcomeatmosphere_glow"
     },
     {
       "relation": "calls",
@@ -6406,9 +6546,9 @@
       "source_file": "web/welcome-atmosphere.js",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_atmosphere_welcomeatmosphere_draw",
-      "target": "web_welcome_atmosphere_welcomeatmosphere_spawnghost",
-      "confidence_score": 1.0
+      "target": "web_welcome_atmosphere_welcomeatmosphere_spawnghost"
     },
     {
       "relation": "contains",
@@ -6416,9 +6556,9 @@
       "source_file": "web/welcome-chrome.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_chrome",
-      "target": "web_welcome_chrome_setupwelcomechrome",
-      "confidence_score": 1.0
+      "target": "web_welcome_chrome_setupwelcomechrome"
     },
     {
       "relation": "contains",
@@ -6426,9 +6566,9 @@
       "source_file": "web/welcome-float.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_float",
-      "target": "web_welcome_float_ease",
-      "confidence_score": 1.0
+      "target": "web_welcome_float_ease"
     },
     {
       "relation": "contains",
@@ -6436,9 +6576,9 @@
       "source_file": "web/welcome-float.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_float",
-      "target": "web_welcome_float_random",
-      "confidence_score": 1.0
+      "target": "web_welcome_float_random"
     },
     {
       "relation": "contains",
@@ -6446,9 +6586,9 @@
       "source_file": "web/welcome-float.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_float",
-      "target": "web_welcome_float_selectors",
-      "confidence_score": 1.0
+      "target": "web_welcome_float_selectors"
     },
     {
       "relation": "contains",
@@ -6456,9 +6596,9 @@
       "source_file": "web/welcome-float.js",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_float",
-      "target": "web_welcome_float_welcomefloat",
-      "confidence_score": 1.0
+      "target": "web_welcome_float_welcomefloat"
     },
     {
       "relation": "calls",
@@ -6467,9 +6607,9 @@
       "source_file": "web/welcome-float.js",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_float_welcomefloat_draw",
-      "target": "web_welcome_float_random",
-      "confidence_score": 1.0
+      "target": "web_welcome_float_random"
     },
     {
       "relation": "calls",
@@ -6478,9 +6618,9 @@
       "source_file": "web/welcome-float.js",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_float_welcomefloat_draw",
-      "target": "web_welcome_float_ease",
-      "confidence_score": 1.0
+      "target": "web_welcome_float_ease"
     },
     {
       "relation": "method",
@@ -6488,9 +6628,9 @@
       "source_file": "web/welcome-float.js",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_float_welcomefloat",
-      "target": "web_welcome_float_welcomefloat_constructor",
-      "confidence_score": 1.0
+      "target": "web_welcome_float_welcomefloat_constructor"
     },
     {
       "relation": "method",
@@ -6498,9 +6638,9 @@
       "source_file": "web/welcome-float.js",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_float_welcomefloat",
-      "target": "web_welcome_float_welcomefloat_draw",
-      "confidence_score": 1.0
+      "target": "web_welcome_float_welcomefloat_draw"
     },
     {
       "relation": "contains",
@@ -6508,9 +6648,9 @@
       "source_file": "web/welcome-messages.js",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_messages",
-      "target": "web_welcome_messages_effects",
-      "confidence_score": 1.0
+      "target": "web_welcome_messages_effects"
     },
     {
       "relation": "contains",
@@ -6518,9 +6658,9 @@
       "source_file": "web/welcome-messages.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_messages",
-      "target": "web_welcome_messages_messages",
-      "confidence_score": 1.0
+      "target": "web_welcome_messages_messages"
     },
     {
       "relation": "contains",
@@ -6528,9 +6668,9 @@
       "source_file": "web/welcome-messages.js",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_messages",
-      "target": "web_welcome_messages_shufflebag",
-      "confidence_score": 1.0
+      "target": "web_welcome_messages_shufflebag"
     },
     {
       "relation": "contains",
@@ -6538,9 +6678,9 @@
       "source_file": "web/welcome-messages.js",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_messages",
-      "target": "web_welcome_messages_welcomemessages",
-      "confidence_score": 1.0
+      "target": "web_welcome_messages_welcomemessages"
     },
     {
       "relation": "method",
@@ -6548,9 +6688,9 @@
       "source_file": "web/welcome-messages.js",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_messages_shufflebag",
-      "target": "web_welcome_messages_shufflebag_constructor",
-      "confidence_score": 1.0
+      "target": "web_welcome_messages_shufflebag_constructor"
     },
     {
       "relation": "method",
@@ -6558,9 +6698,9 @@
       "source_file": "web/welcome-messages.js",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_messages_shufflebag",
-      "target": "web_welcome_messages_shufflebag_next",
-      "confidence_score": 1.0
+      "target": "web_welcome_messages_shufflebag_next"
     },
     {
       "relation": "method",
@@ -6568,9 +6708,9 @@
       "source_file": "web/welcome-messages.js",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_messages_welcomemessages",
-      "target": "web_welcome_messages_welcomemessages_constructor",
-      "confidence_score": 1.0
+      "target": "web_welcome_messages_welcomemessages_constructor"
     },
     {
       "relation": "method",
@@ -6578,9 +6718,9 @@
       "source_file": "web/welcome-messages.js",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_messages_welcomemessages",
-      "target": "web_welcome_messages_welcomemessages_draw",
-      "confidence_score": 1.0
+      "target": "web_welcome_messages_welcomemessages_draw"
     },
     {
       "relation": "method",
@@ -6588,9 +6728,9 @@
       "source_file": "web/welcome-messages.js",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_messages_welcomemessages",
-      "target": "web_welcome_messages_welcomemessages_select",
-      "confidence_score": 1.0
+      "target": "web_welcome_messages_welcomemessages_select"
     },
     {
       "relation": "calls",
@@ -6599,9 +6739,9 @@
       "source_file": "web/welcome-messages.js",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_welcome_messages_welcomemessages_draw",
-      "target": "web_welcome_messages_welcomemessages_select",
-      "confidence_score": 1.0
+      "target": "web_welcome_messages_welcomemessages_select"
     },
     {
       "relation": "contains",
@@ -6619,9 +6759,9 @@
       "source_file": "ARTWORK.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "artwork",
-      "target": "artwork_asset_credits",
-      "confidence_score": 1.0
+      "target": "artwork_asset_credits"
     },
     {
       "relation": "contains",
@@ -6629,9 +6769,9 @@
       "source_file": "BROWSER.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "browser",
-      "target": "browser_browser_interfaces",
-      "confidence_score": 1.0
+      "target": "browser_browser_interfaces"
     },
     {
       "relation": "contains",
@@ -6739,9 +6879,9 @@
       "source_file": "README.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_halloween_hub",
-      "target": "readme_local_preview_and_checks",
-      "confidence_score": 1.0
+      "target": "readme_local_preview_and_checks"
     },
     {
       "relation": "contains",
@@ -6749,9 +6889,9 @@
       "source_file": "README.md",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_halloween_hub",
-      "target": "readme_publishing",
-      "confidence_score": 1.0
+      "target": "readme_publishing"
     },
     {
       "relation": "contains",
@@ -6809,9 +6949,9 @@
       "source_file": "README.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_halloween_hub",
-      "target": "readme_use",
-      "confidence_score": 1.0
+      "target": "readme_use"
     },
     {
       "relation": "contains",
@@ -7265,5 +7405,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "71686759c0f997a8ed71a0dbbb390e52aedf29da"
+  "built_at_commit": "ea9f2f8cdd55f07c4aa12ab3c23e2820a9e0ceca"
 }
