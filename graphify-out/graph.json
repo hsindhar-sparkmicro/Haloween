@@ -160,7 +160,7 @@
       "label": ".test_simulation_completion_logs_and_dates()",
       "file_type": "code",
       "source_file": "tests/web/test_web.py",
-      "source_location": "L152",
+      "source_location": "L153",
       "id": "web_test_web_webtests_test_simulation_completion_logs_and_dates",
       "community": 5,
       "norm_label": ".test_simulation_completion_logs_and_dates()"
@@ -169,7 +169,7 @@
       "label": ".test_weather_and_network_failure()",
       "file_type": "code",
       "source_file": "tests/web/test_web.py",
-      "source_location": "L176",
+      "source_location": "L177",
       "id": "web_test_web_webtests_test_weather_and_network_failure",
       "community": 5,
       "norm_label": ".test_weather_and_network_failure()"
@@ -178,7 +178,7 @@
       "label": ".test_storage_denied_and_quota_atomicity()",
       "file_type": "code",
       "source_file": "tests/web/test_web.py",
-      "source_location": "L190",
+      "source_location": "L191",
       "id": "web_test_web_webtests_test_storage_denied_and_quota_atomicity",
       "community": 5,
       "norm_label": ".test_storage_denied_and_quota_atomicity()"
@@ -187,7 +187,7 @@
       "label": ".test_offline_shell()",
       "file_type": "code",
       "source_file": "tests/web/test_web.py",
-      "source_location": "L209",
+      "source_location": "L210",
       "id": "web_test_web_webtests_test_offline_shell",
       "community": 5,
       "norm_label": ".test_offline_shell()"
@@ -196,7 +196,7 @@
       "label": ".test_included_audio_offline_ranges_and_restore()",
       "file_type": "code",
       "source_file": "tests/web/test_web.py",
-      "source_location": "L221",
+      "source_location": "L222",
       "id": "web_test_web_webtests_test_included_audio_offline_ranges_and_restore",
       "community": 5,
       "norm_label": ".test_included_audio_offline_ranges_and_restore()"
@@ -205,7 +205,7 @@
       "label": ".test_responsive_layouts()",
       "file_type": "code",
       "source_file": "tests/web/test_web.py",
-      "source_location": "L264",
+      "source_location": "L267",
       "id": "web_test_web_webtests_test_responsive_layouts",
       "community": 5,
       "norm_label": ".test_responsive_layouts()"
@@ -214,7 +214,7 @@
       "label": ".test_media_intro_and_idle_fades()",
       "file_type": "code",
       "source_file": "tests/web/test_web.py",
-      "source_location": "L275",
+      "source_location": "L278",
       "id": "web_test_web_webtests_test_media_intro_and_idle_fades",
       "community": 5,
       "norm_label": ".test_media_intro_and_idle_fades()"
@@ -223,7 +223,7 @@
       "label": ".test_missing_media_and_user_cancellation()",
       "file_type": "code",
       "source_file": "tests/web/test_web.py",
-      "source_location": "L300",
+      "source_location": "L303",
       "id": "web_test_web_webtests_test_missing_media_and_user_cancellation",
       "community": 5,
       "norm_label": ".test_missing_media_and_user_cancellation()"
@@ -2644,9 +2644,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_handler",
-      "target": "web_test_web_handler_copyfile",
-      "confidence_score": 1.0
+      "target": "web_test_web_handler_copyfile"
     },
     {
       "relation": "method",
@@ -2744,9 +2744,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L221",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_webtests",
-      "target": "web_test_web_webtests_test_included_audio_offline_ranges_and_restore",
-      "confidence_score": 1.0
+      "target": "web_test_web_webtests_test_included_audio_offline_ranges_and_restore"
     },
     {
       "relation": "method",
@@ -2846,9 +2846,9 @@
       "source_file": "tests/web/test_web.py",
       "source_location": "L222",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_test_web_webtests_test_included_audio_offline_ranges_and_restore",
-      "target": "web_test_web_webtests_hub",
-      "confidence_score": 1.0
+      "target": "web_test_web_webtests_hub"
     },
     {
       "relation": "calls",
@@ -3963,9 +3963,9 @@
       "source_file": "web/audio-manifest.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_audio_manifest",
-      "target": "web_audio_manifest_bundled_audio",
-      "confidence_score": 1.0
+      "target": "web_audio_manifest_bundled_audio"
     },
     {
       "relation": "imports_from",
@@ -3974,9 +3974,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service",
-      "target": "web_audio_manifest",
-      "confidence_score": 1.0
+      "target": "web_audio_manifest"
     },
     {
       "relation": "imports",
@@ -3985,9 +3985,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service",
-      "target": "web_audio_manifest_bundled_audio",
-      "confidence_score": 1.0
+      "target": "web_audio_manifest_bundled_audio"
     },
     {
       "relation": "contains",
@@ -4644,9 +4644,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L218",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_importaudio",
-      "target": "web_browser_service_browserhub_save",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_save"
     },
     {
       "relation": "calls",
@@ -4655,9 +4655,9 @@
       "source_file": "web/browser-service.js",
       "source_location": "L230",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_browser_service_browserhub_removeaudio",
-      "target": "web_browser_service_browserhub_save",
-      "confidence_score": 1.0
+      "target": "web_browser_service_browserhub_save"
     },
     {
       "relation": "calls",
@@ -5605,9 +5605,9 @@
       "source_file": "web/sw.js",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_sw",
-      "target": "web_sw_audiorange",
-      "confidence_score": 1.0
+      "target": "web_sw_audiorange"
     },
     {
       "relation": "contains",
@@ -7405,5 +7405,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "ea9f2f8cdd55f07c4aa12ab3c23e2820a9e0ceca"
+  "built_at_commit": "96d98a9d88e5c4201d0953b7d24415effa21adde"
 }
