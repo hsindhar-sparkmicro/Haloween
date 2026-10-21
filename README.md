@@ -1,257 +1,47 @@
 # Halloween Hub
 
-A four-screen, offline-first Halloween kiosk for **Windows amd64**, **Linux amd64**, and **Raspberry Pi ARM64**. Python serves a locally bundled browser UI; no Node build, GPIO, microphone, or camera is required.
+A Halloween playground that runs entirely in your browser: a cinematic pumpkin dashboard, eight animated haunted scenes, games and branching stories, a party planner, and a pretend Ghost Detector.
 
-![Pumpkin dashboard](validation/screenshots/dashboard-800x480.png)
+**Live site:** https://hsindhar-sparkmicro.github.io/halloween-hub-web/
 
-## Start
+Touch the pumpkin for Play, Story, and Surprise. Idle backgrounds come alive silently at half speed with 3.5-second fades. Autumn leaves, wind, and winter flurries decorate the night while the actual weather forecast remains separate. Layouts support 800×480, phones, and large displays.
 
-Install Python **3.11–3.13** with pip and venv, and use a current Chromium, Chrome, Edge, or Firefox browser.
+## Use
 
-Linux / Raspberry Pi:
+Open the live site in a current Chrome, Edge, Firefox, or Safari browser. Audio starts only after you choose to play it. Fullscreen depends on browser support.
 
-```bash
-./run.sh
-```
+Settings, guests, tasks, simulated detections, and imported MP3/WAV/OGG audio stay in **this browser on this device**, using IndexedDB. Nothing is uploaded. Site data is separate across devices, browser profiles, and website origins. Clearing site data removes your saved information. If storage is blocked, the app displays a notice and uses temporary memory; failed saves preserve existing stored data.
 
-Windows PowerShell (Python launcher `py` must be installed):
+Choose your city in Settings for real weather from Open-Meteo. The initial timezone follows your browser; you can change it using an IANA name such as `America/Toronto`. Forecasts refresh at most every 15 minutes and show stale status when offline. This is a non-commercial entertainment site using the free weather service.
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\run.ps1
-```
+After the first successful load and offline-cache installation, the interface, artwork, synthesized sounds, games, and local data work offline. Videos stream on demand and may require connectivity; unavailable videos fall back to artwork/adventures. City search and forecast updates require Internet. Offline caching depends on available browser storage.
 
-Open **http://127.0.0.1:8080**. Launchers create `.venv`, install pinned requirements when needed, and open your default browser. Internet is needed for the first dependency installation, weather and city search; all artwork, fonts, ambience, recipes, simulation and party records work offline afterward. On Debian, install `python3-venv` if environment creation is unavailable.
+All haunted-house controls and Ghost Detector readings are simulations. There is no camera, microphone, physical sensor, account, shared database, or Python runtime behind the website. Scenes and scans stop on reload, and audio starts muted.
 
-Server without automatically opening a browser:
+## Local preview and checks
 
-```bash
-./run.sh --no-browser
-```
-
-On the Pi's graphical desktop, launch the server in one terminal and kiosk in another:
-
-```bash
-./kiosk.sh
-```
-
-The kiosk has its own Chromium profile and does not require creating a desktop keyring. The header **−** button minimizes the native kiosk window to the desktop; restore it from the desktop task switcher. The **⛶** button separately toggles browser document fullscreen. Use **Alt+F4** to close it. Use **Ctrl+C** in the server terminal to stop the server.
-
-## Raspberry Pi autostart on boot
-
-Run once as the Pi's normal desktop user (without `sudo`), after preparing dependencies with `./run.sh`:
-
-```bash
-.venv/bin/python scripts/pi_autostart.py install --port 8088
-```
-
-Enable **Desktop Autologin** in Raspberry Pi Configuration (or `sudo raspi-config`, System Options → Boot / Auto Login → Desktop Autologin). On boot, the user service starts the server and the desktop opens Chromium in kiosk mode after the server responds. The installer starts the server immediately; Chromium opens at the next desktop login. No dependency downloads occur during boot. The app uses the deployment's `data/` folder, preserving existing Pi records and media. Run the installer from a permanent location; reinstall after moving the folder. The server stays on loopback.
-
-Check status and logs:
-
-```bash
-systemctl --user status halloween-hub
-journalctl --user -u halloween-hub -b
-```
-
-Remove autostart and stop its server:
-
-```bash
-.venv/bin/python scripts/pi_autostart.py remove
-```
-
-Close any open kiosk with **Alt+F4**. Removing autostart preserves application data and the Pi's desktop login settings. Stop any manually launched Halloween Hub server before installing to avoid a port conflict. For a different port, supply `--port` when installing; the browser uses the same port.
-
-## Remote / headless
-
-Explicitly enable trusted-LAN access:
-
-```bash
-./run.sh --lan --no-browser --port 8088
-```
-
-Open `http://<host-ip>:8088` on another computer. This is a household LAN interface without accounts; everyone who can reach it can modify party records, settings and the music library. Default launch binds to loopback only. Audio plays on the **viewing device**, including when the server is a headless Pi.
-
-An SSH tunnel retains loopback-only access:
-
-```bash
-ssh -L 18088:127.0.0.1:8088 spark@192.168.0.100
-```
-
-Then open `http://127.0.0.1:18088` locally.
-
-## Four screens
-
-- **Dashboard:** immersive haunted background, countdown and floating weather. Tap the pumpkin for adventures. Play spooky sounds shuffles your imported effects.
-- **Haunted House:** simulated lights, fog and motion, effect-level controls and eight distinct animated scenes. Selecting or randomizing opens immersive playback with only a small Back overlay. Back/Escape stops immediately; completion returns automatically to the panel. Each replay gets new smooth fog formations and wind, and each scene has its own background, characters and sound. Activate replays the selection. Reduced motion uses still phase compositions. Hardware controls remain simulated.
-- **Party Hub:** editable tasks and guests, attendance, three rotating recipe cards, local playlist, real audio-reactive equalizer, and optional floating ghosts.
-- **Ghost Detector:** start/stop the simulated scan, choose sensitivity, watch room activity and readings, inspect the journal or export CSV. Readings are fictional entertainment, not measurements.
-
-Settings include IANA timezone, Celsius/Fahrenheit, volume, animation quality, party date, rotation, reduced motion, optional scares and flicker. Rotation is off by default; when enabled it waits two minutes after your most recent interaction, then changes screens every 30 seconds. Open dialogs pause rotation. Audio always starts paused, even after restart. Haunt sequences and scans also start stopped.
-
-The dashboard countdown always targets local **October 31 at midnight**; throughout Halloween it reads zero, then targets the next year. The Party Hub uses a custom party date in the configured timezone when set, without changing the Halloween dashboard; it reads zero after the party starts. The backend host's clock must be correct.
-
-Weather uses Open-Meteo with attribution and a 15-minute cache. Previously fetched forecasts remain visible as stale when offline. City selection is saved immediately; other settings use Save. Set location once rather than shipping a misleading default forecast.
-
-Native minimize is shown in desktop/kiosk launch mode and acts on the server’s own Halloween Hub browser window. Pi Wayland support is verified; Windows support uses the native window API, and X11 requires `xdotool`. Other desktop compositors can report unavailable. Ordinary remote browser views use their own browser window controls.
-
-The free API is intended here for personal/non-commercial use; see [Open-Meteo terms](https://open-meteo.com/en/terms).
-
-## Audio and data
-
-Import MP3, WAV or OGG files from Party Hub → Library. Maximum file size is 100 MB. Imports remain on the server; incompatible codecs report a playback error. Click the header music button to enable audio, or Play music/Play spooky sounds. Click the header button again to pause all audio. Automatic playback is never forced past browser restrictions.
-
-Data defaults to `%LOCALAPPDATA%\HalloweenHub` on Windows and `~/.local/share/HalloweenHub` on Linux. `HALLOWEEN_DATA_DIR` overrides it. The SQLite database stores settings, candy, tasks, guests, tracks, cached weather, and the newest 500 detections. Music is copied into the data directory. Back up this directory with the server stopped.
-
-```bash
-HALLOWEEN_DATA_DIR="$PWD/my-data" ./run.sh
-```
-
-For offline setup, prepare compatible wheels and set `HALLOWEEN_WHEEL_DIR`. The ARM64 wheel bundle in the release is specifically for the tested Pi's Python **3.13**:
-
-```bash
-HALLOWEEN_WHEEL_DIR="$PWD/pi-wheels" ./run.sh --no-browser
-```
-
-## Validation and development
-
-```bash
-.venv/bin/python -m unittest discover -s tests -v
-```
-
-Optional browser QA requires `requirements-dev.txt` and `python -m playwright install chromium`. Start the server first, then:
-
-```bash
-.venv/bin/python scripts/check_browser.py
-.venv/bin/python scripts/check_resilience.py
-.venv/bin/python scripts/check_immersive.py
-.venv/bin/python scripts/check_welcome.py
-```
-
-Browser checks create screenshots at 800×480, 1280×720 and 1920×1080, check layout/control visibility, and exercise editing, audio, scan and haunt controls. The resilience check uses live city search/weather and verifies reconnect, reduced motion and muted startup. These checks modify test app data; use `HALLOWEEN_DATA_DIR` to isolate it.
-
-Public JSON endpoints are documented in [API.md](API.md).
-
-See [VALIDATION.md](VALIDATION.md) for actual results, platform boundaries, Pi deployment details and the endurance record. Build portable source releases using `python scripts/package.py`; archives include instructions, all runtime assets, and SHA256SUMS, never user data or environments.
-
-## Asset provenance
-
-`halloween_hub/static/assets/art-sheet.png` was generated with the built-in imagegen tool, then bundled locally. It contains six moody black-background illustrations: an uncarved pumpkin, Edison bulb, fog machine, lavender ghost, purple speaker, and moonlit house; SVG overlays animate the pumpkin's face. Full generation prompt: [ARTWORK.md](ARTWORK.md). Fonts are DejaVu with the bundled license. Ambient WAV files are original deterministic synthesis from `scripts/generate_audio.py`.
-
-## SPARK Halloween showcase and hidden camera
-
-Tap/click the Dashboard pumpkin (or press Enter when focused) to play the installed welcome cutscene, then explore the **SPARK Halloween showcase**. The former Play / Story / Surprise menu is replaced by four touchable exhibits: **SR1120**, **Gaming mouse**, **Gaming keyboard**, and **Wireless headset**. Each exhibit opens a larger product/application image with a short Halloween-themed story and two factual highlights. **All products** returns to the gallery; the small **Back** overlay or **Escape** returns to the Dashboard. Party Hub's Trick or Treat action opens the same showcase. Reduced motion or an unavailable intro opens the products directly. Camera/test welcomes retain their monster reveal and configured follow-up; the default choice now opens products.
-
-The official SPARK logo, chip render and gaming application images are bundled in `halloween_hub/static/assets/spark/`. The photographs and logo remain unchanged; warm orange/violet lighting, a spiderweb, exhibit numbers and Halloween wording are applied in the interface. Product assets need no internet access. Their original URLs, page sources and SHA-256 hashes are recorded in [sources.json](halloween_hub/static/assets/spark/sources.json). Reference-design and demo specifications describe the corresponding SPARK designs, rather than measurements made by this kiosk. Sources: [SR1120](https://www.sparkmicro.com/products/sr1120/), [Gaming](https://www.sparkmicro.com/applications/gaming/), [Reference designs](https://www.sparkmicro.com/reference-designs/).
-
-### Larger monitors and TVs
-
-The showcase supports 800×480, 1080p, 1440p and 4K layouts, including high-DPI/Retina displays. Local `srcset` variants select the thumbnail or original SPARK PNG for the available image size and pixel density. Originals are **1254×1254** (SR1120) and **1672×941** (mouse, keyboard and headset). Product images keep their aspect ratio and are capped at native pixel detail, so a large panel may show space around the image instead of stretching a small source. The 250×75 logo is similarly limited to its source detail. Typography, frames and SVG decoration render at the display's native resolution, with larger type and controls for TV layouts. Moving a window between displays updates the density limits automatically.
-
-For a connected Pi monitor/TV, select its **native HDMI resolution** in the desktop's display settings. The kiosk launcher uses fullscreen without forcing an 800×480 window. Application layout cannot add pixels if the operating system is still outputting 800×480. The current bench Pi has only its 800×480 DSI output connected; HDMI/TV modes have been checked in browser rendering rather than on a physically connected 4K TV. Existing Halloween PNGs/videos retain their original source resolution; this change does not create new detail in those files.
-
-Reproduce the image-quality checks with an isolated server and installed intro media:
-
-```bash
-.venv/bin/python scripts/check_showcase_resolution.py --url http://127.0.0.1:8094
-```
-
-Open **Haunted House → Camera** or Settings to configure the optional Pi motion trigger. **Arm welcome** enables short motion scans; **Disarm** stops capture. **Test welcome** runs the same monster reveal without opening the camera. Choose what follows the reveal: SPARK showcase, Play, Story, or Surprise. Existing manual scenes are not interrupted. Camera arming and active adventures never resume after restart.
-
-The camera is completely hidden: no video elements, previews, mirror, JPEG export, recordings, or image archives. Frames exist only briefly inside the capture worker for motion analysis; only numerical motion scores reach the server. The retired frame endpoint returns 410. Capture rotates 90° clockwise before analysis. Motion can include pets or lighting changes; it does not identify people or measure distance.
-
-Defaults are **180 seconds scanning, then 45 seconds resting**, configurable to 6–600 and 20–300 seconds respectively. Every scan physically stops/closes the camera and ends its worker before resting, including scans with no motion. A confirmed trigger ends capture early. Visitors may be missed during rest; pumpkin touch remains available. Worker time limits and parent-process checks prevent unattended continuous capture.
-
-A conservative app policy pauses scans at **70°C Pi board temperature** and resumes at **65°C**. This is not a camera sensor reading or manufacturer-prescribed camera cooldown. The [Picamera2 manual](https://datasheets.raspberrypi.com/camera/picamera2-manual.pdf) documents stop/close lifecycle operations; it does not prescribe an IMX219 scan/rest interval. [Raspberry Pi thermal documentation](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#frequency-management-and-thermal-control) describes the board's separate thermal throttling. Keep normal ventilation and board cooling appropriate to the enclosure.
-
-Pi capture uses a separate **system Python** process with Picamera2/libcamera and NumPy, keeping portable dependencies unchanged. Install missing camera packages through the OS package manager. `HALLOWEEN_CAMERA_PYTHON` overrides `/usr/bin/python3`. Windows and ordinary Linux retain the touch showcase; CSI motion capture is Pi-specific.
-
-Visitor UI checks: `.venv/bin/python scripts/check_visitor.py`. Pi-only physical scan/rest checks use `scripts/check_hidden_camera.py` against a separate test server on port 8092, never the main kiosk data.
-
-## Halloween music and offline shuffle
-
-Party Hub → Library → **Find Halloween music on Pixabay** opens the official Halloween search in a separate tab. Download MP3s there, then use **Import local music** to upload them to this app. A remote browser's uploads are stored on the Pi when connected to the Pi server. They remain available after restart and without Internet. Tap Play music to enable audio; Shuffle saved songs is enabled by default and persisted, with no immediate repeats when more than one song exists. Next and track completion choose another random saved song; disabling Shuffle restores sequential playback. No playlist playback starts automatically after a restart.
-
-Pixabay's [public API](https://pixabay.com/api/docs/) documents images/videos, not music. Its [terms](https://pixabay.com/service/terms/) prohibit unauthorized automatic collection and systematic copying. This app therefore does not scrape the search page or perform background Pixabay downloads. Direct download attempts in this environment returned HTTP 403; user-supplied downloaded MP3s can be imported without contacting Pixabay. Keep downloaded tracks for the app's soundtrack and retain their source/license information; external songs are not included in the portable source package.
-
-## Imported scene sound effects
-
-Party Hub → Library includes separate music and **Random scene sound effects** lists. MP3/WAV/OGG imports are copied into the server's application-data folder and persist offline. Duplicate content in the same library is reused rather than inserted twice. Music and effects remain separate even if they contain the same audio.
-
-Each scene chooses a random saved effect, avoiding the previous effect when alternatives exist, over its bundled soundtrack. A short clip can be followed by another after a random 1–4-second gap. Longer clips are cut off at scene completion. Back, Stop, and Mute cancel both playback and queued effects. The scene sound slider and shared volume apply; audio remains muted until an explicit gesture. Library Listen buttons preview effects when no scene is active.
-
-For batch imports from your own folders into a running server:
+Python is used only for development tools, not by the deployed application:
 
 ```sh
-python3 scripts/import_audio.py --url http://127.0.0.1:8080 --music /path/to/music --effects /path/to/soundeffects
+python3 scripts/build_web.py
+python3 -m http.server 8080 --directory dist/site
 ```
 
-On the test Pi the music and effects are stored under `/home/spark/HalloweenHub-20261014/data/music` and `data/effects`; names and playlist entries live in SQLite. Original source files remain in place. User-supplied external audio is not redistributed in the portable source package.
-
-## Immersive welcome screen
-
-The main screen is a single haunted-house backdrop with a large tappable pumpkin, an emerging/fading Halloween countdown, floating weather, and a bottom ambience control. Dashboard cards and candy controls have been removed; existing stored data is preserved. The four screens and Settings remain in the navigation.
-
-The main screen's **Night atmosphere** cycles between a quiet misty night, gusts of tumbling autumn leaves, and drifting winter flurries. The first leaf gust begins after about six visible seconds; subsequent leaf periods last 20–28 seconds, flurries 28–36 seconds, with quiet 9–15 second gaps. Each active season eases in and out over four seconds. Winter brings a subtle cool tint while warm ember glow recedes. These are decorative conditions; the location's live forecast stays separate.
-
-Leaves and snow use cached local canvas sprites on the existing welcome animation clock, with no network downloads. A foreground canvas lets particles pass across the pumpkin while the countdown/weather controls remain readable and the touch target remains reachable. Low/auto-on-Pi quality caps the scene at 28 leaves or 90 snowflakes; higher quality uses at most 54 or 180. Off-screen pages and open dialogs pause the effects. Reduced-motion mode shows a still night without moving weather. Browser coverage: `.venv/bin/python scripts/check_night_weather.py`; native Pi coverage: `.venv/bin/python scripts/check_night_weather_native.py` through a temporary loopback CDP tunnel.
-
-
-Locally drawn fog drifts at randomized speeds, lighting slowly breathes, embers rise, and ghosts cross at random intervals, directions, sizes and heights. The Pi uses reduced particle density and cached glow/ghost sprites. The welcome canvas and countdown pause off-screen or behind any dialog. Reduced motion keeps the scene static and the countdown visible. Weather remains live with explicit loading/stale/offline status and a location button; ambience still requires an explicit tap.
-
-### Spooky Sounds uses your imported effects
-
-The welcome screen's **Play spooky sounds** control plays the saved effect library, not the bundled midnight loop. Every effect plays once in a shuffled cycle before the next cycle begins; the boundary avoids an immediate repeat when alternatives exist. Each clip finishes before the next starts, including longer recordings. Pause and header Mute stop playback immediately; startup remains muted. With an empty effects library, the control opens Library with import guidance. Scene effects and Party Hub music remain separate.
-
-## Pumpkin welcome cutscene
-
-The supplied 15-second clip replaces the spinning reveal for manual pumpkin/Trick or Treat activation. It plays full-screen with one small Back overlay, then fades into the SPARK product showcase. The showcase always appears after a manual intro, regardless of the automatic camera follow-up setting. Back/Escape stops and releases the video. Background music and Spooky Sounds pause during the intro, then resume if still enabled. Video audio follows shared volume and Mute; browser audio restrictions fall back to muted video. Reduced motion skips the clip. A missing/unplayable intro opens the showcase instead.
-
-Videos are stored privately in app data as `cutscenes/welcome.mp4` and optional `welcome.webm`, and are excluded from the source archive. The original `/home/hsindhar/Music/cutscenes/generated_video.mp4` was preserved. The installed MP4 is stream-copied with fast-start metadata; a smaller 800-pixel VP8/Opus WebM supports browsers without H.264 decoding. No ffmpeg installation is needed at playback time.
-
-To install already browser-compatible files:
+Open `http://localhost:8080/`. Preview over HTTP; opening `index.html` directly does not support browser modules, storage, or service workers reliably.
 
 ```sh
-python3 scripts/import_cutscene.py /path/to/welcome.mp4 --webm /path/to/welcome.webm --data-dir /path/to/app-data
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements-dev.txt
+.venv/bin/python -m playwright install chromium
+.venv/bin/python -m unittest discover -s tests/web -v
 ```
 
-Omit `--webm` if unavailable. On the Pi, app data is `/home/spark/HalloweenHub-20261014/data`. The importer copies files atomically and leaves sources untouched. Without an installed clip, manual activation opens the SPARK showcase directly.
+The checks serve the real `/halloween-hub-web/` project path, verify persistence and media playback, and exercise adventures, simulations, weather errors, storage errors, offline reload, and multiple display sizes.
 
-## Background and cutscene rotation
+## Publishing
 
-When the Dashboard has had no touch, mouse movement, keypress or scrolling for **20 seconds**, its current settled background can briefly come alive. Wicked Nun plays **Nun**, Dracula plays **Dracula**, and the original pumpkin scene plays **Pumpkin Scare**. Replays are silent and leave the countdown, weather, caption and controls in front. Video plays at **0.5× speed**, stretching each six-second clip to about twelve seconds. A decoded frame fades in over **3.5 seconds**, and playback fades back to the matching still over **3.5 seconds**. Fade-out begins about 3.9 seconds before the slowed clip ends, allowing time to return to the still before the final frame. The decorative foreground pumpkin artwork fades away during replay so it does not cover the moving character; its touch target and caption remain available, and the artwork returns with the still. The matching image remains mounted and background rotation holds throughout, then resumes from the same point. There is a random **45–75 second** wait before another replay becomes eligible, and interaction must again have been quiet for 20 seconds.
+The public repository deploys its `main` branch through GitHub Actions to GitHub Pages. Select **GitHub Actions** as the Pages source. Each build stages only `web/`, with a cache version derived from file content. Push a correction to redeploy; reverting a commit restores the previous application on the next deployment. Existing browser data is kept between application updates.
 
-Touch, mouse movement, a keypress or scrolling fades the replay away in 0.6 seconds without intercepting the action. Opening a dialog, leaving the Dashboard, hiding the page or enabling reduced motion releases playback immediately. Missing, blocked or stalled media keeps the image visible and skips the replay. Only one background video is decoded at a time and its resources are released after the fade. Imported images without an explicit video pairing continue as stills. Manual pumpkin adventures keep their existing behavior and audio.
+The original private project's `generic` branch contains the same generic source. Publish updates by copying the explicit public file set (`web/`, `scripts/build_web.py`, `tests/web/`, the Pages workflow, development requirements, README, credits, and `.gitignore`) into the public repository. Keep its history independent of the private project.
 
-The welcome background keeps the original haunted-house scene and rotates through imported PNG images: 20 seconds still, then a 3-second crossfade. Rotation pauses off-screen, behind dialogs, and in reduced-motion mode. New images preload before entering rotation; unavailable images are skipped. The foreground pumpkin lowers by 30% of its own height as an imported PNG fades in and returns as the original scene reappears; its touch target and caption stay anchored.
-
-Pumpkin taps cycle the installed cutscenes in order, opening the SPARK showcase after each. The last selection is remembered in that browser, so reloading does not reset the cycle. The Pi currently has **Welcome**, **Dracula**, **Nun**, and **Pumpkin Scare**, plus two full-size imported PNG backgrounds (Dracula and Wicked Nun) alongside the original scene. The former WebP backgrounds have been removed.
-
-Import additional media without replacing Welcome:
-
-```sh
-python3 scripts/import_cutscene.py /path/to/new.mp4 --webm /path/to/new.webm --name new-scene --data-dir /path/to/app-data
-python3 scripts/import_backgrounds.py /path/to/background-folder --data-dir /path/to/app-data
-```
-
-Use lowercase letters, digits, hyphens or underscores for cutscene names. Background imports deduplicate by content. Original files are preserved; imported media stays in application data and works offline.
-
-On the welcome screen, the scene fills the display. Tap outside the pumpkin to reveal compact top and bottom controls for seven seconds. Tab or Escape reveals them for keyboard use. Other screens retain their visible navigation.
-
-Welcome text lines drift independently along randomized 28–50 second routes, with separate fade schedules and mist/rise/slide/fade re-entry effects. Eight spooky headings change every 12 seconds. Messages and effects use independent shuffled bags without adjacent repeats. Effects include wavy letters, fading mist, a passing ghost, rotating title words with shimmer, typewriter reveals, and subdued city-night neon. Pumpkin instructions and the sound-library caption fade away between appearances. Messages pause behind dialogs/off-screen; reduced-motion mode keeps text steady and readable.
-
-Welcome text effects are original adaptations inspired by [Prismic’s text-animation examples](https://prismic.io/blog/css-text-animations), including Ghosts and Ghouls, Schitt’s Creek title animation, Typewriter Effect and City Nights. No external scripts or media are loaded for these effects.
-
-The welcome overlay containers stay anchored; individual headings, countdown values, weather lines, sound lines and pumpkin instructions move separately. Some remain visible while others fade. Playback/location buttons remain visible, and keyboard focus steadies the focused line. Dialogs, hidden screens and reduced motion pause the shared animation clock.
-
-Imported backgrounds display at full opacity without the additional dark gradient, with lighter edge shading and reduced generated fog. The original scene keeps its existing rendering. Background PNGs are imported directly at their original resolution.
-
-Idle-video browser checks (use an isolated server with the three paired clips and two PNGs installed):
-
-```bash
-.venv/bin/python scripts/check_idle_video.py --url http://127.0.0.1:8094
-.venv/bin/python scripts/check_idle_video_natural.py --url http://127.0.0.1:8094
-```
-
-The first check backdates inactivity in an isolated browser fixture but plays the real clips and fades in real time. The second checks the natural idle schedule in the full Dashboard, then backdates inactivity for interruption checks. Both support `--cdp` for a Raspberry Pi Chromium instance and `--output` for evidence.
-
-For native display verification, temporarily enable Chromium's loopback remote-debugging port, forward it over SSH, then run `.venv/bin/python scripts/check_idle_video_native.py --cdp http://127.0.0.1:19223`. This checks the existing kiosk tab and its real idle schedule, advancing decoded frames, decorative-art fade and return to the still. Normal kiosk startup does not expose a debugging port.
+See [browser interfaces](BROWSER.md) and [asset credits](ARTWORK.md).

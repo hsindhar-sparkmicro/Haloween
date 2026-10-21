@@ -1,9 +1,0 @@
-"""Verify test welcome uses the same hidden-camera monster-reveal UI path, without capture."""
-import argparse
-import json
-from pathlib import Path
-from playwright.sync_api import sync_playwright
-parser=argparse.ArgumentParser();parser.add_argument('--cdp');parser.add_argument('--url',default='http://127.0.0.1:8080');parser.add_argument('--output',default='validation/welcome.json');args=parser.parse_args()
-with sync_playwright() as p:
- b=p.chromium.connect_over_cdp(args.cdp) if args.cdp else p.chromium.launch();ctx=b.new_context(viewport={'width':800,'height':480});page=ctx.new_page();errors=[];page.on('pageerror',lambda e:errors.append(str(e)));page.goto(args.url);page.wait_for_function('()=>document.querySelector("#connection").textContent.includes("Connected")');page.keyboard.press('Escape');page.click('[data-screen="haunt"]');page.locator('[data-open="camera-dialog"]').first.click();page.click('#camera-test');page.wait_for_selector('[data-product="sr1120"]',timeout=8000);assert page.locator('#visitor-dialog video').count()==0;page.click('[data-product="headset"]');assert page.locator('.spark-facts').count()==1;scene='SPARK headset showcase';page.click('#visitor-back');page.wait_for_function('()=>!document.querySelector("#pumpkin").disabled');snapshot=page.evaluate("async()=>{const s=await(await fetch('/api/state')).json();return {camera:s.camera,scan:s.scan.active,welcome:s.welcome,haunt:s.haunt.active};}");assert not snapshot['camera']['enabled'] and not snapshot['scan'] and not snapshot['welcome']['active'] and not snapshot['haunt'];assert not errors,errors;Path(args.output).write_text(json.dumps({'test_reveal_to_showcase':scene,'stop':snapshot,'errors':errors},indent=2));print(json.dumps({'scene':scene,'errors':errors}));ctx.close()
- if not args.cdp:b.close()
