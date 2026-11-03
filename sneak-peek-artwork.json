@@ -62,7 +62,7 @@
     "audio": "Removed; background remains muted, separate opt-in jingles unchanged.",
     "filter": "setpts=1.25*(PTS-STARTPTS),minterpolate=fps=24:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1,tpad=stop_mode=clone:stop_duration=0.083333",
     "encode": "H.264 libx264 slow CRF19, yuv420p, 24 fps CFR, faststart; source metadata removed",
-    "notes": "Same forest-preparing.png still beneath both fades. Alternates with Grinch; shares one decoder with the arrival and preserves its 120-second start-to-start schedule."
+    "notes": "Same forest-preparing.png still beneath playback. No entry or exit fade; reveal after the first presented frame and return directly to still. Alternates with Grinch; shares one decoder with the arrival and preserves its 240-second start-to-start schedule. At least sixty seconds of still background separate alternative visits."
   },
   "roaming_dog": {
     "method": "Built-in image_gen; second turn atlas corrected with built-in background extraction",
@@ -94,6 +94,6 @@
     "audio": "Removed; background muted, opt-in jingles independent.",
     "filter": "setpts=1.25*(PTS-STARTPTS),minterpolate=fps=24:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1,tpad=stop_mode=clone:stop_duration=0.083333",
     "encode": "H.264 libx264 slow CRF19, yuv420p, 24 fps CFR, faststart; first video stream only; source metadata removed",
-    "notes": "Alternates with dog film after five-second still gaps. Both share the arrival decoder and preserve its 120-second start-to-start schedule."
+    "notes": "Alternates with dog film after sixty-second still gaps. Both share the arrival decoder and preserve its 240-second start-to-start schedule."
   }
 }

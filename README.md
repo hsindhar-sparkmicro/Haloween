@@ -94,7 +94,7 @@ The dashboard countdown always targets local **October 31 at midnight**; through
 
 Weather uses Open-Meteo with attribution and a 15-minute cache. Previously fetched forecasts remain visible as stale when offline. City selection is saved immediately; other settings use Save. Set location once rather than shipping a misleading default forecast.
 
-Native minimize is shown in desktop/kiosk launch mode and acts on the server’s own Halloween Hub browser window. Pi Wayland support is verified; Windows support uses the native window API, and X11 requires `xdotool`. Other desktop compositors can report unavailable. Ordinary remote browser views use their own browser window controls.
+Native minimize is shown in desktop/kiosk launch mode and acts on the server’s own Halloween Hub or Christmas sneak-peek browser window. Pi Wayland support is verified; Windows support uses the native window API, and X11 requires `xdotool`. Other desktop compositors can report unavailable. Ordinary remote browser views use their own browser window controls.
 
 The free API is intended here for personal/non-commercial use; see [Open-Meteo terms](https://open-meteo.com/en/terms).
 

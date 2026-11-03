@@ -1,16 +1,16 @@
 # Graph Report - Haloween  (2026-11-03)
 
 ## Corpus Check
-- 107 files · ~1,552,441 words
+- 108 files · ~1,553,477 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 762 nodes · 1098 edges · 98 communities (38 shown, 60 thin omitted)
-- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 10 edges (avg confidence: 0.56)
+- 772 nodes · 1113 edges · 97 communities (39 shown, 58 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 11 edges (avg confidence: 0.55)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `587d9b31`
+- Built from commit: `7233387f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -100,7 +100,6 @@
 - [[_COMMUNITY_Community 87|Community 87]]
 - [[_COMMUNITY_Community 88|Community 88]]
 - [[_COMMUNITY_Community 89|Community 89]]
-- [[_COMMUNITY_Community 90|Community 90]]
 - [[_COMMUNITY_Community 91|Community 91]]
 - [[_COMMUNITY_Community 92|Community 92]]
 - [[_COMMUNITY_Community 93|Community 93]]
@@ -114,7 +113,7 @@
 2. `create_app()` - 29 edges
 3. `RoamingDog` - 24 edges
 4. `Visitor` - 24 edges
-5. `Validation record — October 14, 2026` - 19 edges
+5. `Validation record — October 14, 2026` - 21 edges
 6. `Simulation` - 18 edges
 7. `SneakArrival` - 18 edges
 8. `$()` - 18 edges
@@ -136,7 +135,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (98 total, 60 thin omitted)
+## Communities (97 total, 58 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.22
@@ -150,13 +149,17 @@ Nodes (7): Shared simulation boundary. No GPIO or sensor access., Shared simulat
 Cohesion: 0.06
 Nodes (51): $(), action(), ambience, ambientControl(), ambientShuffle, api(), cue, discoverWindowControls() (+43 more)
 
+### Community 3 - "Community 3"
+Cohesion: 0.16
+Nodes (5): ScenePlayer, ease(), random(), selectors, WelcomeFloat
+
 ### Community 4 - "Community 4"
 Cohesion: 0.10
 Nodes (19): Asset provenance, Audio and data, Automatic release downloads, Background and cutscene rotation, Camera haunt (optional Raspberry Pi feature), Four screens, Halloween Hub, Halloween music and offline shuffle (+11 more)
 
 ### Community 5 - "Community 5"
-Cohesion: 0.29
-Nodes (7): manage(), Minimize only a browser window titled Halloween Hub; never simulate global keys., read_string(), string(), uint(), WaylandWindows, windows_target()
+Cohesion: 0.21
+Nodes (8): manage(), Minimize only this app's seasonal browser window; never simulate global keys.  W, read_string(), string(), uint(), WaylandWindows, windows_target(), SeasonalWindowTests
 
 ### Community 9 - "Community 9"
 Cohesion: 0.33
@@ -164,7 +167,7 @@ Nodes (5): Artwork generation, Decorative night weather, Immersive scene backgro
 
 ### Community 20 - "Community 20"
 Cohesion: 0.05
-Nodes (37): Added background and cutscene rotation, Added Dracula backgrounds and cutscene, Animated scene player correction, Camera orientation correction, Clearly visible floating weather, sound details and countdown, Completed checks, Display-refresh dog rendering and video edge handoffs (2026-11-03), Dog video only — roaming overlay disabled (2026-11-03) (+29 more)
+Nodes (39): Added background and cutscene rotation, Added Dracula backgrounds and cutscene, Alternating Grinch video and two-minute arrival (2026-11-03), Animated scene player correction, Camera orientation correction, Clearly visible floating weather, sound details and countdown, Completed checks, Direct dog handoff, continuous weather and seasonal minimize (2026-11-03) (+31 more)
 
 ### Community 21 - "Community 21"
 Cohesion: 0.29
@@ -176,7 +179,7 @@ Nodes (12): asset(), masthead(), productImage(), products, SparkShowcase, $(), r
 
 ### Community 38 - "Community 38"
 Cohesion: 0.07
-Nodes (13): BackgroundRotation, IdleBackgroundVideo, NightWeather, random(), smooth(), ease(), random(), selectors (+5 more)
+Nodes (10): BackgroundRotation, IdleBackgroundVideo, NightWeather, random(), smooth(), WelcomeAtmosphere, EFFECTS, MESSAGES (+2 more)
 
 ### Community 52 - "Community 52"
 Cohesion: 0.67
@@ -199,8 +202,8 @@ Cohesion: 0.11
 Nodes (18): arrival_media, audio, browser_playback_rate, delivery_duration_seconds, delivery_sha256, encode, file, filter (+10 more)
 
 ### Community 65 - "Community 65"
-Cohesion: 0.14
-Nodes (13): After the haunt — Christmas sneak peek, Alternating dog and Grinch videos between the main transitions, Archived roaming dog prototype — disabled, Checks, Dates and artwork sources, Dog video between the main transitions, Dog-video fallback between the main transitions, Dog visits between the main transitions (+5 more)
+Cohesion: 0.13
+Nodes (14): After the haunt — Christmas sneak peek, Alternating dog and Grinch videos between the main transitions, Archived roaming dog prototype — disabled, Checks, Dates and artwork sources, Dog video between the main transitions, Dog-video fallback between the main transitions, Dog visits between the main transitions (+6 more)
 
 ### Community 67 - "Community 67"
 Cohesion: 0.50
@@ -208,7 +211,7 @@ Nodes (3): GitHub release downloads, Private repository access, Release contract
 
 ### Community 68 - "Community 68"
 Cohesion: 0.53
-Nodes (5): Check real background video, a real two-minute repeat, and interruption recovery, replay(), start(), state(), still()
+Nodes (5): Check real background video, a real four-minute repeat, and interruption recover, replay(), start(), state(), still()
 
 ### Community 73 - "Community 73"
 Cohesion: 0.21
@@ -219,15 +222,15 @@ Cohesion: 0.13
 Nodes (15): dog_media, audio, browser_playback_rate, delivery_duration_seconds, delivery_sha256, encode, file, filter (+7 more)
 
 ### Community 76 - "Community 76"
-Cohesion: 0.67
-Nodes (3): Check alternating dog/Grinch films and the real two-minute main-film cadence., still(), wait_state()
+Cohesion: 0.50
+Nodes (3): Check alternating dog/Grinch films and the real four-minute main-film cadence., still(), wait_state()
 
 ### Community 79 - "Community 79"
 Cohesion: 0.24
 Nodes (4): countdown(), fetch(), search_locations(), Weather
 
 ### Community 80 - "Community 80"
-Cohesion: 0.31
+Cohesion: 0.29
 Nodes (3): Calendar facts for the isolated November sneak-peek edition., sneak_peek_calendar(), SneakPeekCalendarTests
 
 ### Community 81 - "Community 81"
@@ -271,24 +274,24 @@ Cohesion: 0.40
 Nodes (5): background_wordmark, file, notes, sha256, source
 
 ## Knowledge Gaps
-- **205 isolated node(s):** `image`, `width`, `height`, `frames`, `lastRotation` (+200 more)
+- **208 isolated node(s):** `image`, `width`, `height`, `frames`, `lastRotation` (+203 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **60 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **58 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `$()` connect `Community 2` to `Community 32`, `Community 3`, `Community 38`, `Community 90`, `Community 60`?**
-  _High betweenness centrality (0.070) - this node is a cross-community bridge._
+- **Why does `$()` connect `Community 2` to `Community 32`, `Community 3`, `Community 60`, `Community 38`?**
+  _High betweenness centrality (0.069) - this node is a cross-community bridge._
 - **Why does `$()` connect `Community 60` to `Community 73`, `Community 2`, `Community 38`, `Community 70`?**
-  _High betweenness centrality (0.038) - this node is a cross-community bridge._
+  _High betweenness centrality (0.037) - this node is a cross-community bridge._
 - **Why does `create_app()` connect `Community 0` to `Community 1`, `Community 5`, `Community 78`, `Community 79`, `Community 80`, `Community 81`, `Community 55`, `Community 88`, `Community 26`, `Community 27`?**
-  _High betweenness centrality (0.018) - this node is a cross-community bridge._
+  _High betweenness centrality (0.019) - this node is a cross-community bridge._
 - **What connects `image`, `width`, `height` to the rest of the system?**
-  _272 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _275 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.059322033898305086 - nodes in this community are weakly interconnected._
 - **Should `Community 4` be split into smaller, more focused modules?**
   _Cohesion score 0.1 - nodes in this community are weakly interconnected._
 - **Should `Community 20` be split into smaller, more focused modules?**
-  _Cohesion score 0.05263157894736842 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05 - nodes in this community are weakly interconnected._

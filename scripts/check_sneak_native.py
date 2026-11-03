@@ -1,6 +1,6 @@
 """Measure the actual Pi kiosk through a temporary loopback CDP tunnel.
 
-Observe natural two-minute background cycles, transparent foreground overlays,
+Observe natural four-minute background cycles, transparent foreground overlays,
 and decoder frame counters for at least ten minutes. Leaves the kiosk open.
 """
 import argparse
@@ -24,12 +24,23 @@ with sync_playwright() as p:
         raise AssertionError(state)
     page.reload()
     wait_state("playing")
-    page.evaluate('''()=>{
-      window.qualification={cycles:[],states:[],viewport:[innerWidth,innerHeight],start:performance.now(),samples:0,overlayViolations:[]};
+    page.evaluate('''async()=>{
+      window.qualification={cycles:[],states:[],viewport:[innerWidth,innerHeight],start:performance.now(),samples:0,overlayViolations:[],weatherViolations:[],weatherUpdates:{},weatherModes:{},weatherMaxGapMs:0};
+      const {NightWeather}=await import('/static/night-weather.js'),advance=NightWeather.prototype.advance;
+      let lastWeather=performance.now();
+      NightWeather.prototype.advance=function(...args){
+        const now=performance.now(),root=document.querySelector('#dashboard'),kind=root.classList.contains('arrival-playing')?root.dataset.backgroundClip:'still';
+        qualification.weatherMaxGapMs=Math.max(qualification.weatherMaxGapMs,now-lastWeather);lastWeather=now;
+        qualification.weatherUpdates[kind]=(qualification.weatherUpdates[kind]||0)+1;
+        const result=advance.apply(this,args);
+        qualification.weatherModes[this.mode]=(qualification.weatherModes[this.mode]||0)+1;
+        return result;
+      };
       let prev='',cycle=null;
       window.qualificationTimer=setInterval(()=>{
         const state=document.querySelector('#dashboard').dataset.arrival,v=document.querySelector('#peek-arrival video'),now=performance.now();
         const q=v.getVideoPlaybackQuality();
+        if(document.querySelector('#dashboard').classList.contains('atmosphere-paused')||document.querySelector('#night-weather-canvas').dataset.weather==='still')qualification.weatherViolations.push({state,seconds:(now-qualification.start)/1000});
         if(state!==prev){qualification.states.push({state,seconds:(now-qualification.start)/1000});
           if(state==='playing'||state.endsWith('-playing')){cycle={kind:document.querySelector('#dashboard').dataset.backgroundClip,duration:v.duration,start:now,total:0,dropped:0,baseline:null,maxTime:0,rate:v.playbackRate,muted:v.muted,fadeDuration:getComputedStyle(document.querySelector("#peek-arrival")).transitionDuration,fadeSamples:[]};qualification.cycles.push(cycle);}prev=state;}
         if(cycle&&v.hasAttribute('src')&&!state.endsWith('loading')){cycle.total=Math.max(cycle.total,q.totalVideoFrames);cycle.dropped=Math.max(cycle.dropped,q.droppedVideoFrames);cycle.maxTime=Math.max(cycle.maxTime,v.currentTime);
@@ -76,11 +87,13 @@ with sync_playwright() as p:
     (out/'native-ten-minute.json').write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps({k:v for k,v in result.items() if k not in ['cycles','states']}),flush=True)
     assert result['viewport']==[800,480],result['viewport']
-    assert result['durationSeconds']>=600 and result['completeMainCycles']>=5,result
+    assert result['durationSeconds']>=600 and result['completeMainCycles']>=3,result
     assert steady_total>0 and result['afterClipStartup']['percent']<1,result['afterClipStartup']
-    assert all(118<=t<=122 for t in result['cadenceSeconds']),result['cadenceSeconds']
+    assert all(238<=t<=242 for t in result['cadenceSeconds']),result['cadenceSeconds']
     assert all(c['rate']==1 and c['muted'] for c in finished),finished
     assert not result['overlayViolations'],result['overlayViolations']
+    assert not result['weatherViolations'],result['weatherViolations']
+    assert all(result['weatherUpdates'].get(kind,0)>0 for kind in ['arrival','dog','grinch','still']),result['weatherUpdates']
     assert not errors,errors
-    assert all(c['fadeDuration']==('2.4s' if c['kind']!='arrival' else '4.8s') for c in finished),finished
-    assert all(any(.1<s['opacity']<.9 for s in c['fadeSamples']) and any(s['opacity']>.99 for s in c['fadeSamples']) for c in finished),finished
+    assert all(c['fadeDuration']=={'dog':'0s','grinch':'2.4s','arrival':'4.8s'}[c['kind']] for c in finished),finished
+    assert all((all(s['opacity']==1 for s in c['fadeSamples']) if c['kind']=='dog' else any(.1<s['opacity']<.9 for s in c['fadeSamples'])) and any(s['opacity']>.99 for s in c['fadeSamples']) for c in finished),finished

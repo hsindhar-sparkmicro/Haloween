@@ -1,4 +1,4 @@
-"""Minimize only a browser window titled Halloween Hub; never simulate global keys.
+"""Minimize only this app's seasonal browser window; never simulate global keys.
 
 Wayland requests follow wlr-foreign-toplevel-management v1 (version 3).
 https://github.com/swaywm/wlr-protocols/blob/master/unstable/wlr-foreign-toplevel-management-unstable-v1.xml
@@ -6,12 +6,16 @@ https://github.com/swaywm/wlr-protocols/blob/master/unstable/wlr-foreign-topleve
 import ctypes
 import os
 import platform
+import re
 import shutil
 import socket
 import stat
 import struct
 import subprocess
 from pathlib import Path
+
+
+WINDOW_TITLES = ('Halloween Hub', 'Christmas is stirring · SPARK sneak peek')
 
 
 def uint(n):
@@ -111,11 +115,11 @@ class WaylandWindows:
 
     def target(self):
         matches = [(identifier, handle) for identifier, handle in self.handles.items()
-                   if handle['title'].startswith('Halloween Hub') and
+                   if handle['title'].startswith(WINDOW_TITLES) and
                    any(name in handle['app_id'].lower() for name in ('chrom', 'firefox', 'edge'))]
         matches.sort(key=lambda item: 2 not in item[1]['states'])
         if not matches:
-            raise OSError('No Halloween Hub browser window was found')
+            raise OSError('No Halloween Hub or Christmas sneak-peek browser window was found')
         return matches[0]
 
     def action(self, action):
@@ -148,13 +152,13 @@ def windows_target(action=None):
     def visit(handle, _):
         title = ctypes.create_unicode_buffer(512)
         user.GetWindowTextW(handle, title, len(title))
-        if title.value.startswith('Halloween Hub') and any(name in title.value for name in ('Chrome','Chromium','Firefox','Edge')):
+        if title.value.startswith(WINDOW_TITLES) and any(name in title.value for name in ('Chrome','Chromium','Firefox','Edge')):
             handles.append(handle)
         return True
     user.EnumWindows.argtypes = [callback_type, wintypes.LPARAM]
     user.EnumWindows(visit, 0)
     if not handles:
-        raise OSError('No Halloween Hub browser window was found')
+        raise OSError('No Halloween Hub or Christmas sneak-peek browser window was found')
     foreground = user.GetForegroundWindow()
     handle = foreground if foreground in handles else handles[0]
     if action:
@@ -185,12 +189,13 @@ def manage(action=None):
     finally:
         if wayland:
             wayland.close()
-    found = subprocess.run(['xdotool', 'search', '--name', '^Halloween Hub'], capture_output=True, text=True, timeout=2)
+    pattern = '^(' + '|'.join(re.escape(title) for title in WINDOW_TITLES) + ')'
+    found = subprocess.run(['xdotool', 'search', '--name', pattern], capture_output=True, text=True, timeout=2)
     windows = found.stdout.splitlines()
     if not windows:
         if action:
-            raise OSError('No Halloween Hub browser window was found')
-        return dict(available=False, reason='No Halloween Hub browser window was found')
+            raise OSError('No Halloween Hub or Christmas sneak-peek browser window was found')
+        return dict(available=False, reason='No Halloween Hub or Christmas sneak-peek browser window was found')
     if action:
         operation = 'windowminimize' if action == 'minimize' else 'windowactivate'
         subprocess.run(['xdotool', operation, windows[-1]], check=True, timeout=2)

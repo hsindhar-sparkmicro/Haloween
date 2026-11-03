@@ -1,8 +1,8 @@
 const ASSETS='/static/assets/sneak-peek/';
-const REPEAT_MS=120000;
+const REPEAT_MS=240000;
 const DISSOLVE_MS=4800;
 const AMBIENT_DISSOLVE_MS=2400;
-const AMBIENT_STILL_MS=5000;
+const AMBIENT_STILL_MS=60000;
 const AMBIENT_WINDOW_MS=18000;
 const ALTERNATIVES=['dog','grinch'];
 const MEDIA={arrival:'arrival-half-speed.mp4',dog:'dog-eight-tenths-speed.mp4',grinch:'grinch-eight-tenths-speed.mp4'};
@@ -38,7 +38,7 @@ export class SneakArrival {
   }
   schedule(){
     clearTimeout(this.next);
-    // Start-to-start cadence. Returning to the dashboard begins a fresh two minutes.
+    // Start-to-start cadence. Returning to the dashboard begins a fresh four minutes.
     this.next=setTimeout(()=>{this.next=0;this.start();},REPEAT_MS);
     this.arrivalDue=performance.now()+REPEAT_MS;
   }
@@ -141,7 +141,7 @@ export class SneakArrival {
     if(!this.running&&!this.fading)return;
     this.running=false;this.fading=true;this.returning=false;++this.generation;this.clearCycle();this.video.pause();
     this.phase('settling');
-    // Keep the last decoded frame until the slow dissolve exposes the forest underneath.
+    // Dog footage shares the still: switch directly; other films keep their dissolve.
     this.layer.style.removeProperty('opacity');this.layer.style.removeProperty('transition');
     this.layer.classList.add('settling');this.returnLayer.classList.remove('visible');
     const release=()=>{
@@ -150,6 +150,6 @@ export class SneakArrival {
       this.root.classList.remove('arrival-playing');this.root.dataset.arrival='resting';
       if(!immediate)this.scheduleDog();
     };
-    if(immediate||!this.eligible())release();else this.later(release,(this.kind!=='arrival'?AMBIENT_DISSOLVE_MS:DISSOLVE_MS)+50);
+    if(immediate||this.kind==='dog'||!this.eligible())release();else this.later(release,(this.kind!=='arrival'?AMBIENT_DISSOLVE_MS:DISSOLVE_MS)+50);
   }
 }

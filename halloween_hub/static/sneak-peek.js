@@ -20,7 +20,8 @@ export class SneakAtmosphere {
   refresh(){
     const active=$('#dashboard').classList.contains('active')&&!document.hidden&&!$('dialog[open]');
     const reduced=this.motion.matches||this.settings.reduced_motion;
-    const paused=!active||reduced||$('#dashboard').classList.contains('arrival-playing');
+    // Weather keeps its own clock and particles across every background-video handoff.
+    const paused=!active||reduced;
     if($('#dashboard').classList.contains('atmosphere-paused')!==Boolean(paused))$('#dashboard').classList.toggle('atmosphere-paused',Boolean(paused));
     if(paused){cancelAnimationFrame(this.frame);this.frame=0;this.last=0;this.ctx.clearRect(0,0,this.width,this.height);this.weatherDirty=false;this.weather.describe('still');return;}
     if(this.frame)return;
@@ -122,7 +123,7 @@ export class SneakPeek {
       this.defrostPercent=percent;
       $('#peek-defrost-value').textContent=percent+'%';$('.peek-meter').setAttribute('aria-valuenow',percent);$('.peek-meter span').style.width=percent+'%';
       $('.peek-defrost h2').textContent=percent===100?'Mariah has defrosted.':'Mariah is defrosting…';
-      $('#peek-defrost-caption').textContent=percent===100?'December mode: unlocked':'warming up for December';
+      $('#peek-defrost-caption').textContent=percent===100?'December mode: unlocked':'ready on December 1';
     }
     const party=calendar.spark_party;
     if(party){

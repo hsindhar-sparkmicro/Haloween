@@ -24,6 +24,18 @@ class SneakPeekCalendarTests(unittest.TestCase):
         self.assertEqual(result['christmas']['seconds'], 0)
         self.assertEqual(result['boxing_day']['phase'], 'today')
 
+    def test_defrost_finishes_at_december_first_montreal_midnight(self):
+        zone = ZoneInfo('America/Toronto')
+        cases = [
+            (datetime(2026, 11, 1, tzinfo=zone), 0),
+            (datetime(2026, 12, 1, 4, 59, 59, tzinfo=timezone.utc), 96),
+            (datetime(2026, 12, 1, 5, tzinfo=timezone.utc), 100),
+            (datetime(2026, 12, 25, tzinfo=zone), 100),
+        ]
+        for instant, expected in cases:
+            with self.subTest(instant=instant):
+                self.assertEqual(sneak_peek_calendar('America/Toronto', instant)['defrost_percent'], expected)
+
     def test_dst_seconds_and_year_rollover(self):
         now = datetime(2026, 10, 31, 12, tzinfo=ZoneInfo('America/Toronto'))
         result = sneak_peek_calendar('America/Toronto', now)
