@@ -1,16 +1,16 @@
-# Graph Report - Haloween  (2026-10-20)
+# Graph Report - Haloween  (2026-11-03)
 
 ## Corpus Check
-- 78 files · ~702,662 words
+- 84 files · ~973,889 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 458 nodes · 655 edges · 63 communities (19 shown, 44 thin omitted)
+- 502 nodes · 728 edges · 67 communities (21 shown, 46 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.65)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `bff495c1`
+- Built from commit: `71686759`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -73,11 +73,15 @@
 - [[_COMMUNITY_Community 60|Community 60]]
 - [[_COMMUNITY_Community 61|Community 61]]
 - [[_COMMUNITY_Community 62|Community 62]]
+- [[_COMMUNITY_Community 63|Community 63]]
+- [[_COMMUNITY_Community 64|Community 64]]
+- [[_COMMUNITY_Community 65|Community 65]]
+- [[_COMMUNITY_Community 66|Community 66]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `$()` - 62 edges
-2. `Visitor` - 24 edges
-3. `create_app()` - 23 edges
+1. `$()` - 66 edges
+2. `create_app()` - 26 edges
+3. `Visitor` - 24 edges
 4. `Simulation` - 18 edges
 5. `$()` - 18 edges
 6. `CameraTests` - 18 edges
@@ -101,11 +105,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (63 total, 44 thin omitted)
+## Communities (67 total, 46 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.08
-Nodes (16): create_app(), countdown(), data_directory(), backgrounds(), cutscenes(), Discover only installed gallery media in app data., main(), import_audio() (+8 more)
+Cohesion: 0.07
+Nodes (19): create_app(), countdown(), data_directory(), backgrounds(), cutscenes(), Discover only installed gallery media in app data., main(), import_audio() (+11 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.15
@@ -113,7 +117,7 @@ Nodes (8): Shared simulation boundary. No GPIO or sensor access., Shared simulat
 
 ### Community 2 - "Community 2"
 Cohesion: 0.06
-Nodes (48): $(), action(), ambience, ambientControl(), ambientShuffle, api(), cue, discoverWindowControls() (+40 more)
+Nodes (49): $(), action(), ambience, ambientControl(), ambientShuffle, api(), cue, discoverWindowControls() (+41 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.11
@@ -141,7 +145,7 @@ Nodes (7): $(), riddles, stories, icon(), icons, monsterNames, Visitor
 
 ### Community 38 - "Community 38"
 Cohesion: 0.07
-Nodes (11): BackgroundRotation, IdleBackgroundVideo, WelcomeAtmosphere, ease(), random(), selectors, WelcomeFloat, EFFECTS (+3 more)
+Nodes (13): BackgroundRotation, IdleBackgroundVideo, NightWeather, random(), smooth(), ease(), random(), selectors (+5 more)
 
 ### Community 52 - "Community 52"
 Cohesion: 0.67
@@ -156,28 +160,36 @@ Cohesion: 0.50
 Nodes (3): assets, images_unmodified, retrieved
 
 ### Community 60 - "Community 60"
-Cohesion: 0.27
-Nodes (3): NightWeather, random(), smooth()
+Cohesion: 0.23
+Nodes (4): $(), gifts, SneakAtmosphere, SneakPeek
+
+### Community 63 - "Community 63"
+Cohesion: 0.25
+Nodes (7): base, branch, created, file, method, notes, prompt
+
+### Community 65 - "Community 65"
+Cohesion: 0.33
+Nodes (5): After the haunt — Christmas sneak peek, Checks, Dates and artwork sources, Local preview, What works
 
 ## Knowledge Gaps
-- **77 isolated node(s):** `lastRotation`, `player`, `ambience`, `effect`, `cue` (+72 more)
+- **90 isolated node(s):** `lastRotation`, `player`, `ambience`, `effect`, `cue` (+85 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **44 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **46 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `$()` connect `Community 2` to `Community 32`, `Community 3`, `Community 38`?**
-  _High betweenness centrality (0.104) - this node is a cross-community bridge._
-- **Why does `Visitor` connect `Community 32` to `Community 2`?**
-  _High betweenness centrality (0.026) - this node is a cross-community bridge._
+- **Why does `$()` connect `Community 2` to `Community 32`, `Community 64`, `Community 3`, `Community 38`, `Community 60`?**
+  _High betweenness centrality (0.109) - this node is a cross-community bridge._
 - **Why does `create_app()` connect `Community 0` to `Community 1`, `Community 26`, `Community 27`, `Community 5`?**
-  _High betweenness centrality (0.026) - this node is a cross-community bridge._
+  _High betweenness centrality (0.025) - this node is a cross-community bridge._
+- **Why does `Visitor` connect `Community 32` to `Community 2`?**
+  _High betweenness centrality (0.025) - this node is a cross-community bridge._
 - **What connects `Halloween Hub: offline-first entertainment kiosk.`, `Hidden motion scans with physical capture shutdown between scan windows.`, `Hidden Pi motion scan. Only numerical scores leave this process.` to the rest of the system?**
-  _129 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _144 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.07624113475177305 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06516290726817042 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.14624505928853754 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.06265664160401002 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06110102843315184 - nodes in this community are weakly interconnected._

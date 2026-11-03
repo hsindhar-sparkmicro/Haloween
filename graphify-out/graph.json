@@ -52,7 +52,7 @@
       "label": "create_app()",
       "file_type": "code",
       "source_file": "halloween_hub/app.py",
-      "source_location": "L18",
+      "source_location": "L19",
       "id": "halloween_hub_app_create_app",
       "community": 0,
       "norm_label": "create_app()"
@@ -463,10 +463,37 @@
       "norm_label": "validated, content-addressed local audio imports; repeated imports are idempoten"
     },
     {
+      "label": "sneak_peek.py",
+      "file_type": "code",
+      "source_file": "halloween_hub/sneak_peek.py",
+      "source_location": "L1",
+      "id": "halloween_hub_sneak_peek",
+      "community": 0,
+      "norm_label": "sneak_peek.py"
+    },
+    {
+      "label": "sneak_peek_calendar()",
+      "file_type": "code",
+      "source_file": "halloween_hub/sneak_peek.py",
+      "source_location": "L6",
+      "id": "halloween_hub_sneak_peek_sneak_peek_calendar",
+      "community": 0,
+      "norm_label": "sneak_peek_calendar()"
+    },
+    {
+      "label": "Calendar facts for the isolated November sneak-peek edition.",
+      "file_type": "rationale",
+      "source_file": "halloween_hub/sneak_peek.py",
+      "source_location": "L1",
+      "id": "halloween_hub_sneak_peek_rationale_1",
+      "community": 0,
+      "norm_label": "calendar facts for the isolated november sneak-peek edition."
+    },
+    {
       "label": "$()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L6",
+      "source_location": "L5",
       "id": "static_app",
       "community": 2,
       "norm_label": "$()"
@@ -475,7 +502,7 @@
       "label": "lastRotation",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L8",
+      "source_location": "L7",
       "id": "static_app_lastrotation",
       "community": 2,
       "norm_label": "lastrotation"
@@ -484,7 +511,7 @@
       "label": "player",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L13",
+      "source_location": "L12",
       "id": "static_app_player",
       "community": 2,
       "norm_label": "player"
@@ -493,7 +520,7 @@
       "label": "ambience",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L13",
+      "source_location": "L12",
       "id": "static_app_ambience",
       "community": 2,
       "norm_label": "ambience"
@@ -502,7 +529,7 @@
       "label": "effect",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L13",
+      "source_location": "L12",
       "id": "static_app_effect",
       "community": 2,
       "norm_label": "effect"
@@ -511,7 +538,7 @@
       "label": "cue",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L13",
+      "source_location": "L12",
       "id": "static_app_cue",
       "community": 2,
       "norm_label": "cue"
@@ -520,7 +547,7 @@
       "label": "scenePlayer",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L14",
+      "source_location": "L13",
       "id": "static_app_sceneplayer",
       "community": 2,
       "norm_label": "sceneplayer"
@@ -529,7 +556,7 @@
       "label": "welcomeAtmosphere",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L15",
+      "source_location": "L14",
       "id": "static_app_welcomeatmosphere",
       "community": 2,
       "norm_label": "welcomeatmosphere"
@@ -538,10 +565,19 @@
       "label": "ambientShuffle",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L16",
+      "source_location": "L15",
       "id": "static_app_ambientshuffle",
       "community": 2,
       "norm_label": "ambientshuffle"
+    },
+    {
+      "label": "sneakPeek",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/app.js",
+      "source_location": "L17",
+      "id": "static_app_sneakpeek",
+      "community": 2,
+      "norm_label": "sneakpeek"
     },
     {
       "label": "showScene()",
@@ -682,7 +718,7 @@
       "label": "muteAudio()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L130",
+      "source_location": "L131",
       "id": "static_app_muteaudio",
       "community": 2,
       "norm_label": "muteaudio()"
@@ -691,7 +727,7 @@
       "label": "ambientControl()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L140",
+      "source_location": "L142",
       "id": "static_app_ambientcontrol",
       "community": 2,
       "norm_label": "ambientcontrol()"
@@ -700,7 +736,7 @@
       "label": "stopAmbience()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L144",
+      "source_location": "L146",
       "id": "static_app_stopambience",
       "community": 2,
       "norm_label": "stopambience()"
@@ -709,7 +745,7 @@
       "label": "nextAmbientEffect()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L145",
+      "source_location": "L147",
       "id": "static_app_nextambienteffect",
       "community": 2,
       "norm_label": "nextambienteffect()"
@@ -718,7 +754,7 @@
       "label": "startEqualizer()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L159",
+      "source_location": "L161",
       "id": "static_app_startequalizer",
       "community": 2,
       "norm_label": "startequalizer()"
@@ -727,7 +763,7 @@
       "label": "stopCues()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L170",
+      "source_location": "L172",
       "id": "static_app_stopcues",
       "community": 2,
       "norm_label": "stopcues()"
@@ -736,7 +772,7 @@
       "label": "playRandomCue()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L171",
+      "source_location": "L173",
       "id": "static_app_playrandomcue",
       "community": 2,
       "norm_label": "playrandomcue()"
@@ -745,7 +781,7 @@
       "label": "renderEffects()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L191",
+      "source_location": "L193",
       "id": "static_app_rendereffects",
       "community": 2,
       "norm_label": "rendereffects()"
@@ -754,7 +790,7 @@
       "label": "nextTrackIndex()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L204",
+      "source_location": "L206",
       "id": "static_app_nexttrackindex",
       "community": 2,
       "norm_label": "nexttrackindex()"
@@ -763,7 +799,7 @@
       "label": "playTrack()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L211",
+      "source_location": "L213",
       "id": "static_app_playtrack",
       "community": 2,
       "norm_label": "playtrack()"
@@ -772,7 +808,7 @@
       "label": "playScene()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L238",
+      "source_location": "L240",
       "id": "static_app_playscene",
       "community": 2,
       "norm_label": "playscene()"
@@ -781,7 +817,7 @@
       "label": "stopScene()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L246",
+      "source_location": "L248",
       "id": "static_app_stopscene",
       "community": 2,
       "norm_label": "stopscene()"
@@ -790,7 +826,7 @@
       "label": "fillCamera()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L258",
+      "source_location": "L260",
       "id": "static_app_fillcamera",
       "community": 2,
       "norm_label": "fillcamera()"
@@ -799,7 +835,7 @@
       "label": "saveCamera()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L266",
+      "source_location": "L268",
       "id": "static_app_savecamera",
       "community": 2,
       "norm_label": "savecamera()"
@@ -808,7 +844,7 @@
       "label": "renderCamera()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L273",
+      "source_location": "L275",
       "id": "static_app_rendercamera",
       "community": 2,
       "norm_label": "rendercamera()"
@@ -817,7 +853,7 @@
       "label": "fillSettings()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L281",
+      "source_location": "L283",
       "id": "static_app_fillsettings",
       "community": 2,
       "norm_label": "fillsettings()"
@@ -826,7 +862,7 @@
       "label": "renderRecords()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L314",
+      "source_location": "L316",
       "id": "static_app_renderrecords",
       "community": 2,
       "norm_label": "renderrecords()"
@@ -835,7 +871,7 @@
       "label": "renderTracks()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L337",
+      "source_location": "L339",
       "id": "static_app_rendertracks",
       "community": 2,
       "norm_label": "rendertracks()"
@@ -844,7 +880,7 @@
       "label": "renderLogRows()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L348",
+      "source_location": "L350",
       "id": "static_app_renderlogrows",
       "community": 2,
       "norm_label": "renderlogrows()"
@@ -853,7 +889,7 @@
       "label": "renderLogs()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L360",
+      "source_location": "L362",
       "id": "static_app_renderlogs",
       "community": 2,
       "norm_label": "renderlogs()"
@@ -862,7 +898,7 @@
       "label": "temperature()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L361",
+      "source_location": "L363",
       "id": "static_app_temperature",
       "community": 2,
       "norm_label": "temperature()"
@@ -871,7 +907,7 @@
       "label": "renderWeather()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L362",
+      "source_location": "L364",
       "id": "static_app_renderweather",
       "community": 2,
       "norm_label": "renderweather()"
@@ -880,7 +916,7 @@
       "label": "renderCountdown()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L380",
+      "source_location": "L382",
       "id": "static_app_rendercountdown",
       "community": 2,
       "norm_label": "rendercountdown()"
@@ -889,7 +925,7 @@
       "label": "render()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L396",
+      "source_location": "L399",
       "id": "static_app_render",
       "community": 2,
       "norm_label": "render()"
@@ -898,7 +934,7 @@
       "label": "sync()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L462",
+      "source_location": "L465",
       "id": "static_app_sync",
       "community": 2,
       "norm_label": "sync()"
@@ -907,7 +943,7 @@
       "label": "discoverWindowControls()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L480",
+      "source_location": "L483",
       "id": "static_app_discoverwindowcontrols",
       "community": 2,
       "norm_label": "discoverwindowcontrols()"
@@ -1107,7 +1143,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L1",
       "id": "static_night_weather",
-      "community": 60,
+      "community": 38,
       "norm_label": "night-weather.js"
     },
     {
@@ -1116,7 +1152,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L2",
       "id": "static_night_weather_random",
-      "community": 60,
+      "community": 38,
       "norm_label": "random()"
     },
     {
@@ -1125,7 +1161,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L3",
       "id": "static_night_weather_smooth",
-      "community": 60,
+      "community": 38,
       "norm_label": "smooth()"
     },
     {
@@ -1134,7 +1170,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L4",
       "id": "static_night_weather_nightweather",
-      "community": 60,
+      "community": 38,
       "norm_label": "nightweather"
     },
     {
@@ -1143,70 +1179,70 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L5",
       "id": "static_night_weather_nightweather_constructor",
-      "community": 60,
+      "community": 38,
       "norm_label": ".constructor()"
     },
     {
       "label": ".leaf()",
       "file_type": "code",
       "source_file": "halloween_hub/static/night-weather.js",
-      "source_location": "L12",
+      "source_location": "L13",
       "id": "static_night_weather_nightweather_leaf",
-      "community": 60,
+      "community": 38,
       "norm_label": ".leaf()"
     },
     {
       "label": ".change()",
       "file_type": "code",
       "source_file": "halloween_hub/static/night-weather.js",
-      "source_location": "L21",
+      "source_location": "L22",
       "id": "static_night_weather_nightweather_change",
-      "community": 60,
+      "community": 38,
       "norm_label": ".change()"
     },
     {
       "label": ".advance()",
       "file_type": "code",
       "source_file": "halloween_hub/static/night-weather.js",
-      "source_location": "L26",
+      "source_location": "L27",
       "id": "static_night_weather_nightweather_advance",
-      "community": 60,
+      "community": 38,
       "norm_label": ".advance()"
     },
     {
       "label": ".spawn()",
       "file_type": "code",
       "source_file": "halloween_hub/static/night-weather.js",
-      "source_location": "L45",
+      "source_location": "L46",
       "id": "static_night_weather_nightweather_spawn",
-      "community": 60,
+      "community": 38,
       "norm_label": ".spawn()"
     },
     {
       "label": ".describe()",
       "file_type": "code",
       "source_file": "halloween_hub/static/night-weather.js",
-      "source_location": "L49",
+      "source_location": "L50",
       "id": "static_night_weather_nightweather_describe",
-      "community": 60,
+      "community": 38,
       "norm_label": ".describe()"
     },
     {
       "label": ".draw()",
       "file_type": "code",
       "source_file": "halloween_hub/static/night-weather.js",
-      "source_location": "L53",
+      "source_location": "L54",
       "id": "static_night_weather_nightweather_draw",
-      "community": 60,
+      "community": 38,
       "norm_label": ".draw()"
     },
     {
       "label": ".winter()",
       "file_type": "code",
       "source_file": "halloween_hub/static/night-weather.js",
-      "source_location": "L65",
+      "source_location": "L66",
       "id": "static_night_weather_nightweather_winter",
-      "community": 60,
+      "community": 38,
       "norm_label": ".winter()"
     },
     {
@@ -1361,6 +1397,168 @@
       "id": "static_scene_player_sceneplayer_draw",
       "community": 3,
       "norm_label": ".draw()"
+    },
+    {
+      "label": "$()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L2",
+      "id": "static_sneak_peek",
+      "community": 60,
+      "norm_label": "$()"
+    },
+    {
+      "label": "SneakAtmosphere",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L5",
+      "id": "static_sneak_peek_sneakatmosphere",
+      "community": 60,
+      "norm_label": "sneakatmosphere"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L6",
+      "id": "static_sneak_peek_sneakatmosphere_constructor",
+      "community": 60,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".configure()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L16",
+      "id": "static_sneak_peek_sneakatmosphere_configure",
+      "community": 60,
+      "norm_label": ".configure()"
+    },
+    {
+      "label": ".resize()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L17",
+      "id": "static_sneak_peek_sneakatmosphere_resize",
+      "community": 60,
+      "norm_label": ".resize()"
+    },
+    {
+      "label": ".refresh()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L18",
+      "id": "static_sneak_peek_sneakatmosphere_refresh",
+      "community": 60,
+      "norm_label": ".refresh()"
+    },
+    {
+      "label": "gifts",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L36",
+      "id": "static_sneak_peek_gifts",
+      "community": 60,
+      "norm_label": "gifts"
+    },
+    {
+      "label": "SneakPeek",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L42",
+      "id": "static_sneak_peek_sneakpeek",
+      "community": 60,
+      "norm_label": "sneakpeek"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L43",
+      "id": "static_sneak_peek_sneakpeek_constructor",
+      "community": 60,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".active()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L61",
+      "id": "static_sneak_peek_sneakpeek_active",
+      "community": 60,
+      "norm_label": ".active()"
+    },
+    {
+      "label": ".controls()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L62",
+      "id": "static_sneak_peek_sneakpeek_controls",
+      "community": 60,
+      "norm_label": ".controls()"
+    },
+    {
+      "label": ".volumeChanged()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L63",
+      "id": "static_sneak_peek_sneakpeek_volumechanged",
+      "community": 60,
+      "norm_label": ".volumechanged()"
+    },
+    {
+      "label": ".silence()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L64",
+      "id": "static_sneak_peek_sneakpeek_silence",
+      "community": 60,
+      "norm_label": ".silence()"
+    },
+    {
+      "label": ".stopJingles()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L70",
+      "id": "static_sneak_peek_sneakpeek_stopjingles",
+      "community": 60,
+      "norm_label": ".stopjingles()"
+    },
+    {
+      "label": ".activity()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L71",
+      "id": "static_sneak_peek_sneakpeek_activity",
+      "community": 60,
+      "norm_label": ".activity()"
+    },
+    {
+      "label": ".schedule()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L74",
+      "id": "static_sneak_peek_sneakpeek_schedule",
+      "community": 60,
+      "norm_label": ".schedule()"
+    },
+    {
+      "label": ".playJingle()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L75",
+      "id": "static_sneak_peek_sneakpeek_playjingle",
+      "community": 60,
+      "norm_label": ".playjingle()"
+    },
+    {
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L92",
+      "id": "static_sneak_peek_sneakpeek_update",
+      "community": 60,
+      "norm_label": ".update()"
     },
     {
       "label": "spark-showcase.js",
@@ -1728,7 +1926,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L7",
       "id": "static_welcome_atmosphere_welcomeatmosphere",
-      "community": 38,
+      "community": 64,
       "norm_label": "welcomeatmosphere"
     },
     {
@@ -1737,7 +1935,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L8",
       "id": "static_welcome_atmosphere_welcomeatmosphere_constructor",
-      "community": 38,
+      "community": 64,
       "norm_label": ".constructor()"
     },
     {
@@ -1746,7 +1944,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L20",
       "id": "static_welcome_atmosphere_welcomeatmosphere_configure",
-      "community": 38,
+      "community": 64,
       "norm_label": ".configure()"
     },
     {
@@ -1755,7 +1953,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L21",
       "id": "static_welcome_atmosphere_welcomeatmosphere_resize",
-      "community": 38,
+      "community": 64,
       "norm_label": ".resize()"
     },
     {
@@ -1764,7 +1962,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L22",
       "id": "static_welcome_atmosphere_welcomeatmosphere_refresh",
-      "community": 38,
+      "community": 64,
       "norm_label": ".refresh()"
     },
     {
@@ -1773,7 +1971,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L35",
       "id": "static_welcome_atmosphere_welcomeatmosphere_glow",
-      "community": 38,
+      "community": 64,
       "norm_label": ".glow()"
     },
     {
@@ -1782,7 +1980,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L39",
       "id": "static_welcome_atmosphere_welcomeatmosphere_spawnghost",
-      "community": 38,
+      "community": 64,
       "norm_label": ".spawnghost()"
     },
     {
@@ -1791,7 +1989,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L40",
       "id": "static_welcome_atmosphere_welcomeatmosphere_draw",
-      "community": 38,
+      "community": 64,
       "norm_label": ".draw()"
     },
     {
@@ -2792,6 +2990,24 @@
       "norm_label": "check sharp local images and responsive layout through 4k and high-dpi displays."
     },
     {
+      "label": "check_sneak_peek.py",
+      "file_type": "code",
+      "source_file": "scripts/check_sneak_peek.py",
+      "source_location": "L1",
+      "id": "scripts_check_sneak_peek",
+      "community": 66,
+      "norm_label": "check_sneak_peek.py"
+    },
+    {
+      "label": "Exercise the real sneak-peek app; screenshots and findings stay in validation/.",
+      "file_type": "rationale",
+      "source_file": "scripts/check_sneak_peek.py",
+      "source_location": "L1",
+      "id": "scripts_check_sneak_peek_rationale_1",
+      "community": 66,
+      "norm_label": "exercise the real sneak-peek app; screenshots and findings stay in validation/."
+    },
+    {
       "label": "check_spark_native.py",
       "file_type": "code",
       "source_file": "scripts/check_spark_native.py",
@@ -3125,6 +3341,78 @@
       "norm_label": "exercise the real pi kiosk over an ssh-forwarded, loopback-only cdp port."
     },
     {
+      "label": "sneak-peek-artwork.json",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L1",
+      "id": "sneak_peek_artwork",
+      "community": 63,
+      "norm_label": "sneak-peek-artwork.json"
+    },
+    {
+      "label": "created",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L2",
+      "id": "sneak_peek_artwork_created",
+      "community": 63,
+      "norm_label": "created"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L3",
+      "id": "sneak_peek_artwork_branch",
+      "community": 63,
+      "norm_label": "branch"
+    },
+    {
+      "label": "base",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L4",
+      "id": "sneak_peek_artwork_base",
+      "community": 63,
+      "norm_label": "base"
+    },
+    {
+      "label": "method",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L5",
+      "id": "sneak_peek_artwork_method",
+      "community": 63,
+      "norm_label": "method"
+    },
+    {
+      "label": "file",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L6",
+      "id": "sneak_peek_artwork_file",
+      "community": 63,
+      "norm_label": "file"
+    },
+    {
+      "label": "prompt",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L7",
+      "id": "sneak_peek_artwork_prompt",
+      "community": 63,
+      "norm_label": "prompt"
+    },
+    {
+      "label": "notes",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L8",
+      "id": "sneak_peek_artwork_notes",
+      "community": 63,
+      "norm_label": "notes"
+    },
+    {
       "label": "test_app.py",
       "file_type": "code",
       "source_file": "tests/test_app.py",
@@ -3440,6 +3728,60 @@
       "norm_label": ".test_background_video_pairing_and_unmatched_image()"
     },
     {
+      "label": "test_sneak_peek.py",
+      "file_type": "code",
+      "source_file": "tests/test_sneak_peek.py",
+      "source_location": "L1",
+      "id": "tests_test_sneak_peek",
+      "community": 0,
+      "norm_label": "test_sneak_peek.py"
+    },
+    {
+      "label": "SneakPeekCalendarTests",
+      "file_type": "code",
+      "source_file": "tests/test_sneak_peek.py",
+      "source_location": "L9",
+      "id": "tests_test_sneak_peek_sneakpeekcalendartests",
+      "community": 0,
+      "norm_label": "sneakpeekcalendartests"
+    },
+    {
+      "label": ".test_november_calendar()",
+      "file_type": "code",
+      "source_file": "tests/test_sneak_peek.py",
+      "source_location": "L10",
+      "id": "tests_test_sneak_peek_sneakpeekcalendartests_test_november_calendar",
+      "community": 0,
+      "norm_label": ".test_november_calendar()"
+    },
+    {
+      "label": ".test_local_christmas_day_and_passed_dates()",
+      "file_type": "code",
+      "source_file": "tests/test_sneak_peek.py",
+      "source_location": "L18",
+      "id": "tests_test_sneak_peek_sneakpeekcalendartests_test_local_christmas_day_and_passed_dates",
+      "community": 0,
+      "norm_label": ".test_local_christmas_day_and_passed_dates()"
+    },
+    {
+      "label": ".test_dst_seconds_and_year_rollover()",
+      "file_type": "code",
+      "source_file": "tests/test_sneak_peek.py",
+      "source_location": "L27",
+      "id": "tests_test_sneak_peek_sneakpeekcalendartests_test_dst_seconds_and_year_rollover",
+      "community": 0,
+      "norm_label": ".test_dst_seconds_and_year_rollover()"
+    },
+    {
+      "label": ".test_party_settings_and_halloween_countdown_preserved()",
+      "file_type": "code",
+      "source_file": "tests/test_sneak_peek.py",
+      "source_location": "L37",
+      "id": "tests_test_sneak_peek_sneakpeekcalendartests_test_party_settings_and_halloween_countdown_preserved",
+      "community": 0,
+      "norm_label": ".test_party_settings_and_halloween_countdown_preserved()"
+    },
+    {
       "label": "API.md",
       "file_type": "document",
       "source_file": "API.md",
@@ -3569,7 +3911,7 @@
       "label": "Start",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L7",
+      "source_location": "L9",
       "id": "readme_start",
       "community": 4,
       "norm_label": "start"
@@ -3578,7 +3920,7 @@
       "label": "Raspberry Pi autostart on boot",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L39",
+      "source_location": "L41",
       "id": "readme_raspberry_pi_autostart_on_boot",
       "community": 4,
       "norm_label": "raspberry pi autostart on boot"
@@ -3587,7 +3929,7 @@
       "label": "Remote / headless",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L64",
+      "source_location": "L66",
       "id": "readme_remote_headless",
       "community": 4,
       "norm_label": "remote / headless"
@@ -3596,7 +3938,7 @@
       "label": "Four screens",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L82",
+      "source_location": "L84",
       "id": "readme_four_screens",
       "community": 4,
       "norm_label": "four screens"
@@ -3605,7 +3947,7 @@
       "label": "Audio and data",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L99",
+      "source_location": "L101",
       "id": "readme_audio_and_data",
       "community": 4,
       "norm_label": "audio and data"
@@ -3614,7 +3956,7 @@
       "label": "Validation and development",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L115",
+      "source_location": "L117",
       "id": "readme_validation_and_development",
       "community": 4,
       "norm_label": "validation and development"
@@ -3623,7 +3965,7 @@
       "label": "Asset provenance",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L136",
+      "source_location": "L138",
       "id": "readme_asset_provenance",
       "community": 4,
       "norm_label": "asset provenance"
@@ -3632,7 +3974,7 @@
       "label": "SPARK Halloween showcase and hidden camera",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L140",
+      "source_location": "L142",
       "id": "readme_spark_halloween_showcase_and_hidden_camera",
       "community": 4,
       "norm_label": "spark halloween showcase and hidden camera"
@@ -3641,7 +3983,7 @@
       "label": "Larger monitors and TVs",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L146",
+      "source_location": "L148",
       "id": "readme_larger_monitors_and_tvs",
       "community": 4,
       "norm_label": "larger monitors and tvs"
@@ -3650,7 +3992,7 @@
       "label": "Halloween music and offline shuffle",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L170",
+      "source_location": "L172",
       "id": "readme_halloween_music_and_offline_shuffle",
       "community": 4,
       "norm_label": "halloween music and offline shuffle"
@@ -3659,7 +4001,7 @@
       "label": "Imported scene sound effects",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L176",
+      "source_location": "L178",
       "id": "readme_imported_scene_sound_effects",
       "community": 4,
       "norm_label": "imported scene sound effects"
@@ -3668,7 +4010,7 @@
       "label": "Immersive welcome screen",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L190",
+      "source_location": "L192",
       "id": "readme_immersive_welcome_screen",
       "community": 4,
       "norm_label": "immersive welcome screen"
@@ -3677,7 +4019,7 @@
       "label": "Spooky Sounds uses your imported effects",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L201",
+      "source_location": "L203",
       "id": "readme_spooky_sounds_uses_your_imported_effects",
       "community": 4,
       "norm_label": "spooky sounds uses your imported effects"
@@ -3686,7 +4028,7 @@
       "label": "Pumpkin welcome cutscene",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L205",
+      "source_location": "L207",
       "id": "readme_pumpkin_welcome_cutscene",
       "community": 4,
       "norm_label": "pumpkin welcome cutscene"
@@ -3695,10 +4037,64 @@
       "label": "Background and cutscene rotation",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L219",
+      "source_location": "L221",
       "id": "readme_background_and_cutscene_rotation",
       "community": 4,
       "norm_label": "background and cutscene rotation"
+    },
+    {
+      "label": "SNEAK-PEEK.md",
+      "file_type": "document",
+      "source_file": "SNEAK-PEEK.md",
+      "source_location": "L1",
+      "id": "sneak_peek",
+      "community": 65,
+      "norm_label": "sneak-peek.md"
+    },
+    {
+      "label": "After the haunt \u2014 Christmas sneak peek",
+      "file_type": "document",
+      "source_file": "SNEAK-PEEK.md",
+      "source_location": "L1",
+      "id": "sneak_peek_after_the_haunt_christmas_sneak_peek",
+      "community": 65,
+      "norm_label": "after the haunt \u2014 christmas sneak peek"
+    },
+    {
+      "label": "What works",
+      "file_type": "document",
+      "source_file": "SNEAK-PEEK.md",
+      "source_location": "L5",
+      "id": "sneak_peek_what_works",
+      "community": 65,
+      "norm_label": "what works"
+    },
+    {
+      "label": "Local preview",
+      "file_type": "document",
+      "source_file": "SNEAK-PEEK.md",
+      "source_location": "L17",
+      "id": "sneak_peek_local_preview",
+      "community": 65,
+      "norm_label": "local preview"
+    },
+    {
+      "label": "Checks",
+      "file_type": "document",
+      "source_file": "SNEAK-PEEK.md",
+      "source_location": "L27",
+      "id": "sneak_peek_checks",
+      "community": 65,
+      "norm_label": "checks"
+    },
+    {
+      "label": "Dates and artwork sources",
+      "file_type": "document",
+      "source_file": "SNEAK-PEEK.md",
+      "source_location": "L38",
+      "id": "sneak_peek_dates_and_artwork_sources",
+      "community": 65,
+      "norm_label": "dates and artwork sources"
     },
     {
       "label": "VALIDATION.md",
@@ -4343,6 +4739,28 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "halloween_hub/app.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "halloween_hub_app",
+      "target": "halloween_hub_sneak_peek",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/app.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "halloween_hub_app",
+      "target": "halloween_hub_sneak_peek_sneak_peek_calendar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/app.py",
       "source_location": "L13",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4425,6 +4843,17 @@
       "confidence_score": 1.0,
       "source": "tests_test_media",
       "target": "halloween_hub_app"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_sneak_peek.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "tests_test_sneak_peek",
+      "target": "halloween_hub_app",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4513,6 +4942,17 @@
       "confidence_score": 1.0,
       "source": "halloween_hub_app_create_app",
       "target": "halloween_hub_media_import_audio"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/app.py",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "halloween_hub_app_create_app",
+      "target": "halloween_hub_sneak_peek_sneak_peek_calendar",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4644,6 +5084,28 @@
       "source_location": "L29",
       "weight": 1.0,
       "source": "tests_test_media_mediatests_test_optional_cutscene_and_byte_ranges",
+      "target": "halloween_hub_app_create_app"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_sneak_peek.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "tests_test_sneak_peek",
+      "target": "halloween_hub_app_create_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_sneak_peek.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "tests_test_sneak_peek_sneakpeekcalendartests_test_party_settings_and_halloween_countdown_preserved",
       "target": "halloween_hub_app_create_app"
     },
     {
@@ -5571,8 +6033,83 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "halloween_hub/static/app.js",
+      "source_file": "halloween_hub/sneak_peek.py",
       "source_location": "L6",
+      "weight": 1.0,
+      "source": "halloween_hub_sneak_peek",
+      "target": "halloween_hub_sneak_peek_sneak_peek_calendar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/sneak_peek.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "halloween_hub_sneak_peek_rationale_1",
+      "target": "halloween_hub_sneak_peek",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_sneak_peek.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "tests_test_sneak_peek",
+      "target": "halloween_hub_sneak_peek",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_sneak_peek.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "tests_test_sneak_peek",
+      "target": "halloween_hub_sneak_peek_sneak_peek_calendar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_sneak_peek.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "tests_test_sneak_peek_sneakpeekcalendartests_test_dst_seconds_and_year_rollover",
+      "target": "halloween_hub_sneak_peek_sneak_peek_calendar"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_sneak_peek.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "tests_test_sneak_peek_sneakpeekcalendartests_test_local_christmas_day_and_passed_dates",
+      "target": "halloween_hub_sneak_peek_sneak_peek_calendar"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_sneak_peek.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "tests_test_sneak_peek_sneakpeekcalendartests_test_november_calendar",
+      "target": "halloween_hub_sneak_peek_sneak_peek_calendar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/app.js",
+      "source_location": "L5",
       "weight": 1.0,
       "source": "static_app",
       "target": "static_app",
@@ -5968,6 +6505,16 @@
       "target": "static_app"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/app.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "static_app",
+      "target": "static_app_sneakpeek",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "halloween_hub/static/app.js",
@@ -6135,6 +6682,39 @@
       "confidence_score": 1.0,
       "source": "static_app",
       "target": "static_scene_player_sceneplayer"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/app.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "static_app",
+      "target": "static_sneak_peek",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/app.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "static_app",
+      "target": "static_sneak_peek_sneakatmosphere",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/app.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "static_app",
+      "target": "static_sneak_peek_sneakpeek",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -6928,9 +7508,9 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_night_weather",
-      "target": "static_night_weather_nightweather",
-      "confidence_score": 1.0
+      "target": "static_night_weather_nightweather"
     },
     {
       "relation": "contains",
@@ -6938,9 +7518,9 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_night_weather",
-      "target": "static_night_weather_random",
-      "confidence_score": 1.0
+      "target": "static_night_weather_random"
     },
     {
       "relation": "contains",
@@ -6948,8 +7528,19 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_night_weather",
-      "target": "static_night_weather_smooth",
+      "target": "static_night_weather_smooth"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "static_sneak_peek",
+      "target": "static_night_weather",
       "confidence_score": 1.0
     },
     {
@@ -6959,9 +7550,9 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_welcome_atmosphere",
-      "target": "static_night_weather",
-      "confidence_score": 1.0
+      "target": "static_night_weather"
     },
     {
       "relation": "calls",
@@ -6970,7 +7561,18 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_night_weather_nightweather_change",
+      "target": "static_night_weather_random"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/night-weather.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "static_night_weather_nightweather_constructor",
       "target": "static_night_weather_random",
       "confidence_score": 1.0
     },
@@ -6981,9 +7583,9 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_night_weather_nightweather_spawn",
-      "target": "static_night_weather_random",
-      "confidence_score": 1.0
+      "target": "static_night_weather_random"
     },
     {
       "relation": "calls",
@@ -6992,9 +7594,9 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_night_weather_nightweather_advance",
-      "target": "static_night_weather_smooth",
-      "confidence_score": 1.0
+      "target": "static_night_weather_smooth"
     },
     {
       "relation": "calls",
@@ -7003,9 +7605,9 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_night_weather_nightweather_draw",
-      "target": "static_night_weather_smooth",
-      "confidence_score": 1.0
+      "target": "static_night_weather_smooth"
     },
     {
       "relation": "method",
@@ -7013,9 +7615,9 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_night_weather_nightweather",
-      "target": "static_night_weather_nightweather_advance",
-      "confidence_score": 1.0
+      "target": "static_night_weather_nightweather_advance"
     },
     {
       "relation": "method",
@@ -7023,9 +7625,9 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_night_weather_nightweather",
-      "target": "static_night_weather_nightweather_change",
-      "confidence_score": 1.0
+      "target": "static_night_weather_nightweather_change"
     },
     {
       "relation": "method",
@@ -7033,9 +7635,9 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_night_weather_nightweather",
-      "target": "static_night_weather_nightweather_constructor",
-      "confidence_score": 1.0
+      "target": "static_night_weather_nightweather_constructor"
     },
     {
       "relation": "method",
@@ -7043,9 +7645,9 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_night_weather_nightweather",
-      "target": "static_night_weather_nightweather_describe",
-      "confidence_score": 1.0
+      "target": "static_night_weather_nightweather_describe"
     },
     {
       "relation": "method",
@@ -7053,9 +7655,9 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_night_weather_nightweather",
-      "target": "static_night_weather_nightweather_draw",
-      "confidence_score": 1.0
+      "target": "static_night_weather_nightweather_draw"
     },
     {
       "relation": "method",
@@ -7063,9 +7665,9 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_night_weather_nightweather",
-      "target": "static_night_weather_nightweather_leaf",
-      "confidence_score": 1.0
+      "target": "static_night_weather_nightweather_leaf"
     },
     {
       "relation": "method",
@@ -7073,9 +7675,9 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_night_weather_nightweather",
-      "target": "static_night_weather_nightweather_spawn",
-      "confidence_score": 1.0
+      "target": "static_night_weather_nightweather_spawn"
     },
     {
       "relation": "method",
@@ -7083,8 +7685,19 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_night_weather_nightweather",
-      "target": "static_night_weather_nightweather_winter",
+      "target": "static_night_weather_nightweather_winter"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "static_sneak_peek",
+      "target": "static_night_weather_nightweather",
       "confidence_score": 1.0
     },
     {
@@ -7094,9 +7707,9 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_welcome_atmosphere",
-      "target": "static_night_weather_nightweather",
-      "confidence_score": 1.0
+      "target": "static_night_weather_nightweather"
     },
     {
       "relation": "calls",
@@ -7105,9 +7718,9 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_night_weather_nightweather_advance",
-      "target": "static_night_weather_nightweather_change",
-      "confidence_score": 1.0
+      "target": "static_night_weather_nightweather_change"
     },
     {
       "relation": "calls",
@@ -7116,9 +7729,9 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_night_weather_nightweather_advance",
-      "target": "static_night_weather_nightweather_describe",
-      "confidence_score": 1.0
+      "target": "static_night_weather_nightweather_describe"
     },
     {
       "relation": "calls",
@@ -7127,9 +7740,9 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_night_weather_nightweather_advance",
-      "target": "static_night_weather_nightweather_spawn",
-      "confidence_score": 1.0
+      "target": "static_night_weather_nightweather_spawn"
     },
     {
       "relation": "contains",
@@ -7521,6 +8134,373 @@
       "confidence_score": 1.0,
       "source": "static_scene_player_sceneplayer_draw",
       "target": "static_scene_player_sceneplayer_train"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "static_sneak_peek",
+      "target": "static_sneak_peek",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "static_sneak_peek",
+      "target": "static_sneak_peek_gifts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "static_sneak_peek",
+      "target": "static_sneak_peek_sneakatmosphere",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "static_sneak_peek",
+      "target": "static_sneak_peek_sneakpeek",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakatmosphere_constructor",
+      "target": "static_sneak_peek",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakatmosphere_refresh",
+      "target": "static_sneak_peek",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek_active",
+      "target": "static_sneak_peek",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek_constructor",
+      "target": "static_sneak_peek",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L95",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek_update",
+      "target": "static_sneak_peek",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakatmosphere",
+      "target": "static_sneak_peek_sneakatmosphere_configure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakatmosphere",
+      "target": "static_sneak_peek_sneakatmosphere_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakatmosphere",
+      "target": "static_sneak_peek_sneakatmosphere_refresh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakatmosphere",
+      "target": "static_sneak_peek_sneakatmosphere_resize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakatmosphere_constructor",
+      "target": "static_sneak_peek_sneakatmosphere_resize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakatmosphere_configure",
+      "target": "static_sneak_peek_sneakatmosphere_refresh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek",
+      "target": "static_sneak_peek_sneakpeek_active",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek",
+      "target": "static_sneak_peek_sneakpeek_activity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek",
+      "target": "static_sneak_peek_sneakpeek_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek",
+      "target": "static_sneak_peek_sneakpeek_controls",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek",
+      "target": "static_sneak_peek_sneakpeek_playjingle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek",
+      "target": "static_sneak_peek_sneakpeek_schedule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek",
+      "target": "static_sneak_peek_sneakpeek_silence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek",
+      "target": "static_sneak_peek_sneakpeek_stopjingles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek",
+      "target": "static_sneak_peek_sneakpeek_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek",
+      "target": "static_sneak_peek_sneakpeek_volumechanged",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek_activity",
+      "target": "static_sneak_peek_sneakpeek_active",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek_playjingle",
+      "target": "static_sneak_peek_sneakpeek_active",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek_schedule",
+      "target": "static_sneak_peek_sneakpeek_active",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek_stopjingles",
+      "target": "static_sneak_peek_sneakpeek_controls",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek_playjingle",
+      "target": "static_sneak_peek_sneakpeek_volumechanged",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek_activity",
+      "target": "static_sneak_peek_sneakpeek_silence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek_playjingle",
+      "target": "static_sneak_peek_sneakpeek_silence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek_stopjingles",
+      "target": "static_sneak_peek_sneakpeek_silence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek_activity",
+      "target": "static_sneak_peek_sneakpeek_schedule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek_playjingle",
+      "target": "static_sneak_peek_sneakpeek_schedule",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -9582,9 +10562,9 @@
       "source_file": "scripts/check_night_weather.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_check_night_weather_rationale_1",
-      "target": "scripts_check_night_weather",
-      "confidence_score": 1.0
+      "target": "scripts_check_night_weather"
     },
     {
       "relation": "contains",
@@ -9592,9 +10572,9 @@
       "source_file": "scripts/check_night_weather_native.py",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_check_night_weather_native",
-      "target": "scripts_check_night_weather_native_measure",
-      "confidence_score": 1.0
+      "target": "scripts_check_night_weather_native_measure"
     },
     {
       "relation": "rationale_for",
@@ -9602,9 +10582,9 @@
       "source_file": "scripts/check_night_weather_native.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_check_night_weather_native_rationale_1",
-      "target": "scripts_check_night_weather_native",
-      "confidence_score": 1.0
+      "target": "scripts_check_night_weather_native"
     },
     {
       "relation": "rationale_for",
@@ -9739,6 +10719,16 @@
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/check_sneak_peek.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_check_sneak_peek_rationale_1",
+      "target": "scripts_check_sneak_peek",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
       "source_file": "scripts/check_spark_native.py",
       "source_location": "L1",
       "weight": 1.0,
@@ -9802,9 +10792,9 @@
       "source_file": "scripts/check_visitor.py",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_check_visitor",
-      "target": "scripts_check_visitor_offline_route",
-      "confidence_score": 1.0
+      "target": "scripts_check_visitor_offline_route"
     },
     {
       "relation": "contains",
@@ -9976,6 +10966,76 @@
       "confidence_score": 1.0,
       "source": "scripts_soak_rationale_1",
       "target": "scripts_soak"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork",
+      "target": "sneak_peek_artwork_base",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork",
+      "target": "sneak_peek_artwork_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork",
+      "target": "sneak_peek_artwork_created",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork",
+      "target": "sneak_peek_artwork_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork",
+      "target": "sneak_peek_artwork_method",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork",
+      "target": "sneak_peek_artwork_notes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork",
+      "target": "sneak_peek_artwork_prompt",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -10382,6 +11442,56 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "tests/test_sneak_peek.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "tests_test_sneak_peek",
+      "target": "tests_test_sneak_peek_sneakpeekcalendartests",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_sneak_peek.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "tests_test_sneak_peek_sneakpeekcalendartests",
+      "target": "tests_test_sneak_peek_sneakpeekcalendartests_test_dst_seconds_and_year_rollover",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_sneak_peek.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "tests_test_sneak_peek_sneakpeekcalendartests",
+      "target": "tests_test_sneak_peek_sneakpeekcalendartests_test_local_christmas_day_and_passed_dates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_sneak_peek.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "tests_test_sneak_peek_sneakpeekcalendartests",
+      "target": "tests_test_sneak_peek_sneakpeekcalendartests_test_november_calendar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_sneak_peek.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "tests_test_sneak_peek_sneakpeekcalendartests",
+      "target": "tests_test_sneak_peek_sneakpeekcalendartests_test_party_settings_and_halloween_countdown_preserved",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "API.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -10455,9 +11565,9 @@
       "source_file": "ARTWORK.md",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "artwork_artwork_generation",
-      "target": "artwork_decorative_night_weather",
-      "confidence_score": 1.0
+      "target": "artwork_decorative_night_weather"
     },
     {
       "relation": "contains",
@@ -10672,6 +11782,56 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "SNEAK-PEEK.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "sneak_peek",
+      "target": "sneak_peek_after_the_haunt_christmas_sneak_peek",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SNEAK-PEEK.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "sneak_peek_after_the_haunt_christmas_sneak_peek",
+      "target": "sneak_peek_checks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SNEAK-PEEK.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "sneak_peek_after_the_haunt_christmas_sneak_peek",
+      "target": "sneak_peek_dates_and_artwork_sources",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SNEAK-PEEK.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "sneak_peek_after_the_haunt_christmas_sneak_peek",
+      "target": "sneak_peek_local_preview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SNEAK-PEEK.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "sneak_peek_after_the_haunt_christmas_sneak_peek",
+      "target": "sneak_peek_what_works",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "VALIDATION.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -10805,9 +11965,9 @@
       "source_file": "VALIDATION.md",
       "source_location": "L254",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "validation_validation_record_october_14_2026",
-      "target": "validation_variable_night_weather_autumn_gusts_and_winter_flurries_2026_10_20",
-      "confidence_score": 1.0
+      "target": "validation_variable_night_weather_autumn_gusts_and_winter_flurries_2026_10_20"
     },
     {
       "relation": "contains",
@@ -10991,5 +12151,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "bff495c12475bba5842b88f82cccf756de4a9b4b"
+  "built_at_commit": "71686759c0f997a8ed71a0dbbb390e52aedf29da"
 }

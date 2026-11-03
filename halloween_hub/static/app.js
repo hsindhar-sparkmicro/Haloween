@@ -1,7 +1,6 @@
-import {setupWelcomeChrome} from './welcome-chrome.js';
 import {ScenePlayer} from './scene-player.js';
 import {Visitor} from './visitor.js';
-import {WelcomeAtmosphere} from './welcome-atmosphere.js';
+import {SneakAtmosphere as WelcomeAtmosphere, SneakPeek} from './sneak-peek.js';
 import {EffectShuffle} from './effect-shuffle.js';
 const $ = (q, root = document) => root.querySelector(q);
 const $$ = (q, root = document) => [...root.querySelectorAll(q)];
@@ -14,7 +13,8 @@ const player = $('#music-player'), ambience = $('#ambience-player'), effect = $(
 const scenePlayer = new ScenePlayer($('#scene-canvas'));
 const welcomeAtmosphere=new WelcomeAtmosphere($('#welcome-atmosphere'));
 const ambientShuffle=new EffectShuffle();
-setupWelcomeChrome();
+// The teaser keeps navigation visible; the full-screen Halloween chrome stays available in its own branch.
+const sneakPeek = new SneakPeek({audio:()=>({enabled:audioEnabled,context,volume:(state?.settings.volume??40)/100}),unlock:unlockAudio});
 let ambientGeneration=0;
 function showScene() {
   if (!$('#scene-dialog').open) $('#scene-dialog').showModal();
@@ -124,10 +124,12 @@ function updateVolume() {
   const volume = (state?.settings.volume ?? 40)/100;
   player.volume = ambience.volume = effect.volume = cue.volume = volume;
   visitor.setVideoAudio(audioEnabled,volume);
+  sneakPeek.volumeChanged();
   if(cueGain)cueGain.gain.value=((state?.haunt.sound ?? 40)/100)*.7;
   if (effectGain) effectGain.gain.value = (state?.haunt.sound ?? 40)/100;
 }
 function muteAudio() {
+  sneakPeek.stopJingles();
   stopCues();stopAmbience();
   player.pause(); effect.pause(); audioEnabled = false;
   visitor.setVideoAudio(false,(state?.settings.volume??40)/100);
@@ -381,16 +383,17 @@ function renderCountdown() {
   if(!state) return;
   const elapsed=(Date.now()-state.received)/1000;
   $$('[data-countdown]').forEach(el=> {
-    const countdown=el.closest('#party')?(state.party_countdown||state.countdown):state.countdown;
+    const countdown=el.closest('#party')?(state.party_countdown||state.countdown):(state.sneak_peek?.christmas||state.countdown);
     const seconds=Math.max(0,Math.floor(countdown.seconds-elapsed));
     const values=[Math.floor(seconds/86400),Math.floor(seconds/3600)%24,Math.floor(seconds/60)%60];
     if(!el.children.length) el.innerHTML='<span class="digit"><b></b><small>DAYS</small></span><span class="colon">:</span><span class="digit"><b></b><small>HOURS</small></span><span class="colon">:</span><span class="digit"><b></b><small>MINUTES</small></span>';
     $$('.digit b',el).forEach((b,i)=>b.textContent=String(values[i]).padStart(2,'0'));
   });
   $$('.countdown-target').forEach(el=>{
-    const countdown=el.closest('#party')?(state.party_countdown||state.countdown):state.countdown;
+    const countdown=el.closest('#party')?(state.party_countdown||state.countdown):(state.sneak_peek?.christmas||state.countdown);
     el.textContent=new Date(countdown.target).toLocaleDateString([],{timeZone:state.settings.timezone,month:'short',day:'numeric',year:'numeric'})+' · '+state.settings.timezone.split('/').pop().replaceAll('_',' ');
   });
+  sneakPeek.update(state.sneak_peek);
   $('#clock').textContent=new Date().toLocaleTimeString([],{timeZone:state.settings.timezone,hour:'2-digit',minute:'2-digit'});
 }
 function render() {

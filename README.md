@@ -1,5 +1,7 @@
 # Halloween Hub
 
+**This branch: Christmas sneak peek.** A separate SPARK transition edition with a Christmas countdown, wrapped product surprises, playful Mariah defrosting, original opt-in jingles, random flurries and upcoming shopping-day teasers. See [SNEAK-PEEK.md](SNEAK-PEEK.md) for preview commands, scope and checks. The full Christmas experience remains separate.
+
 A four-screen, offline-first Halloween kiosk for **Windows amd64**, **Linux amd64**, and **Raspberry Pi ARM64**. Python serves a locally bundled browser UI; no Node build, GPIO, microphone, or camera is required.
 
 ![Pumpkin dashboard](validation/screenshots/dashboard-800x480.png)

@@ -2,9 +2,10 @@
 const random=(min,max)=>min+Math.random()*(max-min);
 const smooth=value=>{const x=Math.max(0,Math.min(1,value));return x*x*(3-2*x);};
 export class NightWeather {
- constructor(canvas){
+ constructor(canvas,{sneakPeek=false}={}){
   this.canvas=canvas;this.status=document.querySelector('#night-weather');
   this.mode='calm';this.next='leaves';this.started=0;this.duration=6;this.last=0;this.particles=[];this.credit=0;this.direction=1;this.blend=0;this.gust=0;
+  this.sneakPeek=sneakPeek;if(sneakPeek){this.next='snow';this.duration=random(5,12);}
   this.leaves=['#d37b32','#a74b2c','#d5a348'].map((color,index)=>this.leaf(color,index));
   this.flake=document.createElement('canvas');this.flake.width=this.flake.height=48;
   const c=this.flake.getContext('2d'),g=c.createRadialGradient(24,24,1,24,24,23);g.addColorStop(0,'#f6fbff');g.addColorStop(.25,'#e6f3ffdd');g.addColorStop(1,'#c6ddff00');c.fillStyle=g;c.fillRect(0,0,48,48);
@@ -20,8 +21,8 @@ export class NightWeather {
  }
  change(){
   this.started+=this.duration;this.particles=[];this.credit=0;
-  if(this.mode==='calm'){this.mode=this.next;this.next=this.mode==='leaves'?'snow':'leaves';this.duration=this.mode==='leaves'?random(20,28):random(28,36);this.direction=Math.random()<.5?-1:1;}
-  else{this.mode='calm';this.duration=random(9,15);}
+  if(this.mode==='calm'){this.mode=this.next;this.next=this.sneakPeek?(Math.random()<.8?'snow':'leaves'):(this.mode==='leaves'?'snow':'leaves');this.duration=this.mode==='leaves'?random(20,28):random(28,36);this.direction=Math.random()<.5?-1:1;}
+  else{this.mode='calm';this.duration=this.sneakPeek?random(18,42):random(9,15);}
  }
  advance(time,moving,low){
   const dt=Math.max(0,Math.min(.12,time-this.last));this.last=time;

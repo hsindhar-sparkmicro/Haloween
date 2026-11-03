@@ -13,6 +13,7 @@ from .media import import_audio
 from .camera import Camera
 from .weather import Weather, search_locations
 from .window import manage as manage_window
+from .sneak_peek import sneak_peek_calendar
 
 
 def create_app(root=None):
@@ -82,7 +83,7 @@ def create_app(root=None):
     @app.get('/api/state')
     def state():
         settings = dict(DEFAULTS, **store.get('settings'))
-        return jsonify(settings=settings, candy=store.get('candy'), countdown=countdown(dict(settings, party_date='')), party_countdown=countdown(settings),
+        return jsonify(settings=settings, candy=store.get('candy'), countdown=countdown(dict(settings, party_date='')), party_countdown=countdown(settings), sneak_peek=sneak_peek_calendar(settings['timezone']),
                        records=store.rows('records'), tracks=store.rows('tracks'), effects=store.rows('effects'),
                        detections=store.rows('detections')[:20], weather=weather.snapshot(settings['location']),
                        camera=camera.snapshot(), cutscene={'available':(store.root/'cutscenes'/'welcome.mp4').is_file(),'url':'/api/cutscene','webm_url':'/api/cutscene/webm' if (store.root/'cutscenes'/'welcome.webm').is_file() else None,'items':cutscenes(store.root)}, backgrounds=backgrounds(store.root), scenes=list(SCENES), **sim.snapshot())
