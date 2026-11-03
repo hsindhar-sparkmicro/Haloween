@@ -292,6 +292,15 @@ function fillSettings() {
   $('#selected-location').textContent=state.settings.location?.name || 'No weather location selected';
   $('#volume-output').textContent=state.settings.volume+'%';
 }
+function renderUpdates(updates){
+  if(!updates)return;
+  $('#release-version').textContent='Version '+updates.current_version+' · '+updates.repository;
+  const message=updates.message+(updates.status==='downloading'?' '+updates.progress+'%':'');
+  if($('#release-status').textContent!==message)$('#release-status').textContent=message;
+  $('#release-check').disabled=updates.busy||!updates.local_controls;
+  $('#release-package').hidden=!updates.download_url;
+}
+$('#release-check').addEventListener('click',()=>action(async()=>{renderUpdates(await api('/updates/check','POST',{}));}));
 $('#setting-volume').addEventListener('input', () => $('#volume-output').textContent=$('#setting-volume').value+'%');
 $('#save-settings').addEventListener('click', () => action(async () => {
   const settings={};
@@ -419,7 +428,7 @@ function render() {
     if(key==='effects'&&hash!==effectsHash){effectsHash=hash;renderFn();}
     if(key==='detections'&&hash!==logsHash){logsHash=hash;renderFn();}
   }
-  renderWeather(); renderCountdown();
+  renderWeather(); renderCountdown(); renderUpdates(state.updates);
   const haunt=state.haunt;
   $('#scene-title').textContent=haunt.scene;
   if(state.scenes && $('#haunt-scene').options.length!==state.scenes.length) {

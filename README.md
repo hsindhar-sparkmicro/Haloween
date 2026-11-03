@@ -257,3 +257,7 @@ Idle-video browser checks (use an isolated server with the three paired clips an
 The first check backdates inactivity in an isolated browser fixture but plays the real clips and fades in real time. The second checks the natural idle schedule in the full Dashboard, then backdates inactivity for interruption checks. Both support `--cdp` for a Raspberry Pi Chromium instance and `--output` for evidence.
 
 For native display verification, temporarily enable Chromium's loopback remote-debugging port, forward it over SSH, then run `.venv/bin/python scripts/check_idle_video_native.py --cdp http://127.0.0.1:19223`. This checks the existing kiosk tab and its real idle schedule, advancing decoded frames, decorative-art fade and return to the still. Normal kiosk startup does not expose a debugging port.
+
+## Automatic release downloads
+
+The kiosk checks GitHub Releases on startup and every six hours, downloads newer stable source packages, and verifies their SHA-256 before making them available in **Settings → App updates**. Installation remains manual. Private repositories require server-side read credentials. See [UPDATES.md](UPDATES.md) for setup, package names, release publishing steps and verification details.

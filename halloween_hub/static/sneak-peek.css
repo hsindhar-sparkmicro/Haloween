@@ -53,3 +53,5 @@ body.sneak-peek{background:#0c1320;color:#f8eedb}.sneak-peek #app{height:100dvh;
 body.sneak-peek.welcome-fullscreen #app>header{background:#0d1623ef}
 body.sneak-peek.welcome-fullscreen #app>nav{background:#0c1d25ef}
 @media(max-width:600px){body.sneak-peek.welcome-fullscreen #dashboard{overflow-y:auto;overscroll-behavior:contain}.sneak-peek.welcome-fullscreen .welcome-space{flex-shrink:0}}
+
+.release-updates{margin:16px 0;padding:14px;border:1px solid #c3ad7b40;border-radius:12px;background:#0e263180}.release-updates h3{margin:0 0 8px;font-size:15px}.release-updates .button-row{flex-wrap:wrap}.release-updates a[hidden]{display:none}

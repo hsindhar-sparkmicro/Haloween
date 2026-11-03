@@ -5,23 +5,23 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/__main__.py": {
-    "mtime": 1793723326.2753098,
-    "ast_hash": "a0465081acc8c088726d7d782f46613f",
+    "mtime": 1793727577.6379447,
+    "ast_hash": "9b1e9f47891788ce1e988d0fffa6cb3c",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/app.py": {
-    "mtime": 1793723495.5744257,
-    "ast_hash": "9af539030fd8a14744c6a7d15a942885",
+    "mtime": 1793727577.6369448,
+    "ast_hash": "1bcccc9b567df112ffd891085179564b",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/core.py": {
-    "mtime": 1793723326.2773097,
-    "ast_hash": "24fd3c57b9512ea9cf8beddbc004b696",
+    "mtime": 1793727577.6369448,
+    "ast_hash": "8ef0e041d0181bf2b03381fe10191ee7",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/app.js": {
-    "mtime": 1793727361.4484634,
-    "ast_hash": "5fced833872fffbf00754422ae0455cd",
+    "mtime": 1793727577.670624,
+    "ast_hash": "d1d8edea2bf54275040eecda7d520e70",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/weather.py": {
@@ -65,8 +65,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/scripts/package.py": {
-    "mtime": 1793723326.4233124,
-    "ast_hash": "815715ee1ef2d75fd3c130a66b4ea8a8",
+    "mtime": 1793727685.9287794,
+    "ast_hash": "5285f9041899f3c24e7729070d569e5f",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/scripts/soak.py": {
@@ -85,8 +85,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/README.md": {
-    "mtime": 1793723838.01036,
-    "ast_hash": "77c0c0100d4662dbbcc825b25cd43cf8",
+    "mtime": 1793727635.8131702,
+    "ast_hash": "93417409d53339fe52070da86f1f2b77",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/assets/FONT-LICENSE.txt": {
@@ -95,8 +95,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/index.html": {
-    "mtime": 1793727107.7379851,
-    "ast_hash": "49189eb012faa4202b7740a11f7d66bc",
+    "mtime": 1793727577.6704097,
+    "ast_hash": "d3d40b77259bfb7c52052ac4cd36ac7f",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/requirements-dev.txt": {
@@ -627,6 +627,31 @@
   "/home/hsindhar/github/Haloween/scripts/check_sneak_chrome.py": {
     "mtime": 1793727431.0635328,
     "ast_hash": "0166b9532425122be5ac223f27fc4fd1",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/halloween_hub/updates.py": {
+    "mtime": 1793727685.92857,
+    "ast_hash": "d98f8a1a0942bd1a837fb24f79480a8b",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/halloween_hub/version.py": {
+    "mtime": 1793727546.2150366,
+    "ast_hash": "7130568257a433d690d0befea662205f",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/scripts/check_updates_ui.py": {
+    "mtime": 1793727705.7865164,
+    "ast_hash": "4a873ad1caf07d26fb7f2745b0421cde",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/tests/test_updates.py": {
+    "mtime": 1793727733.536265,
+    "ast_hash": "c3d6d2da4c05b0b7fd82485fe6172d0e",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/UPDATES.md": {
+    "mtime": 1793727754.6420171,
+    "ast_hash": "370d6f863eddee82f905cdec9bfdb73f",
     "semantic_hash": ""
   }
 }

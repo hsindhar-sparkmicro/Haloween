@@ -1,16 +1,16 @@
 # Graph Report - Haloween  (2026-11-03)
 
 ## Corpus Check
-- 89 files · ~1,186,045 words
+- 94 files · ~1,188,266 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 554 nodes · 808 edges · 72 communities (22 shown, 50 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.65)
+- 608 nodes · 896 edges · 73 communities (23 shown, 50 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 10 edges (avg confidence: 0.56)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `16ccd0f7`
+- Built from commit: `d3b9f1ae`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -82,51 +82,52 @@
 - [[_COMMUNITY_Community 69|Community 69]]
 - [[_COMMUNITY_Community 70|Community 70]]
 - [[_COMMUNITY_Community 71|Community 71]]
+- [[_COMMUNITY_Community 72|Community 72]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `$()` - 66 edges
-2. `create_app()` - 26 edges
+1. `$()` - 67 edges
+2. `create_app()` - 29 edges
 3. `Visitor` - 24 edges
 4. `Simulation` - 18 edges
 5. `$()` - 18 edges
 6. `CameraTests` - 18 edges
 7. `Hidden camera and visitor adventures (supersedes preview/mirror behavior above)` - 18 edges
 8. `ScenePlayer` - 17 edges
-9. `$()` - 16 edges
-10. `HubTests` - 16 edges
+9. `ReleaseUpdates` - 17 edges
+10. `UpdatesTests` - 17 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `FakeGitHub` --uses--> `Store`  [INFERRED]
+  tests/test_updates.py → halloween_hub/core.py
+- `UpdatesTests` --uses--> `Store`  [INFERRED]
+  tests/test_updates.py → halloween_hub/core.py
 - `MediaTests` --uses--> `Store`  [INFERRED]
   tests/test_media.py → halloween_hub/core.py
-- `HubTests` --uses--> `Weather`  [INFERRED]
-  tests/test_app.py → halloween_hub/weather.py
-- `main()` --calls--> `create_app()`  [EXTRACTED]
-  halloween_hub/__main__.py → halloween_hub/app.py
-- `create_app()` --calls--> `Camera`  [EXTRACTED]
-  halloween_hub/app.py → halloween_hub/camera.py
-- `create_app()` --calls--> `Simulation`  [EXTRACTED]
-  halloween_hub/app.py → halloween_hub/core.py
+- `FakeGitHub` --uses--> `SafeRedirect`  [INFERRED]
+  tests/test_updates.py → halloween_hub/updates.py
+- `UpdatesTests` --uses--> `SafeRedirect`  [INFERRED]
+  tests/test_updates.py → halloween_hub/updates.py
 
 ## Import Cycles
 - None detected.
 
-## Communities (72 total, 50 thin omitted)
+## Communities (73 total, 50 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
-Nodes (19): create_app(), countdown(), data_directory(), backgrounds(), cutscenes(), Discover only installed gallery media in app data., main(), import_audio() (+11 more)
+Nodes (20): create_app(), countdown(), data_directory(), Store, backgrounds(), cutscenes(), Discover only installed gallery media in app data., main() (+12 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.15
-Nodes (8): Shared simulation boundary. No GPIO or sensor access., Shared simulation boundary. No GPIO or sensor access., Shared simulation boundary. No GPIO or sensor access., Shared simulation boundary. No GPIO or sensor access., Shared simulation boundary. No GPIO or sensor access., Shared simulation boundary. No GPIO or sensor access., Simulation, Store
+Cohesion: 0.20
+Nodes (7): Shared simulation boundary. No GPIO or sensor access., Shared simulation boundary. No GPIO or sensor access., Shared simulation boundary. No GPIO or sensor access., Shared simulation boundary. No GPIO or sensor access., Shared simulation boundary. No GPIO or sensor access., Shared simulation boundary. No GPIO or sensor access., Simulation
 
 ### Community 2 - "Community 2"
 Cohesion: 0.06
-Nodes (49): $(), action(), ambience, ambientControl(), ambientShuffle, api(), cue, discoverWindowControls() (+41 more)
+Nodes (50): $(), action(), ambience, ambientControl(), ambientShuffle, api(), cue, discoverWindowControls() (+42 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.11
-Nodes (18): Asset provenance, Audio and data, Background and cutscene rotation, Camera haunt (optional Raspberry Pi feature), Four screens, Halloween Hub, Halloween music and offline shuffle, Hidden camera and visitor adventures (+10 more)
+Cohesion: 0.10
+Nodes (19): Asset provenance, Audio and data, Automatic release downloads, Background and cutscene rotation, Camera haunt (optional Raspberry Pi feature), Four screens, Halloween Hub, Halloween music and offline shuffle (+11 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.29
@@ -145,8 +146,8 @@ Cohesion: 0.29
 Nodes (6): Hidden motion camera and encounters, Local API, Local scene-effect library, Optional camera, Settings, Welcome cutscene
 
 ### Community 32 - "Community 32"
-Cohesion: 0.16
-Nodes (7): $(), riddles, stories, icon(), icons, monsterNames, Visitor
+Cohesion: 0.11
+Nodes (12): asset(), masthead(), productImage(), products, SparkShowcase, $(), riddles, stories (+4 more)
 
 ### Community 38 - "Community 38"
 Cohesion: 0.07
@@ -157,16 +158,16 @@ Cohesion: 0.67
 Nodes (3): main(), quoted(), Install per-user Raspberry Pi desktop autostart; no root access required.
 
 ### Community 55 - "Community 55"
-Cohesion: 0.39
-Nodes (5): asset(), masthead(), productImage(), products, SparkShowcase
+Cohesion: 0.07
+Nodes (11): GitHub, newer(), Download verified GitHub release packages; never execute or replace running code, ReleaseUpdates, SafeRedirect, sha256(), stable_version(), Update this version before packaging a release. (+3 more)
 
 ### Community 57 - "Community 57"
 Cohesion: 0.50
 Nodes (3): assets, images_unmodified, retrieved
 
 ### Community 60 - "Community 60"
-Cohesion: 0.21
-Nodes (4): $(), gifts, SneakAtmosphere, SneakPeek
+Cohesion: 0.15
+Nodes (5): SneakArrival, $(), gifts, SneakAtmosphere, SneakPeek
 
 ### Community 63 - "Community 63"
 Cohesion: 0.07
@@ -176,12 +177,16 @@ Nodes (28): arrival_media, audio, browser_playback_rate, delivery_duration_secon
 Cohesion: 0.25
 Nodes (7): After the haunt — Christmas sneak peek, Checks, Dates and artwork sources, Immersive dashboard bars, Local preview, Supplied Halloween transition and fused forest, What works
 
+### Community 67 - "Community 67"
+Cohesion: 0.50
+Nodes (3): GitHub release downloads, Private repository access, Release contract
+
 ### Community 68 - "Community 68"
 Cohesion: 0.53
 Nodes (5): Check real background video, a real one-minute repeat, and interruption recovery, replay(), start(), state(), still()
 
 ## Knowledge Gaps
-- **111 isolated node(s):** `lastRotation`, `player`, `ambience`, `effect`, `cue` (+106 more)
+- **114 isolated node(s):** `lastRotation`, `player`, `ambience`, `effect`, `cue` (+109 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **50 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -189,16 +194,16 @@ Nodes (5): Check real background video, a real one-minute repeat, and interrupti
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `$()` connect `Community 2` to `Community 32`, `Community 3`, `Community 70`, `Community 38`, `Community 60`?**
-  _High betweenness centrality (0.102) - this node is a cross-community bridge._
-- **Why does `$()` connect `Community 60` to `Community 2`, `Community 67`, `Community 38`?**
-  _High betweenness centrality (0.027) - this node is a cross-community bridge._
-- **Why does `Visitor` connect `Community 32` to `Community 2`?**
-  _High betweenness centrality (0.022) - this node is a cross-community bridge._
+  _High betweenness centrality (0.086) - this node is a cross-community bridge._
+- **Why does `create_app()` connect `Community 0` to `Community 1`, `Community 5`, `Community 55`, `Community 26`, `Community 27`?**
+  _High betweenness centrality (0.029) - this node is a cross-community bridge._
+- **Why does `$()` connect `Community 60` to `Community 2`, `Community 38`?**
+  _High betweenness centrality (0.023) - this node is a cross-community bridge._
 - **What connects `Halloween Hub: offline-first entertainment kiosk.`, `Hidden motion scans with physical capture shutdown between scan windows.`, `Hidden Pi motion scan. Only numerical scores leave this process.` to the rest of the system?**
-  _169 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _175 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.06412583182093164 - nodes in this community are weakly interconnected._
-- **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.14624505928853754 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05879692446856626 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.06110102843315184 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06019871420222092 - nodes in this community are weakly interconnected._
+- **Should `Community 4` be split into smaller, more focused modules?**
+  _Cohesion score 0.1 - nodes in this community are weakly interconnected._

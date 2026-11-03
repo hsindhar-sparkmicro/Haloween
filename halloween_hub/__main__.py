@@ -14,7 +14,12 @@ def main():
     if not args.no_browser:
         threading.Timer(1, lambda: webbrowser.open(f'http://127.0.0.1:{args.port}/?desktop=1')).start()
     print(f'Halloween Hub: http://127.0.0.1:{args.port} — simulated hardware', flush=True)
-    serve(create_app(), host='0.0.0.0' if args.lan else '127.0.0.1', port=args.port, threads=6)
+    app = create_app()
+    app.extensions['updates'].start()
+    try:
+        serve(app, host='0.0.0.0' if args.lan else '127.0.0.1', port=args.port, threads=6)
+    finally:
+        app.extensions['updates'].close()
 
 
 if __name__ == '__main__':

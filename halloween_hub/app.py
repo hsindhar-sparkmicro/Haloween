@@ -14,6 +14,8 @@ from .camera import Camera
 from .weather import Weather, search_locations
 from .window import manage as manage_window
 from .sneak_peek import sneak_peek_calendar
+from .updates import ReleaseUpdates
+from .version import VERSION
 
 
 def create_app(root=None):
@@ -23,9 +25,11 @@ def create_app(root=None):
     sim = Simulation(store)
     camera = Camera(store, sim)
     weather = Weather(store)
-    app.extensions.update(store=store, simulation=sim, weather=weather, camera=camera)
+    updates = ReleaseUpdates(store)
+    app.extensions.update(store=store, simulation=sim, weather=weather, camera=camera, updates=updates)
     atexit.register(sim.close)
     atexit.register(camera.close)
+    atexit.register(updates.close)
 
     @app.before_request
     def same_origin_mutations():
@@ -78,12 +82,40 @@ def create_app(root=None):
 
     @app.get('/api/health')
     def health():
-        return jsonify(status='ok', version='1.0.0', hardware='simulated')
+        return jsonify(status='ok', version=VERSION, hardware='simulated')
+
+    def update_status():
+        result = updates.snapshot()
+        result['local_controls'] = request.remote_addr in ('127.0.0.1', '::1')
+        if not result['local_controls']:
+            result['download_url'] = None
+        return result
+
+    @app.get('/api/updates')
+    def release_status():
+        return jsonify(update_status())
+
+    @app.post('/api/updates/check')
+    def check_release():
+        if request.remote_addr not in ('127.0.0.1', '::1'):
+            return jsonify(error='Release controls are local to the kiosk server'), 403
+        started = updates.trigger()
+        return jsonify(update_status()), 202 if started else 200
+
+    @app.get('/api/updates/package')
+    def release_package():
+        if request.remote_addr not in ('127.0.0.1', '::1'):
+            return jsonify(error='Release packages are local to the kiosk server'), 403
+        with updates.lock:
+            ready = updates.ready
+        if ready is None:
+            return jsonify(error='No verified release package is ready'), 404
+        return send_from_directory(updates.directory, ready.name, as_attachment=True, conditional=True)
 
     @app.get('/api/state')
     def state():
         settings = dict(DEFAULTS, **store.get('settings'))
-        return jsonify(settings=settings, candy=store.get('candy'), countdown=countdown(dict(settings, party_date='')), party_countdown=countdown(settings), sneak_peek=sneak_peek_calendar(settings['timezone']),
+        return jsonify(settings=settings, updates=update_status(), candy=store.get('candy'), countdown=countdown(dict(settings, party_date='')), party_countdown=countdown(settings), sneak_peek=sneak_peek_calendar(settings['timezone']),
                        records=store.rows('records'), tracks=store.rows('tracks'), effects=store.rows('effects'),
                        detections=store.rows('detections')[:20], weather=weather.snapshot(settings['location']),
                        camera=camera.snapshot(), cutscene={'available':(store.root/'cutscenes'/'welcome.mp4').is_file(),'url':'/api/cutscene','webm_url':'/api/cutscene/webm' if (store.root/'cutscenes'/'welcome.webm').is_file() else None,'items':cutscenes(store.root)}, backgrounds=backgrounds(store.root), scenes=list(SCENES), **sim.snapshot())
@@ -126,7 +158,7 @@ def create_app(root=None):
         if set(changes) - set(DEFAULTS):
             raise ValueError('Unknown setting')
         for key, value in changes.items():
-            if key in ('rotation', 'music_shuffle', 'reduced_motion', 'jumpscares', 'flicker') and not isinstance(value, bool):
+            if key in ('rotation', 'music_shuffle', 'reduced_motion', 'jumpscares', 'flicker', 'auto_download_updates') and not isinstance(value, bool):
                 raise ValueError('Expected a boolean')
             if key == 'volume' and (isinstance(value, bool) or not isinstance(value, int) or not 0 <= value <= 100):
                 raise ValueError('Volume must be 0–100')

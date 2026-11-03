@@ -10,7 +10,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 DEFAULTS = dict(timezone='America/Toronto', units='C', location=None, volume=40,
-                rotation=False, music_shuffle=True, reduced_motion=False, jumpscares=False, flicker=False,
+                rotation=False, music_shuffle=True, reduced_motion=False, jumpscares=False, flicker=False, auto_download_updates=True,
                 quality='auto', party_date='', sensitivity='medium',
                 camera_area='center', camera_threshold=4, camera_cooldown=45,
                 camera_scan_seconds=180, visitor_mode='choose')
