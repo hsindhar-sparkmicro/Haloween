@@ -12,6 +12,8 @@ Created November 3, 2026 on the separate local `christmas-sneak-peek` branch, ba
 - Quiet original bell motifs play only after **Enable festive jingles**. They respect global mute and volume. Repeats are spaced randomly 32–60 seconds apart, pause for dialogs/other screens/hidden tabs, and start disabled on reload.
 - Decorative flurries start after a random 5–12-second opening calm. Later 18–42-second calm gaps alternate with a random choice favoring snow over autumn leaves. The canvas uses bounded particles and a 30 FPS ceiling; dialogs, hidden tabs and reduced motion suppress it. Forecast data is independent.
 - The bottom row now holds the Christmas House preview, the wrapped-gifts button and a SPARK Christmas Party card: **Dîner de fin d’année**, Wednesday, December 9, 2026 at 5:00 PM Montréal time. Its days/hours/minutes/seconds countdown is independent of saved custom party dates. The Black Friday and Boxing Day cards have been removed.
+- The supplied SPARK wordmark sits beneath the countdown, blending into the forest with a gentle seven-second float and glow. It stays visible but pauses during video playback, dialogs, hidden tabs and reduced motion. Its original transparent PNG is kept unchanged.
+- Dashboard cards are transparent, including weather, Mariah’s defrost meter, jingles and the bottom row. Text shadows keep labels readable without panel fills, panel shadows or background blur covering the forest. Touch targets and keyboard focus outlines are retained.
 - Four two-line headlines rotate every 12 active seconds with a gentle fade: Halloween fades / Christmas stirs; Santa’s on his way / With gifts for you; More festive magic / Stay for the reveal; The Christmas app / Arrives December 1. Rotation pauses for dialogs, hidden tabs, other screens and reduced motion.
 - The existing Halloween adventures, haunted controls, party management and simulated detector remain available. The main branch's backend and kiosk controls are retained.
 
@@ -23,7 +25,7 @@ Use a separate data directory for a review session so production records are not
 HALLOWEEN_DATA_DIR=/tmp/halloween-sneak-peek-preview .venv/bin/python -m halloween_hub --no-browser --port 8092
 ```
 
-Open <http://127.0.0.1:8092>. The standard `run.sh` / `run.ps1` launchers also work. Internet is only needed for optional real forecast/location lookup and external product links; all teaser art and synthesized bells are local. This is the Python kiosk branch, not a new browser-only release or deployment.
+Open <http://127.0.0.1:8092>. The standard `run.sh` / `run.ps1` launchers also work. Internet is only needed for optional real forecast/location lookup, GitHub release downloads and external product links; all teaser art and synthesized bells are local. This is the Python kiosk branch, not a new browser-only release.
 
 ## Checks
 
@@ -34,7 +36,7 @@ Open <http://127.0.0.1:8092>. The standard `run.sh` / `run.ps1` launchers also w
 
 The calendar tests cover Toronto dates, timezone boundaries, daylight saving, December 25/26, passed events, next year and independent party settings. The browser check covers 800×480, 1280×720, 1920×1080 and phone layouts; gift reveals and preview images; keyboard dismissal/focus; no initial/reload autoplay; actual oscillator activation, mute/dialog cancellation; randomly starting visible flurries; reduced motion; and navigation through all four screens. Screenshots/results are written to ignored `validation/sneak-peek/`.
 
-Physical Pi qualification, ten-minute ambient measurements and audible speaker review remain pending. The supplied short Halloween transition is integrated; the separate full Christmas arrival film remains upcoming. This edition has one arrival-video decoder, followed by a static forest; the old looping Halloween video player stays inactive.
+The transition is deployed on the physical Pi 4 with preserved settings and media. Native playback, transparent overlays, controls and ten-minute frame measurements are documented in [VALIDATION.md](VALIDATION.md#pi-transition-deployment-and-transparent-overlays-2026-11-03). Audible speaker review and a new cold-boot test remain pending. The supplied short Halloween transition is integrated; the separate full Christmas arrival film remains upcoming. This edition has one arrival-video decoder, followed by a static forest; the old looping Halloween video player stays inactive.
 
 Validated November 3, 2026: all 28 Python tests passed; the existing `scripts/check_browser.py` regression passed with zero page errors, no overflow and 48-pixel action targets; the new sneak-peek check passed at all four sizes, including simulated visibility pause, opt-in jingles, global mute, random visible flurries and reduced motion. Browser checks used Chromium through Playwright on this desktop, not physical Pi hardware.
 
@@ -48,19 +50,19 @@ Keep this branch local until publication or deployment is explicitly requested. 
 
 ## Supplied Halloween transition and fused forest
 
-The supplied `haloweenfading_video.mp4` is encoded at **0.5× source speed** into a local 1280×720, 24 fps H.264 clip, 12.25 seconds including a brief last-frame hold. Motion interpolation fills the slowed frames; the browser plays the prepared file at 1×. The video is muted, with the existing opt-in original jingles independent. No external video service is used.
+The supplied `haloweenfading_video.mp4` is encoded at **0.5× source speed** into a local 1280×720, 24 fps H.264 clip, 10.25 seconds including a brief last-frame hold. The first two seconds of the earlier half-speed delivery are removed to skip the glitch-prone opening; its poster is extracted from the new opening frame. Motion interpolation fills the slowed frames; the browser plays the prepared file at 1×. The video is muted, with the existing opt-in original jingles independent. No external video service is used.
 
-The muted film starts when the dashboard first loads, then **once every 60 seconds, measured start to start**. Every headline, countdown, card and control remains visible and usable in front of it. There are no Restart, Replay or Skip controls, no transition status text and no “The old magic is still here” caption. Legacy first-visit completion flags no longer suppress playback.
+The muted film starts when the dashboard first loads, then **once every 60 seconds, measured start to start**. Every headline, countdown, card and control remains visible and usable in front of it. Headline rotation does not fade the text away while a film/return/dissolve is active. There are no Restart, Replay or Skip controls, no transition status text and no “The old magic is still here” caption. Legacy first-visit completion flags no longer suppress playback.
 
-**One last Halloween adventure** now fades the current background to the original haunted pumpkin/house opening over 4.8 seconds, then plays the main Halloween-to-Christmas film from its first frame. The matching opening still stays visible until the film presents a frame. This action does not open the old showcase or enable sound. Repeated clicks during the return fade are ignored; the automatic minute cadence restarts when the film begins. All dashboard content remains in front.
+**One last Halloween adventure** now fades the current background to the matching haunted forest opening over 4.8 seconds, then plays the trimmed Halloween-to-Christmas film from its first frame. The matching opening still stays visible until the film presents a frame. This action does not open the old showcase or enable sound. Repeated clicks during the return fade are ignored; the automatic minute cadence restarts when the film begins. All dashboard content remains in front.
 
-The stable forest stays beneath the video until a frame is presented. The film fades in over 0.8 seconds; its last decoded frame then holds through the **4.8-second dissolve** back to the forest. The decoder is unloaded between cycles. Existing decorative flurries pause during the film and dissolve; opt-in jingles remain independent.
+The stable forest stays beneath the video until a frame is presented. The film fades in over 4.8 seconds; its last decoded frame then holds through the **4.8-second dissolve** back to the forest. The decoder is unloaded between cycles. Existing decorative flurries pause during the film and dissolve; opt-in jingles remain independent.
 
 Dialogs, hidden tabs, navigation away and reduced motion suppress the film and cancel its scheduled repeat. Returning to an eligible dashboard starts a fresh quiet minute, with no catch-up burst. Loading failures or stalls fall back to the still and retry on the next minute. The film never steals keyboard focus or intercepts touches. All assets are local; forecast data stays independent.
 
 The final still preserves the supplied forest composition while blending in the earlier illustrated characters; it is not pixel-identical to the source final frame.
 
-The built-in image-generation prompt is saved in [design-sneak-fusion-prompt.txt](design-sneak-fusion-prompt.txt). Media source hash, transformation settings and provenance are recorded in [sneak-peek-artwork.json](sneak-peek-artwork.json). The supplied original still and extracted first/last video frames are retained alongside the delivery clip.
+The built-in image-generation prompt is saved in [design-sneak-fusion-prompt.txt](design-sneak-fusion-prompt.txt). Media source hash, transformation settings and provenance are recorded in [sneak-peek-artwork.json](sneak-peek-artwork.json). The supplied forest still, matching trimmed opening frame and extracted final frame are retained alongside the delivery clip.
 
 Additional media lifecycle checks:
 
@@ -70,7 +72,7 @@ Additional media lifecycle checks:
 
 The `--browser` path is optional and should point to an installed H.264-capable Chromium, Chrome or Brave executable. The bundled Playwright Chromium on this desktop lacks H.264 and exercised the unavailable-media fallback instead. On November 3, the installed Brave completed all 294 frames of the 12.25-second film with zero reported dropped frames in a headless run. Completion/reload, Skip/Replay, hidden tabs, dialogs/navigation, stalled/missing video and reduced motion passed, along with the existing browser regression, four-size teaser checks and all 28 backend tests. This short desktop check does not establish physical Pi or long-run performance.
 
-Latest background-cycle validation: the measured start-to-start interval was 59.98 seconds. Text/cards remained visible and interactive at 800×480, 1280×720, 1920×1080 and phone size; keyboard focus stayed on the foreground control. The 4.8-second dissolve, dialogs/hidden tabs/navigation/reduced motion, and stalled/missing video checks passed. Brave reported 1 dropped frame out of 294 (0.34%) during a short run that also captured screenshots and resized the viewport. The existing app regression and teaser browser checks passed without page errors. Physical Pi qualification remains pending.
+Latest background-cycle validation: the trimmed film contains 246 frames over 10.25 seconds; the measured desktop start-to-start interval was 59.98 seconds. Text/cards remained visible and interactive at 800×480, 1280×720, 1920×1080 and phone size. The 4.8-second entry and exit fades, dialogs/hidden tabs/navigation/reduced motion, and stalled/missing video checks passed. Brave reported one dropped frame out of 246 in the short run. The physical Pi deployment, native controls, final animated logo and ten-minute measurements are documented in [VALIDATION.md](VALIDATION.md#pi-transition-deployment-and-transparent-overlays-2026-11-03).
 
 The adventure-link sequence is checked with `.venv/bin/python scripts/check_halloween_return.py --browser /usr/bin/brave-browser`. The return took 4.917 seconds before presenting the new film. Resting/mid-film clicks, repeated clicks, foreground controls/focus, dialogs and reduced motion passed with no page errors or old encounter API requests.
 

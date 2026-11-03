@@ -33,8 +33,12 @@ with sync_playwright() as p:
     assert page.locator('#peek-halloween-return').is_hidden()
     assert page.locator('#pumpkin').evaluate('e=>document.activeElement===e')
     assert page.locator('#peek-arrival video').evaluate('v=>v.muted')
+    # The adventure click reveals the navigation overlay for seven seconds.
+    page.locator('#app>nav').wait_for(state='hidden',timeout=8500)
     for w,h in [(800,480),(1280,720),(1920,1080),(390,844)]:
         page.set_viewport_size({'width':w,'height':h})
+        if w==390:
+            page.locator('#peek-gifts').scroll_into_view_if_needed()
         assert page.locator('#peek-gifts').evaluate('e=>{let r=e.getBoundingClientRect();return e.contains(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2))}')
         assert page.locator('.peek-strip').is_visible()
         assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')

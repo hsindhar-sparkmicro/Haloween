@@ -243,7 +243,7 @@
       "source_file": "halloween_hub/core.py",
       "source_location": "L43",
       "id": "halloween_hub_core_store",
-      "community": 0,
+      "community": 1,
       "norm_label": "store"
     },
     {
@@ -252,7 +252,7 @@
       "source_file": "halloween_hub/core.py",
       "source_location": "L44",
       "id": "halloween_hub_core_store_init",
-      "community": 0,
+      "community": 1,
       "norm_label": ".__init__()"
     },
     {
@@ -261,7 +261,7 @@
       "source_file": "halloween_hub/core.py",
       "source_location": "L60",
       "id": "halloween_hub_core_store_connect",
-      "community": 0,
+      "community": 1,
       "norm_label": ".connect()"
     },
     {
@@ -270,7 +270,7 @@
       "source_file": "halloween_hub/core.py",
       "source_location": "L68",
       "id": "halloween_hub_core_store_get",
-      "community": 0,
+      "community": 1,
       "norm_label": ".get()"
     },
     {
@@ -279,7 +279,7 @@
       "source_file": "halloween_hub/core.py",
       "source_location": "L73",
       "id": "halloween_hub_core_store_put",
-      "community": 0,
+      "community": 1,
       "norm_label": ".put()"
     },
     {
@@ -288,7 +288,7 @@
       "source_file": "halloween_hub/core.py",
       "source_location": "L77",
       "id": "halloween_hub_core_store_candy",
-      "community": 0,
+      "community": 1,
       "norm_label": ".candy()"
     },
     {
@@ -297,7 +297,7 @@
       "source_file": "halloween_hub/core.py",
       "source_location": "L85",
       "id": "halloween_hub_core_store_rows",
-      "community": 0,
+      "community": 1,
       "norm_label": ".rows()"
     },
     {
@@ -387,7 +387,7 @@
       "source_file": "halloween_hub/core.py",
       "source_location": "L250",
       "id": "halloween_hub_core_simulation_close",
-      "community": 0,
+      "community": 1,
       "norm_label": ".close()"
     },
     {
@@ -1422,7 +1422,7 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L6",
       "id": "static_sneak_arrival_sneakarrival",
-      "community": 60,
+      "community": 70,
       "norm_label": "sneakarrival"
     },
     {
@@ -1431,7 +1431,7 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L7",
       "id": "static_sneak_arrival_sneakarrival_constructor",
-      "community": 60,
+      "community": 70,
       "norm_label": ".constructor()"
     },
     {
@@ -1440,7 +1440,7 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L23",
       "id": "static_sneak_arrival_sneakarrival_eligible",
-      "community": 60,
+      "community": 70,
       "norm_label": ".eligible()"
     },
     {
@@ -1449,7 +1449,7 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L27",
       "id": "static_sneak_arrival_sneakarrival_configure",
-      "community": 60,
+      "community": 70,
       "norm_label": ".configure()"
     },
     {
@@ -1458,7 +1458,7 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L33",
       "id": "static_sneak_arrival_sneakarrival_schedule",
-      "community": 60,
+      "community": 70,
       "norm_label": ".schedule()"
     },
     {
@@ -1467,7 +1467,7 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L38",
       "id": "static_sneak_arrival_sneakarrival_check",
-      "community": 60,
+      "community": 70,
       "norm_label": ".check()"
     },
     {
@@ -1476,7 +1476,7 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L45",
       "id": "static_sneak_arrival_sneakarrival_later",
-      "community": 60,
+      "community": 70,
       "norm_label": ".later()"
     },
     {
@@ -1485,7 +1485,7 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L46",
       "id": "static_sneak_arrival_sneakarrival_clearcycle",
-      "community": 60,
+      "community": 70,
       "norm_label": ".clearcycle()"
     },
     {
@@ -1494,7 +1494,7 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L47",
       "id": "static_sneak_arrival_sneakarrival_returntohalloween",
-      "community": 60,
+      "community": 70,
       "norm_label": ".returntohalloween()"
     },
     {
@@ -1503,16 +1503,16 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L66",
       "id": "static_sneak_arrival_sneakarrival_start",
-      "community": 60,
+      "community": 70,
       "norm_label": ".start()"
     },
     {
       "label": ".finish()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L100",
+      "source_location": "L102",
       "id": "static_sneak_arrival_sneakarrival_finish",
-      "community": 60,
+      "community": 70,
       "norm_label": ".finish()"
     },
     {
@@ -1692,7 +1692,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L1",
       "id": "static_spark_showcase",
-      "community": 32,
+      "community": 73,
       "norm_label": "spark-showcase.js"
     },
     {
@@ -1701,7 +1701,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L2",
       "id": "static_spark_showcase_asset",
-      "community": 32,
+      "community": 73,
       "norm_label": "asset()"
     },
     {
@@ -1710,7 +1710,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L3",
       "id": "static_spark_showcase_products",
-      "community": 32,
+      "community": 73,
       "norm_label": "products"
     },
     {
@@ -1719,7 +1719,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L11",
       "id": "static_spark_showcase_productimage",
-      "community": 32,
+      "community": 73,
       "norm_label": "productimage()"
     },
     {
@@ -1728,7 +1728,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L16",
       "id": "static_spark_showcase_masthead",
-      "community": 32,
+      "community": 73,
       "norm_label": "masthead()"
     },
     {
@@ -1737,7 +1737,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L18",
       "id": "static_spark_showcase_sparkshowcase",
-      "community": 32,
+      "community": 73,
       "norm_label": "sparkshowcase"
     },
     {
@@ -1746,7 +1746,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L19",
       "id": "static_spark_showcase_sparkshowcase_constructor",
-      "community": 32,
+      "community": 73,
       "norm_label": ".constructor()"
     },
     {
@@ -1755,7 +1755,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L29",
       "id": "static_spark_showcase_sparkshowcase_show",
-      "community": 32,
+      "community": 73,
       "norm_label": ".show()"
     },
     {
@@ -1764,7 +1764,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L34",
       "id": "static_spark_showcase_sparkshowcase_detail",
-      "community": 32,
+      "community": 73,
       "norm_label": ".detail()"
     },
     {
@@ -2052,7 +2052,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L7",
       "id": "static_welcome_atmosphere_welcomeatmosphere",
-      "community": 70,
+      "community": 74,
       "norm_label": "welcomeatmosphere"
     },
     {
@@ -2061,7 +2061,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L8",
       "id": "static_welcome_atmosphere_welcomeatmosphere_constructor",
-      "community": 70,
+      "community": 74,
       "norm_label": ".constructor()"
     },
     {
@@ -2070,7 +2070,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L20",
       "id": "static_welcome_atmosphere_welcomeatmosphere_configure",
-      "community": 70,
+      "community": 74,
       "norm_label": ".configure()"
     },
     {
@@ -2079,7 +2079,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L21",
       "id": "static_welcome_atmosphere_welcomeatmosphere_resize",
-      "community": 70,
+      "community": 74,
       "norm_label": ".resize()"
     },
     {
@@ -2088,7 +2088,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L22",
       "id": "static_welcome_atmosphere_welcomeatmosphere_refresh",
-      "community": 70,
+      "community": 74,
       "norm_label": ".refresh()"
     },
     {
@@ -2097,7 +2097,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L35",
       "id": "static_welcome_atmosphere_welcomeatmosphere_glow",
-      "community": 70,
+      "community": 74,
       "norm_label": ".glow()"
     },
     {
@@ -2106,7 +2106,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L39",
       "id": "static_welcome_atmosphere_welcomeatmosphere_spawnghost",
-      "community": 70,
+      "community": 74,
       "norm_label": ".spawnghost()"
     },
     {
@@ -2115,7 +2115,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L40",
       "id": "static_welcome_atmosphere_welcomeatmosphere_draw",
-      "community": 70,
+      "community": 74,
       "norm_label": ".draw()"
     },
     {
@@ -3440,6 +3440,33 @@
       "norm_label": "validate immersive dashboard bars, input, focus, and phone scroll reachability."
     },
     {
+      "label": "check_sneak_native.py",
+      "file_type": "code",
+      "source_file": "scripts/check_sneak_native.py",
+      "source_location": "L1",
+      "id": "scripts_check_sneak_native",
+      "community": 75,
+      "norm_label": "check_sneak_native.py"
+    },
+    {
+      "label": "wait_state()",
+      "file_type": "code",
+      "source_file": "scripts/check_sneak_native.py",
+      "source_location": "L19",
+      "id": "scripts_check_sneak_native_wait_state",
+      "community": 75,
+      "norm_label": "wait_state()"
+    },
+    {
+      "label": "Measure the actual Pi kiosk through a temporary loopback CDP tunnel.  Observe na",
+      "file_type": "rationale",
+      "source_file": "scripts/check_sneak_native.py",
+      "source_location": "L1",
+      "id": "scripts_check_sneak_native_rationale_1",
+      "community": 75,
+      "norm_label": "measure the actual pi kiosk through a temporary loopback cdp tunnel.  observe na"
+    },
+    {
       "label": "check_sneak_party.py",
       "file_type": "code",
       "source_file": "scripts/check_sneak_party.py",
@@ -4093,6 +4120,87 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L39",
       "id": "sneak_peek_artwork_arrival_media_notes",
+      "community": 63,
+      "norm_label": "notes"
+    },
+    {
+      "label": "trimmed_opening_seconds",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L40",
+      "id": "sneak_peek_artwork_arrival_media_trimmed_opening_seconds",
+      "community": 63,
+      "norm_label": "trimmed_opening_seconds"
+    },
+    {
+      "label": "trim_source",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L41",
+      "id": "sneak_peek_artwork_arrival_media_trim_source",
+      "community": 63,
+      "norm_label": "trim_source"
+    },
+    {
+      "label": "delivery_sha256",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L42",
+      "id": "sneak_peek_artwork_arrival_media_delivery_sha256",
+      "community": 63,
+      "norm_label": "delivery_sha256"
+    },
+    {
+      "label": "opening_still",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L43",
+      "id": "sneak_peek_artwork_arrival_media_opening_still",
+      "community": 63,
+      "norm_label": "opening_still"
+    },
+    {
+      "label": "background_wordmark",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L45",
+      "id": "sneak_peek_artwork_background_wordmark",
+      "community": 63,
+      "norm_label": "background_wordmark"
+    },
+    {
+      "label": "file",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L46",
+      "id": "sneak_peek_artwork_background_wordmark_file",
+      "community": 63,
+      "norm_label": "file"
+    },
+    {
+      "label": "source",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L47",
+      "id": "sneak_peek_artwork_background_wordmark_source",
+      "community": 63,
+      "norm_label": "source"
+    },
+    {
+      "label": "sha256",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L48",
+      "id": "sneak_peek_artwork_background_wordmark_sha256",
+      "community": 63,
+      "norm_label": "sha256"
+    },
+    {
+      "label": "notes",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L49",
+      "id": "sneak_peek_artwork_background_wordmark_notes",
       "community": 63,
       "norm_label": "notes"
     },
@@ -4946,7 +5054,7 @@
       "label": "Local preview",
       "file_type": "document",
       "source_file": "SNEAK-PEEK.md",
-      "source_location": "L18",
+      "source_location": "L20",
       "id": "sneak_peek_local_preview",
       "community": 65,
       "norm_label": "local preview"
@@ -4955,7 +5063,7 @@
       "label": "Checks",
       "file_type": "document",
       "source_file": "SNEAK-PEEK.md",
-      "source_location": "L28",
+      "source_location": "L30",
       "id": "sneak_peek_checks",
       "community": 65,
       "norm_label": "checks"
@@ -4964,7 +5072,7 @@
       "label": "Dates and artwork sources",
       "file_type": "document",
       "source_file": "SNEAK-PEEK.md",
-      "source_location": "L41",
+      "source_location": "L43",
       "id": "sneak_peek_dates_and_artwork_sources",
       "community": 65,
       "norm_label": "dates and artwork sources"
@@ -4973,7 +5081,7 @@
       "label": "Supplied Halloween transition and fused forest",
       "file_type": "document",
       "source_file": "SNEAK-PEEK.md",
-      "source_location": "L49",
+      "source_location": "L51",
       "id": "sneak_peek_supplied_halloween_transition_and_fused_forest",
       "community": 65,
       "norm_label": "supplied halloween transition and fused forest"
@@ -4982,7 +5090,7 @@
       "label": "Immersive dashboard bars",
       "file_type": "document",
       "source_file": "SNEAK-PEEK.md",
-      "source_location": "L79",
+      "source_location": "L81",
       "id": "sneak_peek_immersive_dashboard_bars",
       "community": 65,
       "norm_label": "immersive dashboard bars"
@@ -5325,7 +5433,7 @@
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L31",
-      "community": 60,
+      "community": 70,
       "norm_label": ".reduced()",
       "id": "static_sneak_arrival_sneakarrival_reduced"
     },
@@ -5334,7 +5442,7 @@
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L47",
-      "community": 60,
+      "community": 70,
       "norm_label": ".clear()",
       "id": "static_sneak_arrival_sneakarrival_clear"
     },
@@ -5717,9 +5825,9 @@
       "source_file": "halloween_hub/app.py",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_app",
-      "target": "halloween_hub_updates",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates"
     },
     {
       "relation": "imports",
@@ -5728,9 +5836,9 @@
       "source_file": "halloween_hub/app.py",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_app",
-      "target": "halloween_hub_updates_releaseupdates",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_releaseupdates"
     },
     {
       "relation": "imports_from",
@@ -5739,9 +5847,9 @@
       "source_file": "halloween_hub/app.py",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_app",
-      "target": "halloween_hub_version",
-      "confidence_score": 1.0
+      "target": "halloween_hub_version"
     },
     {
       "relation": "imports_from",
@@ -5849,9 +5957,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates",
-      "target": "halloween_hub_app",
-      "confidence_score": 1.0
+      "target": "halloween_hub_app"
     },
     {
       "relation": "calls",
@@ -5959,9 +6067,9 @@
       "source_file": "halloween_hub/app.py",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_app_create_app",
-      "target": "halloween_hub_updates_releaseupdates",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_releaseupdates"
     },
     {
       "relation": "calls",
@@ -6124,9 +6232,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates",
-      "target": "halloween_hub_app_create_app",
-      "confidence_score": 1.0
+      "target": "halloween_hub_app_create_app"
     },
     {
       "relation": "calls",
@@ -6512,9 +6620,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates",
-      "target": "halloween_hub_core",
-      "confidence_score": 1.0
+      "target": "halloween_hub_core"
     },
     {
       "relation": "calls",
@@ -6681,9 +6789,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates",
-      "target": "halloween_hub_core_store",
-      "confidence_score": 1.0
+      "target": "halloween_hub_core_store"
     },
     {
       "relation": "uses",
@@ -6691,9 +6799,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L11",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "tests_test_updates_fakegithub",
-      "target": "halloween_hub_core_store",
-      "confidence_score": 0.5
+      "target": "halloween_hub_core_store"
     },
     {
       "relation": "uses",
@@ -6701,9 +6809,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L11",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "tests_test_updates_updatestests",
-      "target": "halloween_hub_core_store",
-      "confidence_score": 0.5
+      "target": "halloween_hub_core_store"
     },
     {
       "relation": "calls",
@@ -7553,9 +7661,9 @@
       "source_location": "L297",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "static_app_renderupdates",
-      "target": "static_app",
-      "confidence_score": 1.0
+      "target": "static_app"
     },
     {
       "relation": "calls",
@@ -8291,9 +8399,9 @@
       "source_file": "halloween_hub/static/app.js",
       "source_location": "L431",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_app_render",
-      "target": "static_app_renderupdates",
-      "confidence_score": 1.0
+      "target": "static_app_renderupdates"
     },
     {
       "relation": "calls",
@@ -11376,9 +11484,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates",
-      "target": "halloween_hub_updates_github",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_github"
     },
     {
       "relation": "contains",
@@ -11386,9 +11494,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates",
-      "target": "halloween_hub_updates_newer",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_newer"
     },
     {
       "relation": "contains",
@@ -11396,9 +11504,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L95",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates",
-      "target": "halloween_hub_updates_releaseupdates",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_releaseupdates"
     },
     {
       "relation": "contains",
@@ -11406,9 +11514,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates",
-      "target": "halloween_hub_updates_saferedirect",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_saferedirect"
     },
     {
       "relation": "contains",
@@ -11416,9 +11524,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates",
-      "target": "halloween_hub_updates_sha256",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_sha256"
     },
     {
       "relation": "contains",
@@ -11426,9 +11534,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates",
-      "target": "halloween_hub_updates_stable_version",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_stable_version"
     },
     {
       "relation": "imports_from",
@@ -11437,9 +11545,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates",
-      "target": "halloween_hub_version",
-      "confidence_score": 1.0
+      "target": "halloween_hub_version"
     },
     {
       "relation": "rationale_for",
@@ -11447,9 +11555,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_rationale_1",
-      "target": "halloween_hub_updates",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates"
     },
     {
       "relation": "imports_from",
@@ -11458,9 +11566,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates",
-      "target": "halloween_hub_updates",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates"
     },
     {
       "relation": "calls",
@@ -11469,9 +11577,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_newer",
-      "target": "halloween_hub_updates_stable_version",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_stable_version"
     },
     {
       "relation": "calls",
@@ -11480,9 +11588,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L171",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_releaseupdates_check_download",
-      "target": "halloween_hub_updates_stable_version",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_stable_version"
     },
     {
       "relation": "calls",
@@ -11491,9 +11599,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L178",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_releaseupdates_check_download",
-      "target": "halloween_hub_updates_newer",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_newer"
     },
     {
       "relation": "imports",
@@ -11502,9 +11610,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates",
-      "target": "halloween_hub_updates_newer",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_newer"
     },
     {
       "relation": "calls",
@@ -11524,9 +11632,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L195",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_releaseupdates_check_download",
-      "target": "halloween_hub_updates_sha256",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_sha256"
     },
     {
       "relation": "calls",
@@ -11535,9 +11643,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_github_init",
-      "target": "halloween_hub_updates_saferedirect",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_saferedirect"
     },
     {
       "relation": "method",
@@ -11545,9 +11653,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_saferedirect",
-      "target": "halloween_hub_updates_saferedirect_redirect_request",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_saferedirect_redirect_request"
     },
     {
       "relation": "inherits",
@@ -11555,9 +11663,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_saferedirect",
-      "target": "httpredirecthandler",
-      "confidence_score": 1.0
+      "target": "httpredirecthandler"
     },
     {
       "relation": "imports",
@@ -11566,9 +11674,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates",
-      "target": "halloween_hub_updates_saferedirect",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_saferedirect"
     },
     {
       "relation": "uses",
@@ -11576,9 +11684,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L12",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "tests_test_updates_fakegithub",
-      "target": "halloween_hub_updates_saferedirect",
-      "confidence_score": 0.5
+      "target": "halloween_hub_updates_saferedirect"
     },
     {
       "relation": "uses",
@@ -11586,9 +11694,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L12",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "tests_test_updates_updatestests",
-      "target": "halloween_hub_updates_saferedirect",
-      "confidence_score": 0.5
+      "target": "halloween_hub_updates_saferedirect"
     },
     {
       "relation": "calls",
@@ -11607,9 +11715,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_github",
-      "target": "halloween_hub_updates_github_asset",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_github_asset"
     },
     {
       "relation": "method",
@@ -11617,9 +11725,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_github",
-      "target": "halloween_hub_updates_github_init",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_github_init"
     },
     {
       "relation": "method",
@@ -11627,9 +11735,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_github",
-      "target": "halloween_hub_updates_github_open",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_github_open"
     },
     {
       "relation": "method",
@@ -11637,9 +11745,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_github",
-      "target": "halloween_hub_updates_github_releases",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_github_releases"
     },
     {
       "relation": "method",
@@ -11647,9 +11755,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_github",
-      "target": "halloween_hub_updates_github_token",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_github_token"
     },
     {
       "relation": "calls",
@@ -11658,9 +11766,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L99",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_releaseupdates_init",
-      "target": "halloween_hub_updates_github",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_github"
     },
     {
       "relation": "calls",
@@ -11669,9 +11777,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_github_open",
-      "target": "halloween_hub_updates_github_token",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_github_token"
     },
     {
       "relation": "calls",
@@ -11680,9 +11788,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L171",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_releaseupdates_check_download",
-      "target": "halloween_hub_updates_github_releases",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_github_releases"
     },
     {
       "relation": "calls",
@@ -11691,9 +11799,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L203",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_releaseupdates_check_download",
-      "target": "halloween_hub_updates_github_asset",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_github_asset"
     },
     {
       "relation": "method",
@@ -11701,9 +11809,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L170",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_releaseupdates",
-      "target": "halloween_hub_updates_releaseupdates_check_download",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_releaseupdates_check_download"
     },
     {
       "relation": "method",
@@ -11711,9 +11819,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L134",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_releaseupdates",
-      "target": "halloween_hub_updates_releaseupdates_close",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_releaseupdates_close"
     },
     {
       "relation": "method",
@@ -11721,9 +11829,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L119",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_releaseupdates",
-      "target": "halloween_hub_updates_releaseupdates_enabled",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_releaseupdates_enabled"
     },
     {
       "relation": "method",
@@ -11731,9 +11839,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L96",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_releaseupdates",
-      "target": "halloween_hub_updates_releaseupdates_init",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_releaseupdates_init"
     },
     {
       "relation": "method",
@@ -11741,9 +11849,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L147",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_releaseupdates",
-      "target": "halloween_hub_updates_releaseupdates_run",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_releaseupdates_run"
     },
     {
       "relation": "method",
@@ -11751,9 +11859,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L115",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_releaseupdates",
-      "target": "halloween_hub_updates_releaseupdates_set",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_releaseupdates_set"
     },
     {
       "relation": "method",
@@ -11761,9 +11869,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_releaseupdates",
-      "target": "halloween_hub_updates_releaseupdates_snapshot",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_releaseupdates_snapshot"
     },
     {
       "relation": "method",
@@ -11771,9 +11879,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L122",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_releaseupdates",
-      "target": "halloween_hub_updates_releaseupdates_start",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_releaseupdates_start"
     },
     {
       "relation": "method",
@@ -11781,9 +11889,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L137",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_releaseupdates",
-      "target": "halloween_hub_updates_releaseupdates_trigger",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_releaseupdates_trigger"
     },
     {
       "relation": "imports",
@@ -11792,9 +11900,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates",
-      "target": "halloween_hub_updates_releaseupdates",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_releaseupdates"
     },
     {
       "relation": "uses",
@@ -11802,9 +11910,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L12",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "tests_test_updates_fakegithub",
-      "target": "halloween_hub_updates_releaseupdates",
-      "confidence_score": 0.5
+      "target": "halloween_hub_updates_releaseupdates"
     },
     {
       "relation": "uses",
@@ -11812,9 +11920,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L12",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "tests_test_updates_updatestests",
-      "target": "halloween_hub_updates_releaseupdates",
-      "confidence_score": 0.5
+      "target": "halloween_hub_updates_releaseupdates"
     },
     {
       "relation": "calls",
@@ -11845,9 +11953,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L144",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_releaseupdates_trigger",
-      "target": "halloween_hub_updates_releaseupdates_start",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_releaseupdates_start"
     },
     {
       "relation": "calls",
@@ -11856,9 +11964,9 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_updates_releaseupdates_run",
-      "target": "halloween_hub_updates_releaseupdates_check_download",
-      "confidence_score": 1.0
+      "target": "halloween_hub_updates_releaseupdates_check_download"
     },
     {
       "relation": "rationale_for",
@@ -11866,9 +11974,9 @@
       "source_file": "halloween_hub/version.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_version_rationale_1",
-      "target": "halloween_hub_version",
-      "confidence_score": 1.0
+      "target": "halloween_hub_version"
     },
     {
       "relation": "contains",
@@ -12906,6 +13014,26 @@
       "target": "scripts_check_sneak_chrome"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check_sneak_native.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_check_sneak_native",
+      "target": "scripts_check_sneak_native_wait_state"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check_sneak_native.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_check_sneak_native_rationale_1",
+      "target": "scripts_check_sneak_native"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "scripts/check_sneak_party.py",
@@ -12961,9 +13089,9 @@
       "source_file": "scripts/check_updates_ui.py",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_check_updates_ui",
-      "target": "scripts_check_updates_ui_fixture",
-      "confidence_score": 1.0
+      "target": "scripts_check_updates_ui_fixture"
     },
     {
       "relation": "rationale_for",
@@ -12971,9 +13099,9 @@
       "source_file": "scripts/check_updates_ui.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_check_updates_ui_rationale_1",
-      "target": "scripts_check_updates_ui",
-      "confidence_score": 1.0
+      "target": "scripts_check_updates_ui"
     },
     {
       "relation": "contains",
@@ -13200,6 +13328,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "sneak-peek-artwork.json",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork",
+      "target": "sneak_peek_artwork_background_wordmark",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
       "source_location": "L4",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -13370,6 +13508,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "sneak-peek-artwork.json",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sneak_peek_artwork_arrival_media",
+      "target": "sneak_peek_artwork_arrival_media_delivery_sha256"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
       "source_location": "L38",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -13420,6 +13568,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "sneak-peek-artwork.json",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sneak_peek_artwork_arrival_media",
+      "target": "sneak_peek_artwork_arrival_media_opening_still"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
       "source_location": "L32",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -13465,6 +13623,66 @@
       "confidence_score": 1.0,
       "source": "sneak_peek_artwork_arrival_media",
       "target": "sneak_peek_artwork_arrival_media_speed"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sneak_peek_artwork_arrival_media",
+      "target": "sneak_peek_artwork_arrival_media_trim_source"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sneak_peek_artwork_arrival_media",
+      "target": "sneak_peek_artwork_arrival_media_trimmed_opening_seconds"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_background_wordmark",
+      "target": "sneak_peek_artwork_background_wordmark_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_background_wordmark",
+      "target": "sneak_peek_artwork_background_wordmark_notes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_background_wordmark",
+      "target": "sneak_peek_artwork_background_wordmark_sha256",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_background_wordmark",
+      "target": "sneak_peek_artwork_background_wordmark_source",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -13934,9 +14152,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates",
-      "target": "tests_test_updates_fakegithub",
-      "confidence_score": 1.0
+      "target": "tests_test_updates_fakegithub"
     },
     {
       "relation": "contains",
@@ -13944,9 +14162,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates",
-      "target": "tests_test_updates_updatestests",
-      "confidence_score": 1.0
+      "target": "tests_test_updates_updatestests"
     },
     {
       "relation": "method",
@@ -13954,9 +14172,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates_fakegithub",
-      "target": "tests_test_updates_fakegithub_asset",
-      "confidence_score": 1.0
+      "target": "tests_test_updates_fakegithub_asset"
     },
     {
       "relation": "method",
@@ -13964,9 +14182,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates_fakegithub",
-      "target": "tests_test_updates_fakegithub_init",
-      "confidence_score": 1.0
+      "target": "tests_test_updates_fakegithub_init"
     },
     {
       "relation": "method",
@@ -13974,9 +14192,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates_fakegithub",
-      "target": "tests_test_updates_fakegithub_releases",
-      "confidence_score": 1.0
+      "target": "tests_test_updates_fakegithub_releases"
     },
     {
       "relation": "calls",
@@ -13985,9 +14203,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates_updatestests_setup",
-      "target": "tests_test_updates_fakegithub",
-      "confidence_score": 1.0
+      "target": "tests_test_updates_fakegithub"
     },
     {
       "relation": "calls",
@@ -13996,9 +14214,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L96",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates_updatestests_test_interrupted_stream_and_invalid_archive_never_ready",
-      "target": "tests_test_updates_fakegithub",
-      "confidence_score": 1.0
+      "target": "tests_test_updates_fakegithub"
     },
     {
       "relation": "method",
@@ -14006,9 +14224,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates_updatestests",
-      "target": "tests_test_updates_updatestests_setup",
-      "confidence_score": 1.0
+      "target": "tests_test_updates_updatestests_setup"
     },
     {
       "relation": "method",
@@ -14016,9 +14234,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates_updatestests",
-      "target": "tests_test_updates_updatestests_teardown",
-      "confidence_score": 1.0
+      "target": "tests_test_updates_updatestests_teardown"
     },
     {
       "relation": "method",
@@ -14026,9 +14244,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L136",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates_updatestests",
-      "target": "tests_test_updates_updatestests_test_auto_download_setting_and_local_only_endpoints",
-      "confidence_score": 1.0
+      "target": "tests_test_updates_updatestests_test_auto_download_setting_and_local_only_endpoints"
     },
     {
       "relation": "method",
@@ -14036,9 +14254,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates_updatestests",
-      "target": "tests_test_updates_updatestests_test_checksum_size_and_truncated_download_cleanup",
-      "confidence_score": 1.0
+      "target": "tests_test_updates_updatestests_test_checksum_size_and_truncated_download_cleanup"
     },
     {
       "relation": "method",
@@ -14046,9 +14264,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates_updatestests",
-      "target": "tests_test_updates_updatestests_test_digest_required_and_asset_name_exact",
-      "confidence_score": 1.0
+      "target": "tests_test_updates_updatestests_test_digest_required_and_asset_name_exact"
     },
     {
       "relation": "method",
@@ -14056,9 +14274,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates_updatestests",
-      "target": "tests_test_updates_updatestests_test_drafts_prereleases_and_older_releases_not_downloaded",
-      "confidence_score": 1.0
+      "target": "tests_test_updates_updatestests_test_drafts_prereleases_and_older_releases_not_downloaded"
     },
     {
       "relation": "method",
@@ -14066,9 +14284,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L86",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates_updatestests",
-      "target": "tests_test_updates_updatestests_test_interrupted_stream_and_invalid_archive_never_ready",
-      "confidence_score": 1.0
+      "target": "tests_test_updates_updatestests_test_interrupted_stream_and_invalid_archive_never_ready"
     },
     {
       "relation": "method",
@@ -14076,9 +14294,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates_updatestests",
-      "target": "tests_test_updates_updatestests_test_offline_auth_error_and_stop_leave_app_usable",
-      "confidence_score": 1.0
+      "target": "tests_test_updates_updatestests_test_offline_auth_error_and_stop_leave_app_usable"
     },
     {
       "relation": "method",
@@ -14086,9 +14304,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L121",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates_updatestests",
-      "target": "tests_test_updates_updatestests_test_redirect_strips_credentials_and_rejects_unknown_hosts",
-      "confidence_score": 1.0
+      "target": "tests_test_updates_updatestests_test_redirect_strips_credentials_and_rejects_unknown_hosts"
     },
     {
       "relation": "method",
@@ -14096,9 +14314,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates_updatestests",
-      "target": "tests_test_updates_updatestests_test_scheduler_checks_at_startup_then_six_hours_and_respects_opt_out",
-      "confidence_score": 1.0
+      "target": "tests_test_updates_updatestests_test_scheduler_checks_at_startup_then_six_hours_and_respects_opt_out"
     },
     {
       "relation": "method",
@@ -14106,9 +14324,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates_updatestests",
-      "target": "tests_test_updates_updatestests_test_single_job_and_manual_check_cooldown",
-      "confidence_score": 1.0
+      "target": "tests_test_updates_updatestests_test_single_job_and_manual_check_cooldown"
     },
     {
       "relation": "method",
@@ -14116,9 +14334,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates_updatestests",
-      "target": "tests_test_updates_updatestests_test_verified_atomic_download_reused_after_restart",
-      "confidence_score": 1.0
+      "target": "tests_test_updates_updatestests_test_verified_atomic_download_reused_after_restart"
     },
     {
       "relation": "method",
@@ -14126,9 +14344,9 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_updates_updatestests",
-      "target": "tests_test_updates_updatestests_test_version_order_and_stable_promotion",
-      "confidence_score": 1.0
+      "target": "tests_test_updates_updatestests_test_version_order_and_stable_promotion"
     },
     {
       "relation": "contains",
@@ -14276,9 +14494,9 @@
       "source_file": "README.md",
       "source_location": "L261",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_halloween_hub",
-      "target": "readme_automatic_release_downloads",
-      "confidence_score": 1.0
+      "target": "readme_automatic_release_downloads"
     },
     {
       "relation": "contains",
@@ -14506,9 +14724,9 @@
       "source_file": "UPDATES.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "updates",
-      "target": "updates_github_release_downloads",
-      "confidence_score": 1.0
+      "target": "updates_github_release_downloads"
     },
     {
       "relation": "contains",
@@ -14516,9 +14734,9 @@
       "source_file": "UPDATES.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "updates_github_release_downloads",
-      "target": "updates_private_repository_access",
-      "confidence_score": 1.0
+      "target": "updates_private_repository_access"
     },
     {
       "relation": "contains",
@@ -14526,9 +14744,9 @@
       "source_file": "UPDATES.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "updates_github_release_downloads",
-      "target": "updates_release_contract",
-      "confidence_score": 1.0
+      "target": "updates_release_contract"
     },
     {
       "relation": "contains",
@@ -14852,5 +15070,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d3b9f1ae31ac35cfd479cf05716d8d4d3e17d13d"
+  "built_at_commit": "15047893754d1c840bfb267d27a90d1591d9723f"
 }

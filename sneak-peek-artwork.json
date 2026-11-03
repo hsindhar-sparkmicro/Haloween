@@ -28,7 +28,7 @@
     "source_sha256": "dab916af458a42f33850f9629cfd0316ff7ebd898cf8e2e933b1cd76d4c75866",
     "file": "halloween_hub/static/assets/sneak-peek/arrival-half-speed.mp4",
     "source_duration_seconds": 6.041667,
-    "delivery_duration_seconds": 12.25,
+    "delivery_duration_seconds": 10.25,
     "resolution": "1280x720",
     "fps": 24,
     "speed": 0.5,
@@ -36,6 +36,16 @@
     "audio": "Removed from background delivery; original opt-in jingles remain independent.",
     "filter": "setpts=2*(PTS-STARTPTS),minterpolate=fps=24:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1,tpad=stop_mode=clone:stop_duration=0.17",
     "encode": "H.264 libx264 slow CRF19, yuv420p, 24 fps CFR, faststart, source metadata removed",
-    "notes": "Motion interpolation restores 24 fps after half-speed retiming; brief final-frame hold; visual qualification remains needed on physical Pi."
+    "notes": "Retains 0.5x source motion and final-frame hold. Playback starts at file time zero after removing the glitch-prone opening; no runtime seeking required.",
+    "trimmed_opening_seconds": 2,
+    "trim_source": "Prepared half-speed 12.25-second delivery from commit 1504789; trim its first 2 seconds, then re-encode CFR H.264 with a new opening keyframe.",
+    "delivery_sha256": "5b1ddfe5a43a48e16c48a3e46f061b1a60a2d1d0568b3d7e023df978b94a1f66",
+    "opening_still": "arrival-start.png extracted from the first frame of the trimmed delivery; used for both the poster and manual Halloween return."
+  },
+  "background_wordmark": {
+    "file": "halloween_hub/static/assets/sneak-peek/spark-wordmark.png",
+    "source": "User supplied SPARK Microsystems transparent PNG, November 3, 2026",
+    "sha256": "59845e110e77c2e75093d3f5bf152ef8620f224e24004a18be1c1271299c0163",
+    "notes": "Unmodified 250x75 RGBA artwork. CSS screen blending integrates it beneath the countdown with a seven-second gentle float and glow. Pauses with background animation; static in reduced motion."
   }
 }

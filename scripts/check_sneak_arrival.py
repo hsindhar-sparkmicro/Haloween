@@ -30,7 +30,10 @@ with sync_playwright() as p:
     start()
     started=time.monotonic()
     info=tab.locator('#peek-arrival video').evaluate('(v)=>({duration:v.duration,rate:v.playbackRate,muted:v.muted,loop:v.loop})')
-    assert 12 <= info['duration'] < 12.4 and info['rate']==1 and info['muted'] and not info['loop'],info
+    assert 10.2 <= info['duration'] < 10.4 and info['rate']==1 and info['muted'] and not info['loop'],info
+    assert tab.locator('#peek-arrival').evaluate('e=>getComputedStyle(e).transitionDuration')=='4.8s'
+    tab.wait_for_timeout(1600)
+    assert tab.locator('#peek-arrival').evaluate('e=>{const opacity=Number(getComputedStyle(e).opacity);return opacity>0&&opacity<.9}')
     assert tab.locator('#peek-arrival button,#peek-arrival-restart,#peek-arrival-replay').count()==0
     assert 'old magic is still here' not in tab.locator('body').inner_text().lower()
     assert tab.evaluate('document.activeElement===document.body')
@@ -38,6 +41,8 @@ with sync_playwright() as p:
         tab.set_viewport_size({'width':w,'height':h})
         for selector in ['.welcome-countdown','.welcome-weather','.peek-strip','#peek-gifts','.peek-defrost']:
             assert tab.locator(selector).is_visible(),(w,selector)
+        if w==390:
+            tab.locator('#peek-gifts').scroll_into_view_if_needed()
         assert tab.locator('#peek-gifts').evaluate('e=>{let r=e.getBoundingClientRect();return e.contains(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2))}')
         assert tab.evaluate('document.documentElement.scrollWidth<=innerWidth')
         tab.screenshot(path=str(OUT/f'foreground-playing-{w}.png'),full_page=True)

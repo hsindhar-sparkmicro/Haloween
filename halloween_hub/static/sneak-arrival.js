@@ -81,6 +81,8 @@ export class SneakArrival {
       await this.video.play();if(run!==this.generation||!this.running)return;
       const present=()=>{
         if(run!==this.generation||!this.running)return;
+        // Commit the transparent starting style even when cached media is ready immediately.
+        this.layer.getBoundingClientRect();
         this.clearCycle();this.layer.classList.add('presented');this.root.dataset.arrival='playing';
         if(fromHalloween){
           // The poster and the first film frame match, so this handoff needs no cut to black.
