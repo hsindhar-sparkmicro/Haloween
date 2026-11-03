@@ -95,8 +95,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/index.html": {
-    "mtime": 1793723495.7112088,
-    "ast_hash": "e700ada6884d33e5de3793e75566ca56",
+    "mtime": 1793724226.8880785,
+    "ast_hash": "f2cc7c27ae710217af12f1a2a49ab913",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/requirements-dev.txt": {
@@ -535,18 +535,18 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/sneak-peek.js": {
-    "mtime": 1793723539.7482152,
-    "ast_hash": "5884c9841980f8a440a23ee0f02bced4",
+    "mtime": 1793724226.8878362,
+    "ast_hash": "0974794869571b4148c96a579eca6a3f",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/scripts/check_sneak_peek.py": {
-    "mtime": 1793723928.227868,
-    "ast_hash": "3d44ed716525ea0c9f4e707e63b81642",
+    "mtime": 1793724276.8527095,
+    "ast_hash": "9d707cfa209c28b752516b74357f61f3",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/sneak-peek-artwork.json": {
-    "mtime": 1793723838.0043597,
-    "ast_hash": "1c2d9750cacb90749c996d79b49c3f58",
+    "mtime": 1793724309.6312554,
+    "ast_hash": "dd4327467586e5b7d10fc28695152566",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/tests/test_sneak_peek.py": {
@@ -555,8 +555,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/SNEAK-PEEK.md": {
-    "mtime": 1793723838.0093598,
-    "ast_hash": "ceaee831467465426b60c3aab5477d67",
+    "mtime": 1793724420.73333,
+    "ast_hash": "69ebc98d9537251901fca827e17d3248",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/assets/sneak-peek/forest.png": {
@@ -572,6 +572,46 @@
   "/home/hsindhar/github/Haloween/halloween_hub/static/assets/sneak-peek/transition.png": {
     "mtime": 1793723632.70385,
     "ast_hash": "6eb86b68b75bf8e5fbaea6c0af8a1890",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/halloween_hub/static/sneak-arrival.js": {
+    "mtime": 1793724217.454606,
+    "ast_hash": "dcf9545b9a73f7479ec88bd95945992a",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/scripts/check_sneak_arrival.py": {
+    "mtime": 1793724371.188747,
+    "ast_hash": "0ca667069d2ef44eae33d152facb3c11",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/design-sneak-fusion-prompt.txt": {
+    "mtime": 1793724243.1780221,
+    "ast_hash": "112ecda1cebf55f3c1d2b9e9a58dacf2",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/halloween_hub/static/assets/sneak-peek/arrival-end.png": {
+    "mtime": 1793724191.0666418,
+    "ast_hash": "2d4c0802e7ece43cdb4b2d4175e8e9e1",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/halloween_hub/static/assets/sneak-peek/arrival-start.png": {
+    "mtime": 1793724191.0652192,
+    "ast_hash": "a38ab3ca1dc1fc494f038d562b371609",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/halloween_hub/static/assets/sneak-peek/forest-preparing.png": {
+    "mtime": 1793724243.1460216,
+    "ast_hash": "2143043652cf8fa8e3172c9a5f85c98f",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/halloween_hub/static/assets/sneak-peek/supplied-forest.jpg": {
+    "mtime": 1793724191.0636313,
+    "ast_hash": "45fb3217f0fff957b22a6fc7b6d3893b",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/halloween_hub/static/assets/sneak-peek/arrival-half-speed.mp4": {
+    "mtime": 1793724240.7769833,
+    "ast_hash": "140be7320137553888d3f6e275e5591e",
     "semantic_hash": ""
   }
 }

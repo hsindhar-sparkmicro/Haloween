@@ -4,11 +4,38 @@
   "base": "main@7168675",
   "method": "Built-in imagegen",
   "file": "halloween_hub/static/assets/sneak-peek/transition.png",
-  "prompt": "Generate a polished cinematic 3D storybook illustration, landscape16:9, for a playful November Halloween-to-Christmas SNEAK PEEK kiosk in Montréal. Transitional atmosphere, not fullChristmas yet. Deep midnightpurple woods LEFT blend naturally into icyblue snow-dusted firs RIGHT, soft gold light hints of festivefuture. Leftground: a few friendly grinningcarvedpumpkins, fallen copperleaves, harmless purplemist; no horror. Rightground fresh light snow patches and frostedbranches, earlywinterflurries sparse, no denseblizzard.\nComposition for real dashboardUI: top15percent quiet darksky; leftthird upper/middle largely quiet deepplum negative space behind futureheadlinecountdown; farRIGHT20percent upper/middle quietblue shadows behindfuturestatuscards. Main illustrated action in CENTERbetween x36–73percent,y35–76percent.\nCenterforeground x48%,y68% three beautiful SMALL wrappedgiftpacks in deep evergreen, cranberryred andgold ribbon, subtle gold light leaking fromonepartlyopenlid. A tiny black wirelessheadset and blacksquarechip peekfrompacking justenough totempt, not a largeproductdisplay, no labels/logos. NearbyfriendlypumpkinwearingasingleSanta hat. One elf halfhiddenbehindgiftstack witha warm conspiratorialsmile.\nAtx66%,y47%, a playful recognizable storybook caricature of adult singer MARIAH CAREY inside a gently frosted translucent upright ice capsule, smiling with long goldenbrown wavyhair, classy modest redwintergown withwhitefurtrim, holding a microphone. Familyfriendly whimsical 'defrosting for Christmas' fan-meme cameo, not anactualphotograph orendorsement. Iceedgesgleam softly, a few littlemelt dropletsnearbase, no distressed person. Faceclearlyreadable evenatthumbnail. No words insideice.\nFarbackgroundbehindcenter-rightfirsonlyasmallhint of cozyoakChristmaslodge throughsnowytrees: warmwindowandgarland, notgiantmainhouse. TinygreenlightatopdistantfirtreehintsSanta'sarrival. Keep the mystery and seasonal handover: Halloweenis windingdown, Christmasiswarmingup. A few non-scaryghostshapesfadeinto smallsnowflakes acrosscentralmist, gentleflowingtransitionnotahardleft/rightsplit. Rich texturedmaterials,warm lanternlight, elegant restrainedgold/evergreen/redaccents, stableillustration. No text, no typography, no dates, no UI, no retail discounts, no watermark. Clear calmgroundspace bottom20percent for navigation/teasercards.",
+  "prompt": "Generate a polished cinematic 3D storybook illustration, landscape16:9, for a playful November Halloween-to-Christmas SNEAK PEEK kiosk in Montr\u00e9al. Transitional atmosphere, not fullChristmas yet. Deep midnightpurple woods LEFT blend naturally into icyblue snow-dusted firs RIGHT, soft gold light hints of festivefuture. Leftground: a few friendly grinningcarvedpumpkins, fallen copperleaves, harmless purplemist; no horror. Rightground fresh light snow patches and frostedbranches, earlywinterflurries sparse, no denseblizzard.\nComposition for real dashboardUI: top15percent quiet darksky; leftthird upper/middle largely quiet deepplum negative space behind futureheadlinecountdown; farRIGHT20percent upper/middle quietblue shadows behindfuturestatuscards. Main illustrated action in CENTERbetween x36\u201373percent,y35\u201376percent.\nCenterforeground x48%,y68% three beautiful SMALL wrappedgiftpacks in deep evergreen, cranberryred andgold ribbon, subtle gold light leaking fromonepartlyopenlid. A tiny black wirelessheadset and blacksquarechip peekfrompacking justenough totempt, not a largeproductdisplay, no labels/logos. NearbyfriendlypumpkinwearingasingleSanta hat. One elf halfhiddenbehindgiftstack witha warm conspiratorialsmile.\nAtx66%,y47%, a playful recognizable storybook caricature of adult singer MARIAH CAREY inside a gently frosted translucent upright ice capsule, smiling with long goldenbrown wavyhair, classy modest redwintergown withwhitefurtrim, holding a microphone. Familyfriendly whimsical 'defrosting for Christmas' fan-meme cameo, not anactualphotograph orendorsement. Iceedgesgleam softly, a few littlemelt dropletsnearbase, no distressed person. Faceclearlyreadable evenatthumbnail. No words insideice.\nFarbackgroundbehindcenter-rightfirsonlyasmallhint of cozyoakChristmaslodge throughsnowytrees: warmwindowandgarland, notgiantmainhouse. TinygreenlightatopdistantfirtreehintsSanta'sarrival. Keep the mystery and seasonal handover: Halloweenis windingdown, Christmasiswarmingup. A few non-scaryghostshapesfadeinto smallsnowflakes acrosscentralmist, gentleflowingtransitionnotahardleft/rightsplit. Rich texturedmaterials,warm lanternlight, elegant restrainedgold/evergreen/redaccents, stableillustration. No text, no typography, no dates, no UI, no retail discounts, no watermark. Clear calmgroundspace bottom20percent for navigation/teasercards.",
   "notes": [
     "Illustrated Mariah Carey defrosting fan joke; meter represents November 1 to December 1, not artist activity.",
     "Original bell motifs synthesized locally with Web Audio; no artist recordings used.",
     "Full Christmas forest and house previews copied unchanged from local design commit 4fd046f.",
     "Product reveal images reused from main's existing SPARK artwork."
-  ]
+  ],
+  "forest_fusion": {
+    "created": "2026-11-03",
+    "method": "Built-in imagegen, compositing edit",
+    "file": "halloween_hub/static/assets/sneak-peek/forest-preparing.png",
+    "prompt_file": "design-sneak-fusion-prompt.txt",
+    "inputs": [
+      "User supplied haloween_gone.jpg",
+      "Existing transition.png character reference",
+      "Exact final frame of user supplied haloweenfading_video.mp4"
+    ],
+    "notes": "Original tree, snowy forest and gates used as setting; adds elves, wrapped gifts, friendly pumpkins and Mariah ice cameo."
+  },
+  "arrival_media": {
+    "source": "/home/hsindhar/Pictures/xmas-transition/haloweenfading_video.mp4",
+    "source_sha256": "dab916af458a42f33850f9629cfd0316ff7ebd898cf8e2e933b1cd76d4c75866",
+    "file": "halloween_hub/static/assets/sneak-peek/arrival-half-speed.mp4",
+    "source_duration_seconds": 6.041667,
+    "delivery_duration_seconds": 12.25,
+    "resolution": "1280x720",
+    "fps": 24,
+    "speed": 0.5,
+    "browser_playback_rate": 1,
+    "audio": "Removed from background delivery; original opt-in jingles remain independent.",
+    "filter": "setpts=2*(PTS-STARTPTS),minterpolate=fps=24:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1,tpad=stop_mode=clone:stop_duration=0.17",
+    "encode": "H.264 libx264 slow CRF19, yuv420p, 24 fps CFR, faststart, source metadata removed",
+    "notes": "Motion interpolation restores 24 fps after half-speed retiming; brief final-frame hold; visual qualification remains needed on physical Pi."
+  }
 }

@@ -1399,10 +1399,109 @@
       "norm_label": ".draw()"
     },
     {
+      "label": "sneak-arrival.js",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L1",
+      "id": "static_sneak_arrival",
+      "community": 60,
+      "norm_label": "sneak-arrival.js"
+    },
+    {
+      "label": "SneakArrival",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L5",
+      "id": "static_sneak_arrival_sneakarrival",
+      "community": 67,
+      "norm_label": "sneakarrival"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L6",
+      "id": "static_sneak_arrival_sneakarrival_constructor",
+      "community": 67,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".reduced()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L26",
+      "id": "static_sneak_arrival_sneakarrival_reduced",
+      "community": 67,
+      "norm_label": ".reduced()"
+    },
+    {
+      "label": ".eligible()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L27",
+      "id": "static_sneak_arrival_sneakarrival_eligible",
+      "community": 67,
+      "norm_label": ".eligible()"
+    },
+    {
+      "label": ".configure()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L28",
+      "id": "static_sneak_arrival_sneakarrival_configure",
+      "community": 67,
+      "norm_label": ".configure()"
+    },
+    {
+      "label": ".check()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L34",
+      "id": "static_sneak_arrival_sneakarrival_check",
+      "community": 67,
+      "norm_label": ".check()"
+    },
+    {
+      "label": ".later()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L39",
+      "id": "static_sneak_arrival_sneakarrival_later",
+      "community": 67,
+      "norm_label": ".later()"
+    },
+    {
+      "label": ".clear()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L40",
+      "id": "static_sneak_arrival_sneakarrival_clear",
+      "community": 67,
+      "norm_label": ".clear()"
+    },
+    {
+      "label": ".start()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L41",
+      "id": "static_sneak_arrival_sneakarrival_start",
+      "community": 67,
+      "norm_label": ".start()"
+    },
+    {
+      "label": ".finish()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L69",
+      "id": "static_sneak_arrival_sneakarrival_finish",
+      "community": 67,
+      "norm_label": ".finish()"
+    },
+    {
       "label": "$()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L2",
+      "source_location": "L3",
       "id": "static_sneak_peek",
       "community": 60,
       "norm_label": "$()"
@@ -1411,7 +1510,7 @@
       "label": "SneakAtmosphere",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L5",
+      "source_location": "L6",
       "id": "static_sneak_peek_sneakatmosphere",
       "community": 60,
       "norm_label": "sneakatmosphere"
@@ -1420,7 +1519,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L6",
+      "source_location": "L7",
       "id": "static_sneak_peek_sneakatmosphere_constructor",
       "community": 60,
       "norm_label": ".constructor()"
@@ -1429,7 +1528,7 @@
       "label": ".configure()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L16",
+      "source_location": "L18",
       "id": "static_sneak_peek_sneakatmosphere_configure",
       "community": 60,
       "norm_label": ".configure()"
@@ -1438,7 +1537,7 @@
       "label": ".resize()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L17",
+      "source_location": "L19",
       "id": "static_sneak_peek_sneakatmosphere_resize",
       "community": 60,
       "norm_label": ".resize()"
@@ -1447,7 +1546,7 @@
       "label": ".refresh()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L18",
+      "source_location": "L20",
       "id": "static_sneak_peek_sneakatmosphere_refresh",
       "community": 60,
       "norm_label": ".refresh()"
@@ -1456,7 +1555,7 @@
       "label": "gifts",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L36",
+      "source_location": "L38",
       "id": "static_sneak_peek_gifts",
       "community": 60,
       "norm_label": "gifts"
@@ -1465,7 +1564,7 @@
       "label": "SneakPeek",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L42",
+      "source_location": "L44",
       "id": "static_sneak_peek_sneakpeek",
       "community": 60,
       "norm_label": "sneakpeek"
@@ -1474,7 +1573,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L43",
+      "source_location": "L45",
       "id": "static_sneak_peek_sneakpeek_constructor",
       "community": 60,
       "norm_label": ".constructor()"
@@ -1483,7 +1582,7 @@
       "label": ".active()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L61",
+      "source_location": "L63",
       "id": "static_sneak_peek_sneakpeek_active",
       "community": 60,
       "norm_label": ".active()"
@@ -1492,7 +1591,7 @@
       "label": ".controls()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L62",
+      "source_location": "L64",
       "id": "static_sneak_peek_sneakpeek_controls",
       "community": 60,
       "norm_label": ".controls()"
@@ -1501,7 +1600,7 @@
       "label": ".volumeChanged()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L63",
+      "source_location": "L65",
       "id": "static_sneak_peek_sneakpeek_volumechanged",
       "community": 60,
       "norm_label": ".volumechanged()"
@@ -1510,7 +1609,7 @@
       "label": ".silence()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L64",
+      "source_location": "L66",
       "id": "static_sneak_peek_sneakpeek_silence",
       "community": 60,
       "norm_label": ".silence()"
@@ -1519,7 +1618,7 @@
       "label": ".stopJingles()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L70",
+      "source_location": "L72",
       "id": "static_sneak_peek_sneakpeek_stopjingles",
       "community": 60,
       "norm_label": ".stopjingles()"
@@ -1528,7 +1627,7 @@
       "label": ".activity()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L71",
+      "source_location": "L73",
       "id": "static_sneak_peek_sneakpeek_activity",
       "community": 60,
       "norm_label": ".activity()"
@@ -1537,7 +1636,7 @@
       "label": ".schedule()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L74",
+      "source_location": "L76",
       "id": "static_sneak_peek_sneakpeek_schedule",
       "community": 60,
       "norm_label": ".schedule()"
@@ -1546,7 +1645,7 @@
       "label": ".playJingle()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L75",
+      "source_location": "L77",
       "id": "static_sneak_peek_sneakpeek_playjingle",
       "community": 60,
       "norm_label": ".playjingle()"
@@ -1555,7 +1654,7 @@
       "label": ".update()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L92",
+      "source_location": "L94",
       "id": "static_sneak_peek_sneakpeek_update",
       "community": 60,
       "norm_label": ".update()"
@@ -2016,7 +2115,7 @@
       "source_file": "halloween_hub/static/welcome-float.js",
       "source_location": "L1",
       "id": "static_welcome_float",
-      "community": 38,
+      "community": 3,
       "norm_label": "welcome-float.js"
     },
     {
@@ -2025,7 +2124,7 @@
       "source_file": "halloween_hub/static/welcome-float.js",
       "source_location": "L2",
       "id": "static_welcome_float_random",
-      "community": 38,
+      "community": 3,
       "norm_label": "random()"
     },
     {
@@ -2034,7 +2133,7 @@
       "source_file": "halloween_hub/static/welcome-float.js",
       "source_location": "L3",
       "id": "static_welcome_float_ease",
-      "community": 38,
+      "community": 3,
       "norm_label": "ease()"
     },
     {
@@ -2043,7 +2142,7 @@
       "source_file": "halloween_hub/static/welcome-float.js",
       "source_location": "L4",
       "id": "static_welcome_float_selectors",
-      "community": 38,
+      "community": 3,
       "norm_label": "selectors"
     },
     {
@@ -2052,7 +2151,7 @@
       "source_file": "halloween_hub/static/welcome-float.js",
       "source_location": "L12",
       "id": "static_welcome_float_welcomefloat",
-      "community": 38,
+      "community": 3,
       "norm_label": "welcomefloat"
     },
     {
@@ -2061,7 +2160,7 @@
       "source_file": "halloween_hub/static/welcome-float.js",
       "source_location": "L13",
       "id": "static_welcome_float_welcomefloat_constructor",
-      "community": 38,
+      "community": 3,
       "norm_label": ".constructor()"
     },
     {
@@ -2070,7 +2169,7 @@
       "source_file": "halloween_hub/static/welcome-float.js",
       "source_location": "L22",
       "id": "static_welcome_float_welcomefloat_draw",
-      "community": 38,
+      "community": 3,
       "norm_label": ".draw()"
     },
     {
@@ -2990,6 +3089,42 @@
       "norm_label": "check sharp local images and responsive layout through 4k and high-dpi displays."
     },
     {
+      "label": "check_sneak_arrival.py",
+      "file_type": "code",
+      "source_file": "scripts/check_sneak_arrival.py",
+      "source_location": "L1",
+      "id": "scripts_check_sneak_arrival",
+      "community": 68,
+      "norm_label": "check_sneak_arrival.py"
+    },
+    {
+      "label": "state()",
+      "file_type": "code",
+      "source_file": "scripts/check_sneak_arrival.py",
+      "source_location": "L20",
+      "id": "scripts_check_sneak_arrival_state",
+      "community": 68,
+      "norm_label": "state()"
+    },
+    {
+      "label": "replay()",
+      "file_type": "code",
+      "source_file": "scripts/check_sneak_arrival.py",
+      "source_location": "L22",
+      "id": "scripts_check_sneak_arrival_replay",
+      "community": 68,
+      "norm_label": "replay()"
+    },
+    {
+      "label": "Real encoded-media lifecycle checks; physical Pi qualification remains separate.",
+      "file_type": "rationale",
+      "source_file": "scripts/check_sneak_arrival.py",
+      "source_location": "L1",
+      "id": "scripts_check_sneak_arrival_rationale_1",
+      "community": 68,
+      "norm_label": "real encoded-media lifecycle checks; physical pi qualification remains separate."
+    },
+    {
       "label": "check_sneak_peek.py",
       "file_type": "code",
       "source_file": "scripts/check_sneak_peek.py",
@@ -3409,6 +3544,195 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L8",
       "id": "sneak_peek_artwork_notes",
+      "community": 63,
+      "norm_label": "notes"
+    },
+    {
+      "label": "forest_fusion",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L14",
+      "id": "sneak_peek_artwork_forest_fusion",
+      "community": 63,
+      "norm_label": "forest_fusion"
+    },
+    {
+      "label": "created",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L15",
+      "id": "sneak_peek_artwork_forest_fusion_created",
+      "community": 63,
+      "norm_label": "created"
+    },
+    {
+      "label": "method",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L16",
+      "id": "sneak_peek_artwork_forest_fusion_method",
+      "community": 63,
+      "norm_label": "method"
+    },
+    {
+      "label": "file",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L17",
+      "id": "sneak_peek_artwork_forest_fusion_file",
+      "community": 63,
+      "norm_label": "file"
+    },
+    {
+      "label": "prompt_file",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L18",
+      "id": "sneak_peek_artwork_forest_fusion_prompt_file",
+      "community": 63,
+      "norm_label": "prompt_file"
+    },
+    {
+      "label": "inputs",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L19",
+      "id": "sneak_peek_artwork_forest_fusion_inputs",
+      "community": 63,
+      "norm_label": "inputs"
+    },
+    {
+      "label": "notes",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L24",
+      "id": "sneak_peek_artwork_forest_fusion_notes",
+      "community": 63,
+      "norm_label": "notes"
+    },
+    {
+      "label": "arrival_media",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L26",
+      "id": "sneak_peek_artwork_arrival_media",
+      "community": 63,
+      "norm_label": "arrival_media"
+    },
+    {
+      "label": "source",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L27",
+      "id": "sneak_peek_artwork_arrival_media_source",
+      "community": 63,
+      "norm_label": "source"
+    },
+    {
+      "label": "source_sha256",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L28",
+      "id": "sneak_peek_artwork_arrival_media_source_sha256",
+      "community": 63,
+      "norm_label": "source_sha256"
+    },
+    {
+      "label": "file",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L29",
+      "id": "sneak_peek_artwork_arrival_media_file",
+      "community": 63,
+      "norm_label": "file"
+    },
+    {
+      "label": "source_duration_seconds",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L30",
+      "id": "sneak_peek_artwork_arrival_media_source_duration_seconds",
+      "community": 63,
+      "norm_label": "source_duration_seconds"
+    },
+    {
+      "label": "delivery_duration_seconds",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L31",
+      "id": "sneak_peek_artwork_arrival_media_delivery_duration_seconds",
+      "community": 63,
+      "norm_label": "delivery_duration_seconds"
+    },
+    {
+      "label": "resolution",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L32",
+      "id": "sneak_peek_artwork_arrival_media_resolution",
+      "community": 63,
+      "norm_label": "resolution"
+    },
+    {
+      "label": "fps",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L33",
+      "id": "sneak_peek_artwork_arrival_media_fps",
+      "community": 63,
+      "norm_label": "fps"
+    },
+    {
+      "label": "speed",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L34",
+      "id": "sneak_peek_artwork_arrival_media_speed",
+      "community": 63,
+      "norm_label": "speed"
+    },
+    {
+      "label": "browser_playback_rate",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L35",
+      "id": "sneak_peek_artwork_arrival_media_browser_playback_rate",
+      "community": 63,
+      "norm_label": "browser_playback_rate"
+    },
+    {
+      "label": "audio",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L36",
+      "id": "sneak_peek_artwork_arrival_media_audio",
+      "community": 63,
+      "norm_label": "audio"
+    },
+    {
+      "label": "filter",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L37",
+      "id": "sneak_peek_artwork_arrival_media_filter",
+      "community": 63,
+      "norm_label": "filter"
+    },
+    {
+      "label": "encode",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L38",
+      "id": "sneak_peek_artwork_arrival_media_encode",
+      "community": 63,
+      "norm_label": "encode"
+    },
+    {
+      "label": "notes",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L39",
+      "id": "sneak_peek_artwork_arrival_media_notes",
       "community": 63,
       "norm_label": "notes"
     },
@@ -4091,10 +4415,19 @@
       "label": "Dates and artwork sources",
       "file_type": "document",
       "source_file": "SNEAK-PEEK.md",
-      "source_location": "L38",
+      "source_location": "L40",
       "id": "sneak_peek_dates_and_artwork_sources",
       "community": 65,
       "norm_label": "dates and artwork sources"
+    },
+    {
+      "label": "Supplied Halloween transition and fused forest",
+      "file_type": "document",
+      "source_file": "SNEAK-PEEK.md",
+      "source_location": "L48",
+      "id": "sneak_peek_supplied_halloween_transition_and_fused_forest",
+      "community": 65,
+      "norm_label": "supplied halloween transition and fused forest"
     },
     {
       "label": "VALIDATION.md",
@@ -4741,9 +5074,9 @@
       "source_file": "halloween_hub/app.py",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_app",
-      "target": "halloween_hub_sneak_peek",
-      "confidence_score": 1.0
+      "target": "halloween_hub_sneak_peek"
     },
     {
       "relation": "imports",
@@ -4752,9 +5085,9 @@
       "source_file": "halloween_hub/app.py",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_app",
-      "target": "halloween_hub_sneak_peek_sneak_peek_calendar",
-      "confidence_score": 1.0
+      "target": "halloween_hub_sneak_peek_sneak_peek_calendar"
     },
     {
       "relation": "imports_from",
@@ -4851,9 +5184,9 @@
       "source_file": "tests/test_sneak_peek.py",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_sneak_peek",
-      "target": "halloween_hub_app",
-      "confidence_score": 1.0
+      "target": "halloween_hub_app"
     },
     {
       "relation": "calls",
@@ -4950,9 +5283,9 @@
       "source_file": "halloween_hub/app.py",
       "source_location": "L86",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_app_create_app",
-      "target": "halloween_hub_sneak_peek_sneak_peek_calendar",
-      "confidence_score": 1.0
+      "target": "halloween_hub_sneak_peek_sneak_peek_calendar"
     },
     {
       "relation": "calls",
@@ -5093,9 +5426,9 @@
       "source_file": "tests/test_sneak_peek.py",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_sneak_peek",
-      "target": "halloween_hub_app_create_app",
-      "confidence_score": 1.0
+      "target": "halloween_hub_app_create_app"
     },
     {
       "relation": "calls",
@@ -6036,9 +6369,9 @@
       "source_file": "halloween_hub/sneak_peek.py",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_sneak_peek",
-      "target": "halloween_hub_sneak_peek_sneak_peek_calendar",
-      "confidence_score": 1.0
+      "target": "halloween_hub_sneak_peek_sneak_peek_calendar"
     },
     {
       "relation": "rationale_for",
@@ -6046,9 +6379,9 @@
       "source_file": "halloween_hub/sneak_peek.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "halloween_hub_sneak_peek_rationale_1",
-      "target": "halloween_hub_sneak_peek",
-      "confidence_score": 1.0
+      "target": "halloween_hub_sneak_peek"
     },
     {
       "relation": "imports_from",
@@ -6057,9 +6390,9 @@
       "source_file": "tests/test_sneak_peek.py",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_sneak_peek",
-      "target": "halloween_hub_sneak_peek",
-      "confidence_score": 1.0
+      "target": "halloween_hub_sneak_peek"
     },
     {
       "relation": "imports",
@@ -6068,9 +6401,9 @@
       "source_file": "tests/test_sneak_peek.py",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_sneak_peek",
-      "target": "halloween_hub_sneak_peek_sneak_peek_calendar",
-      "confidence_score": 1.0
+      "target": "halloween_hub_sneak_peek_sneak_peek_calendar"
     },
     {
       "relation": "calls",
@@ -6510,9 +6843,9 @@
       "source_file": "halloween_hub/static/app.js",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_app",
-      "target": "static_app_sneakpeek",
-      "confidence_score": 1.0
+      "target": "static_app_sneakpeek"
     },
     {
       "relation": "calls",
@@ -6690,9 +7023,9 @@
       "source_file": "halloween_hub/static/app.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_app",
-      "target": "static_sneak_peek",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek"
     },
     {
       "relation": "imports",
@@ -6701,9 +7034,9 @@
       "source_file": "halloween_hub/static/app.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_app",
-      "target": "static_sneak_peek_sneakatmosphere",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakatmosphere"
     },
     {
       "relation": "imports",
@@ -6712,9 +7045,9 @@
       "source_file": "halloween_hub/static/app.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_app",
-      "target": "static_sneak_peek_sneakpeek",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek"
     },
     {
       "relation": "imports_from",
@@ -7539,9 +7872,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek",
-      "target": "static_night_weather",
-      "confidence_score": 1.0
+      "target": "static_night_weather"
     },
     {
       "relation": "imports_from",
@@ -7572,9 +7905,9 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_night_weather_nightweather_constructor",
-      "target": "static_night_weather_random",
-      "confidence_score": 1.0
+      "target": "static_night_weather_random"
     },
     {
       "relation": "calls",
@@ -7696,9 +8029,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek",
-      "target": "static_night_weather_nightweather",
-      "confidence_score": 1.0
+      "target": "static_night_weather_nightweather"
     },
     {
       "relation": "imports",
@@ -8138,8 +8471,295 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "static_sneak_arrival",
+      "target": "static_sneak_arrival_sneakarrival",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L2",
+      "weight": 1.0,
+      "source": "static_sneak_peek",
+      "target": "static_sneak_arrival",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival",
+      "target": "static_sneak_arrival_sneakarrival_check",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival",
+      "target": "static_sneak_arrival_sneakarrival_clear",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival",
+      "target": "static_sneak_arrival_sneakarrival_configure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival",
+      "target": "static_sneak_arrival_sneakarrival_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival",
+      "target": "static_sneak_arrival_sneakarrival_eligible",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival",
+      "target": "static_sneak_arrival_sneakarrival_finish",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival",
+      "target": "static_sneak_arrival_sneakarrival_later",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival",
+      "target": "static_sneak_arrival_sneakarrival_reduced",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival",
+      "target": "static_sneak_arrival_sneakarrival_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "static_sneak_peek",
+      "target": "static_sneak_arrival_sneakarrival",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival_check",
+      "target": "static_sneak_arrival_sneakarrival_reduced",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival_configure",
+      "target": "static_sneak_arrival_sneakarrival_reduced",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival_finish",
+      "target": "static_sneak_arrival_sneakarrival_reduced",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival_start",
+      "target": "static_sneak_arrival_sneakarrival_reduced",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival_check",
+      "target": "static_sneak_arrival_sneakarrival_eligible",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival_configure",
+      "target": "static_sneak_arrival_sneakarrival_eligible",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival_start",
+      "target": "static_sneak_arrival_sneakarrival_eligible",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival_configure",
+      "target": "static_sneak_arrival_sneakarrival_check",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival_configure",
+      "target": "static_sneak_arrival_sneakarrival_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival_check",
+      "target": "static_sneak_arrival_sneakarrival_finish",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival_finish",
+      "target": "static_sneak_arrival_sneakarrival_later",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival_start",
+      "target": "static_sneak_arrival_sneakarrival_later",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival_finish",
+      "target": "static_sneak_arrival_sneakarrival_clear",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival_start",
+      "target": "static_sneak_arrival_sneakarrival_clear",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival_start",
+      "target": "static_sneak_arrival_sneakarrival_finish",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L3",
       "weight": 1.0,
       "source": "static_sneak_peek",
       "target": "static_sneak_peek",
@@ -8151,9 +8771,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek",
-      "target": "static_sneak_peek_gifts",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_gifts"
     },
     {
       "relation": "contains",
@@ -8161,9 +8781,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek",
-      "target": "static_sneak_peek_sneakatmosphere",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakatmosphere"
     },
     {
       "relation": "contains",
@@ -8171,9 +8791,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek",
-      "target": "static_sneak_peek_sneakpeek",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek"
     },
     {
       "relation": "calls",
@@ -8182,9 +8802,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakatmosphere_constructor",
-      "target": "static_sneak_peek",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek"
     },
     {
       "relation": "calls",
@@ -8193,9 +8813,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakatmosphere_refresh",
-      "target": "static_sneak_peek",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek"
     },
     {
       "relation": "calls",
@@ -8204,9 +8824,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek_active",
-      "target": "static_sneak_peek",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek"
     },
     {
       "relation": "calls",
@@ -8215,9 +8835,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek_constructor",
-      "target": "static_sneak_peek",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek"
     },
     {
       "relation": "calls",
@@ -8226,9 +8846,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L95",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek_update",
-      "target": "static_sneak_peek",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek"
     },
     {
       "relation": "method",
@@ -8236,9 +8856,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakatmosphere",
-      "target": "static_sneak_peek_sneakatmosphere_configure",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakatmosphere_configure"
     },
     {
       "relation": "method",
@@ -8246,9 +8866,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakatmosphere",
-      "target": "static_sneak_peek_sneakatmosphere_constructor",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakatmosphere_constructor"
     },
     {
       "relation": "method",
@@ -8256,9 +8876,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakatmosphere",
-      "target": "static_sneak_peek_sneakatmosphere_refresh",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakatmosphere_refresh"
     },
     {
       "relation": "method",
@@ -8266,9 +8886,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakatmosphere",
-      "target": "static_sneak_peek_sneakatmosphere_resize",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakatmosphere_resize"
     },
     {
       "relation": "calls",
@@ -8277,9 +8897,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakatmosphere_constructor",
-      "target": "static_sneak_peek_sneakatmosphere_resize",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakatmosphere_resize"
     },
     {
       "relation": "calls",
@@ -8288,9 +8908,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakatmosphere_configure",
-      "target": "static_sneak_peek_sneakatmosphere_refresh",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakatmosphere_refresh"
     },
     {
       "relation": "method",
@@ -8298,9 +8918,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek",
-      "target": "static_sneak_peek_sneakpeek_active",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek_active"
     },
     {
       "relation": "method",
@@ -8308,9 +8928,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek",
-      "target": "static_sneak_peek_sneakpeek_activity",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek_activity"
     },
     {
       "relation": "method",
@@ -8318,9 +8938,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek",
-      "target": "static_sneak_peek_sneakpeek_constructor",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek_constructor"
     },
     {
       "relation": "method",
@@ -8328,9 +8948,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek",
-      "target": "static_sneak_peek_sneakpeek_controls",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek_controls"
     },
     {
       "relation": "method",
@@ -8338,9 +8958,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek",
-      "target": "static_sneak_peek_sneakpeek_playjingle",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek_playjingle"
     },
     {
       "relation": "method",
@@ -8348,9 +8968,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek",
-      "target": "static_sneak_peek_sneakpeek_schedule",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek_schedule"
     },
     {
       "relation": "method",
@@ -8358,9 +8978,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek",
-      "target": "static_sneak_peek_sneakpeek_silence",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek_silence"
     },
     {
       "relation": "method",
@@ -8368,9 +8988,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek",
-      "target": "static_sneak_peek_sneakpeek_stopjingles",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek_stopjingles"
     },
     {
       "relation": "method",
@@ -8378,9 +8998,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L92",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek",
-      "target": "static_sneak_peek_sneakpeek_update",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek_update"
     },
     {
       "relation": "method",
@@ -8388,9 +9008,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek",
-      "target": "static_sneak_peek_sneakpeek_volumechanged",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek_volumechanged"
     },
     {
       "relation": "calls",
@@ -8399,9 +9019,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek_activity",
-      "target": "static_sneak_peek_sneakpeek_active",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek_active"
     },
     {
       "relation": "calls",
@@ -8410,9 +9030,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek_playjingle",
-      "target": "static_sneak_peek_sneakpeek_active",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek_active"
     },
     {
       "relation": "calls",
@@ -8421,9 +9041,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek_schedule",
-      "target": "static_sneak_peek_sneakpeek_active",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek_active"
     },
     {
       "relation": "calls",
@@ -8432,9 +9052,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek_stopjingles",
-      "target": "static_sneak_peek_sneakpeek_controls",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek_controls"
     },
     {
       "relation": "calls",
@@ -8443,9 +9063,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek_playjingle",
-      "target": "static_sneak_peek_sneakpeek_volumechanged",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek_volumechanged"
     },
     {
       "relation": "calls",
@@ -8454,9 +9074,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek_activity",
-      "target": "static_sneak_peek_sneakpeek_silence",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek_silence"
     },
     {
       "relation": "calls",
@@ -8465,9 +9085,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek_playjingle",
-      "target": "static_sneak_peek_sneakpeek_silence",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek_silence"
     },
     {
       "relation": "calls",
@@ -8476,9 +9096,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek_stopjingles",
-      "target": "static_sneak_peek_sneakpeek_silence",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek_silence"
     },
     {
       "relation": "calls",
@@ -8487,9 +9107,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek_activity",
-      "target": "static_sneak_peek_sneakpeek_schedule",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek_schedule"
     },
     {
       "relation": "calls",
@@ -8498,9 +9118,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L90",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek_playjingle",
-      "target": "static_sneak_peek_sneakpeek_schedule",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek_schedule"
     },
     {
       "relation": "contains",
@@ -10717,14 +11337,55 @@
       "target": "scripts_check_showcase_resolution"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check_sneak_arrival.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "scripts_check_sneak_arrival",
+      "target": "scripts_check_sneak_arrival_replay",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check_sneak_arrival.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "scripts_check_sneak_arrival",
+      "target": "scripts_check_sneak_arrival_state",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check_sneak_arrival.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_check_sneak_arrival_rationale_1",
+      "target": "scripts_check_sneak_arrival",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check_sneak_arrival.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "scripts_check_sneak_arrival_replay",
+      "target": "scripts_check_sneak_arrival_state",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "scripts/check_sneak_peek.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_check_sneak_peek_rationale_1",
-      "target": "scripts_check_sneak_peek",
-      "confidence_score": 1.0
+      "target": "scripts_check_sneak_peek"
     },
     {
       "relation": "rationale_for",
@@ -10971,11 +11632,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "sneak-peek-artwork.json",
-      "source_location": "L4",
+      "source_location": "L26",
       "weight": 1.0,
       "source": "sneak_peek_artwork",
-      "target": "sneak_peek_artwork_base",
+      "target": "sneak_peek_artwork_arrival_media",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sneak_peek_artwork",
+      "target": "sneak_peek_artwork_base"
     },
     {
       "relation": "contains",
@@ -10983,9 +11654,9 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sneak_peek_artwork",
-      "target": "sneak_peek_artwork_branch",
-      "confidence_score": 1.0
+      "target": "sneak_peek_artwork_branch"
     },
     {
       "relation": "contains",
@@ -10993,9 +11664,9 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sneak_peek_artwork",
-      "target": "sneak_peek_artwork_created",
-      "confidence_score": 1.0
+      "target": "sneak_peek_artwork_created"
     },
     {
       "relation": "contains",
@@ -11003,8 +11674,18 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sneak_peek_artwork",
-      "target": "sneak_peek_artwork_file",
+      "target": "sneak_peek_artwork_file"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork",
+      "target": "sneak_peek_artwork_forest_fusion",
       "confidence_score": 1.0
     },
     {
@@ -11013,9 +11694,9 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sneak_peek_artwork",
-      "target": "sneak_peek_artwork_method",
-      "confidence_score": 1.0
+      "target": "sneak_peek_artwork_method"
     },
     {
       "relation": "contains",
@@ -11023,9 +11704,9 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sneak_peek_artwork",
-      "target": "sneak_peek_artwork_notes",
-      "confidence_score": 1.0
+      "target": "sneak_peek_artwork_notes"
     },
     {
       "relation": "contains",
@@ -11033,8 +11714,198 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sneak_peek_artwork",
-      "target": "sneak_peek_artwork_prompt",
+      "target": "sneak_peek_artwork_prompt"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_forest_fusion",
+      "target": "sneak_peek_artwork_forest_fusion_created",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_forest_fusion",
+      "target": "sneak_peek_artwork_forest_fusion_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_forest_fusion",
+      "target": "sneak_peek_artwork_forest_fusion_inputs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_forest_fusion",
+      "target": "sneak_peek_artwork_forest_fusion_method",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_forest_fusion",
+      "target": "sneak_peek_artwork_forest_fusion_notes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_forest_fusion",
+      "target": "sneak_peek_artwork_forest_fusion_prompt_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_arrival_media",
+      "target": "sneak_peek_artwork_arrival_media_audio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_arrival_media",
+      "target": "sneak_peek_artwork_arrival_media_browser_playback_rate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_arrival_media",
+      "target": "sneak_peek_artwork_arrival_media_delivery_duration_seconds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_arrival_media",
+      "target": "sneak_peek_artwork_arrival_media_encode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_arrival_media",
+      "target": "sneak_peek_artwork_arrival_media_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_arrival_media",
+      "target": "sneak_peek_artwork_arrival_media_filter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_arrival_media",
+      "target": "sneak_peek_artwork_arrival_media_fps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_arrival_media",
+      "target": "sneak_peek_artwork_arrival_media_notes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_arrival_media",
+      "target": "sneak_peek_artwork_arrival_media_resolution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_arrival_media",
+      "target": "sneak_peek_artwork_arrival_media_source",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_arrival_media",
+      "target": "sneak_peek_artwork_arrival_media_source_duration_seconds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_arrival_media",
+      "target": "sneak_peek_artwork_arrival_media_source_sha256",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_arrival_media",
+      "target": "sneak_peek_artwork_arrival_media_speed",
       "confidence_score": 1.0
     },
     {
@@ -11445,9 +12316,9 @@
       "source_file": "tests/test_sneak_peek.py",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_sneak_peek",
-      "target": "tests_test_sneak_peek_sneakpeekcalendartests",
-      "confidence_score": 1.0
+      "target": "tests_test_sneak_peek_sneakpeekcalendartests"
     },
     {
       "relation": "method",
@@ -11455,9 +12326,9 @@
       "source_file": "tests/test_sneak_peek.py",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_sneak_peek_sneakpeekcalendartests",
-      "target": "tests_test_sneak_peek_sneakpeekcalendartests_test_dst_seconds_and_year_rollover",
-      "confidence_score": 1.0
+      "target": "tests_test_sneak_peek_sneakpeekcalendartests_test_dst_seconds_and_year_rollover"
     },
     {
       "relation": "method",
@@ -11465,9 +12336,9 @@
       "source_file": "tests/test_sneak_peek.py",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_sneak_peek_sneakpeekcalendartests",
-      "target": "tests_test_sneak_peek_sneakpeekcalendartests_test_local_christmas_day_and_passed_dates",
-      "confidence_score": 1.0
+      "target": "tests_test_sneak_peek_sneakpeekcalendartests_test_local_christmas_day_and_passed_dates"
     },
     {
       "relation": "method",
@@ -11475,9 +12346,9 @@
       "source_file": "tests/test_sneak_peek.py",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_sneak_peek_sneakpeekcalendartests",
-      "target": "tests_test_sneak_peek_sneakpeekcalendartests_test_november_calendar",
-      "confidence_score": 1.0
+      "target": "tests_test_sneak_peek_sneakpeekcalendartests_test_november_calendar"
     },
     {
       "relation": "method",
@@ -11485,9 +12356,9 @@
       "source_file": "tests/test_sneak_peek.py",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_sneak_peek_sneakpeekcalendartests",
-      "target": "tests_test_sneak_peek_sneakpeekcalendartests_test_party_settings_and_halloween_countdown_preserved",
-      "confidence_score": 1.0
+      "target": "tests_test_sneak_peek_sneakpeekcalendartests_test_party_settings_and_halloween_countdown_preserved"
     },
     {
       "relation": "contains",
@@ -11785,9 +12656,9 @@
       "source_file": "SNEAK-PEEK.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sneak_peek",
-      "target": "sneak_peek_after_the_haunt_christmas_sneak_peek",
-      "confidence_score": 1.0
+      "target": "sneak_peek_after_the_haunt_christmas_sneak_peek"
     },
     {
       "relation": "contains",
@@ -11795,9 +12666,9 @@
       "source_file": "SNEAK-PEEK.md",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sneak_peek_after_the_haunt_christmas_sneak_peek",
-      "target": "sneak_peek_checks",
-      "confidence_score": 1.0
+      "target": "sneak_peek_checks"
     },
     {
       "relation": "contains",
@@ -11805,9 +12676,9 @@
       "source_file": "SNEAK-PEEK.md",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sneak_peek_after_the_haunt_christmas_sneak_peek",
-      "target": "sneak_peek_dates_and_artwork_sources",
-      "confidence_score": 1.0
+      "target": "sneak_peek_dates_and_artwork_sources"
     },
     {
       "relation": "contains",
@@ -11815,8 +12686,18 @@
       "source_file": "SNEAK-PEEK.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sneak_peek_after_the_haunt_christmas_sneak_peek",
-      "target": "sneak_peek_local_preview",
+      "target": "sneak_peek_local_preview"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SNEAK-PEEK.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "sneak_peek_after_the_haunt_christmas_sneak_peek",
+      "target": "sneak_peek_supplied_halloween_transition_and_fused_forest",
       "confidence_score": 1.0
     },
     {
@@ -11825,9 +12706,9 @@
       "source_file": "SNEAK-PEEK.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sneak_peek_after_the_haunt_christmas_sneak_peek",
-      "target": "sneak_peek_what_works",
-      "confidence_score": 1.0
+      "target": "sneak_peek_what_works"
     },
     {
       "relation": "contains",
@@ -12151,5 +13032,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "71686759c0f997a8ed71a0dbbb390e52aedf29da"
+  "built_at_commit": "4d86055824ca1948b19aa9e8a2ecec8ba64a44d7"
 }

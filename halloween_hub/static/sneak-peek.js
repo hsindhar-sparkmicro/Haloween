@@ -1,10 +1,12 @@
 import {NightWeather} from './night-weather.js';
+import {SneakArrival} from './sneak-arrival.js';
 const $ = q => document.querySelector(q);
 
 // One bounded particle canvas, no competing imported-video decoder in this edition.
 export class SneakAtmosphere {
   constructor() {
     this.canvas=$('#night-weather-canvas');this.ctx=this.canvas.getContext('2d');
+    this.arrival=new SneakArrival();
     this.weather=new NightWeather(this.canvas,{sneakPeek:true});this.settings={};
     this.elapsed=0;this.frame=0;this.last=0;this.width=0;this.height=0;
     this.motion=matchMedia('(prefers-reduced-motion: reduce)');
@@ -13,12 +15,12 @@ export class SneakAtmosphere {
     new MutationObserver(()=>this.refresh()).observe(document.body,{subtree:true,attributes:true,attributeFilter:['class','open']});
     document.addEventListener('visibilitychange',()=>this.refresh());this.resize();
   }
-  configure(settings){this.settings=settings;this.refresh();}
+  configure(settings){this.settings=settings;this.arrival.configure(settings);this.refresh();}
   resize(){const r=this.canvas.getBoundingClientRect();this.width=r.width;this.height=r.height;this.canvas.width=r.width;this.canvas.height=r.height;}
   refresh(){
     const active=$('#dashboard').classList.contains('active')&&!document.hidden&&!$('dialog[open]');
     const reduced=this.motion.matches||this.settings.reduced_motion;
-    const paused=!active||reduced;
+    const paused=!active||reduced||$('#dashboard').classList.contains('arrival-playing');
     if($('#dashboard').classList.contains('atmosphere-paused')!==Boolean(paused))$('#dashboard').classList.toggle('atmosphere-paused',Boolean(paused));
     if(paused){cancelAnimationFrame(this.frame);this.frame=0;this.last=0;this.ctx.clearRect(0,0,this.width,this.height);this.weather.describe('still');return;}
     if(this.frame)return;
@@ -58,7 +60,7 @@ export class SneakPeek {
     document.addEventListener('visibilitychange',()=>this.activity());
     window.addEventListener('pagehide',()=>this.stopJingles());
   }
-  active(){return !document.hidden&&$('#dashboard').classList.contains('active')&&!$('dialog[open]');}
+  active(){return !$('#dashboard').classList.contains('arrival-playing')&&!document.hidden&&$('#dashboard').classList.contains('active')&&!$('dialog[open]');}
   controls(){this.button.textContent=this.enabled?'♫ Pause festive jingles':'♫ Enable festive jingles';this.button.setAttribute('aria-pressed',String(this.enabled));}
   volumeChanged(){if(this.master){const audio=this.audio();this.master.gain.setTargetAtTime(audio.volume*.18,audio.context.currentTime,.03);}}
   silence(){

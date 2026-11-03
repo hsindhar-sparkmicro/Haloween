@@ -13,6 +13,7 @@ with sync_playwright() as p:
     browser = p.chromium.launch()
     context = browser.new_context()
     context.add_init_script('''(() => {
+      localStorage.setItem('spark-sneak-arrival-v1','done');
       const Base=window.AudioContext; window.audioProbe={starts:0,ends:0};
       window.AudioContext=class extends Base {createOscillator(){const osc=super.createOscillator();
         const start=osc.start.bind(osc);osc.start=(...args)=>{audioProbe.starts++;return start(...args)};
@@ -27,7 +28,7 @@ with sync_playwright() as p:
         tab.goto(args.url)
         tab.wait_for_function('() => document.querySelector("#connection").textContent.includes("Connected")')
         tab.evaluate('document.fonts.ready')
-        tab.evaluate('async()=>{let i=new Image();i.src="/static/assets/sneak-peek/transition.png";await i.decode()}')
+        tab.evaluate('async()=>{let i=new Image();i.src="/static/assets/sneak-peek/forest-preparing.png";await i.decode()}')
         assert tab.evaluate('document.documentElement.scrollWidth<=innerWidth')
         if w > 600:
             assert tab.evaluate('document.documentElement.scrollHeight<=innerHeight')
