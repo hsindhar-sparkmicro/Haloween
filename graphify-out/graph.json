@@ -1876,10 +1876,28 @@
       "norm_label": "sneak-arrival.js"
     },
     {
+      "label": "ALTERNATIVES",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L7",
+      "id": "static_sneak_arrival_alternatives",
+      "community": 60,
+      "norm_label": "alternatives"
+    },
+    {
+      "label": "MEDIA",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L8",
+      "id": "static_sneak_arrival_media",
+      "community": 60,
+      "norm_label": "media"
+    },
+    {
       "label": "SneakArrival",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L9",
+      "source_location": "L11",
       "id": "static_sneak_arrival_sneakarrival",
       "community": 70,
       "norm_label": "sneakarrival"
@@ -1888,7 +1906,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L10",
+      "source_location": "L12",
       "id": "static_sneak_arrival_sneakarrival_constructor",
       "community": 70,
       "norm_label": ".constructor()"
@@ -1897,7 +1915,7 @@
       "label": ".eligible()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L27",
+      "source_location": "L29",
       "id": "static_sneak_arrival_sneakarrival_eligible",
       "community": 70,
       "norm_label": ".eligible()"
@@ -1906,7 +1924,7 @@
       "label": ".configure()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L31",
+      "source_location": "L33",
       "id": "static_sneak_arrival_sneakarrival_configure",
       "community": 70,
       "norm_label": ".configure()"
@@ -1915,7 +1933,7 @@
       "label": ".schedule()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L37",
+      "source_location": "L39",
       "id": "static_sneak_arrival_sneakarrival_schedule",
       "community": 70,
       "norm_label": ".schedule()"
@@ -1924,7 +1942,7 @@
       "label": ".clearDog()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L43",
+      "source_location": "L45",
       "id": "static_sneak_arrival_sneakarrival_cleardog",
       "community": 70,
       "norm_label": ".cleardog()"
@@ -1933,7 +1951,7 @@
       "label": ".setRoamingDogReady()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L44",
+      "source_location": "L46",
       "id": "static_sneak_arrival_sneakarrival_setroamingdogready",
       "community": 70,
       "norm_label": ".setroamingdogready()"
@@ -1942,7 +1960,7 @@
       "label": ".scheduleDog()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L48",
+      "source_location": "L50",
       "id": "static_sneak_arrival_sneakarrival_scheduledog",
       "community": 70,
       "norm_label": ".scheduledog()"
@@ -1951,7 +1969,7 @@
       "label": ".phase()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L57",
+      "source_location": "L59",
       "id": "static_sneak_arrival_sneakarrival_phase",
       "community": 70,
       "norm_label": ".phase()"
@@ -1960,7 +1978,7 @@
       "label": ".check()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L60",
+      "source_location": "L62",
       "id": "static_sneak_arrival_sneakarrival_check",
       "community": 70,
       "norm_label": ".check()"
@@ -1969,7 +1987,7 @@
       "label": ".later()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L71",
+      "source_location": "L73",
       "id": "static_sneak_arrival_sneakarrival_later",
       "community": 70,
       "norm_label": ".later()"
@@ -1978,7 +1996,7 @@
       "label": ".clearCycle()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L72",
+      "source_location": "L74",
       "id": "static_sneak_arrival_sneakarrival_clearcycle",
       "community": 70,
       "norm_label": ".clearcycle()"
@@ -1987,7 +2005,7 @@
       "label": ".returnToHalloween()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L73",
+      "source_location": "L75",
       "id": "static_sneak_arrival_sneakarrival_returntohalloween",
       "community": 70,
       "norm_label": ".returntohalloween()"
@@ -1996,7 +2014,7 @@
       "label": ".start()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L93",
+      "source_location": "L95",
       "id": "static_sneak_arrival_sneakarrival_start",
       "community": 70,
       "norm_label": ".start()"
@@ -2005,7 +2023,7 @@
       "label": ".finish()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L135",
+      "source_location": "L140",
       "id": "static_sneak_arrival_sneakarrival_finish",
       "community": 70,
       "norm_label": ".finish()"
@@ -4007,13 +4025,13 @@
       "norm_label": "still()"
     },
     {
-      "label": "Check real background video, a real one-minute repeat, and interruption recovery",
+      "label": "Check real background video, a real two-minute repeat, and interruption recovery",
       "file_type": "rationale",
       "source_file": "scripts/check_sneak_arrival.py",
       "source_location": "L1",
       "id": "scripts_check_sneak_arrival_rationale_1",
       "community": 68,
-      "norm_label": "check real background video, a real one-minute repeat, and interruption recovery"
+      "norm_label": "check real background video, a real two-minute repeat, and interruption recovery"
     },
     {
       "label": "check_sneak_chrome.py",
@@ -4061,13 +4079,13 @@
       "norm_label": "still()"
     },
     {
-      "label": "Check natural dog/still cycles and main-film priority, locally or in the native",
+      "label": "Check alternating dog/Grinch films and the real two-minute main-film cadence.",
       "file_type": "rationale",
       "source_file": "scripts/check_sneak_dog.py",
       "source_location": "L1",
       "id": "scripts_check_sneak_dog_rationale_1",
       "community": 76,
-      "norm_label": "check natural dog/still cycles and main-film priority, locally or in the native"
+      "norm_label": "check alternating dog/grinch films and the real two-minute main-film cadence."
     },
     {
       "label": "check_sneak_native.py",
@@ -4498,7 +4516,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L1",
       "id": "sneak_peek_artwork",
-      "community": 74,
+      "community": 95,
       "norm_label": "sneak-peek-artwork.json"
     },
     {
@@ -4507,7 +4525,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L2",
       "id": "sneak_peek_artwork_created",
-      "community": 74,
+      "community": 95,
       "norm_label": "created"
     },
     {
@@ -4516,7 +4534,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L3",
       "id": "sneak_peek_artwork_branch",
-      "community": 74,
+      "community": 95,
       "norm_label": "branch"
     },
     {
@@ -4525,7 +4543,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L4",
       "id": "sneak_peek_artwork_base",
-      "community": 74,
+      "community": 95,
       "norm_label": "base"
     },
     {
@@ -4534,7 +4552,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L5",
       "id": "sneak_peek_artwork_method",
-      "community": 74,
+      "community": 95,
       "norm_label": "method"
     },
     {
@@ -4543,7 +4561,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L6",
       "id": "sneak_peek_artwork_file",
-      "community": 74,
+      "community": 95,
       "norm_label": "file"
     },
     {
@@ -4552,7 +4570,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L7",
       "id": "sneak_peek_artwork_prompt",
-      "community": 74,
+      "community": 95,
       "norm_label": "prompt"
     },
     {
@@ -4561,7 +4579,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L8",
       "id": "sneak_peek_artwork_notes",
-      "community": 74,
+      "community": 95,
       "norm_label": "notes"
     },
     {
@@ -4570,7 +4588,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L14",
       "id": "sneak_peek_artwork_forest_fusion",
-      "community": 74,
+      "community": 96,
       "norm_label": "forest_fusion"
     },
     {
@@ -4579,7 +4597,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L15",
       "id": "sneak_peek_artwork_forest_fusion_created",
-      "community": 74,
+      "community": 96,
       "norm_label": "created"
     },
     {
@@ -4588,7 +4606,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L16",
       "id": "sneak_peek_artwork_forest_fusion_method",
-      "community": 74,
+      "community": 96,
       "norm_label": "method"
     },
     {
@@ -4597,7 +4615,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L17",
       "id": "sneak_peek_artwork_forest_fusion_file",
-      "community": 74,
+      "community": 96,
       "norm_label": "file"
     },
     {
@@ -4606,7 +4624,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L18",
       "id": "sneak_peek_artwork_forest_fusion_prompt_file",
-      "community": 74,
+      "community": 96,
       "norm_label": "prompt_file"
     },
     {
@@ -4615,7 +4633,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L19",
       "id": "sneak_peek_artwork_forest_fusion_inputs",
-      "community": 74,
+      "community": 96,
       "norm_label": "inputs"
     },
     {
@@ -4624,7 +4642,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L24",
       "id": "sneak_peek_artwork_forest_fusion_notes",
-      "community": 74,
+      "community": 96,
       "norm_label": "notes"
     },
     {
@@ -4795,7 +4813,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L45",
       "id": "sneak_peek_artwork_background_wordmark",
-      "community": 74,
+      "community": 97,
       "norm_label": "background_wordmark"
     },
     {
@@ -4804,7 +4822,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L46",
       "id": "sneak_peek_artwork_background_wordmark_file",
-      "community": 74,
+      "community": 97,
       "norm_label": "file"
     },
     {
@@ -4813,7 +4831,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L47",
       "id": "sneak_peek_artwork_background_wordmark_source",
-      "community": 74,
+      "community": 97,
       "norm_label": "source"
     },
     {
@@ -4822,7 +4840,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L48",
       "id": "sneak_peek_artwork_background_wordmark_sha256",
-      "community": 74,
+      "community": 97,
       "norm_label": "sha256"
     },
     {
@@ -4831,7 +4849,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L49",
       "id": "sneak_peek_artwork_background_wordmark_notes",
-      "community": 74,
+      "community": 97,
       "norm_label": "notes"
     },
     {
@@ -4975,7 +4993,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L67",
       "id": "sneak_peek_artwork_roaming_dog",
-      "community": 74,
+      "community": 94,
       "norm_label": "roaming_dog"
     },
     {
@@ -4984,7 +5002,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L68",
       "id": "sneak_peek_artwork_roaming_dog_method",
-      "community": 74,
+      "community": 94,
       "norm_label": "method"
     },
     {
@@ -4993,7 +5011,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L69",
       "id": "sneak_peek_artwork_roaming_dog_reference",
-      "community": 74,
+      "community": 94,
       "norm_label": "reference"
     },
     {
@@ -5002,7 +5020,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L70",
       "id": "sneak_peek_artwork_roaming_dog_prompts",
-      "community": 74,
+      "community": 94,
       "norm_label": "prompts"
     },
     {
@@ -5011,7 +5029,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L74",
       "id": "sneak_peek_artwork_roaming_dog_documentation",
-      "community": 74,
+      "community": 94,
       "norm_label": "documentation"
     },
     {
@@ -5020,7 +5038,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L75",
       "id": "sneak_peek_artwork_roaming_dog_files",
-      "community": 74,
+      "community": 94,
       "norm_label": "files"
     },
     {
@@ -5029,7 +5047,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L76",
       "id": "sneak_peek_artwork_files_roaming_dog_atlas_v1_png",
-      "community": 74,
+      "community": 94,
       "norm_label": "roaming-dog-atlas-v1.png"
     },
     {
@@ -5038,7 +5056,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L77",
       "id": "sneak_peek_artwork_files_roaming_dog_atlas_v1_json",
-      "community": 74,
+      "community": 94,
       "norm_label": "roaming-dog-atlas-v1.json"
     },
     {
@@ -5047,7 +5065,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L78",
       "id": "sneak_peek_artwork_files_roaming_dog_turns_v2_png",
-      "community": 74,
+      "community": 94,
       "norm_label": "roaming-dog-turns-v2.png"
     },
     {
@@ -5056,7 +5074,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L79",
       "id": "sneak_peek_artwork_files_roaming_dog_turns_v2_json",
-      "community": 74,
+      "community": 94,
       "norm_label": "roaming-dog-turns-v2.json"
     },
     {
@@ -5065,7 +5083,142 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L81",
       "id": "sneak_peek_artwork_roaming_dog_notes",
-      "community": 74,
+      "community": 94,
+      "norm_label": "notes"
+    },
+    {
+      "label": "grinch_media",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L83",
+      "id": "sneak_peek_artwork_grinch_media",
+      "community": 93,
+      "norm_label": "grinch_media"
+    },
+    {
+      "label": "source",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L84",
+      "id": "sneak_peek_artwork_grinch_media_source",
+      "community": 93,
+      "norm_label": "source"
+    },
+    {
+      "label": "source_sha256",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L85",
+      "id": "sneak_peek_artwork_grinch_media_source_sha256",
+      "community": 93,
+      "norm_label": "source_sha256"
+    },
+    {
+      "label": "file",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L86",
+      "id": "sneak_peek_artwork_grinch_media_file",
+      "community": 93,
+      "norm_label": "file"
+    },
+    {
+      "label": "delivery_sha256",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L87",
+      "id": "sneak_peek_artwork_grinch_media_delivery_sha256",
+      "community": 93,
+      "norm_label": "delivery_sha256"
+    },
+    {
+      "label": "source_duration_seconds",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L88",
+      "id": "sneak_peek_artwork_grinch_media_source_duration_seconds",
+      "community": 93,
+      "norm_label": "source_duration_seconds"
+    },
+    {
+      "label": "delivery_duration_seconds",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L89",
+      "id": "sneak_peek_artwork_grinch_media_delivery_duration_seconds",
+      "community": 93,
+      "norm_label": "delivery_duration_seconds"
+    },
+    {
+      "label": "resolution",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L90",
+      "id": "sneak_peek_artwork_grinch_media_resolution",
+      "community": 93,
+      "norm_label": "resolution"
+    },
+    {
+      "label": "fps",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L91",
+      "id": "sneak_peek_artwork_grinch_media_fps",
+      "community": 93,
+      "norm_label": "fps"
+    },
+    {
+      "label": "speed",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L92",
+      "id": "sneak_peek_artwork_grinch_media_speed",
+      "community": 93,
+      "norm_label": "speed"
+    },
+    {
+      "label": "browser_playback_rate",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L93",
+      "id": "sneak_peek_artwork_grinch_media_browser_playback_rate",
+      "community": 93,
+      "norm_label": "browser_playback_rate"
+    },
+    {
+      "label": "audio",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L94",
+      "id": "sneak_peek_artwork_grinch_media_audio",
+      "community": 93,
+      "norm_label": "audio"
+    },
+    {
+      "label": "filter",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L95",
+      "id": "sneak_peek_artwork_grinch_media_filter",
+      "community": 93,
+      "norm_label": "filter"
+    },
+    {
+      "label": "encode",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L96",
+      "id": "sneak_peek_artwork_grinch_media_encode",
+      "community": 93,
+      "norm_label": "encode"
+    },
+    {
+      "label": "notes",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L97",
+      "id": "sneak_peek_artwork_grinch_media_notes",
+      "community": 93,
       "norm_label": "notes"
     },
     {
@@ -5960,22 +6113,22 @@
       "norm_label": "immersive dashboard bars"
     },
     {
-      "label": "Dog video between the main transitions",
+      "label": "Alternating dog and Grinch videos between the main transitions",
       "file_type": "document",
       "source_file": "SNEAK-PEEK.md",
       "source_location": "L86",
-      "id": "sneak_peek_dog_video_between_the_main_transitions",
+      "id": "sneak_peek_alternating_dog_and_grinch_videos_between_the_main_transitions",
       "community": 65,
-      "norm_label": "dog video between the main transitions"
+      "norm_label": "alternating dog and grinch videos between the main transitions"
     },
     {
-      "label": "Roaming dog prototype",
+      "label": "Archived roaming dog prototype \u2014 disabled",
       "file_type": "document",
       "source_file": "SNEAK-PEEK.md",
-      "source_location": "L97",
-      "id": "sneak_peek_roaming_dog_prototype",
+      "source_location": "L99",
+      "id": "sneak_peek_archived_roaming_dog_prototype_disabled",
       "community": 65,
-      "norm_label": "roaming dog prototype"
+      "norm_label": "archived roaming dog prototype \u2014 disabled"
     },
     {
       "label": "UPDATES.md",
@@ -6347,6 +6500,15 @@
       "norm_label": "display-refresh dog rendering and video edge handoffs (2026-11-03)"
     },
     {
+      "label": "Dog video only \u2014 roaming overlay disabled (2026-11-03)",
+      "file_type": "document",
+      "source_file": "VALIDATION.md",
+      "source_location": "L324",
+      "id": "validation_dog_video_only_roaming_overlay_disabled_2026_11_03",
+      "community": 20,
+      "norm_label": "dog video only \u2014 roaming overlay disabled (2026-11-03)"
+    },
+    {
       "label": "GROK-DOG-ANIMATION-BRIEF.md",
       "file_type": "document",
       "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
@@ -6507,6 +6669,24 @@
       "id": "roaming_dog_v1_readme_roaming_dog_prototype",
       "community": 87,
       "norm_label": "roaming dog prototype"
+    },
+    {
+      "label": "Dog video between the main transitions",
+      "file_type": "document",
+      "source_file": "SNEAK-PEEK.md",
+      "source_location": "L86",
+      "community": 65,
+      "norm_label": "dog video between the main transitions",
+      "id": "sneak_peek_dog_video_between_the_main_transitions"
+    },
+    {
+      "label": "Roaming dog prototype",
+      "file_type": "document",
+      "source_file": "SNEAK-PEEK.md",
+      "source_location": "L97",
+      "community": 65,
+      "norm_label": "roaming dog prototype",
+      "id": "sneak_peek_roaming_dog_prototype"
     },
     {
       "label": "Dog-video fallback between the main transitions",
@@ -11493,6 +11673,26 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "static_sneak_arrival",
+      "target": "static_sneak_arrival_alternatives",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "static_sneak_arrival",
+      "target": "static_sneak_arrival_media",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L5",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -15777,6 +15977,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "sneak-peek-artwork.json",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork",
+      "target": "sneak_peek_artwork_grinch_media",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
       "source_location": "L5",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -16322,6 +16532,146 @@
       "confidence_score": 1.0,
       "source": "sneak_peek_artwork_roaming_dog_files",
       "target": "sneak_peek_artwork_files_roaming_dog_turns_v2_png"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_grinch_media",
+      "target": "sneak_peek_artwork_grinch_media_audio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_grinch_media",
+      "target": "sneak_peek_artwork_grinch_media_browser_playback_rate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_grinch_media",
+      "target": "sneak_peek_artwork_grinch_media_delivery_duration_seconds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_grinch_media",
+      "target": "sneak_peek_artwork_grinch_media_delivery_sha256",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_grinch_media",
+      "target": "sneak_peek_artwork_grinch_media_encode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_grinch_media",
+      "target": "sneak_peek_artwork_grinch_media_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L95",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_grinch_media",
+      "target": "sneak_peek_artwork_grinch_media_filter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_grinch_media",
+      "target": "sneak_peek_artwork_grinch_media_fps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_grinch_media",
+      "target": "sneak_peek_artwork_grinch_media_notes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_grinch_media",
+      "target": "sneak_peek_artwork_grinch_media_resolution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_grinch_media",
+      "target": "sneak_peek_artwork_grinch_media_source",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_grinch_media",
+      "target": "sneak_peek_artwork_grinch_media_source_duration_seconds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_grinch_media",
+      "target": "sneak_peek_artwork_grinch_media_source_sha256",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_grinch_media",
+      "target": "sneak_peek_artwork_grinch_media_speed",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -17301,6 +17651,26 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "SNEAK-PEEK.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "sneak_peek_after_the_haunt_christmas_sneak_peek",
+      "target": "sneak_peek_alternating_dog_and_grinch_videos_between_the_main_transitions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SNEAK-PEEK.md",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "sneak_peek_after_the_haunt_christmas_sneak_peek",
+      "target": "sneak_peek_archived_roaming_dog_prototype_disabled",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SNEAK-PEEK.md",
       "source_location": "L27",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -17463,8 +17833,18 @@
       "source_file": "VALIDATION.md",
       "source_location": "L308",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "validation_validation_record_october_14_2026",
-      "target": "validation_display_refresh_dog_rendering_and_video_edge_handoffs_2026_11_03",
+      "target": "validation_display_refresh_dog_rendering_and_video_edge_handoffs_2026_11_03"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "VALIDATION.md",
+      "source_location": "L324",
+      "weight": 1.0,
+      "source": "validation_validation_record_october_14_2026",
+      "target": "validation_dog_video_only_roaming_overlay_disabled_2026_11_03",
       "confidence_score": 1.0
     },
     {
@@ -17793,9 +18173,9 @@
       "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dog_animation_v2_grok_dog_animation_brief",
-      "target": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
-      "confidence_score": 1.0
+      "target": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief"
     },
     {
       "relation": "contains",
@@ -17803,9 +18183,9 @@
       "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
-      "target": "dog_animation_v2_grok_dog_animation_brief_1_happy_attentive_idle_idle_happy_right",
-      "confidence_score": 1.0
+      "target": "dog_animation_v2_grok_dog_animation_brief_1_happy_attentive_idle_idle_happy_right"
     },
     {
       "relation": "contains",
@@ -17813,9 +18193,9 @@
       "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
-      "target": "dog_animation_v2_grok_dog_animation_brief_2_genuine_gentle_run_run_right",
-      "confidence_score": 1.0
+      "target": "dog_animation_v2_grok_dog_animation_brief_2_genuine_gentle_run_run_right"
     },
     {
       "relation": "contains",
@@ -17823,9 +18203,9 @@
       "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
-      "target": "dog_animation_v2_grok_dog_animation_brief_3_calm_walk_walk_right",
-      "confidence_score": 1.0
+      "target": "dog_animation_v2_grok_dog_animation_brief_3_calm_walk_walk_right"
     },
     {
       "relation": "contains",
@@ -17833,9 +18213,9 @@
       "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
-      "target": "dog_animation_v2_grok_dog_animation_brief_4_planted_turn_turn_right_to_left",
-      "confidence_score": 1.0
+      "target": "dog_animation_v2_grok_dog_animation_brief_4_planted_turn_turn_right_to_left"
     },
     {
       "relation": "contains",
@@ -17843,9 +18223,9 @@
       "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
-      "target": "dog_animation_v2_grok_dog_animation_brief_5_sniff_and_look_up_sniff_right",
-      "confidence_score": 1.0
+      "target": "dog_animation_v2_grok_dog_animation_brief_5_sniff_and_look_up_sniff_right"
     },
     {
       "relation": "contains",
@@ -17853,9 +18233,9 @@
       "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
-      "target": "dog_animation_v2_grok_dog_animation_brief_6_notice_the_next_scene_alert_right",
-      "confidence_score": 1.0
+      "target": "dog_animation_v2_grok_dog_animation_brief_6_notice_the_next_scene_alert_right"
     },
     {
       "relation": "contains",
@@ -17863,9 +18243,9 @@
       "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
-      "target": "dog_animation_v2_grok_dog_animation_brief_7_start_and_settle_start_run_right_run_stop_right",
-      "confidence_score": 1.0
+      "target": "dog_animation_v2_grok_dog_animation_brief_7_start_and_settle_start_run_right_run_stop_right"
     },
     {
       "relation": "contains",
@@ -17873,9 +18253,9 @@
       "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
-      "target": "dog_animation_v2_grok_dog_animation_brief_delivery",
-      "confidence_score": 1.0
+      "target": "dog_animation_v2_grok_dog_animation_brief_delivery"
     },
     {
       "relation": "contains",
@@ -17883,9 +18263,9 @@
       "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
-      "target": "dog_animation_v2_grok_dog_animation_brief_left_facing_versions",
-      "confidence_score": 1.0
+      "target": "dog_animation_v2_grok_dog_animation_brief_left_facing_versions"
     },
     {
       "relation": "contains",
@@ -17893,9 +18273,9 @@
       "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
-      "target": "dog_animation_v2_grok_dog_animation_brief_reference_to_attach",
-      "confidence_score": 1.0
+      "target": "dog_animation_v2_grok_dog_animation_brief_reference_to_attach"
     },
     {
       "relation": "contains",
@@ -17903,9 +18283,9 @@
       "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
-      "target": "dog_animation_v2_grok_dog_animation_brief_shared_direction_prepend_to_every_prompt",
-      "confidence_score": 1.0
+      "target": "dog_animation_v2_grok_dog_animation_brief_shared_direction_prepend_to_every_prompt"
     },
     {
       "relation": "contains",
@@ -17913,9 +18293,9 @@
       "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
-      "target": "dog_animation_v2_grok_dog_animation_brief_visual_acceptance_before_app_integration",
-      "confidence_score": 1.0
+      "target": "dog_animation_v2_grok_dog_animation_brief_visual_acceptance_before_app_integration"
     },
     {
       "relation": "contains",
@@ -17923,9 +18303,9 @@
       "source_file": "design/dog-animation-v2/README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dog_animation_v2_readme",
-      "target": "dog_animation_v2_readme_natural_dog_replacement",
-      "confidence_score": 1.0
+      "target": "dog_animation_v2_readme_natural_dog_replacement"
     },
     {
       "relation": "contains",
@@ -17939,5 +18319,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "04f117f9c255f37b71de29779f726ed15c9198a0"
+  "built_at_commit": "587d9b315acfe7ceb66be9c5b61606cf24dd49cd"
 }

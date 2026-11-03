@@ -62,7 +62,7 @@
     "audio": "Removed; background remains muted, separate opt-in jingles unchanged.",
     "filter": "setpts=1.25*(PTS-STARTPTS),minterpolate=fps=24:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1,tpad=stop_mode=clone:stop_duration=0.083333",
     "encode": "H.264 libx264 slow CRF19, yuv420p, 24 fps CFR, faststart; source metadata removed",
-    "notes": "Same forest-preparing.png still beneath both fades. No hard video loop; return to still between plays. Shares the arrival decoder and never changes its 60-second schedule."
+    "notes": "Same forest-preparing.png still beneath both fades. Alternates with Grinch; shares one decoder with the arrival and preserves its 120-second start-to-start schedule."
   },
   "roaming_dog": {
     "method": "Built-in image_gen; second turn atlas corrected with built-in background extraction",
@@ -79,5 +79,21 @@
       "roaming-dog-turns-v2.json": "234cf55a05ab3593e2542505a6cd4c8aeed504f3a86728191361929811089e9c"
     },
     "notes": "Original generated PNG pixels and alpha preserved. JSON anchors derived from alpha bounds. Walk/stop/sniff/idle/turn prototype; not a live 3D rig. Uses a bounded 256-square canvas and cached contact shadow."
+  },
+  "grinch_media": {
+    "source": "/home/hsindhar/Pictures/xmas-transition/grinch_steal_video.mp4",
+    "source_sha256": "a7e3bbcf89f3faa17b71037f59cc1f38cae6c6452eb19dcc0aa93e19b421b727",
+    "file": "halloween_hub/static/assets/sneak-peek/grinch-eight-tenths-speed.mp4",
+    "delivery_sha256": "1c038c6f3c162aa14f732aa0549b19d6820e3045b19d70e1913688aa51c6dc54",
+    "source_duration_seconds": 10.041667,
+    "delivery_duration_seconds": 12.625,
+    "resolution": "1280x720",
+    "fps": 24,
+    "speed": 0.8,
+    "browser_playback_rate": 1,
+    "audio": "Removed; background muted, opt-in jingles independent.",
+    "filter": "setpts=1.25*(PTS-STARTPTS),minterpolate=fps=24:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1,tpad=stop_mode=clone:stop_duration=0.083333",
+    "encode": "H.264 libx264 slow CRF19, yuv420p, 24 fps CFR, faststart; first video stream only; source metadata removed",
+    "notes": "Alternates with dog film after five-second still gaps. Both share the arrival decoder and preserve its 120-second start-to-start schedule."
   }
 }

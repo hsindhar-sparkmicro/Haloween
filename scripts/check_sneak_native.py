@@ -1,6 +1,6 @@
 """Measure the actual Pi kiosk through a temporary loopback CDP tunnel.
 
-Observe natural one-minute background cycles, transparent foreground overlays,
+Observe natural two-minute background cycles, transparent foreground overlays,
 and decoder frame counters for at least ten minutes. Leaves the kiosk open.
 """
 import argparse
@@ -31,16 +31,16 @@ with sync_playwright() as p:
         const state=document.querySelector('#dashboard').dataset.arrival,v=document.querySelector('#peek-arrival video'),now=performance.now();
         const q=v.getVideoPlaybackQuality();
         if(state!==prev){qualification.states.push({state,seconds:(now-qualification.start)/1000});
-          if(state==='playing'||state==='dog-playing'){cycle={kind:document.querySelector('#dashboard').dataset.backgroundClip,duration:v.duration,start:now,total:0,dropped:0,baseline:null,maxTime:0,rate:v.playbackRate,muted:v.muted,fadeDuration:getComputedStyle(document.querySelector("#peek-arrival")).transitionDuration,fadeSamples:[]};qualification.cycles.push(cycle);}prev=state;}
+          if(state==='playing'||state.endsWith('-playing')){cycle={kind:document.querySelector('#dashboard').dataset.backgroundClip,duration:v.duration,start:now,total:0,dropped:0,baseline:null,maxTime:0,rate:v.playbackRate,muted:v.muted,fadeDuration:getComputedStyle(document.querySelector("#peek-arrival")).transitionDuration,fadeSamples:[]};qualification.cycles.push(cycle);}prev=state;}
         if(cycle&&v.hasAttribute('src')&&!state.endsWith('loading')){cycle.total=Math.max(cycle.total,q.totalVideoFrames);cycle.dropped=Math.max(cycle.dropped,q.droppedVideoFrames);cycle.maxTime=Math.max(cycle.maxTime,v.currentTime);
           if(!cycle.baseline&&v.currentTime>=1)cycle.baseline={total:q.totalVideoFrames,dropped:q.droppedVideoFrames};}
-        if(state.startsWith('dog-')||['loading','playing','settling','returning'].includes(state)){
+        if(state.startsWith('dog-')||state.startsWith('grinch-')||['loading','playing','settling','returning'].includes(state)){
           for(const selector of ['.welcome-countdown','#peek-headline','.welcome-weather','.peek-strip','.peek-defrost','.peek-jingle']){
             const el=document.querySelector(selector),style=getComputedStyle(el);
             if(style.display==='none'||style.visibility==='hidden'||Number(style.opacity)<.99)qualification.overlayViolations.push({selector,state,opacity:style.opacity});
           }
         }
-        if(cycle&&(state==='playing'||state==='dog-playing')&&now-cycle.start<6000){
+        if(cycle&&(state==='playing'||state.endsWith('-playing'))&&now-cycle.start<6000){
           cycle.fadeSamples.push({elapsed:(now-cycle.start)/1000,opacity:Number(getComputedStyle(document.querySelector('#peek-arrival')).opacity)});
         }
         qualification.samples++;
@@ -61,6 +61,7 @@ with sync_playwright() as p:
     arrivals=[c for c in result['cycles'] if c['kind']=='arrival']
     result['completeMainCycles']=sum(c['kind']=='arrival' for c in finished)
     result['completeDogCycles']=sum(c['kind']=='dog' for c in finished)
+    result['completeGrinchCycles']=sum(c['kind']=='grinch' for c in finished)
     all_total=sum(c['total'] for c in finished)
     all_dropped=sum(c['dropped'] for c in finished)
     # Exclude only the first second after page load, not startup on each repeat.
@@ -75,11 +76,11 @@ with sync_playwright() as p:
     (out/'native-ten-minute.json').write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps({k:v for k,v in result.items() if k not in ['cycles','states']}),flush=True)
     assert result['viewport']==[800,480],result['viewport']
-    assert result['durationSeconds']>=600 and result['completeMainCycles']>=10,result
+    assert result['durationSeconds']>=600 and result['completeMainCycles']>=5,result
     assert steady_total>0 and result['afterClipStartup']['percent']<1,result['afterClipStartup']
-    assert all(58<=t<=62 for t in result['cadenceSeconds']),result['cadenceSeconds']
+    assert all(118<=t<=122 for t in result['cadenceSeconds']),result['cadenceSeconds']
     assert all(c['rate']==1 and c['muted'] for c in finished),finished
     assert not result['overlayViolations'],result['overlayViolations']
     assert not errors,errors
-    assert all(c['fadeDuration']==('2.4s' if c['kind']=='dog' else '4.8s') for c in finished),finished
+    assert all(c['fadeDuration']==('2.4s' if c['kind']!='arrival' else '4.8s') for c in finished),finished
     assert all(any(.1<s['opacity']<.9 for s in c['fadeSamples']) and any(s['opacity']>.99 for s in c['fadeSamples']) for c in finished),finished

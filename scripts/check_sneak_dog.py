@@ -1,4 +1,4 @@
-"""Check natural dog/still cycles and main-film priority, locally or in the native Pi kiosk."""
+"""Check alternating dog/Grinch films and the real two-minute main-film cadence."""
 import argparse
 import json
 import time
@@ -32,14 +32,16 @@ with sync_playwright() as p:
         assert page.locator('#peek-arrival video').get_attribute('src') is None
         assert page.locator('.welcome-backdrop:not(.welcome-backdrop-next)').evaluate('e=>getComputedStyle(e).backgroundImage.includes("forest-preparing.png")&&getComputedStyle(e).opacity==="1"')
     if args.faults_only:
-        wait_state('dog-playing')
+        wait_state('grinch-playing',60)
         page.locator('#peek-arrival video').evaluate('v=>v.pause()');still()
-        page.route('**/dog-eight-tenths-speed.mp4',lambda r:r.abort())
-        page.wait_for_timeout(10000)
+        page.route('**/grinch-eight-tenths-speed.mp4',lambda r:r.abort())
+        wait_state('dog-playing');still()
+        page.wait_for_timeout(9000)
         assert page.locator('#peek-arrival').is_hidden()
         assert page.locator('#peek-arrival video').get_attribute('src') is None
         assert not errors,errors
-        report={'stalledDog':'pass','missingDog':'pass','sameStillFallback':'pass','pageErrors':errors}
+        wait_state('dog-playing')
+        report={'stalledGrinch':'pass','missingGrinch':'pass','dogContinuesAfterGrinchFailure':'pass','sameStillFallback':'pass','pageErrors':errors}
         (out/'faults.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))
         browser.close();raise SystemExit(0)
     wait_state('playing');start=time.monotonic()
@@ -48,7 +50,7 @@ with sync_playwright() as p:
       window.dogCheckTimer=setInterval(()=>{
         const root=document.querySelector('#dashboard'),state=root.dataset.arrival,v=document.querySelector('#peek-arrival video'),q=v.getVideoPlaybackQuality();
         if(state!==previous){dogCheck.events.push({state,time:performance.now()});
-          if(state==='playing'||state==='dog-playing'){cycle={kind:root.dataset.backgroundClip,total:0,dropped:0,duration:v.duration,rate:v.playbackRate,muted:v.muted,fade:getComputedStyle(v.parentElement).transitionDuration};dogCheck.cycles.push(cycle);}previous=state;}
+          if(state==='playing'||state.endsWith('-playing')){cycle={kind:root.dataset.backgroundClip,total:0,dropped:0,duration:v.duration,rate:v.playbackRate,muted:v.muted,fade:getComputedStyle(v.parentElement).transitionDuration};dogCheck.cycles.push(cycle);}previous=state;}
         if(cycle&&v.hasAttribute('src')&&!state.endsWith('loading')){cycle.total=Math.max(cycle.total,q.totalVideoFrames);cycle.dropped=Math.max(cycle.dropped,q.droppedVideoFrames);}
         if(state.includes('playing')||state.includes('settling'))for(const selector of ['.welcome-countdown','#peek-headline','.welcome-weather','.peek-strip','.peek-defrost','.peek-jingle']){
           const s=getComputedStyle(document.querySelector(selector));if(s.display==='none'||s.visibility==='hidden'||Number(s.opacity)<.99)dogCheck.violations.push({selector,state});}
@@ -60,15 +62,19 @@ with sync_playwright() as p:
     assert page.locator('#peek-arrival video').get_attribute('src').endswith('dog-eight-tenths-speed.mp4')
     page.wait_for_timeout(3000);page.screenshot(path=str(out/'dog-playing.png'))
     still();page.screenshot(path=str(out/'same-still.png'))
-    wait_state('dog-playing');still()
-    wait_state('playing',timeout=15);cadence=time.monotonic()-start
-    assert 58<=cadence<=63,cadence
+    wait_state('grinch-playing')
+    assert page.locator('#peek-arrival video').get_attribute('src').endswith('grinch-eight-tenths-speed.mp4')
+    assert page.locator('.roaming-dog').count()==0
+    page.wait_for_timeout(3000);page.screenshot(path=str(out/'grinch-playing.png'));still()
+    wait_state('playing',timeout=85);cadence=time.monotonic()-start
+    assert 118<=cadence<=123,cadence
     report=page.evaluate('()=>{clearInterval(dogCheckTimer);return dogCheck}')
     assert not report['violations'],report['violations']
-    dogs=[c for c in report['cycles'] if c['kind']=='dog']
-    assert len(dogs)==2 and all(12.3<c['duration']<12.7 and c['rate']==1 and c['muted'] and c['fade']=='2.4s' for c in dogs),dogs
+    alternatives=[c for c in report['cycles'] if c['kind']!='arrival']
+    assert len(alternatives)>=4 and [c['kind'] for c in alternatives]==['dog' if i%2==0 else 'grinch' for i in range(len(alternatives))],alternatives
+    assert all(12.3<c['duration']<12.8 and c['rate']==1 and c['muted'] and c['fade']=='2.4s' for c in alternatives),alternatives
     report['mainCadenceSeconds']=cadence
-    print('Two natural dog loops returned to the same still; main film repeated on schedule.',flush=True)
+    print('Dog/Grinch alternation and the real two-minute repeat passed.',flush=True)
     still();wait_state('dog-playing')
     page.locator('#peek-gifts').click();still()
     assert page.locator('#peek-gift-dialog').is_visible()

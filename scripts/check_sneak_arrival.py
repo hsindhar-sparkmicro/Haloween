@@ -1,4 +1,4 @@
-"""Check real background video, a real one-minute repeat, and interruption recovery."""
+"""Check real background video, a real two-minute repeat, and interruption recovery."""
 import argparse
 import json
 import time
@@ -57,10 +57,10 @@ with sync_playwright() as p:
     still()
     assert tab.locator('#peek-jingle').get_attribute('aria-pressed')=='true'
     assert tab.locator('#peek-jingle').evaluate('e=>document.activeElement===e')
-    print('First cycle, foreground controls and slow dissolve passed; waiting for the real minute repeat.',flush=True)
-    state('playing',timeout=65000)
+    print('First cycle, foreground controls and slow dissolve passed; waiting for the real two-minute repeat.',flush=True)
+    state('playing',timeout=125000)
     cadence=time.monotonic()-started
-    assert 58 <= cadence <= 63,cadence
+    assert 118 <= cadence <= 123,cadence
     tab.locator('#peek-gifts').click()  # Usable while the video is playing.
     still()
     assert tab.locator('#peek-gift-dialog').is_visible()

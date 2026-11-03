@@ -1,11 +1,13 @@
 const ASSETS='/static/assets/sneak-peek/';
-const REPEAT_MS=60000;
+const REPEAT_MS=120000;
 const DISSOLVE_MS=4800;
-const DOG_DISSOLVE_MS=2400;
-const DOG_STILL_MS=5000;
-const DOG_WINDOW_MS=18000;
+const AMBIENT_DISSOLVE_MS=2400;
+const AMBIENT_STILL_MS=5000;
+const AMBIENT_WINDOW_MS=18000;
+const ALTERNATIVES=['dog','grinch'];
+const MEDIA={arrival:'arrival-half-speed.mp4',dog:'dog-eight-tenths-speed.mp4',grinch:'grinch-eight-tenths-speed.mp4'};
 
-// One muted decoder shared by both films. Their intended speeds are encoded.
+// One muted decoder shared by the arrival and alternating forest films.
 export class SneakArrival {
   constructor(){
     this.root=document.querySelector('#dashboard');
@@ -15,7 +17,7 @@ export class SneakArrival {
     this.motion=matchMedia('(prefers-reduced-motion: reduce)');
     this.settings={};this.running=false;this.fading=false;this.returning=false;this.generation=0;
     this.timers=[];this.next=0;this.configured=false;this.disposed=false;
-    this.kind='arrival';this.dogTimer=0;this.arrivalDue=0;
+    this.kind='arrival';this.dogTimer=0;this.arrivalDue=0;this.alternativeIndex=0;
     this.motion.addEventListener('change',()=>this.check());
     document.addEventListener('visibilitychange',()=>this.check());
     window.addEventListener('pagehide',()=>{this.disposed=true;this.check();});
@@ -36,7 +38,7 @@ export class SneakArrival {
   }
   schedule(){
     clearTimeout(this.next);
-    // Start-to-start cadence. Returning to the dashboard begins a fresh quiet minute.
+    // Start-to-start cadence. Returning to the dashboard begins a fresh two minutes.
     this.next=setTimeout(()=>{this.next=0;this.start();},REPEAT_MS);
     this.arrivalDue=performance.now()+REPEAT_MS;
   }
@@ -49,13 +51,13 @@ export class SneakArrival {
     if(this.roamingDogReady)return;
     if(this.dogTimer||!this.next||!this.eligible()||this.running||this.fading||this.root.dataset.arrival!=='resting')return;
     // Leave a quiet still between clips and enough room before the fixed arrival slot.
-    const stillMs=this.roamingDogPresent?12000:DOG_STILL_MS;
-    if(this.arrivalDue-performance.now()<stillMs+DOG_WINDOW_MS)return;
+    const stillMs=this.roamingDogPresent?12000:AMBIENT_STILL_MS;
+    if(this.arrivalDue-performance.now()<stillMs+AMBIENT_WINDOW_MS)return;
     this.dogDue=performance.now()+stillMs;
-    this.dogTimer=setTimeout(()=>{this.dogTimer=0;this.dogDue=0;this.start(false,'dog');},stillMs);
+    this.dogTimer=setTimeout(()=>{this.dogTimer=0;this.dogDue=0;this.start(false,ALTERNATIVES[this.alternativeIndex]);},stillMs);
   }
   phase(name){
-    this.root.dataset.arrival=this.kind==='dog'&&name!=='resting'?'dog-'+name:name;
+    this.root.dataset.arrival=this.kind!=='arrival'&&name!=='resting'?this.kind+'-'+name:name;
   }
   check(){
     if(!this.configured)return;
@@ -91,10 +93,13 @@ export class SneakArrival {
     }catch{if(run===this.generation)this.finish();}
   }
   async start(fromHalloween=false,kind='arrival'){
-    // A late/stalled dog clip must never postpone the main transition.
-    if(kind==='arrival'&&this.kind==='dog'&&(this.running||this.fading))this.finish(true);
+    if(!MEDIA[kind])return;
+    // A late/stalled alternative must never postpone the main transition.
+    if(kind==='arrival'&&this.kind!=='arrival'&&(this.running||this.fading))this.finish(true);
     if(this.running||this.fading||!this.eligible())return;
-    if(kind==='dog'&&(this.roamingDogReady||!this.next||this.root.dataset.arrival!=='resting'||this.arrivalDue-performance.now()<DOG_WINDOW_MS))return;
+    if(kind!=='arrival'&&(this.roamingDogReady||!this.next||this.root.dataset.arrival!=='resting'||this.arrivalDue-performance.now()<AMBIENT_WINDOW_MS))return;
+    // Advance on an accepted attempt so unavailable media cannot starve its sibling.
+    if(kind!=='arrival')this.alternativeIndex=(ALTERNATIVES.indexOf(kind)+1)%ALTERNATIVES.length;
     this.clearDog();this.clearCycle();
     this.kind=kind;this.root.dataset.backgroundClip=kind;
     if(kind==='arrival')this.schedule();
@@ -109,14 +114,14 @@ export class SneakArrival {
     this.later(()=>{if(this.running)this.finish();},10000);
     try{
       await still.decode();if(run!==this.generation||!this.running)return;
-      this.video.src=ASSETS+(kind==='dog'?'dog-eight-tenths-speed.mp4':'arrival-half-speed.mp4');
+      this.video.src=ASSETS+MEDIA[kind];
       await this.video.play();if(run!==this.generation||!this.running)return;
       const present=()=>{
         if(run!==this.generation||!this.running)return;
         // Commit the transparent starting style even when cached media is ready immediately.
         this.layer.getBoundingClientRect();
         this.clearCycle();this.layer.classList.add('presented');this.phase('playing');
-        if(kind==='dog')this.later(()=>this.finish(),Math.max(0,this.arrivalDue-performance.now()-DOG_DISSOLVE_MS-150));
+        if(kind!=='arrival')this.later(()=>this.finish(),Math.max(0,this.arrivalDue-performance.now()-AMBIENT_DISSOLVE_MS-150));
         if(fromHalloween){
           // The poster and the first film frame match, so this handoff needs no cut to black.
           this.layer.getBoundingClientRect();this.returnLayer.hidden=true;
@@ -145,6 +150,6 @@ export class SneakArrival {
       this.root.classList.remove('arrival-playing');this.root.dataset.arrival='resting';
       if(!immediate)this.scheduleDog();
     };
-    if(immediate||!this.eligible())release();else this.later(release,(this.kind==='dog'?DOG_DISSOLVE_MS:DISSOLVE_MS)+50);
+    if(immediate||!this.eligible())release();else this.later(release,(this.kind!=='arrival'?AMBIENT_DISSOLVE_MS:DISSOLVE_MS)+50);
   }
 }
