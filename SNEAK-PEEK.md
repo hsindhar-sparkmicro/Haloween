@@ -36,7 +36,7 @@ Open <http://127.0.0.1:8092>. The standard `run.sh` / `run.ps1` launchers also w
 
 The calendar tests cover Toronto dates, timezone boundaries, daylight saving, December 25/26, passed events, next year and independent party settings. The browser check covers 800×480, 1280×720, 1920×1080 and phone layouts; gift reveals and preview images; keyboard dismissal/focus; no initial/reload autoplay; actual oscillator activation, mute/dialog cancellation; randomly starting visible flurries; reduced motion; and navigation through all four screens. Screenshots/results are written to ignored `validation/sneak-peek/`.
 
-The transition is deployed on the physical Pi 4 with preserved settings and media. Native playback, transparent overlays, controls and ten-minute frame measurements are documented in [VALIDATION.md](VALIDATION.md#pi-transition-deployment-and-transparent-overlays-2026-11-03). Audible speaker review and a new cold-boot test remain pending. The supplied short Halloween transition is integrated; the separate full Christmas arrival film remains upcoming. This edition has one arrival-video decoder, followed by a static forest; the old looping Halloween video player stays inactive.
+The transition is deployed on the physical Pi 4 with preserved settings and media. Native playback, transparent overlays, controls and ten-minute frame measurements are documented in [VALIDATION.md](VALIDATION.md#pi-transition-deployment-and-transparent-overlays-2026-11-03). Audible speaker review and a new cold-boot test remain pending. The supplied short Halloween transition is integrated; the separate full Christmas arrival film remains upcoming. This edition shares one decoder between the arrival film and the dog visit; both return to the same static forest. The old looping Halloween video player stays inactive.
 
 Validated November 3, 2026: all 28 Python tests passed; the existing `scripts/check_browser.py` regression passed with zero page errors, no overflow and 48-pixel action targets; the new sneak-peek check passed at all four sizes, including simulated visibility pause, opt-in jingles, global mute, random visible flurries and reduced motion. Browser checks used Chromium through Playwright on this desktop, not physical Pi hardware.
 
@@ -81,3 +81,14 @@ Party/headline validation: all 29 Python tests passed, including the fixed Montr
 ## Immersive dashboard bars
 
 The header and navigation are hidden on the dashboard, giving the scene the full viewport. Tap/click anywhere outside a dialog, or press Tab/Escape, to reveal both as overlays. They hide after seven seconds without another interaction; keyboard focus within a bar keeps it available. Other screens retain their normal bars. On phones the dashboard itself scrolls so the gift/party cards remain reachable while the bars stay anchored to the viewport.
+
+
+## Dog visits between the main transitions
+
+The supplied `dog_video.mp4` is delivered as `dog-eight-tenths-speed.mp4`: 1280×720, 24 fps CFR, silent H.264, **0.80× source speed encoded into the file** (12.625 seconds, browser playback at 1×). Motion interpolation fills the slowed frames. The supplied original remains unchanged.
+
+Once the main arrival has completely faded back to `forest-preparing.png`, the scene rests for five seconds, fades into the dog clip over 2.4 seconds, then fades back to **that same still** over 2.4 seconds. It can repeat after another five-second still interval if there is room before the next main arrival. Normal timing allows two dog visits between main transitions. It never starts over the Halloween return, an arrival film, or an unfinished fade.
+
+The main Halloween transition retains its 60-second start-to-start schedule and existing 4.8-second fades. Dog playback never resets that timer. A reserve window and deadline fade keep the single shared decoder available for the main transition; the manual Halloween adventure takes priority too. All text/cards remain in front. Muted dog audio, independent opt-in jingles, paused decorative motion, reduced motion, hidden tabs, dialogs, navigation, missing media and stalled media follow the same playback safeguards.
+
+Check with `.venv/bin/python scripts/check_sneak_dog.py` and `.venv/bin/python scripts/check_sneak_dog.py --faults-only`; use `--cdp http://127.0.0.1:19223 --output validation/dog-loop/pi` for the actual kiosk through a temporary loopback SSH tunnel. The native ten-minute observer now distinguishes dog and main clips and measures the main cadence separately.

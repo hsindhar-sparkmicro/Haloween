@@ -47,5 +47,21 @@
     "source": "User supplied SPARK Microsystems transparent PNG, November 3, 2026",
     "sha256": "59845e110e77c2e75093d3f5bf152ef8620f224e24004a18be1c1271299c0163",
     "notes": "Unmodified 250x75 RGBA artwork. CSS screen blending integrates it beneath the countdown with a seven-second gentle float and glow. Pauses with background animation; static in reduced motion."
+  },
+  "dog_media": {
+    "source": "/home/hsindhar/Pictures/xmas-transition/dog_video.mp4",
+    "source_sha256": "abc8b52ea2f98aec2cda275cec0ba68ea2d72b9932c646ad3f4e0830c479f073",
+    "file": "halloween_hub/static/assets/sneak-peek/dog-eight-tenths-speed.mp4",
+    "delivery_sha256": "1d284284225865806730c7cfe58b47305a5f87bfea25471899aaeec2bb2b8f26",
+    "source_duration_seconds": 10.041667,
+    "delivery_duration_seconds": 12.625,
+    "resolution": "1280x720",
+    "fps": 24,
+    "speed": 0.8,
+    "browser_playback_rate": 1,
+    "audio": "Removed; background remains muted, separate opt-in jingles unchanged.",
+    "filter": "setpts=1.25*(PTS-STARTPTS),minterpolate=fps=24:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1,tpad=stop_mode=clone:stop_duration=0.083333",
+    "encode": "H.264 libx264 slow CRF19, yuv420p, 24 fps CFR, faststart; source metadata removed",
+    "notes": "Same forest-preparing.png still beneath both fades. No hard video loop; return to still between plays. Shares the arrival decoder and never changes its 60-second schedule."
   }
 }

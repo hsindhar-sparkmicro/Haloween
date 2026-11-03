@@ -31,16 +31,16 @@ with sync_playwright() as p:
         const state=document.querySelector('#dashboard').dataset.arrival,v=document.querySelector('#peek-arrival video'),now=performance.now();
         const q=v.getVideoPlaybackQuality();
         if(state!==prev){qualification.states.push({state,seconds:(now-qualification.start)/1000});
-          if(state==='playing'){cycle={start:now,total:0,dropped:0,baseline:null,maxTime:0,rate:v.playbackRate,muted:v.muted,fadeDuration:getComputedStyle(document.querySelector("#peek-arrival")).transitionDuration,fadeSamples:[]};qualification.cycles.push(cycle);}prev=state;}
-        if(cycle&&v.hasAttribute('src')){cycle.total=Math.max(cycle.total,q.totalVideoFrames);cycle.dropped=Math.max(cycle.dropped,q.droppedVideoFrames);cycle.maxTime=Math.max(cycle.maxTime,v.currentTime);
+          if(state==='playing'||state==='dog-playing'){cycle={kind:document.querySelector('#dashboard').dataset.backgroundClip,duration:v.duration,start:now,total:0,dropped:0,baseline:null,maxTime:0,rate:v.playbackRate,muted:v.muted,fadeDuration:getComputedStyle(document.querySelector("#peek-arrival")).transitionDuration,fadeSamples:[]};qualification.cycles.push(cycle);}prev=state;}
+        if(cycle&&v.hasAttribute('src')&&!state.endsWith('loading')){cycle.total=Math.max(cycle.total,q.totalVideoFrames);cycle.dropped=Math.max(cycle.dropped,q.droppedVideoFrames);cycle.maxTime=Math.max(cycle.maxTime,v.currentTime);
           if(!cycle.baseline&&v.currentTime>=1)cycle.baseline={total:q.totalVideoFrames,dropped:q.droppedVideoFrames};}
-        if(['loading','playing','settling','returning'].includes(state)){
+        if(state.startsWith('dog-')||['loading','playing','settling','returning'].includes(state)){
           for(const selector of ['.welcome-countdown','#peek-headline','.welcome-weather','.peek-strip','.peek-defrost','.peek-jingle']){
             const el=document.querySelector(selector),style=getComputedStyle(el);
             if(style.display==='none'||style.visibility==='hidden'||Number(style.opacity)<.99)qualification.overlayViolations.push({selector,state,opacity:style.opacity});
           }
         }
-        if(cycle&&state==='playing'&&now-cycle.start<6000){
+        if(cycle&&(state==='playing'||state==='dog-playing')&&now-cycle.start<6000){
           cycle.fadeSamples.push({elapsed:(now-cycle.start)/1000,opacity:Number(getComputedStyle(document.querySelector('#peek-arrival')).opacity)});
         }
         qualification.samples++;
@@ -56,8 +56,11 @@ with sync_playwright() as p:
     result=page.evaluate('()=>{clearInterval(qualificationTimer);return qualification}')
     result['durationSeconds']=page.evaluate('(performance.now()-qualification.start)/1000')
     result['pageErrors']=errors
-    finished=[c for c in result['cycles'] if c['maxTime']>=10]
+    finished=[c for c in result['cycles'] if c['maxTime']>=c['duration']-.1]
     result['completeCycles']=len(finished)
+    arrivals=[c for c in result['cycles'] if c['kind']=='arrival']
+    result['completeMainCycles']=sum(c['kind']=='arrival' for c in finished)
+    result['completeDogCycles']=sum(c['kind']=='dog' for c in finished)
     all_total=sum(c['total'] for c in finished)
     all_dropped=sum(c['dropped'] for c in finished)
     # Exclude only the first second after page load, not startup on each repeat.
@@ -68,15 +71,15 @@ with sync_playwright() as p:
     steady_total=sum(c['total']-c['baseline']['total'] for c in finished if c['baseline'])
     steady_dropped=sum(c['dropped']-c['baseline']['dropped'] for c in finished if c['baseline'])
     result['afterClipStartup']={'excludedSecondsPerClip':1,'totalFrames':steady_total,'droppedFrames':steady_dropped,'percent':100*steady_dropped/steady_total if steady_total else None}
-    result['cadenceSeconds']=[(b['start']-a['start'])/1000 for a,b in zip(result['cycles'],result['cycles'][1:])]
+    result['cadenceSeconds']=[(b['start']-a['start'])/1000 for a,b in zip(arrivals,arrivals[1:])]
     (out/'native-ten-minute.json').write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps({k:v for k,v in result.items() if k not in ['cycles','states']}),flush=True)
     assert result['viewport']==[800,480],result['viewport']
-    assert result['durationSeconds']>=600 and result['completeCycles']>=10,result
+    assert result['durationSeconds']>=600 and result['completeMainCycles']>=10,result
     assert steady_total>0 and result['afterClipStartup']['percent']<1,result['afterClipStartup']
     assert all(58<=t<=62 for t in result['cadenceSeconds']),result['cadenceSeconds']
     assert all(c['rate']==1 and c['muted'] for c in finished),finished
     assert not result['overlayViolations'],result['overlayViolations']
     assert not errors,errors
-    assert all(c['fadeDuration']=='4.8s' for c in finished),finished
+    assert all(c['fadeDuration']==('2.4s' if c['kind']=='dog' else '4.8s') for c in finished),finished
     assert all(any(.1<s['opacity']<.9 for s in c['fadeSamples']) and any(s['opacity']>.99 for s in c['fadeSamples']) for c in finished),finished

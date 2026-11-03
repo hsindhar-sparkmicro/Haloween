@@ -20,6 +20,7 @@ body.sneak-peek{background:#0c1320;color:#f8eedb}.sneak-peek #app{height:100dvh;
 #peek-arrival{position:absolute;inset:0;z-index:1;pointer-events:none;background:transparent;opacity:0;transition:opacity 4.8s ease-in-out;overflow:hidden}
 #peek-arrival[hidden]{display:none}#peek-arrival video{position:absolute;width:100%;height:100%;object-fit:cover}
 #peek-arrival.presented{opacity:1}#peek-arrival.settling{opacity:0;transition-duration:4.8s}
+#dashboard[data-background-clip="dog"] #peek-arrival{transition-duration:2.4s}
 .sneak-peek .welcome-vignette{z-index:2}
 @media(max-width:600px){#peek-arrival{height:600px}#peek-arrival video{top:100px;height:500px;object-position:58% center}}
 @media(prefers-reduced-motion:reduce){#peek-arrival{transition:none}}.reduced-motion #peek-arrival{transition:none}
