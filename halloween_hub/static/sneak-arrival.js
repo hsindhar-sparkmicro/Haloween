@@ -41,7 +41,12 @@ export class SneakArrival {
     this.arrivalDue=performance.now()+REPEAT_MS;
   }
   clearDog(){clearTimeout(this.dogTimer);this.dogTimer=0;}
+  setRoamingDogReady(ready){
+    this.roamingDogReady=ready;
+    if(ready)this.clearDog();else this.scheduleDog();
+  }
   scheduleDog(){
+    if(this.roamingDogReady)return;
     if(this.dogTimer||!this.next||!this.eligible()||this.running||this.fading||this.root.dataset.arrival!=='resting')return;
     // Leave a quiet still between clips and enough room before the fixed arrival slot.
     if(this.arrivalDue-performance.now()<DOG_STILL_MS+DOG_WINDOW_MS)return;
@@ -87,7 +92,7 @@ export class SneakArrival {
     // A late/stalled dog clip must never postpone the main transition.
     if(kind==='arrival'&&this.kind==='dog'&&(this.running||this.fading))this.finish(true);
     if(this.running||this.fading||!this.eligible())return;
-    if(kind==='dog'&&(!this.next||this.root.dataset.arrival!=='resting'||this.arrivalDue-performance.now()<DOG_WINDOW_MS))return;
+    if(kind==='dog'&&(this.roamingDogReady||!this.next||this.root.dataset.arrival!=='resting'||this.arrivalDue-performance.now()<DOG_WINDOW_MS))return;
     this.clearDog();this.clearCycle();
     this.kind=kind;this.root.dataset.backgroundClip=kind;
     if(kind==='arrival')this.schedule();

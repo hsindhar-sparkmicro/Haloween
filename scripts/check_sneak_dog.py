@@ -3,6 +3,7 @@ import argparse
 import json
 import time
 from pathlib import Path
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 from playwright.sync_api import sync_playwright
 
 parser=argparse.ArgumentParser(description=__doc__)
@@ -17,8 +18,9 @@ with sync_playwright() as p:
     browser=p.chromium.connect_over_cdp(args.cdp) if args.cdp else p.chromium.launch(executable_path=args.browser)
     page=next(pg for ctx in browser.contexts for pg in ctx.pages if 'kiosk=1' in pg.url) if args.cdp else browser.new_page(viewport={'width':800,'height':480})
     errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
-    if args.cdp:page.reload()
-    else:page.goto(args.url)
+    original_url=page.url if args.cdp else args.url
+    parts=urlsplit(original_url);query=dict(parse_qsl(parts.query));query['dog']='video'
+    page.goto(urlunsplit(parts._replace(query=urlencode(query))))
     def wait_state(state,timeout=30):
         deadline=time.monotonic()+timeout
         while time.monotonic()<deadline:
@@ -84,4 +86,5 @@ with sync_playwright() as p:
     report.update({'dialogs':'pass','manualHalloweenPriority':'pass','reducedMotion':'pass','pageErrors':errors,'nativePi':bool(args.cdp)})
     (out/'report.json').write_text(json.dumps(report,indent=2)+'\n')
     print(json.dumps(report,indent=2),flush=True)
-    if not args.cdp:browser.close()
+    if args.cdp:page.goto(original_url)
+    else:browser.close()

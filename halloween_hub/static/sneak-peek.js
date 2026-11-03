@@ -1,5 +1,6 @@
 import {NightWeather} from './night-weather.js';
 import {SneakArrival} from './sneak-arrival.js';
+import {RoamingDog} from './roaming-dog.js';
 const $ = q => document.querySelector(q);
 
 // One bounded particle canvas, no competing imported-video decoder in this edition.
@@ -7,6 +8,7 @@ export class SneakAtmosphere {
   constructor() {
     this.canvas=$('#night-weather-canvas');this.ctx=this.canvas.getContext('2d');
     this.arrival=new SneakArrival();
+    this.dog=new RoamingDog($('#dashboard'),this.arrival);
     this.weather=new NightWeather(this.canvas,{sneakPeek:true});this.settings={};
     this.elapsed=0;this.frame=0;this.last=0;this.width=0;this.height=0;
     this.motion=matchMedia('(prefers-reduced-motion: reduce)');
@@ -15,7 +17,7 @@ export class SneakAtmosphere {
     new MutationObserver(()=>this.refresh()).observe(document.body,{subtree:true,attributes:true,attributeFilter:['class','open']});
     document.addEventListener('visibilitychange',()=>this.refresh());this.resize();
   }
-  configure(settings){this.settings=settings;this.arrival.configure(settings);this.refresh();}
+  configure(settings){this.settings=settings;this.arrival.configure(settings);this.dog.configure(settings);this.refresh();}
   resize(){const r=this.canvas.getBoundingClientRect();this.width=r.width;this.height=r.height;this.canvas.width=r.width;this.canvas.height=r.height;}
   refresh(){
     const active=$('#dashboard').classList.contains('active')&&!document.hidden&&!$('dialog[open]');

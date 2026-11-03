@@ -63,5 +63,21 @@
     "filter": "setpts=1.25*(PTS-STARTPTS),minterpolate=fps=24:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1,tpad=stop_mode=clone:stop_duration=0.083333",
     "encode": "H.264 libx264 slow CRF19, yuv420p, 24 fps CFR, faststart; source metadata removed",
     "notes": "Same forest-preparing.png still beneath both fades. No hard video loop; return to still between plays. Shares the arrival decoder and never changes its 60-second schedule."
+  },
+  "roaming_dog": {
+    "method": "Built-in image_gen; second turn atlas corrected with built-in background extraction",
+    "reference": "design/roaming-dog-v1/dog-reference.png, extracted at 5.5 seconds from supplied dog_video.mp4",
+    "prompts": [
+      "design/roaming-dog-v1/generation-prompt.txt",
+      "design/roaming-dog-v1/turn-prompt.txt"
+    ],
+    "documentation": "design/roaming-dog-v1/README.md",
+    "files": {
+      "roaming-dog-atlas-v1.png": "500fc3034f8063cb7f658a084a0459c3e412e68808005b6cab841f92c60debd2",
+      "roaming-dog-atlas-v1.json": "56eb46d38ead2931779595cb1d548b083504e2455e7a056ff445503fc2ab44a2",
+      "roaming-dog-turns-v2.png": "3102b79ac6ff8e5580a8c47eb9dc048ba1766820fb28f704b398f5e5ff3f8d58",
+      "roaming-dog-turns-v2.json": "234cf55a05ab3593e2542505a6cd4c8aeed504f3a86728191361929811089e9c"
+    },
+    "notes": "Original generated PNG pixels and alpha preserved. JSON anchors derived from alpha bounds. Walk/stop/sniff/idle/turn prototype; not a live 3D rig. Uses a bounded 256-square canvas and cached contact shadow."
   }
 }

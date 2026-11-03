@@ -4,6 +4,51 @@
   "graph": {},
   "nodes": [
     {
+      "label": "rejected-turns-haze.json",
+      "file_type": "code",
+      "source_file": "design/roaming-dog-v1/rejected-turns-haze.json",
+      "source_location": "L1",
+      "id": "roaming_dog_v1_rejected_turns_haze",
+      "community": 84,
+      "norm_label": "rejected-turns-haze.json"
+    },
+    {
+      "label": "image",
+      "file_type": "code",
+      "source_file": "design/roaming-dog-v1/rejected-turns-haze.json",
+      "source_location": "L2",
+      "id": "roaming_dog_v1_rejected_turns_haze_image",
+      "community": 84,
+      "norm_label": "image"
+    },
+    {
+      "label": "width",
+      "file_type": "code",
+      "source_file": "design/roaming-dog-v1/rejected-turns-haze.json",
+      "source_location": "L3",
+      "id": "roaming_dog_v1_rejected_turns_haze_width",
+      "community": 84,
+      "norm_label": "width"
+    },
+    {
+      "label": "height",
+      "file_type": "code",
+      "source_file": "design/roaming-dog-v1/rejected-turns-haze.json",
+      "source_location": "L4",
+      "id": "roaming_dog_v1_rejected_turns_haze_height",
+      "community": 84,
+      "norm_label": "height"
+    },
+    {
+      "label": "frames",
+      "file_type": "code",
+      "source_file": "design/roaming-dog-v1/rejected-turns-haze.json",
+      "source_location": "L5",
+      "id": "roaming_dog_v1_rejected_turns_haze_frames",
+      "community": 84,
+      "norm_label": "frames"
+    },
+    {
       "label": "__init__.py",
       "file_type": "code",
       "source_file": "halloween_hub/__init__.py",
@@ -216,7 +261,7 @@
       "source_file": "halloween_hub/core.py",
       "source_location": "L1",
       "id": "halloween_hub_core",
-      "community": 80,
+      "community": 0,
       "norm_label": "core.py"
     },
     {
@@ -225,7 +270,7 @@
       "source_file": "halloween_hub/core.py",
       "source_location": "L19",
       "id": "halloween_hub_core_data_directory",
-      "community": 80,
+      "community": 0,
       "norm_label": "data_directory()"
     },
     {
@@ -234,7 +279,7 @@
       "source_file": "halloween_hub/core.py",
       "source_location": "L26",
       "id": "halloween_hub_core_countdown",
-      "community": 78,
+      "community": 0,
       "norm_label": "countdown()"
     },
     {
@@ -243,7 +288,7 @@
       "source_file": "halloween_hub/core.py",
       "source_location": "L43",
       "id": "halloween_hub_core_store",
-      "community": 81,
+      "community": 0,
       "norm_label": "store"
     },
     {
@@ -252,7 +297,7 @@
       "source_file": "halloween_hub/core.py",
       "source_location": "L44",
       "id": "halloween_hub_core_store_init",
-      "community": 81,
+      "community": 0,
       "norm_label": ".__init__()"
     },
     {
@@ -261,7 +306,7 @@
       "source_file": "halloween_hub/core.py",
       "source_location": "L60",
       "id": "halloween_hub_core_store_connect",
-      "community": 81,
+      "community": 0,
       "norm_label": ".connect()"
     },
     {
@@ -270,7 +315,7 @@
       "source_file": "halloween_hub/core.py",
       "source_location": "L68",
       "id": "halloween_hub_core_store_get",
-      "community": 1,
+      "community": 0,
       "norm_label": ".get()"
     },
     {
@@ -279,7 +324,7 @@
       "source_file": "halloween_hub/core.py",
       "source_location": "L73",
       "id": "halloween_hub_core_store_put",
-      "community": 81,
+      "community": 0,
       "norm_label": ".put()"
     },
     {
@@ -288,7 +333,7 @@
       "source_file": "halloween_hub/core.py",
       "source_location": "L77",
       "id": "halloween_hub_core_store_candy",
-      "community": 81,
+      "community": 0,
       "norm_label": ".candy()"
     },
     {
@@ -297,7 +342,7 @@
       "source_file": "halloween_hub/core.py",
       "source_location": "L85",
       "id": "halloween_hub_core_store_rows",
-      "community": 81,
+      "community": 0,
       "norm_label": ".rows()"
     },
     {
@@ -387,7 +432,7 @@
       "source_file": "halloween_hub/core.py",
       "source_location": "L250",
       "id": "halloween_hub_core_simulation_close",
-      "community": 1,
+      "community": 0,
       "norm_label": ".close()"
     },
     {
@@ -468,7 +513,7 @@
       "source_file": "halloween_hub/sneak_peek.py",
       "source_location": "L1",
       "id": "halloween_hub_sneak_peek",
-      "community": 79,
+      "community": 0,
       "norm_label": "sneak_peek.py"
     },
     {
@@ -477,7 +522,7 @@
       "source_file": "halloween_hub/sneak_peek.py",
       "source_location": "L6",
       "id": "halloween_hub_sneak_peek_sneak_peek_calendar",
-      "community": 79,
+      "community": 0,
       "norm_label": "sneak_peek_calendar()"
     },
     {
@@ -486,7 +531,7 @@
       "source_file": "halloween_hub/sneak_peek.py",
       "source_location": "L1",
       "id": "halloween_hub_sneak_peek_rationale_1",
-      "community": 79,
+      "community": 0,
       "norm_label": "calendar facts for the isolated november sneak-peek edition."
     },
     {
@@ -958,6 +1003,168 @@
       "norm_label": "discoverwindowcontrols()"
     },
     {
+      "label": "roaming-dog-atlas-v1.json",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L1",
+      "id": "sneak_peek_roaming_dog_atlas_v1",
+      "community": 82,
+      "norm_label": "roaming-dog-atlas-v1.json"
+    },
+    {
+      "label": "image",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L2",
+      "id": "sneak_peek_roaming_dog_atlas_v1_image",
+      "community": 82,
+      "norm_label": "image"
+    },
+    {
+      "label": "width",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L3",
+      "id": "sneak_peek_roaming_dog_atlas_v1_width",
+      "community": 82,
+      "norm_label": "width"
+    },
+    {
+      "label": "height",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L4",
+      "id": "sneak_peek_roaming_dog_atlas_v1_height",
+      "community": 82,
+      "norm_label": "height"
+    },
+    {
+      "label": "frames",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L5",
+      "id": "sneak_peek_roaming_dog_atlas_v1_frames",
+      "community": 82,
+      "norm_label": "frames"
+    },
+    {
+      "label": "animations",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L231",
+      "id": "sneak_peek_roaming_dog_atlas_v1_animations",
+      "community": 82,
+      "norm_label": "animations"
+    },
+    {
+      "label": "walk",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L232",
+      "id": "sneak_peek_roaming_dog_atlas_v1_animations_walk",
+      "community": 82,
+      "norm_label": "walk"
+    },
+    {
+      "label": "lower",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L242",
+      "id": "sneak_peek_roaming_dog_atlas_v1_animations_lower",
+      "community": 82,
+      "norm_label": "lower"
+    },
+    {
+      "label": "sniff",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L247",
+      "id": "sneak_peek_roaming_dog_atlas_v1_animations_sniff",
+      "community": 82,
+      "norm_label": "sniff"
+    },
+    {
+      "label": "raise",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L253",
+      "id": "sneak_peek_roaming_dog_atlas_v1_animations_raise",
+      "community": 82,
+      "norm_label": "raise"
+    },
+    {
+      "label": "idle",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L258",
+      "id": "sneak_peek_roaming_dog_atlas_v1_animations_idle",
+      "community": 82,
+      "norm_label": "idle"
+    },
+    {
+      "label": "sha256",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L265",
+      "id": "sneak_peek_roaming_dog_atlas_v1_sha256",
+      "community": 82,
+      "norm_label": "sha256"
+    },
+    {
+      "label": "source",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L266",
+      "id": "sneak_peek_roaming_dog_atlas_v1_source",
+      "community": 82,
+      "norm_label": "source"
+    },
+    {
+      "label": "roaming-dog-turns-v2.json",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-turns-v2.json",
+      "source_location": "L1",
+      "id": "sneak_peek_roaming_dog_turns_v2",
+      "community": 85,
+      "norm_label": "roaming-dog-turns-v2.json"
+    },
+    {
+      "label": "image",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-turns-v2.json",
+      "source_location": "L2",
+      "id": "sneak_peek_roaming_dog_turns_v2_image",
+      "community": 85,
+      "norm_label": "image"
+    },
+    {
+      "label": "width",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-turns-v2.json",
+      "source_location": "L3",
+      "id": "sneak_peek_roaming_dog_turns_v2_width",
+      "community": 85,
+      "norm_label": "width"
+    },
+    {
+      "label": "height",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-turns-v2.json",
+      "source_location": "L4",
+      "id": "sneak_peek_roaming_dog_turns_v2_height",
+      "community": 85,
+      "norm_label": "height"
+    },
+    {
+      "label": "frames",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-turns-v2.json",
+      "source_location": "L5",
+      "id": "sneak_peek_roaming_dog_turns_v2_frames",
+      "community": 85,
+      "norm_label": "frames"
+    },
+    {
       "label": "sources.json",
       "file_type": "code",
       "source_file": "halloween_hub/static/assets/spark/sources.json",
@@ -1152,7 +1359,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L1",
       "id": "static_night_weather",
-      "community": 60,
+      "community": 38,
       "norm_label": "night-weather.js"
     },
     {
@@ -1161,7 +1368,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L2",
       "id": "static_night_weather_random",
-      "community": 60,
+      "community": 38,
       "norm_label": "random()"
     },
     {
@@ -1170,7 +1377,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L3",
       "id": "static_night_weather_smooth",
-      "community": 60,
+      "community": 38,
       "norm_label": "smooth()"
     },
     {
@@ -1179,7 +1386,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L4",
       "id": "static_night_weather_nightweather",
-      "community": 60,
+      "community": 38,
       "norm_label": "nightweather"
     },
     {
@@ -1188,7 +1395,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L5",
       "id": "static_night_weather_nightweather_constructor",
-      "community": 60,
+      "community": 38,
       "norm_label": ".constructor()"
     },
     {
@@ -1197,7 +1404,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L13",
       "id": "static_night_weather_nightweather_leaf",
-      "community": 60,
+      "community": 38,
       "norm_label": ".leaf()"
     },
     {
@@ -1206,7 +1413,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L22",
       "id": "static_night_weather_nightweather_change",
-      "community": 60,
+      "community": 38,
       "norm_label": ".change()"
     },
     {
@@ -1215,7 +1422,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L27",
       "id": "static_night_weather_nightweather_advance",
-      "community": 60,
+      "community": 38,
       "norm_label": ".advance()"
     },
     {
@@ -1224,7 +1431,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L46",
       "id": "static_night_weather_nightweather_spawn",
-      "community": 60,
+      "community": 38,
       "norm_label": ".spawn()"
     },
     {
@@ -1233,7 +1440,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L50",
       "id": "static_night_weather_nightweather_describe",
-      "community": 60,
+      "community": 38,
       "norm_label": ".describe()"
     },
     {
@@ -1242,7 +1449,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L54",
       "id": "static_night_weather_nightweather_draw",
-      "community": 60,
+      "community": 38,
       "norm_label": ".draw()"
     },
     {
@@ -1251,8 +1458,215 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L66",
       "id": "static_night_weather_nightweather_winter",
-      "community": 60,
+      "community": 38,
       "norm_label": ".winter()"
+    },
+    {
+      "label": "roaming-dog.js",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L1",
+      "id": "static_roaming_dog",
+      "community": 73,
+      "norm_label": "roaming-dog.js"
+    },
+    {
+      "label": "random()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L2",
+      "id": "static_roaming_dog_random",
+      "community": 73,
+      "norm_label": "random()"
+    },
+    {
+      "label": "clamp()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L3",
+      "id": "static_roaming_dog_clamp",
+      "community": 73,
+      "norm_label": "clamp()"
+    },
+    {
+      "label": "smooth()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L4",
+      "id": "static_roaming_dog_smooth",
+      "community": 73,
+      "norm_label": "smooth()"
+    },
+    {
+      "label": "RoamingDog",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L7",
+      "id": "static_roaming_dog_roamingdog",
+      "community": 73,
+      "norm_label": "roamingdog"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L8",
+      "id": "static_roaming_dog_roamingdog_constructor",
+      "community": 73,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".load()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L30",
+      "id": "static_roaming_dog_roamingdog_load",
+      "community": 73,
+      "norm_label": ".load()"
+    },
+    {
+      "label": ".configure()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L43",
+      "id": "static_roaming_dog_roamingdog_configure",
+      "community": 73,
+      "norm_label": ".configure()"
+    },
+    {
+      "label": ".eligible()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L44",
+      "id": "static_roaming_dog_roamingdog_eligible",
+      "community": 73,
+      "norm_label": ".eligible()"
+    },
+    {
+      "label": ".pause()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L50",
+      "id": "static_roaming_dog_roamingdog_pause",
+      "community": 73,
+      "norm_label": ".pause()"
+    },
+    {
+      "label": ".refresh()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L54",
+      "id": "static_roaming_dog_roamingdog_refresh",
+      "community": 73,
+      "norm_label": ".refresh()"
+    },
+    {
+      "label": ".resize()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L71",
+      "id": "static_roaming_dog_roamingdog_resize",
+      "community": 73,
+      "norm_label": ".resize()"
+    },
+    {
+      "label": ".measure()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L77",
+      "id": "static_roaming_dog_roamingdog_measure",
+      "community": 73,
+      "norm_label": ".measure()"
+    },
+    {
+      "label": ".size()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L84",
+      "id": "static_roaming_dog_roamingdog_size",
+      "community": 73,
+      "norm_label": ".size()"
+    },
+    {
+      "label": ".bounds()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L85",
+      "id": "static_roaming_dog_roamingdog_bounds",
+      "community": 73,
+      "norm_label": ".bounds()"
+    },
+    {
+      "label": ".safe()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L86",
+      "id": "static_roaming_dog_roamingdog_safe",
+      "community": 73,
+      "norm_label": ".safe()"
+    },
+    {
+      "label": ".place()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L91",
+      "id": "static_roaming_dog_roamingdog_place",
+      "community": 73,
+      "norm_label": ".place()"
+    },
+    {
+      "label": ".plan()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L99",
+      "id": "static_roaming_dog_roamingdog_plan",
+      "community": 73,
+      "norm_label": ".plan()"
+    },
+    {
+      "label": ".setState()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L112",
+      "id": "static_roaming_dog_roamingdog_setstate",
+      "community": 73,
+      "norm_label": ".setstate()"
+    },
+    {
+      "label": ".advance()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L116",
+      "id": "static_roaming_dog_roamingdog_advance",
+      "community": 73,
+      "norm_label": ".advance()"
+    },
+    {
+      "label": ".poses()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L132",
+      "id": "static_roaming_dog_roamingdog_poses",
+      "community": 73,
+      "norm_label": ".poses()"
+    },
+    {
+      "label": ".paint()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L146",
+      "id": "static_roaming_dog_roamingdog_paint",
+      "community": 73,
+      "norm_label": ".paint()"
+    },
+    {
+      "label": ".draw()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L153",
+      "id": "static_roaming_dog_roamingdog_draw",
+      "community": 73,
+      "norm_label": ".draw()"
     },
     {
       "label": "scene-player.js",
@@ -1422,7 +1836,7 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L9",
       "id": "static_sneak_arrival_sneakarrival",
-      "community": 70,
+      "community": 60,
       "norm_label": "sneakarrival"
     },
     {
@@ -1431,7 +1845,7 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L10",
       "id": "static_sneak_arrival_sneakarrival_constructor",
-      "community": 70,
+      "community": 60,
       "norm_label": ".constructor()"
     },
     {
@@ -1440,7 +1854,7 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L27",
       "id": "static_sneak_arrival_sneakarrival_eligible",
-      "community": 70,
+      "community": 60,
       "norm_label": ".eligible()"
     },
     {
@@ -1449,7 +1863,7 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L31",
       "id": "static_sneak_arrival_sneakarrival_configure",
-      "community": 70,
+      "community": 60,
       "norm_label": ".configure()"
     },
     {
@@ -1458,7 +1872,7 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L37",
       "id": "static_sneak_arrival_sneakarrival_schedule",
-      "community": 70,
+      "community": 60,
       "norm_label": ".schedule()"
     },
     {
@@ -1467,86 +1881,95 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L43",
       "id": "static_sneak_arrival_sneakarrival_cleardog",
-      "community": 70,
+      "community": 60,
       "norm_label": ".cleardog()"
+    },
+    {
+      "label": ".setRoamingDogReady()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L44",
+      "id": "static_sneak_arrival_sneakarrival_setroamingdogready",
+      "community": 60,
+      "norm_label": ".setroamingdogready()"
     },
     {
       "label": ".scheduleDog()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L44",
+      "source_location": "L48",
       "id": "static_sneak_arrival_sneakarrival_scheduledog",
-      "community": 70,
+      "community": 60,
       "norm_label": ".scheduledog()"
     },
     {
       "label": ".phase()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L50",
+      "source_location": "L55",
       "id": "static_sneak_arrival_sneakarrival_phase",
-      "community": 70,
+      "community": 60,
       "norm_label": ".phase()"
     },
     {
       "label": ".check()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L53",
+      "source_location": "L58",
       "id": "static_sneak_arrival_sneakarrival_check",
-      "community": 70,
+      "community": 60,
       "norm_label": ".check()"
     },
     {
       "label": ".later()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L64",
+      "source_location": "L69",
       "id": "static_sneak_arrival_sneakarrival_later",
-      "community": 70,
+      "community": 60,
       "norm_label": ".later()"
     },
     {
       "label": ".clearCycle()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L65",
+      "source_location": "L70",
       "id": "static_sneak_arrival_sneakarrival_clearcycle",
-      "community": 70,
+      "community": 60,
       "norm_label": ".clearcycle()"
     },
     {
       "label": ".returnToHalloween()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L66",
+      "source_location": "L71",
       "id": "static_sneak_arrival_sneakarrival_returntohalloween",
-      "community": 70,
+      "community": 60,
       "norm_label": ".returntohalloween()"
     },
     {
       "label": ".start()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L86",
+      "source_location": "L91",
       "id": "static_sneak_arrival_sneakarrival_start",
-      "community": 70,
+      "community": 60,
       "norm_label": ".start()"
     },
     {
       "label": ".finish()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L128",
+      "source_location": "L133",
       "id": "static_sneak_arrival_sneakarrival_finish",
-      "community": 70,
+      "community": 60,
       "norm_label": ".finish()"
     },
     {
       "label": "$()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L3",
+      "source_location": "L4",
       "id": "static_sneak_peek",
       "community": 60,
       "norm_label": "$()"
@@ -1555,7 +1978,7 @@
       "label": "SneakAtmosphere",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L6",
+      "source_location": "L7",
       "id": "static_sneak_peek_sneakatmosphere",
       "community": 60,
       "norm_label": "sneakatmosphere"
@@ -1564,7 +1987,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L7",
+      "source_location": "L8",
       "id": "static_sneak_peek_sneakatmosphere_constructor",
       "community": 60,
       "norm_label": ".constructor()"
@@ -1573,7 +1996,7 @@
       "label": ".configure()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L18",
+      "source_location": "L20",
       "id": "static_sneak_peek_sneakatmosphere_configure",
       "community": 60,
       "norm_label": ".configure()"
@@ -1582,7 +2005,7 @@
       "label": ".resize()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L19",
+      "source_location": "L21",
       "id": "static_sneak_peek_sneakatmosphere_resize",
       "community": 60,
       "norm_label": ".resize()"
@@ -1591,7 +2014,7 @@
       "label": ".refresh()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L20",
+      "source_location": "L22",
       "id": "static_sneak_peek_sneakatmosphere_refresh",
       "community": 60,
       "norm_label": ".refresh()"
@@ -1600,7 +2023,7 @@
       "label": "gifts",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L38",
+      "source_location": "L40",
       "id": "static_sneak_peek_gifts",
       "community": 60,
       "norm_label": "gifts"
@@ -1609,7 +2032,7 @@
       "label": "SneakPeek",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L44",
+      "source_location": "L46",
       "id": "static_sneak_peek_sneakpeek",
       "community": 60,
       "norm_label": "sneakpeek"
@@ -1618,7 +2041,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L45",
+      "source_location": "L47",
       "id": "static_sneak_peek_sneakpeek_constructor",
       "community": 60,
       "norm_label": ".constructor()"
@@ -1627,7 +2050,7 @@
       "label": ".active()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L64",
+      "source_location": "L66",
       "id": "static_sneak_peek_sneakpeek_active",
       "community": 60,
       "norm_label": ".active()"
@@ -1636,7 +2059,7 @@
       "label": ".controls()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L65",
+      "source_location": "L67",
       "id": "static_sneak_peek_sneakpeek_controls",
       "community": 60,
       "norm_label": ".controls()"
@@ -1645,7 +2068,7 @@
       "label": ".volumeChanged()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L66",
+      "source_location": "L68",
       "id": "static_sneak_peek_sneakpeek_volumechanged",
       "community": 60,
       "norm_label": ".volumechanged()"
@@ -1654,7 +2077,7 @@
       "label": ".silence()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L67",
+      "source_location": "L69",
       "id": "static_sneak_peek_sneakpeek_silence",
       "community": 60,
       "norm_label": ".silence()"
@@ -1663,7 +2086,7 @@
       "label": ".stopJingles()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L73",
+      "source_location": "L75",
       "id": "static_sneak_peek_sneakpeek_stopjingles",
       "community": 60,
       "norm_label": ".stopjingles()"
@@ -1672,7 +2095,7 @@
       "label": ".activity()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L74",
+      "source_location": "L76",
       "id": "static_sneak_peek_sneakpeek_activity",
       "community": 60,
       "norm_label": ".activity()"
@@ -1681,7 +2104,7 @@
       "label": ".schedule()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L77",
+      "source_location": "L79",
       "id": "static_sneak_peek_sneakpeek_schedule",
       "community": 60,
       "norm_label": ".schedule()"
@@ -1690,7 +2113,7 @@
       "label": ".playJingle()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L78",
+      "source_location": "L80",
       "id": "static_sneak_peek_sneakpeek_playjingle",
       "community": 60,
       "norm_label": ".playjingle()"
@@ -1699,7 +2122,7 @@
       "label": ".rotateHeadline()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L95",
+      "source_location": "L97",
       "id": "static_sneak_peek_sneakpeek_rotateheadline",
       "community": 60,
       "norm_label": ".rotateheadline()"
@@ -1708,7 +2131,7 @@
       "label": ".update()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L113",
+      "source_location": "L115",
       "id": "static_sneak_peek_sneakpeek_update",
       "community": 60,
       "norm_label": ".update()"
@@ -1719,7 +2142,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L1",
       "id": "static_spark_showcase",
-      "community": 32,
+      "community": 83,
       "norm_label": "spark-showcase.js"
     },
     {
@@ -1728,7 +2151,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L2",
       "id": "static_spark_showcase_asset",
-      "community": 32,
+      "community": 83,
       "norm_label": "asset()"
     },
     {
@@ -1737,7 +2160,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L3",
       "id": "static_spark_showcase_products",
-      "community": 32,
+      "community": 83,
       "norm_label": "products"
     },
     {
@@ -1746,7 +2169,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L11",
       "id": "static_spark_showcase_productimage",
-      "community": 32,
+      "community": 83,
       "norm_label": "productimage()"
     },
     {
@@ -1755,7 +2178,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L16",
       "id": "static_spark_showcase_masthead",
-      "community": 32,
+      "community": 83,
       "norm_label": "masthead()"
     },
     {
@@ -1764,7 +2187,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L18",
       "id": "static_spark_showcase_sparkshowcase",
-      "community": 32,
+      "community": 83,
       "norm_label": "sparkshowcase"
     },
     {
@@ -1773,7 +2196,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L19",
       "id": "static_spark_showcase_sparkshowcase_constructor",
-      "community": 32,
+      "community": 83,
       "norm_label": ".constructor()"
     },
     {
@@ -1782,7 +2205,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L29",
       "id": "static_spark_showcase_sparkshowcase_show",
-      "community": 32,
+      "community": 83,
       "norm_label": ".show()"
     },
     {
@@ -1791,7 +2214,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L34",
       "id": "static_spark_showcase_sparkshowcase_detail",
-      "community": 32,
+      "community": 83,
       "norm_label": ".detail()"
     },
     {
@@ -2079,7 +2502,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L7",
       "id": "static_welcome_atmosphere_welcomeatmosphere",
-      "community": 38,
+      "community": 78,
       "norm_label": "welcomeatmosphere"
     },
     {
@@ -2088,7 +2511,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L8",
       "id": "static_welcome_atmosphere_welcomeatmosphere_constructor",
-      "community": 38,
+      "community": 78,
       "norm_label": ".constructor()"
     },
     {
@@ -2097,7 +2520,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L20",
       "id": "static_welcome_atmosphere_welcomeatmosphere_configure",
-      "community": 38,
+      "community": 78,
       "norm_label": ".configure()"
     },
     {
@@ -2106,7 +2529,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L21",
       "id": "static_welcome_atmosphere_welcomeatmosphere_resize",
-      "community": 38,
+      "community": 78,
       "norm_label": ".resize()"
     },
     {
@@ -2115,7 +2538,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L22",
       "id": "static_welcome_atmosphere_welcomeatmosphere_refresh",
-      "community": 38,
+      "community": 78,
       "norm_label": ".refresh()"
     },
     {
@@ -2124,7 +2547,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L35",
       "id": "static_welcome_atmosphere_welcomeatmosphere_glow",
-      "community": 38,
+      "community": 78,
       "norm_label": ".glow()"
     },
     {
@@ -2133,7 +2556,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L39",
       "id": "static_welcome_atmosphere_welcomeatmosphere_spawnghost",
-      "community": 38,
+      "community": 78,
       "norm_label": ".spawnghost()"
     },
     {
@@ -2142,7 +2565,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L40",
       "id": "static_welcome_atmosphere_welcomeatmosphere_draw",
-      "community": 38,
+      "community": 78,
       "norm_label": ".draw()"
     },
     {
@@ -2169,7 +2592,7 @@
       "source_file": "halloween_hub/static/welcome-float.js",
       "source_location": "L1",
       "id": "static_welcome_float",
-      "community": 3,
+      "community": 38,
       "norm_label": "welcome-float.js"
     },
     {
@@ -2178,7 +2601,7 @@
       "source_file": "halloween_hub/static/welcome-float.js",
       "source_location": "L2",
       "id": "static_welcome_float_random",
-      "community": 3,
+      "community": 38,
       "norm_label": "random()"
     },
     {
@@ -2187,7 +2610,7 @@
       "source_file": "halloween_hub/static/welcome-float.js",
       "source_location": "L3",
       "id": "static_welcome_float_ease",
-      "community": 3,
+      "community": 38,
       "norm_label": "ease()"
     },
     {
@@ -2196,7 +2619,7 @@
       "source_file": "halloween_hub/static/welcome-float.js",
       "source_location": "L4",
       "id": "static_welcome_float_selectors",
-      "community": 3,
+      "community": 38,
       "norm_label": "selectors"
     },
     {
@@ -2205,7 +2628,7 @@
       "source_file": "halloween_hub/static/welcome-float.js",
       "source_location": "L12",
       "id": "static_welcome_float_welcomefloat",
-      "community": 3,
+      "community": 38,
       "norm_label": "welcomefloat"
     },
     {
@@ -2214,7 +2637,7 @@
       "source_file": "halloween_hub/static/welcome-float.js",
       "source_location": "L13",
       "id": "static_welcome_float_welcomefloat_constructor",
-      "community": 3,
+      "community": 38,
       "norm_label": ".constructor()"
     },
     {
@@ -2223,7 +2646,7 @@
       "source_file": "halloween_hub/static/welcome-float.js",
       "source_location": "L22",
       "id": "static_welcome_float_welcomefloat_draw",
-      "community": 3,
+      "community": 38,
       "norm_label": ".draw()"
     },
     {
@@ -2322,7 +2745,7 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L1",
       "id": "halloween_hub_updates",
-      "community": 55,
+      "community": 0,
       "norm_label": "updates.py"
     },
     {
@@ -2529,7 +2952,7 @@
       "source_file": "halloween_hub/updates.py",
       "source_location": "L1",
       "id": "halloween_hub_updates_rationale_1",
-      "community": 55,
+      "community": 0,
       "norm_label": "download verified github release packages; never execute or replace running code"
     },
     {
@@ -2538,7 +2961,7 @@
       "source_file": "halloween_hub/version.py",
       "source_location": "L1",
       "id": "halloween_hub_version",
-      "community": 55,
+      "community": 0,
       "norm_label": "version.py"
     },
     {
@@ -2547,7 +2970,7 @@
       "source_file": "halloween_hub/version.py",
       "source_location": "L1",
       "id": "halloween_hub_version_rationale_1",
-      "community": 55,
+      "community": 0,
       "norm_label": "update this version before packaging a release."
     },
     {
@@ -2556,7 +2979,7 @@
       "source_file": "halloween_hub/weather.py",
       "source_location": "L1",
       "id": "halloween_hub_weather",
-      "community": 78,
+      "community": 0,
       "norm_label": "weather.py"
     },
     {
@@ -2565,7 +2988,7 @@
       "source_file": "halloween_hub/weather.py",
       "source_location": "L8",
       "id": "halloween_hub_weather_fetch",
-      "community": 78,
+      "community": 0,
       "norm_label": "fetch()"
     },
     {
@@ -2574,7 +2997,7 @@
       "source_file": "halloween_hub/weather.py",
       "source_location": "L13",
       "id": "halloween_hub_weather_weather",
-      "community": 78,
+      "community": 0,
       "norm_label": "weather"
     },
     {
@@ -2583,7 +3006,7 @@
       "source_file": "halloween_hub/weather.py",
       "source_location": "L14",
       "id": "halloween_hub_weather_weather_init",
-      "community": 78,
+      "community": 0,
       "norm_label": ".__init__()"
     },
     {
@@ -2592,7 +3015,7 @@
       "source_file": "halloween_hub/weather.py",
       "source_location": "L20",
       "id": "halloween_hub_weather_weather_snapshot",
-      "community": 78,
+      "community": 0,
       "norm_label": ".snapshot()"
     },
     {
@@ -2601,7 +3024,7 @@
       "source_file": "halloween_hub/weather.py",
       "source_location": "L35",
       "id": "halloween_hub_weather_weather_refresh",
-      "community": 78,
+      "community": 0,
       "norm_label": ".refresh()"
     },
     {
@@ -2610,7 +3033,7 @@
       "source_file": "halloween_hub/weather.py",
       "source_location": "L51",
       "id": "halloween_hub_weather_search_locations",
-      "community": 78,
+      "community": 0,
       "norm_label": "search_locations()"
     },
     {
@@ -3314,6 +3737,33 @@
       "norm_label": "check_resilience.py"
     },
     {
+      "label": "check_roaming_dog.py",
+      "file_type": "code",
+      "source_file": "scripts/check_roaming_dog.py",
+      "source_location": "L1",
+      "id": "scripts_check_roaming_dog",
+      "community": 86,
+      "norm_label": "check_roaming_dog.py"
+    },
+    {
+      "label": "wait()",
+      "file_type": "code",
+      "source_file": "scripts/check_roaming_dog.py",
+      "source_location": "L24",
+      "id": "scripts_check_roaming_dog_wait",
+      "community": 86,
+      "norm_label": "wait()"
+    },
+    {
+      "label": "Observe roaming behaviour, main-video priority, input and motion safeguards.",
+      "file_type": "rationale",
+      "source_file": "scripts/check_roaming_dog.py",
+      "source_location": "L1",
+      "id": "scripts_check_roaming_dog_rationale_1",
+      "community": 86,
+      "norm_label": "observe roaming behaviour, main-video priority, input and motion safeguards."
+    },
+    {
       "label": "check_scene_audio.py",
       "file_type": "code",
       "source_file": "scripts/check_scene_audio.py",
@@ -3479,7 +3929,7 @@
       "label": "wait_state()",
       "file_type": "code",
       "source_file": "scripts/check_sneak_dog.py",
-      "source_location": "L22",
+      "source_location": "L24",
       "id": "scripts_check_sneak_dog_wait_state",
       "community": 76,
       "norm_label": "wait_state()"
@@ -3488,7 +3938,7 @@
       "label": "still()",
       "file_type": "code",
       "source_file": "scripts/check_sneak_dog.py",
-      "source_location": "L28",
+      "source_location": "L30",
       "id": "scripts_check_sneak_dog_still",
       "community": 76,
       "norm_label": "still()"
@@ -3823,7 +4273,7 @@
       "source_file": "scripts/import_backgrounds.py",
       "source_location": "L1",
       "id": "scripts_import_backgrounds",
-      "community": 80,
+      "community": 0,
       "norm_label": "import_backgrounds.py"
     },
     {
@@ -3832,7 +4282,7 @@
       "source_file": "scripts/import_backgrounds.py",
       "source_location": "L1",
       "id": "scripts_import_backgrounds_rationale_1",
-      "community": 80,
+      "community": 0,
       "norm_label": "copy local png backgrounds into application data, deduplicated by content."
     },
     {
@@ -3841,7 +4291,7 @@
       "source_file": "scripts/import_cutscene.py",
       "source_location": "L1",
       "id": "scripts_import_cutscene",
-      "community": 80,
+      "community": 0,
       "norm_label": "import_cutscene.py"
     },
     {
@@ -3850,7 +4300,7 @@
       "source_file": "scripts/import_cutscene.py",
       "source_location": "L1",
       "id": "scripts_import_cutscene_rationale_1",
-      "community": 80,
+      "community": 0,
       "norm_label": "copy browser-compatible cutscene files into app data; preserve source files."
     },
     {
@@ -3931,7 +4381,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L1",
       "id": "sneak_peek_artwork",
-      "community": 63,
+      "community": 77,
       "norm_label": "sneak-peek-artwork.json"
     },
     {
@@ -3940,7 +4390,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L2",
       "id": "sneak_peek_artwork_created",
-      "community": 63,
+      "community": 77,
       "norm_label": "created"
     },
     {
@@ -3949,7 +4399,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L3",
       "id": "sneak_peek_artwork_branch",
-      "community": 63,
+      "community": 77,
       "norm_label": "branch"
     },
     {
@@ -3958,7 +4408,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L4",
       "id": "sneak_peek_artwork_base",
-      "community": 63,
+      "community": 77,
       "norm_label": "base"
     },
     {
@@ -3967,7 +4417,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L5",
       "id": "sneak_peek_artwork_method",
-      "community": 63,
+      "community": 77,
       "norm_label": "method"
     },
     {
@@ -3976,7 +4426,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L6",
       "id": "sneak_peek_artwork_file",
-      "community": 63,
+      "community": 77,
       "norm_label": "file"
     },
     {
@@ -3985,7 +4435,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L7",
       "id": "sneak_peek_artwork_prompt",
-      "community": 63,
+      "community": 77,
       "norm_label": "prompt"
     },
     {
@@ -3994,7 +4444,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L8",
       "id": "sneak_peek_artwork_notes",
-      "community": 63,
+      "community": 77,
       "norm_label": "notes"
     },
     {
@@ -4003,7 +4453,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L14",
       "id": "sneak_peek_artwork_forest_fusion",
-      "community": 63,
+      "community": 79,
       "norm_label": "forest_fusion"
     },
     {
@@ -4012,7 +4462,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L15",
       "id": "sneak_peek_artwork_forest_fusion_created",
-      "community": 63,
+      "community": 79,
       "norm_label": "created"
     },
     {
@@ -4021,7 +4471,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L16",
       "id": "sneak_peek_artwork_forest_fusion_method",
-      "community": 63,
+      "community": 79,
       "norm_label": "method"
     },
     {
@@ -4030,7 +4480,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L17",
       "id": "sneak_peek_artwork_forest_fusion_file",
-      "community": 63,
+      "community": 79,
       "norm_label": "file"
     },
     {
@@ -4039,7 +4489,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L18",
       "id": "sneak_peek_artwork_forest_fusion_prompt_file",
-      "community": 63,
+      "community": 79,
       "norm_label": "prompt_file"
     },
     {
@@ -4048,7 +4498,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L19",
       "id": "sneak_peek_artwork_forest_fusion_inputs",
-      "community": 63,
+      "community": 79,
       "norm_label": "inputs"
     },
     {
@@ -4057,7 +4507,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L24",
       "id": "sneak_peek_artwork_forest_fusion_notes",
-      "community": 63,
+      "community": 79,
       "norm_label": "notes"
     },
     {
@@ -4228,7 +4678,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L45",
       "id": "sneak_peek_artwork_background_wordmark",
-      "community": 63,
+      "community": 80,
       "norm_label": "background_wordmark"
     },
     {
@@ -4237,7 +4687,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L46",
       "id": "sneak_peek_artwork_background_wordmark_file",
-      "community": 63,
+      "community": 80,
       "norm_label": "file"
     },
     {
@@ -4246,7 +4696,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L47",
       "id": "sneak_peek_artwork_background_wordmark_source",
-      "community": 63,
+      "community": 80,
       "norm_label": "source"
     },
     {
@@ -4255,7 +4705,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L48",
       "id": "sneak_peek_artwork_background_wordmark_sha256",
-      "community": 63,
+      "community": 80,
       "norm_label": "sha256"
     },
     {
@@ -4264,7 +4714,7 @@
       "source_file": "sneak-peek-artwork.json",
       "source_location": "L49",
       "id": "sneak_peek_artwork_background_wordmark_notes",
-      "community": 63,
+      "community": 80,
       "norm_label": "notes"
     },
     {
@@ -4403,12 +4853,111 @@
       "norm_label": "notes"
     },
     {
+      "label": "roaming_dog",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L67",
+      "id": "sneak_peek_artwork_roaming_dog",
+      "community": 70,
+      "norm_label": "roaming_dog"
+    },
+    {
+      "label": "method",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L68",
+      "id": "sneak_peek_artwork_roaming_dog_method",
+      "community": 70,
+      "norm_label": "method"
+    },
+    {
+      "label": "reference",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L69",
+      "id": "sneak_peek_artwork_roaming_dog_reference",
+      "community": 70,
+      "norm_label": "reference"
+    },
+    {
+      "label": "prompts",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L70",
+      "id": "sneak_peek_artwork_roaming_dog_prompts",
+      "community": 70,
+      "norm_label": "prompts"
+    },
+    {
+      "label": "documentation",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L74",
+      "id": "sneak_peek_artwork_roaming_dog_documentation",
+      "community": 70,
+      "norm_label": "documentation"
+    },
+    {
+      "label": "files",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L75",
+      "id": "sneak_peek_artwork_roaming_dog_files",
+      "community": 70,
+      "norm_label": "files"
+    },
+    {
+      "label": "roaming-dog-atlas-v1.png",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L76",
+      "id": "sneak_peek_artwork_files_roaming_dog_atlas_v1_png",
+      "community": 70,
+      "norm_label": "roaming-dog-atlas-v1.png"
+    },
+    {
+      "label": "roaming-dog-atlas-v1.json",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L77",
+      "id": "sneak_peek_artwork_files_roaming_dog_atlas_v1_json",
+      "community": 70,
+      "norm_label": "roaming-dog-atlas-v1.json"
+    },
+    {
+      "label": "roaming-dog-turns-v2.png",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L78",
+      "id": "sneak_peek_artwork_files_roaming_dog_turns_v2_png",
+      "community": 70,
+      "norm_label": "roaming-dog-turns-v2.png"
+    },
+    {
+      "label": "roaming-dog-turns-v2.json",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L79",
+      "id": "sneak_peek_artwork_files_roaming_dog_turns_v2_json",
+      "community": 70,
+      "norm_label": "roaming-dog-turns-v2.json"
+    },
+    {
+      "label": "notes",
+      "file_type": "code",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L81",
+      "id": "sneak_peek_artwork_roaming_dog_notes",
+      "community": 70,
+      "norm_label": "notes"
+    },
+    {
       "label": "test_app.py",
       "file_type": "code",
       "source_file": "tests/test_app.py",
       "source_location": "L1",
       "id": "tests_test_app",
-      "community": 78,
+      "community": 0,
       "norm_label": "test_app.py"
     },
     {
@@ -4417,7 +4966,7 @@
       "source_file": "tests/test_app.py",
       "source_location": "L14",
       "id": "tests_test_app_hubtests",
-      "community": 77,
+      "community": 0,
       "norm_label": "hubtests"
     },
     {
@@ -4426,7 +4975,7 @@
       "source_file": "tests/test_app.py",
       "source_location": "L15",
       "id": "tests_test_app_hubtests_setup",
-      "community": 77,
+      "community": 0,
       "norm_label": ".setup()"
     },
     {
@@ -4435,7 +4984,7 @@
       "source_file": "tests/test_app.py",
       "source_location": "L22",
       "id": "tests_test_app_hubtests_teardown",
-      "community": 77,
+      "community": 0,
       "norm_label": ".teardown()"
     },
     {
@@ -4444,7 +4993,7 @@
       "source_file": "tests/test_app.py",
       "source_location": "L26",
       "id": "tests_test_app_hubtests_test_independent_countdowns",
-      "community": 77,
+      "community": 0,
       "norm_label": ".test_independent_countdowns()"
     },
     {
@@ -4453,7 +5002,7 @@
       "source_file": "tests/test_app.py",
       "source_location": "L33",
       "id": "tests_test_app_hubtests_test_selected_random_scene_and_replacement",
-      "community": 77,
+      "community": 0,
       "norm_label": ".test_selected_random_scene_and_replacement()"
     },
     {
@@ -4462,7 +5011,7 @@
       "source_file": "tests/test_app.py",
       "source_location": "L50",
       "id": "tests_test_app_hubtests_test_native_minimize_local_guard_and_unavailable",
-      "community": 77,
+      "community": 0,
       "norm_label": ".test_native_minimize_local_guard_and_unavailable()"
     },
     {
@@ -4471,7 +5020,7 @@
       "source_file": "tests/test_app.py",
       "source_location": "L58",
       "id": "tests_test_app_hubtests_test_persistence_and_safe_restart",
-      "community": 77,
+      "community": 0,
       "norm_label": ".test_persistence_and_safe_restart()"
     },
     {
@@ -4480,7 +5029,7 @@
       "source_file": "tests/test_app.py",
       "source_location": "L74",
       "id": "tests_test_app_hubtests_test_candy_atomic_and_clamped",
-      "community": 77,
+      "community": 0,
       "norm_label": ".test_candy_atomic_and_clamped()"
     },
     {
@@ -4489,7 +5038,7 @@
       "source_file": "tests/test_app.py",
       "source_location": "L81",
       "id": "tests_test_app_hubtests_test_record_edit_and_delete",
-      "community": 77,
+      "community": 0,
       "norm_label": ".test_record_edit_and_delete()"
     },
     {
@@ -4498,7 +5047,7 @@
       "source_file": "tests/test_app.py",
       "source_location": "L91",
       "id": "tests_test_app_hubtests_test_scene_presets_and_light_sequence",
-      "community": 77,
+      "community": 0,
       "norm_label": ".test_scene_presets_and_light_sequence()"
     },
     {
@@ -4507,7 +5056,7 @@
       "source_file": "tests/test_app.py",
       "source_location": "L105",
       "id": "tests_test_app_hubtests_test_haunt_and_scan_stop",
-      "community": 77,
+      "community": 0,
       "norm_label": ".test_haunt_and_scan_stop()"
     },
     {
@@ -4516,7 +5065,7 @@
       "source_file": "tests/test_app.py",
       "source_location": "L119",
       "id": "tests_test_app_hubtests_test_settings_validation_and_origin",
-      "community": 77,
+      "community": 0,
       "norm_label": ".test_settings_validation_and_origin()"
     },
     {
@@ -4525,7 +5074,7 @@
       "source_file": "tests/test_app.py",
       "source_location": "L125",
       "id": "tests_test_app_hubtests_test_audio_rejection_and_range",
-      "community": 77,
+      "community": 0,
       "norm_label": ".test_audio_rejection_and_range()"
     },
     {
@@ -4534,7 +5083,7 @@
       "source_file": "tests/test_app.py",
       "source_location": "L134",
       "id": "tests_test_app_hubtests_test_weather_offline_and_stale",
-      "community": 78,
+      "community": 0,
       "norm_label": ".test_weather_offline_and_stale()"
     },
     {
@@ -4543,7 +5092,7 @@
       "source_file": "tests/test_app.py",
       "source_location": "L146",
       "id": "tests_test_app_hubtests_test_halloween_and_timezone_countdown",
-      "community": 78,
+      "community": 0,
       "norm_label": ".test_halloween_and_timezone_countdown()"
     },
     {
@@ -4552,7 +5101,7 @@
       "source_file": "tests/test_camera.py",
       "source_location": "L1",
       "id": "tests_test_camera",
-      "community": 80,
+      "community": 0,
       "norm_label": "test_camera.py"
     },
     {
@@ -4723,7 +5272,7 @@
       "source_file": "tests/test_sneak_peek.py",
       "source_location": "L1",
       "id": "tests_test_sneak_peek",
-      "community": 79,
+      "community": 0,
       "norm_label": "test_sneak_peek.py"
     },
     {
@@ -4732,7 +5281,7 @@
       "source_file": "tests/test_sneak_peek.py",
       "source_location": "L9",
       "id": "tests_test_sneak_peek_sneakpeekcalendartests",
-      "community": 79,
+      "community": 0,
       "norm_label": "sneakpeekcalendartests"
     },
     {
@@ -4741,7 +5290,7 @@
       "source_file": "tests/test_sneak_peek.py",
       "source_location": "L10",
       "id": "tests_test_sneak_peek_sneakpeekcalendartests_test_november_calendar",
-      "community": 79,
+      "community": 0,
       "norm_label": ".test_november_calendar()"
     },
     {
@@ -4750,7 +5299,7 @@
       "source_file": "tests/test_sneak_peek.py",
       "source_location": "L18",
       "id": "tests_test_sneak_peek_sneakpeekcalendartests_test_local_christmas_day_and_passed_dates",
-      "community": 79,
+      "community": 0,
       "norm_label": ".test_local_christmas_day_and_passed_dates()"
     },
     {
@@ -4759,7 +5308,7 @@
       "source_file": "tests/test_sneak_peek.py",
       "source_location": "L27",
       "id": "tests_test_sneak_peek_sneakpeekcalendartests_test_dst_seconds_and_year_rollover",
-      "community": 79,
+      "community": 0,
       "norm_label": ".test_dst_seconds_and_year_rollover()"
     },
     {
@@ -4768,7 +5317,7 @@
       "source_file": "tests/test_sneak_peek.py",
       "source_location": "L37",
       "id": "tests_test_sneak_peek_sneakpeekcalendartests_test_party_settings_and_halloween_countdown_preserved",
-      "community": 79,
+      "community": 0,
       "norm_label": ".test_party_settings_and_halloween_countdown_preserved()"
     },
     {
@@ -4777,7 +5326,7 @@
       "source_file": "tests/test_sneak_peek.py",
       "source_location": "L53",
       "id": "tests_test_sneak_peek_sneakpeekcalendartests_test_spark_party_fixed_montreal_time_and_boundary",
-      "community": 79,
+      "community": 0,
       "norm_label": ".test_spark_party_fixed_montreal_time_and_boundary()"
     },
     {
@@ -4786,7 +5335,7 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L1",
       "id": "tests_test_updates",
-      "community": 80,
+      "community": 0,
       "norm_label": "test_updates.py"
     },
     {
@@ -5294,13 +5843,22 @@
       "norm_label": "immersive dashboard bars"
     },
     {
-      "label": "Dog visits between the main transitions",
+      "label": "Dog-video fallback between the main transitions",
       "file_type": "document",
       "source_file": "SNEAK-PEEK.md",
       "source_location": "L86",
-      "id": "sneak_peek_dog_visits_between_the_main_transitions",
+      "id": "sneak_peek_dog_video_fallback_between_the_main_transitions",
       "community": 65,
-      "norm_label": "dog visits between the main transitions"
+      "norm_label": "dog-video fallback between the main transitions"
+    },
+    {
+      "label": "Roaming dog prototype",
+      "file_type": "document",
+      "source_file": "SNEAK-PEEK.md",
+      "source_location": "L97",
+      "id": "sneak_peek_roaming_dog_prototype",
+      "community": 65,
+      "norm_label": "roaming dog prototype"
     },
     {
       "label": "UPDATES.md",
@@ -5654,11 +6212,47 @@
       "norm_label": "dog visit between stable forest backgrounds (2026-11-03)"
     },
     {
+      "label": "Independent roaming dog prototype (2026-11-03)",
+      "file_type": "document",
+      "source_file": "VALIDATION.md",
+      "source_location": "L295",
+      "id": "validation_independent_roaming_dog_prototype_2026_11_03",
+      "community": 20,
+      "norm_label": "independent roaming dog prototype (2026-11-03)"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "design/roaming-dog-v1/README.md",
+      "source_location": "L1",
+      "id": "roaming_dog_v1_readme",
+      "community": 87,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Roaming dog prototype",
+      "file_type": "document",
+      "source_file": "design/roaming-dog-v1/README.md",
+      "source_location": "L1",
+      "id": "roaming_dog_v1_readme_roaming_dog_prototype",
+      "community": 87,
+      "norm_label": "roaming dog prototype"
+    },
+    {
+      "label": "Dog visits between the main transitions",
+      "file_type": "document",
+      "source_file": "SNEAK-PEEK.md",
+      "source_location": "L86",
+      "community": 65,
+      "norm_label": "dog visits between the main transitions",
+      "id": "sneak_peek_dog_visits_between_the_main_transitions"
+    },
+    {
       "label": ".reduced()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L31",
-      "community": 70,
+      "community": 60,
       "norm_label": ".reduced()",
       "id": "static_sneak_arrival_sneakarrival_reduced"
     },
@@ -5667,7 +6261,7 @@
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L47",
-      "community": 70,
+      "community": 60,
       "norm_label": ".clear()",
       "id": "static_sneak_arrival_sneakarrival_clear"
     },
@@ -5826,6 +6420,46 @@
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design/roaming-dog-v1/rejected-turns-haze.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "roaming_dog_v1_rejected_turns_haze",
+      "target": "roaming_dog_v1_rejected_turns_haze_frames"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design/roaming-dog-v1/rejected-turns-haze.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "roaming_dog_v1_rejected_turns_haze",
+      "target": "roaming_dog_v1_rejected_turns_haze_height"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design/roaming-dog-v1/rejected-turns-haze.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "roaming_dog_v1_rejected_turns_haze",
+      "target": "roaming_dog_v1_rejected_turns_haze_image"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design/roaming-dog-v1/rejected-turns-haze.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "roaming_dog_v1_rejected_turns_haze",
+      "target": "roaming_dog_v1_rejected_turns_haze_width"
+    },
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
@@ -8708,6 +9342,166 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L231",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sneak_peek_roaming_dog_atlas_v1",
+      "target": "sneak_peek_roaming_dog_atlas_v1_animations"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sneak_peek_roaming_dog_atlas_v1",
+      "target": "sneak_peek_roaming_dog_atlas_v1_frames"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sneak_peek_roaming_dog_atlas_v1",
+      "target": "sneak_peek_roaming_dog_atlas_v1_height"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sneak_peek_roaming_dog_atlas_v1",
+      "target": "sneak_peek_roaming_dog_atlas_v1_image"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L265",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sneak_peek_roaming_dog_atlas_v1",
+      "target": "sneak_peek_roaming_dog_atlas_v1_sha256"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L266",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sneak_peek_roaming_dog_atlas_v1",
+      "target": "sneak_peek_roaming_dog_atlas_v1_source"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sneak_peek_roaming_dog_atlas_v1",
+      "target": "sneak_peek_roaming_dog_atlas_v1_width"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L258",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sneak_peek_roaming_dog_atlas_v1_animations",
+      "target": "sneak_peek_roaming_dog_atlas_v1_animations_idle"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L242",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sneak_peek_roaming_dog_atlas_v1_animations",
+      "target": "sneak_peek_roaming_dog_atlas_v1_animations_lower"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L253",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sneak_peek_roaming_dog_atlas_v1_animations",
+      "target": "sneak_peek_roaming_dog_atlas_v1_animations_raise"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L247",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sneak_peek_roaming_dog_atlas_v1_animations",
+      "target": "sneak_peek_roaming_dog_atlas_v1_animations_sniff"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-atlas-v1.json",
+      "source_location": "L232",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sneak_peek_roaming_dog_atlas_v1_animations",
+      "target": "sneak_peek_roaming_dog_atlas_v1_animations_walk"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-turns-v2.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sneak_peek_roaming_dog_turns_v2",
+      "target": "sneak_peek_roaming_dog_turns_v2_frames"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-turns-v2.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sneak_peek_roaming_dog_turns_v2",
+      "target": "sneak_peek_roaming_dog_turns_v2_height"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-turns-v2.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sneak_peek_roaming_dog_turns_v2",
+      "target": "sneak_peek_roaming_dog_turns_v2_image"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/assets/sneak-peek/roaming-dog-turns-v2.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sneak_peek_roaming_dog_turns_v2",
+      "target": "sneak_peek_roaming_dog_turns_v2_width"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "halloween_hub/static/assets/spark/sources.json",
       "source_location": "L4",
       "weight": 1.0,
@@ -9193,6 +9987,633 @@
       "confidence_score": 1.0,
       "source": "static_night_weather_nightweather_advance",
       "target": "static_night_weather_nightweather_spawn"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog",
+      "target": "static_roaming_dog_clamp"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog",
+      "target": "static_roaming_dog_random"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog",
+      "target": "static_roaming_dog_roamingdog"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog",
+      "target": "static_roaming_dog_smooth"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_sneak_peek",
+      "target": "static_roaming_dog"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L124",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_advance",
+      "target": "static_roaming_dog_random"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L99",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_plan",
+      "target": "static_roaming_dog_random"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L99",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_plan",
+      "target": "static_roaming_dog_clamp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L134",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_poses",
+      "target": "static_roaming_dog_clamp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_size",
+      "target": "static_roaming_dog_clamp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_smooth",
+      "target": "static_roaming_dog_clamp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L115",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_advance",
+      "target": "static_roaming_dog_smooth"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L132",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_poses",
+      "target": "static_roaming_dog_smooth"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L112",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog",
+      "target": "static_roaming_dog_roamingdog_advance"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L81",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog",
+      "target": "static_roaming_dog_roamingdog_bounds"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog",
+      "target": "static_roaming_dog_roamingdog_configure"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog",
+      "target": "static_roaming_dog_roamingdog_constructor"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L149",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog",
+      "target": "static_roaming_dog_roamingdog_draw"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L44",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog",
+      "target": "static_roaming_dog_roamingdog_eligible"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog",
+      "target": "static_roaming_dog_roamingdog_load"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog",
+      "target": "static_roaming_dog_roamingdog_measure"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L142",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog",
+      "target": "static_roaming_dog_roamingdog_paint"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog",
+      "target": "static_roaming_dog_roamingdog_pause"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L87",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog",
+      "target": "static_roaming_dog_roamingdog_place"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L95",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog",
+      "target": "static_roaming_dog_roamingdog_plan"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L128",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog",
+      "target": "static_roaming_dog_roamingdog_poses"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog",
+      "target": "static_roaming_dog_roamingdog_refresh"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog",
+      "target": "static_roaming_dog_roamingdog_resize"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L82",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog",
+      "target": "static_roaming_dog_roamingdog_safe"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L108",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog",
+      "target": "static_roaming_dog_roamingdog_setstate"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog",
+      "target": "static_roaming_dog_roamingdog_size"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_sneak_peek",
+      "target": "static_roaming_dog_roamingdog"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_constructor",
+      "target": "static_roaming_dog_roamingdog_load"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_constructor",
+      "target": "static_roaming_dog_roamingdog_resize"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_constructor",
+      "target": "static_roaming_dog_roamingdog_setstate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_load",
+      "target": "static_roaming_dog_roamingdog_pause"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_load",
+      "target": "static_roaming_dog_roamingdog_refresh"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_configure",
+      "target": "static_roaming_dog_roamingdog_refresh"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_refresh",
+      "target": "static_roaming_dog_roamingdog_eligible"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_refresh",
+      "target": "static_roaming_dog_roamingdog_pause"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_resize",
+      "target": "static_roaming_dog_roamingdog_pause"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_refresh",
+      "target": "static_roaming_dog_roamingdog_place"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_refresh",
+      "target": "static_roaming_dog_roamingdog_safe"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_resize",
+      "target": "static_roaming_dog_roamingdog_refresh"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_resize",
+      "target": "static_roaming_dog_roamingdog_measure"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L88",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_place",
+      "target": "static_roaming_dog_roamingdog_measure"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L96",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_plan",
+      "target": "static_roaming_dog_roamingdog_measure"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L117",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_advance",
+      "target": "static_roaming_dog_roamingdog_size"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L81",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_bounds",
+      "target": "static_roaming_dog_roamingdog_size"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L154",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_draw",
+      "target": "static_roaming_dog_roamingdog_size"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L97",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_plan",
+      "target": "static_roaming_dog_roamingdog_size"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_safe",
+      "target": "static_roaming_dog_roamingdog_bounds"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L91",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_place",
+      "target": "static_roaming_dog_roamingdog_safe"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L91",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_place",
+      "target": "static_roaming_dog_roamingdog_setstate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L120",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_advance",
+      "target": "static_roaming_dog_roamingdog_plan"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L103",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_plan",
+      "target": "static_roaming_dog_roamingdog_setstate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L121",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_advance",
+      "target": "static_roaming_dog_roamingdog_setstate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L152",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_draw",
+      "target": "static_roaming_dog_roamingdog_poses"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/roaming-dog.js",
+      "source_location": "L152",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_roaming_dog_roamingdog_draw",
+      "target": "static_roaming_dog_roamingdog_paint"
     },
     {
       "relation": "contains",
@@ -9750,6 +11171,16 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L44",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_sneak_arrival_sneakarrival",
+      "target": "static_sneak_arrival_sneakarrival_setroamingdogready"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L41",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -9915,11 +11346,33 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_sneak_arrival_sneakarrival_setroamingdogready",
+      "target": "static_sneak_arrival_sneakarrival_cleardog"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L91",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "static_sneak_arrival_sneakarrival_start",
       "target": "static_sneak_arrival_sneakarrival_cleardog"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_sneak_arrival_sneakarrival_setroamingdogready",
+      "target": "static_sneak_arrival_sneakarrival_scheduledog"
     },
     {
       "relation": "calls",
@@ -10112,7 +11565,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L3",
+      "source_location": "L4",
       "weight": 1.0,
       "source": "static_sneak_peek",
       "target": "static_sneak_peek",
@@ -13203,6 +14656,26 @@
       "target": "scripts_check_pumpkin_drop"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check_roaming_dog.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_check_roaming_dog",
+      "target": "scripts_check_roaming_dog_wait"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check_roaming_dog.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_check_roaming_dog_rationale_1",
+      "target": "scripts_check_roaming_dog"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "scripts/check_scene_audio.py",
@@ -13801,6 +15274,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "sneak-peek-artwork.json",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork",
+      "target": "sneak_peek_artwork_roaming_dog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
       "source_location": "L15",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -14206,6 +15689,106 @@
       "confidence_score": 1.0,
       "source": "sneak_peek_artwork_dog_media",
       "target": "sneak_peek_artwork_dog_media_speed"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_roaming_dog",
+      "target": "sneak_peek_artwork_roaming_dog_documentation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_roaming_dog",
+      "target": "sneak_peek_artwork_roaming_dog_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_roaming_dog",
+      "target": "sneak_peek_artwork_roaming_dog_method",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_roaming_dog",
+      "target": "sneak_peek_artwork_roaming_dog_notes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_roaming_dog",
+      "target": "sneak_peek_artwork_roaming_dog_prompts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_roaming_dog",
+      "target": "sneak_peek_artwork_roaming_dog_reference",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_roaming_dog_files",
+      "target": "sneak_peek_artwork_files_roaming_dog_atlas_v1_json",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_roaming_dog_files",
+      "target": "sneak_peek_artwork_files_roaming_dog_atlas_v1_png",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_roaming_dog_files",
+      "target": "sneak_peek_artwork_files_roaming_dog_turns_v2_json",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sneak-peek-artwork.json",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "sneak_peek_artwork_roaming_dog_files",
+      "target": "sneak_peek_artwork_files_roaming_dog_turns_v2_png",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15207,6 +16790,16 @@
       "source_file": "SNEAK-PEEK.md",
       "source_location": "L86",
       "weight": 1.0,
+      "source": "sneak_peek_after_the_haunt_christmas_sneak_peek",
+      "target": "sneak_peek_dog_video_fallback_between_the_main_transitions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SNEAK-PEEK.md",
+      "source_location": "L86",
+      "weight": 1.0,
       "confidence_score": 1.0,
       "source": "sneak_peek_after_the_haunt_christmas_sneak_peek",
       "target": "sneak_peek_dog_visits_between_the_main_transitions"
@@ -15230,6 +16823,16 @@
       "confidence_score": 1.0,
       "source": "sneak_peek_after_the_haunt_christmas_sneak_peek",
       "target": "sneak_peek_local_preview"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SNEAK-PEEK.md",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "sneak_peek_after_the_haunt_christmas_sneak_peek",
+      "target": "sneak_peek_roaming_dog_prototype",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15317,9 +16920,9 @@
       "source_file": "VALIDATION.md",
       "source_location": "L282",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "validation_validation_record_october_14_2026",
-      "target": "validation_dog_visit_between_stable_forest_backgrounds_2026_11_03",
-      "confidence_score": 1.0
+      "target": "validation_dog_visit_between_stable_forest_backgrounds_2026_11_03"
     },
     {
       "relation": "contains",
@@ -15380,6 +16983,16 @@
       "confidence_score": 1.0,
       "source": "validation_validation_record_october_14_2026",
       "target": "validation_immersive_scenes_and_optional_camera_update"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "VALIDATION.md",
+      "source_location": "L295",
+      "weight": 1.0,
+      "source": "validation_validation_record_october_14_2026",
+      "target": "validation_independent_roaming_dog_prototype_2026_11_03",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15620,8 +17233,18 @@
       "confidence_score": 1.0,
       "source": "validation_hidden_camera_and_visitor_adventures_supersedes_preview_mirror_behavior_above",
       "target": "validation_welcome_spooky_sounds_shuffle"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design/roaming-dog-v1/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "roaming_dog_v1_readme",
+      "target": "roaming_dog_v1_readme_roaming_dog_prototype"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "0b4e6204df47a5d5fb9d23fe6f806276af9d7bfa"
+  "built_at_commit": "89cab4ae48bb26e4d23124a1264204f009a4b4f0"
 }

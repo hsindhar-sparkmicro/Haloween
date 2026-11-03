@@ -83,12 +83,25 @@ Party/headline validation: all 29 Python tests passed, including the fixed Montr
 The header and navigation are hidden on the dashboard, giving the scene the full viewport. Tap/click anywhere outside a dialog, or press Tab/Escape, to reveal both as overlays. They hide after seven seconds without another interaction; keyboard focus within a bar keeps it available. Other screens retain their normal bars. On phones the dashboard itself scrolls so the gift/party cards remain reachable while the bars stay anchored to the viewport.
 
 
-## Dog visits between the main transitions
+## Dog-video fallback between the main transitions
 
 The supplied `dog_video.mp4` is delivered as `dog-eight-tenths-speed.mp4`: 1280×720, 24 fps CFR, silent H.264, **0.80× source speed encoded into the file** (12.625 seconds, browser playback at 1×). Motion interpolation fills the slowed frames. The supplied original remains unchanged.
 
-Once the main arrival has completely faded back to `forest-preparing.png`, the scene rests for five seconds, fades into the dog clip over 2.4 seconds, then fades back to **that same still** over 2.4 seconds. It can repeat after another five-second still interval if there is room before the next main arrival. Normal timing allows two dog visits between main transitions. It never starts over the Halloween return, an arrival film, or an unfinished fade.
+When the roaming character is unavailable or video mode is selected, once the main arrival has completely faded back to `forest-preparing.png`, the scene rests for five seconds, fades into the dog clip over 2.4 seconds, then fades back to **that same still** over 2.4 seconds. It can repeat after another five-second still interval if there is room before the next main arrival. Normal timing allows two dog visits between main transitions. It never starts over the Halloween return, an arrival film, or an unfinished fade.
 
 The main Halloween transition retains its 60-second start-to-start schedule and existing 4.8-second fades. Dog playback never resets that timer. A reserve window and deadline fade keep the single shared decoder available for the main transition; the manual Halloween adventure takes priority too. All text/cards remain in front. Muted dog audio, independent opt-in jingles, paused decorative motion, reduced motion, hidden tabs, dialogs, navigation, missing media and stalled media follow the same playback safeguards.
 
 Check with `.venv/bin/python scripts/check_sneak_dog.py` and `.venv/bin/python scripts/check_sneak_dog.py --faults-only`; use `--cdp http://127.0.0.1:19223 --output validation/dog-loop/pi` for the actual kiosk through a temporary loopback SSH tunnel. The native ten-minute observer now distinguishes dog and main clips and measures the main cadence separately.
+
+
+## Roaming dog prototype
+
+The default settled forest now has an independent dog that walks across the foreground snow, gradually stops, lowers its head to sniff, raises it, idles, and turns before choosing another route. Positions, distances and pause lengths vary. Feet stay planted while sniffing; walking gait follows travel distance. A soft cached ground shadow and gentle depth scaling help it sit in the scene. It stays beneath all text and controls, with pointer events disabled. Routes avoid the upper controls; footer text remains above the foreground animal.
+
+The new transparent sprite assets match the supplied brown-and-white puppy. They are generated storybook 3D poses, not a live 3D animal. This first prototype implements walk/stop/sniff/idle/turn only. Additional playful behaviours, peeing and entering the house need further animation assets.
+
+On successful asset loading the roaming dog takes over the still interval, leaving the existing dog movie as fallback. The main Halloween film retains its one-minute schedule and fades. The dog fades away 700 ms before the scheduled main transition, freezes during all films, and resumes after the main forest is restored. It pauses for dialogs, page hiding/navigation and reduced motion. One 256×256 canvas draws at a maximum of 24 fps, with no second background-video decoder.
+
+For comparisons, `?dog=video` selects the previous dog-video visits and `?dog=both` permits roaming in their short still gaps. Missing animation assets automatically use dog-video fallback. No saved settings or imported data are changed.
+
+[Asset reference, prompts and provenance](design/roaming-dog-v1/README.md) are saved alongside the prototype. Checks: `scripts/check_roaming_dog.py` and `scripts/check_roaming_dog.py --fallback-only`; the first also accepts `--cdp` for a native Pi session.
