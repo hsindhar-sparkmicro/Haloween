@@ -10,6 +10,11 @@ export class SneakArrival {
     this.status=this.layer.querySelector('[role=status]');
     this.skip=document.querySelector('#peek-arrival-skip');
     this.replay=document.querySelector('#peek-arrival-replay');
+    this.restart=document.querySelector('#peek-arrival-restart');
+    this.restart.addEventListener('click',()=>{
+      if(this.running)this.finish(false,true);
+      this.start();
+    });
     this.motion=matchMedia('(prefers-reduced-motion: reduce)');
     this.settings={};this.running=false;this.generation=0;this.timers=[];
     this.skip.addEventListener('click',()=>this.finish(true));
@@ -32,8 +37,10 @@ export class SneakArrival {
     if(!seen&&this.eligible()&&!this.reduced())this.start();
   }
   check(){
-    this.replay.disabled=Boolean(this.reduced());
-    this.replay.title=this.reduced()?'Turn off reduced motion to watch the transition':'';
+    for(const button of [this.replay,this.restart]){
+      button.disabled=Boolean(this.reduced());
+      button.title=this.reduced()?'Turn off reduced motion to watch the transition':'';
+    }
     if(this.running&&(!this.eligible()||this.reduced()))this.finish(false,true);
   }
   later(callback,ms){this.timers.push(setTimeout(callback,ms));}

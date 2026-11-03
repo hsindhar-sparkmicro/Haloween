@@ -1,7 +1,7 @@
 # Graph Report - Haloween  (2026-11-03)
 
 ## Corpus Check
-- 86 files · ~1,184,973 words
+- 86 files · ~1,185,006 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `4d860558`
+- Built from commit: `e9984b6a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
