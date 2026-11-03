@@ -1,16 +1,16 @@
 # Graph Report - Haloween  (2026-11-03)
 
 ## Corpus Check
-- 102 files · ~1,549,001 words
+- 105 files · ~1,550,142 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 711 nodes · 1038 edges · 87 communities (34 shown, 53 thin omitted)
+- 725 nodes · 1063 edges · 92 communities (33 shown, 59 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 10 edges (avg confidence: 0.56)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `89cab4ae`
+- Built from commit: `2afec07b`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -91,18 +91,23 @@
 - [[_COMMUNITY_Community 78|Community 78]]
 - [[_COMMUNITY_Community 79|Community 79]]
 - [[_COMMUNITY_Community 80|Community 80]]
+- [[_COMMUNITY_Community 81|Community 81]]
 - [[_COMMUNITY_Community 82|Community 82]]
 - [[_COMMUNITY_Community 83|Community 83]]
 - [[_COMMUNITY_Community 84|Community 84]]
 - [[_COMMUNITY_Community 85|Community 85]]
 - [[_COMMUNITY_Community 86|Community 86]]
 - [[_COMMUNITY_Community 87|Community 87]]
+- [[_COMMUNITY_Community 88|Community 88]]
+- [[_COMMUNITY_Community 89|Community 89]]
+- [[_COMMUNITY_Community 90|Community 90]]
+- [[_COMMUNITY_Community 91|Community 91]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `$()` - 67 edges
+1. `$()` - 68 edges
 2. `create_app()` - 29 edges
-3. `Visitor` - 24 edges
-4. `RoamingDog` - 20 edges
+3. `RoamingDog` - 24 edges
+4. `Visitor` - 24 edges
 5. `Simulation` - 18 edges
 6. `SneakArrival` - 18 edges
 7. `$()` - 18 edges
@@ -111,33 +116,33 @@
 10. `CameraTests` - 18 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `MediaTests` --uses--> `Store`  [INFERRED]
+  tests/test_media.py → halloween_hub/core.py
 - `FakeGitHub` --uses--> `Store`  [INFERRED]
   tests/test_updates.py → halloween_hub/core.py
 - `UpdatesTests` --uses--> `Store`  [INFERRED]
   tests/test_updates.py → halloween_hub/core.py
-- `MediaTests` --uses--> `Store`  [INFERRED]
-  tests/test_media.py → halloween_hub/core.py
+- `HubTests` --uses--> `Weather`  [INFERRED]
+  tests/test_app.py → halloween_hub/weather.py
 - `FakeGitHub` --uses--> `SafeRedirect`  [INFERRED]
-  tests/test_updates.py → halloween_hub/updates.py
-- `UpdatesTests` --uses--> `SafeRedirect`  [INFERRED]
   tests/test_updates.py → halloween_hub/updates.py
 
 ## Import Cycles
 - None detected.
 
-## Communities (87 total, 53 thin omitted)
+## Communities (92 total, 59 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.05
-Nodes (22): create_app(), countdown(), data_directory(), Store, backgrounds(), cutscenes(), Discover only installed gallery media in app data., main() (+14 more)
+Cohesion: 0.22
+Nodes (8): create_app(), backgrounds(), cutscenes(), Discover only installed gallery media in app data., main(), import_audio(), Validated, content-addressed local audio imports; repeated imports are idempoten, MediaTests
 
 ### Community 1 - "Community 1"
-Cohesion: 0.20
+Cohesion: 0.18
 Nodes (7): Shared simulation boundary. No GPIO or sensor access., Shared simulation boundary. No GPIO or sensor access., Shared simulation boundary. No GPIO or sensor access., Shared simulation boundary. No GPIO or sensor access., Shared simulation boundary. No GPIO or sensor access., Shared simulation boundary. No GPIO or sensor access., Simulation
 
 ### Community 2 - "Community 2"
 Cohesion: 0.06
-Nodes (50): $(), action(), ambience, ambientControl(), ambientShuffle, api(), cue, discoverWindowControls() (+42 more)
+Nodes (51): $(), action(), ambience, ambientControl(), ambientShuffle, api(), cue, discoverWindowControls() (+43 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.10
@@ -173,23 +178,23 @@ Nodes (3): main(), quoted(), Install per-user Raspberry Pi desktop autostart; no
 
 ### Community 55 - "Community 55"
 Cohesion: 0.07
-Nodes (9): GitHub, newer(), ReleaseUpdates, SafeRedirect, sha256(), stable_version(), HTTPRedirectHandler, FakeGitHub (+1 more)
+Nodes (11): GitHub, newer(), Download verified GitHub release packages; never execute or replace running code, ReleaseUpdates, SafeRedirect, sha256(), stable_version(), Update this version before packaging a release. (+3 more)
 
 ### Community 57 - "Community 57"
 Cohesion: 0.50
 Nodes (3): assets, images_unmodified, retrieved
 
 ### Community 60 - "Community 60"
-Cohesion: 0.14
-Nodes (5): SneakArrival, $(), gifts, SneakAtmosphere, SneakPeek
+Cohesion: 0.21
+Nodes (4): $(), gifts, SneakAtmosphere, SneakPeek
 
 ### Community 63 - "Community 63"
 Cohesion: 0.11
 Nodes (18): arrival_media, audio, browser_playback_rate, delivery_duration_seconds, delivery_sha256, encode, file, filter (+10 more)
 
 ### Community 65 - "Community 65"
-Cohesion: 0.18
-Nodes (10): After the haunt — Christmas sneak peek, Checks, Dates and artwork sources, Dog-video fallback between the main transitions, Dog visits between the main transitions, Immersive dashboard bars, Local preview, Roaming dog prototype (+2 more)
+Cohesion: 0.17
+Nodes (11): After the haunt — Christmas sneak peek, Checks, Dates and artwork sources, Dog video between the main transitions, Dog-video fallback between the main transitions, Dog visits between the main transitions, Immersive dashboard bars, Local preview (+3 more)
 
 ### Community 67 - "Community 67"
 Cohesion: 0.50
@@ -199,33 +204,29 @@ Nodes (3): GitHub release downloads, Private repository access, Release contract
 Cohesion: 0.53
 Nodes (5): Check real background video, a real one-minute repeat, and interruption recovery, replay(), start(), state(), still()
 
-### Community 70 - "Community 70"
-Cohesion: 0.18
-Nodes (11): roaming-dog-atlas-v1.json, roaming-dog-atlas-v1.png, roaming-dog-turns-v2.json, roaming-dog-turns-v2.png, roaming_dog, documentation, files, method (+3 more)
-
 ### Community 73 - "Community 73"
-Cohesion: 0.23
+Cohesion: 0.21
 Nodes (4): clamp(), random(), RoamingDog, smooth()
 
 ### Community 74 - "Community 74"
-Cohesion: 0.13
-Nodes (15): dog_media, audio, browser_playback_rate, delivery_duration_seconds, delivery_sha256, encode, file, filter (+7 more)
+Cohesion: 0.04
+Nodes (45): background_wordmark, file, notes, sha256, source, base, branch, created (+37 more)
 
 ### Community 76 - "Community 76"
 Cohesion: 0.67
 Nodes (3): Check natural dog/still cycles and main-film priority, locally or in the native, still(), wait_state()
 
-### Community 77 - "Community 77"
-Cohesion: 0.25
-Nodes (7): base, branch, created, file, method, notes, prompt
-
 ### Community 79 - "Community 79"
-Cohesion: 0.29
-Nodes (7): forest_fusion, created, file, inputs, method, notes, prompt_file
+Cohesion: 0.24
+Nodes (4): countdown(), fetch(), search_locations(), Weather
 
 ### Community 80 - "Community 80"
-Cohesion: 0.40
-Nodes (5): background_wordmark, file, notes, sha256, source
+Cohesion: 0.31
+Nodes (3): Calendar facts for the isolated November sneak-peek edition., sneak_peek_calendar(), SneakPeekCalendarTests
+
+### Community 81 - "Community 81"
+Cohesion: 0.32
+Nodes (3): data_directory(), Copy local PNG backgrounds into application data, deduplicated by content., Copy browser-compatible cutscene files into app data; preserve source files.
 
 ### Community 82 - "Community 82"
 Cohesion: 0.15
@@ -244,24 +245,24 @@ Cohesion: 0.40
 Nodes (4): frames, height, image, width
 
 ## Knowledge Gaps
-- **171 isolated node(s):** `image`, `width`, `height`, `frames`, `lastRotation` (+166 more)
+- **172 isolated node(s):** `image`, `width`, `height`, `frames`, `lastRotation` (+167 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **53 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **59 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `$()` connect `Community 2` to `Community 32`, `Community 3`, `Community 38`, `Community 78`, `Community 60`?**
+- **Why does `$()` connect `Community 2` to `Community 32`, `Community 3`, `Community 38`, `Community 90`, `Community 60`?**
   _High betweenness centrality (0.077) - this node is a cross-community bridge._
-- **Why does `$()` connect `Community 60` to `Community 73`, `Community 2`, `Community 38`?**
-  _High betweenness centrality (0.038) - this node is a cross-community bridge._
-- **Why does `create_app()` connect `Community 0` to `Community 1`, `Community 5`, `Community 55`, `Community 26`, `Community 27`?**
-  _High betweenness centrality (0.021) - this node is a cross-community bridge._
+- **Why does `$()` connect `Community 60` to `Community 73`, `Community 2`, `Community 38`, `Community 70`?**
+  _High betweenness centrality (0.040) - this node is a cross-community bridge._
+- **Why does `create_app()` connect `Community 0` to `Community 1`, `Community 5`, `Community 78`, `Community 79`, `Community 80`, `Community 81`, `Community 55`, `Community 88`, `Community 26`, `Community 27`?**
+  _High betweenness centrality (0.020) - this node is a cross-community bridge._
 - **What connects `image`, `width`, `height` to the rest of the system?**
-  _235 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.05472837022132797 - nodes in this community are weakly interconnected._
+  _239 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.06019871420222092 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.059322033898305086 - nodes in this community are weakly interconnected._
 - **Should `Community 4` be split into smaller, more focused modules?**
   _Cohesion score 0.1 - nodes in this community are weakly interconnected._
+- **Should `Community 20` be split into smaller, more focused modules?**
+  _Cohesion score 0.05555555555555555 - nodes in this community are weakly interconnected._

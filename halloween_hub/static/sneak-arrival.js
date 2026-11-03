@@ -40,17 +40,19 @@ export class SneakArrival {
     this.next=setTimeout(()=>{this.next=0;this.start();},REPEAT_MS);
     this.arrivalDue=performance.now()+REPEAT_MS;
   }
-  clearDog(){clearTimeout(this.dogTimer);this.dogTimer=0;}
-  setRoamingDogReady(ready){
-    this.roamingDogReady=ready;
-    if(ready)this.clearDog();else this.scheduleDog();
+  clearDog(){clearTimeout(this.dogTimer);this.dogTimer=0;this.dogDue=0;}
+  setRoamingDogReady(ready,keepVideo=false){
+    this.roamingDogPresent=ready;this.roamingDogReady=ready&&!keepVideo;
+    this.clearDog();if(!this.roamingDogReady)this.scheduleDog();
   }
   scheduleDog(){
     if(this.roamingDogReady)return;
     if(this.dogTimer||!this.next||!this.eligible()||this.running||this.fading||this.root.dataset.arrival!=='resting')return;
     // Leave a quiet still between clips and enough room before the fixed arrival slot.
-    if(this.arrivalDue-performance.now()<DOG_STILL_MS+DOG_WINDOW_MS)return;
-    this.dogTimer=setTimeout(()=>{this.dogTimer=0;this.start(false,'dog');},DOG_STILL_MS);
+    const stillMs=this.roamingDogPresent?12000:DOG_STILL_MS;
+    if(this.arrivalDue-performance.now()<stillMs+DOG_WINDOW_MS)return;
+    this.dogDue=performance.now()+stillMs;
+    this.dogTimer=setTimeout(()=>{this.dogTimer=0;this.dogDue=0;this.start(false,'dog');},stillMs);
   }
   phase(name){
     this.root.dataset.arrival=this.kind==='dog'&&name!=='resting'?'dog-'+name:name;

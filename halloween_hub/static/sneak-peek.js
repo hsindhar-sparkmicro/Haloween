@@ -24,13 +24,16 @@ export class SneakAtmosphere {
     const reduced=this.motion.matches||this.settings.reduced_motion;
     const paused=!active||reduced||$('#dashboard').classList.contains('arrival-playing');
     if($('#dashboard').classList.contains('atmosphere-paused')!==Boolean(paused))$('#dashboard').classList.toggle('atmosphere-paused',Boolean(paused));
-    if(paused){cancelAnimationFrame(this.frame);this.frame=0;this.last=0;this.ctx.clearRect(0,0,this.width,this.height);this.weather.describe('still');return;}
+    if(paused){cancelAnimationFrame(this.frame);this.frame=0;this.last=0;this.ctx.clearRect(0,0,this.width,this.height);this.weatherDirty=false;this.weather.describe('still');return;}
     if(this.frame)return;
     const tick=now=>{
       if(!this.last)this.last=now;
       if(now-this.last>=33){this.elapsed+=Math.min(.12,(now-this.last)/1000);this.last=now;
         this.weather.advance(this.elapsed,true,this.settings.quality==='low'||innerWidth<=1000);
-        this.ctx.clearRect(0,0,this.width,this.height);this.weather.draw(this.ctx,this.width,this.height,true);
+        // A transparent, unchanged weather layer needs no full-screen upload.
+        const visibleWeather=this.weather.mode!=='calm'&&this.weather.blend>0;
+        if(visibleWeather||this.weatherDirty){this.ctx.clearRect(0,0,this.width,this.height);this.weather.draw(this.ctx,this.width,this.height,true);}
+        this.weatherDirty=visibleWeather;
       }
       this.frame=requestAnimationFrame(tick);
     };this.frame=requestAnimationFrame(tick);
@@ -117,14 +120,18 @@ export class SneakPeek {
     const christmas=calendar.christmas;
     this.rotateHeadline(christmas);
     const percent=calendar.defrost_percent;
-    $('#peek-defrost-value').textContent=percent+'%';$('.peek-meter').setAttribute('aria-valuenow',percent);$('.peek-meter span').style.width=percent+'%';
-    $('.peek-defrost h2').textContent=percent===100?'Mariah has defrosted.':'Mariah is defrosting…';
-    $('#peek-defrost-caption').textContent=percent===100?'December mode: unlocked':'warming up for December';
+    if(this.defrostPercent!==percent){
+      this.defrostPercent=percent;
+      $('#peek-defrost-value').textContent=percent+'%';$('.peek-meter').setAttribute('aria-valuenow',percent);$('.peek-meter span').style.width=percent+'%';
+      $('.peek-defrost h2').textContent=percent===100?'Mariah has defrosted.':'Mariah is defrosting…';
+      $('#peek-defrost-caption').textContent=percent===100?'December mode: unlocked':'warming up for December';
+    }
     const party=calendar.spark_party;
     if(party){
       const seconds=Math.max(0,Math.floor(party.seconds-elapsed));
       const values=[Math.floor(seconds/86400),Math.floor(seconds/3600)%24,Math.floor(seconds/60)%60,seconds%60];
-      $('#peek-party-countdown').textContent=party.phase==='past'?'Thank you for celebrating!':seconds===0?'It’s time to celebrate!':values.map((n,i)=>String(n).padStart(2,'0')+['d','h','m','s'][i]).join(' · ');
+      const text=party.phase==='past'?'Thank you for celebrating!':seconds===0?'It’s time to celebrate!':values.map((n,i)=>String(n).padStart(2,'0')+['d','h','m','s'][i]).join(' · ');
+      if($('#peek-party-countdown').textContent!==text)$('#peek-party-countdown').textContent=text;
     }
   }
 }

@@ -7,6 +7,8 @@ const $ = (q, root = document) => root.querySelector(q);
 const $$ = (q, root = document) => [...root.querySelectorAll(q)];
 let state, currentScreen = 'dashboard', lastInteraction = 0, lastRotation = Date.now();
 let syncing = false, recordsHash = '', tracksHash = '', effectsHash = '', logsHash = '', settingsHash = '';
+let weatherHash='',countdownFormats=null;
+const textIfChanged=(element,text)=>{if(element.textContent!==text)element.textContent=text;};
 let audioEnabled = false, ambienceEnabled = false, trackIndex = 0, playingId = null;
 let cueGain, cueTimer=0, cueRun=null, blockedCueRun=null, lastCueId=null;
 let context, analyser, effectGain, frame = 0, previousHauntStage = '', lastScare = 0, previousHauntActive = false, lastWelcome = 0;
@@ -373,6 +375,9 @@ function renderLogRows(container, records, detailed=false) {
 function renderLogs() {renderLogRows($('#log-preview'),state.detections.slice(0,2));}
 function temperature(n) {if(!Number.isFinite(n)) return '—°'+state.settings.units; return (state.settings.units==='F'?n*9/5+32:n).toFixed(1)+'°'+state.settings.units;}
 function renderWeather() {
+  const hash=JSON.stringify([state.weather,state.settings.location,state.settings.units]);
+  if(hash===weatherHash)return;
+  weatherHash=hash;
   const weather=state.weather, current=weather.current;
   const locationName=state.settings.location?.name || '';
   $('#weather-location').textContent=locationName || 'Set location ↗';
@@ -392,20 +397,26 @@ function renderWeather() {
 }
 function renderCountdown() {
   if(!state) return;
+  // ICU formatter construction and unchanged text replacements caused periodic
+  // work on the Pi's animation thread. Reuse formatters until the zone changes.
+  const zone=state.settings.timezone;
+  if(countdownFormats?.zone!==zone)countdownFormats={zone,
+    date:new Intl.DateTimeFormat([],{timeZone:zone,month:'short',day:'numeric',year:'numeric'}),
+    time:new Intl.DateTimeFormat([],{timeZone:zone,hour:'2-digit',minute:'2-digit'})};
   const elapsed=(Date.now()-state.received)/1000;
   $$('[data-countdown]').forEach(el=> {
     const countdown=el.closest('#party')?(state.party_countdown||state.countdown):(state.sneak_peek?.christmas||state.countdown);
     const seconds=Math.max(0,Math.floor(countdown.seconds-elapsed));
     const values=[Math.floor(seconds/86400),Math.floor(seconds/3600)%24,Math.floor(seconds/60)%60];
     if(!el.children.length) el.innerHTML='<span class="digit"><b></b><small>DAYS</small></span><span class="colon">:</span><span class="digit"><b></b><small>HOURS</small></span><span class="colon">:</span><span class="digit"><b></b><small>MINUTES</small></span>';
-    $$('.digit b',el).forEach((b,i)=>b.textContent=String(values[i]).padStart(2,'0'));
+    $$('.digit b',el).forEach((b,i)=>textIfChanged(b,String(values[i]).padStart(2,'0')));
   });
   $$('.countdown-target').forEach(el=>{
     const countdown=el.closest('#party')?(state.party_countdown||state.countdown):(state.sneak_peek?.christmas||state.countdown);
-    el.textContent=new Date(countdown.target).toLocaleDateString([],{timeZone:state.settings.timezone,month:'short',day:'numeric',year:'numeric'})+' · '+state.settings.timezone.split('/').pop().replaceAll('_',' ');
+    textIfChanged(el,countdownFormats.date.format(new Date(countdown.target))+' · '+zone.split('/').pop().replaceAll('_',' '));
   });
   sneakPeek.update(state.sneak_peek,elapsed);
-  $('#clock').textContent=new Date().toLocaleTimeString([],{timeZone:state.settings.timezone,hour:'2-digit',minute:'2-digit'});
+  textIfChanged($('#clock'),countdownFormats.time.format(new Date()));
 }
 function render() {
 

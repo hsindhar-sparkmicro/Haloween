@@ -20,8 +20,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/app.js": {
-    "mtime": 1793727577.670624,
-    "ast_hash": "d1d8edea2bf54275040eecda7d520e70",
+    "mtime": 1793740525.060969,
+    "ast_hash": "7ba3b158bc4b6015568af8f98693f7b7",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/weather.py": {
@@ -535,8 +535,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/sneak-peek.js": {
-    "mtime": 1793739120.2426107,
-    "ast_hash": "6c25f3a1506eb21fad8bcf8aa27c6b59",
+    "mtime": 1793740525.061969,
+    "ast_hash": "cbbf294ef06abd9d9267994a6ef1385b",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/scripts/check_sneak_peek.py": {
@@ -555,8 +555,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/SNEAK-PEEK.md": {
-    "mtime": 1793739685.8317413,
-    "ast_hash": "2ea36f719fcee839ed2022147b8674d0",
+    "mtime": 1793741207.519956,
+    "ast_hash": "260486b4c983159fd57d32dfd3b34e46",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/assets/sneak-peek/forest.png": {
@@ -575,8 +575,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/sneak-arrival.js": {
-    "mtime": 1793739120.2416105,
-    "ast_hash": "26efd9ce8a443773b053e9e04840d39c",
+    "mtime": 1793741085.083928,
+    "ast_hash": "adf46e982aecbf7bdf406b62cfa37ef1",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/scripts/check_sneak_arrival.py": {
@@ -690,18 +690,18 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/roaming-dog.js": {
-    "mtime": 1793739553.43227,
-    "ast_hash": "c3cdbd84e7b15384307dc93a8fdaa4cc",
+    "mtime": 1793741181.5055065,
+    "ast_hash": "635bcd2fab233450176c55be150f3bf7",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/scripts/check_roaming_dog.py": {
-    "mtime": 1793739553.43227,
-    "ast_hash": "8eaf5da16ef4cc0f508504dbbf6691be",
+    "mtime": 1793741149.1149755,
+    "ast_hash": "996da1e9705a6b11f39efe356cd1bc7f",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/design/roaming-dog-v1/README.md": {
-    "mtime": 1793739506.6988893,
-    "ast_hash": "c202ae8d5c1683f97116984f41b68dc0",
+    "mtime": 1793741207.5200946,
+    "ast_hash": "bc26ab0a8bda0d436fb9ecbc8246329b",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/design/roaming-dog-v1/generation-prompt.txt": {
@@ -737,6 +737,21 @@
   "/home/hsindhar/github/Haloween/halloween_hub/static/assets/sneak-peek/roaming-dog-turns-v2.png": {
     "mtime": 1793739120.1454859,
     "ast_hash": "5b5c33fbcd7c39d9e25fbfe7e7772ab8",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/scripts/check_roaming_pacing.py": {
+    "mtime": 1793741272.7870064,
+    "ast_hash": "ee0fdfb12609828e09c75c0ab48529ab",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/scripts/check_dashboard_refresh.py": {
+    "mtime": 1793740555.9114223,
+    "ast_hash": "4467a5491385a8828e2cee51f778555b",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/scripts/check_roaming_video_handoffs.py": {
+    "mtime": 1793741149.1289756,
+    "ast_hash": "4165d12e2189cb2955d1c80b73d10a6a",
     "semantic_hash": ""
   }
 }
