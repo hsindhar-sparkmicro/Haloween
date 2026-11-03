@@ -2014,7 +2014,7 @@
       "label": "$()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L4",
+      "source_location": "L3",
       "id": "static_sneak_peek",
       "community": 60,
       "norm_label": "$()"
@@ -2023,7 +2023,7 @@
       "label": "SneakAtmosphere",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L7",
+      "source_location": "L6",
       "id": "static_sneak_peek_sneakatmosphere",
       "community": 60,
       "norm_label": "sneakatmosphere"
@@ -2032,7 +2032,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L8",
+      "source_location": "L7",
       "id": "static_sneak_peek_sneakatmosphere_constructor",
       "community": 60,
       "norm_label": ".constructor()"
@@ -2041,7 +2041,7 @@
       "label": ".configure()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L20",
+      "source_location": "L18",
       "id": "static_sneak_peek_sneakatmosphere_configure",
       "community": 60,
       "norm_label": ".configure()"
@@ -2050,7 +2050,7 @@
       "label": ".resize()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L21",
+      "source_location": "L19",
       "id": "static_sneak_peek_sneakatmosphere_resize",
       "community": 60,
       "norm_label": ".resize()"
@@ -2059,7 +2059,7 @@
       "label": ".refresh()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L22",
+      "source_location": "L20",
       "id": "static_sneak_peek_sneakatmosphere_refresh",
       "community": 60,
       "norm_label": ".refresh()"
@@ -2068,7 +2068,7 @@
       "label": "gifts",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L43",
+      "source_location": "L41",
       "id": "static_sneak_peek_gifts",
       "community": 60,
       "norm_label": "gifts"
@@ -2077,7 +2077,7 @@
       "label": "SneakPeek",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L49",
+      "source_location": "L47",
       "id": "static_sneak_peek_sneakpeek",
       "community": 60,
       "norm_label": "sneakpeek"
@@ -2086,7 +2086,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L50",
+      "source_location": "L48",
       "id": "static_sneak_peek_sneakpeek_constructor",
       "community": 60,
       "norm_label": ".constructor()"
@@ -2095,7 +2095,7 @@
       "label": ".active()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L69",
+      "source_location": "L67",
       "id": "static_sneak_peek_sneakpeek_active",
       "community": 60,
       "norm_label": ".active()"
@@ -2104,7 +2104,7 @@
       "label": ".controls()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L70",
+      "source_location": "L68",
       "id": "static_sneak_peek_sneakpeek_controls",
       "community": 60,
       "norm_label": ".controls()"
@@ -2113,7 +2113,7 @@
       "label": ".volumeChanged()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L71",
+      "source_location": "L69",
       "id": "static_sneak_peek_sneakpeek_volumechanged",
       "community": 60,
       "norm_label": ".volumechanged()"
@@ -2122,7 +2122,7 @@
       "label": ".silence()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L72",
+      "source_location": "L70",
       "id": "static_sneak_peek_sneakpeek_silence",
       "community": 60,
       "norm_label": ".silence()"
@@ -2131,7 +2131,7 @@
       "label": ".stopJingles()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L78",
+      "source_location": "L76",
       "id": "static_sneak_peek_sneakpeek_stopjingles",
       "community": 60,
       "norm_label": ".stopjingles()"
@@ -2140,7 +2140,7 @@
       "label": ".activity()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L79",
+      "source_location": "L77",
       "id": "static_sneak_peek_sneakpeek_activity",
       "community": 60,
       "norm_label": ".activity()"
@@ -2149,7 +2149,7 @@
       "label": ".schedule()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L82",
+      "source_location": "L80",
       "id": "static_sneak_peek_sneakpeek_schedule",
       "community": 60,
       "norm_label": ".schedule()"
@@ -2158,7 +2158,7 @@
       "label": ".playJingle()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L83",
+      "source_location": "L81",
       "id": "static_sneak_peek_sneakpeek_playjingle",
       "community": 60,
       "norm_label": ".playjingle()"
@@ -2167,7 +2167,7 @@
       "label": ".rotateHeadline()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L100",
+      "source_location": "L98",
       "id": "static_sneak_peek_sneakpeek_rotateheadline",
       "community": 60,
       "norm_label": ".rotateheadline()"
@@ -2176,7 +2176,7 @@
       "label": ".update()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L118",
+      "source_location": "L116",
       "id": "static_sneak_peek_sneakpeek_update",
       "community": 60,
       "norm_label": ".update()"
@@ -2187,7 +2187,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L1",
       "id": "static_spark_showcase",
-      "community": 83,
+      "community": 32,
       "norm_label": "spark-showcase.js"
     },
     {
@@ -2196,7 +2196,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L2",
       "id": "static_spark_showcase_asset",
-      "community": 83,
+      "community": 32,
       "norm_label": "asset()"
     },
     {
@@ -2205,7 +2205,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L3",
       "id": "static_spark_showcase_products",
-      "community": 83,
+      "community": 32,
       "norm_label": "products"
     },
     {
@@ -2214,7 +2214,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L11",
       "id": "static_spark_showcase_productimage",
-      "community": 83,
+      "community": 32,
       "norm_label": "productimage()"
     },
     {
@@ -2223,7 +2223,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L16",
       "id": "static_spark_showcase_masthead",
-      "community": 83,
+      "community": 32,
       "norm_label": "masthead()"
     },
     {
@@ -2232,7 +2232,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L18",
       "id": "static_spark_showcase_sparkshowcase",
-      "community": 83,
+      "community": 32,
       "norm_label": "sparkshowcase"
     },
     {
@@ -2241,7 +2241,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L19",
       "id": "static_spark_showcase_sparkshowcase_constructor",
-      "community": 83,
+      "community": 32,
       "norm_label": ".constructor()"
     },
     {
@@ -2250,7 +2250,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L29",
       "id": "static_spark_showcase_sparkshowcase_show",
-      "community": 83,
+      "community": 32,
       "norm_label": ".show()"
     },
     {
@@ -2259,7 +2259,7 @@
       "source_file": "halloween_hub/static/spark-showcase.js",
       "source_location": "L34",
       "id": "static_spark_showcase_sparkshowcase_detail",
-      "community": 83,
+      "community": 32,
       "norm_label": ".detail()"
     },
     {
@@ -5452,7 +5452,7 @@
       "source_file": "tests/test_updates.py",
       "source_location": "L1",
       "id": "tests_test_updates",
-      "community": 81,
+      "community": 55,
       "norm_label": "test_updates.py"
     },
     {
@@ -6336,6 +6336,159 @@
       "id": "validation_independent_roaming_dog_prototype_2026_11_03",
       "community": 20,
       "norm_label": "independent roaming dog prototype (2026-11-03)"
+    },
+    {
+      "label": "Display-refresh dog rendering and video edge handoffs (2026-11-03)",
+      "file_type": "document",
+      "source_file": "VALIDATION.md",
+      "source_location": "L308",
+      "id": "validation_display_refresh_dog_rendering_and_video_edge_handoffs_2026_11_03",
+      "community": 20,
+      "norm_label": "display-refresh dog rendering and video edge handoffs (2026-11-03)"
+    },
+    {
+      "label": "GROK-DOG-ANIMATION-BRIEF.md",
+      "file_type": "document",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L1",
+      "id": "dog_animation_v2_grok_dog_animation_brief",
+      "community": 83,
+      "norm_label": "grok-dog-animation-brief.md"
+    },
+    {
+      "label": "Natural dog animation \u2014 replacement asset brief",
+      "file_type": "document",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L1",
+      "id": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
+      "community": 83,
+      "norm_label": "natural dog animation \u2014 replacement asset brief"
+    },
+    {
+      "label": "Reference to attach",
+      "file_type": "document",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L5",
+      "id": "dog_animation_v2_grok_dog_animation_brief_reference_to_attach",
+      "community": 83,
+      "norm_label": "reference to attach"
+    },
+    {
+      "label": "Shared direction \u2014 prepend to every prompt",
+      "file_type": "document",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L11",
+      "id": "dog_animation_v2_grok_dog_animation_brief_shared_direction_prepend_to_every_prompt",
+      "community": 83,
+      "norm_label": "shared direction \u2014 prepend to every prompt"
+    },
+    {
+      "label": "1. Happy, attentive idle \u2014 `idle-happy-right`",
+      "file_type": "document",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L19",
+      "id": "dog_animation_v2_grok_dog_animation_brief_1_happy_attentive_idle_idle_happy_right",
+      "community": 83,
+      "norm_label": "1. happy, attentive idle \u2014 `idle-happy-right`"
+    },
+    {
+      "label": "2. Genuine gentle run \u2014 `run-right`",
+      "file_type": "document",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L25",
+      "id": "dog_animation_v2_grok_dog_animation_brief_2_genuine_gentle_run_run_right",
+      "community": 83,
+      "norm_label": "2. genuine gentle run \u2014 `run-right`"
+    },
+    {
+      "label": "3. Calm walk \u2014 `walk-right`",
+      "file_type": "document",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L33",
+      "id": "dog_animation_v2_grok_dog_animation_brief_3_calm_walk_walk_right",
+      "community": 83,
+      "norm_label": "3. calm walk \u2014 `walk-right`"
+    },
+    {
+      "label": "4. Planted turn \u2014 `turn-right-to-left`",
+      "file_type": "document",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L39",
+      "id": "dog_animation_v2_grok_dog_animation_brief_4_planted_turn_turn_right_to_left",
+      "community": 83,
+      "norm_label": "4. planted turn \u2014 `turn-right-to-left`"
+    },
+    {
+      "label": "5. Sniff and look up \u2014 `sniff-right`",
+      "file_type": "document",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L47",
+      "id": "dog_animation_v2_grok_dog_animation_brief_5_sniff_and_look_up_sniff_right",
+      "community": 83,
+      "norm_label": "5. sniff and look up \u2014 `sniff-right`"
+    },
+    {
+      "label": "6. Notice the next scene \u2014 `alert-right`",
+      "file_type": "document",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L53",
+      "id": "dog_animation_v2_grok_dog_animation_brief_6_notice_the_next_scene_alert_right",
+      "community": 83,
+      "norm_label": "6. notice the next scene \u2014 `alert-right`"
+    },
+    {
+      "label": "7. Start and settle \u2014 `start-run-right`, `run-stop-right`",
+      "file_type": "document",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L59",
+      "id": "dog_animation_v2_grok_dog_animation_brief_7_start_and_settle_start_run_right_run_stop_right",
+      "community": 83,
+      "norm_label": "7. start and settle \u2014 `start-run-right`, `run-stop-right`"
+    },
+    {
+      "label": "Left-facing versions",
+      "file_type": "document",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L67",
+      "id": "dog_animation_v2_grok_dog_animation_brief_left_facing_versions",
+      "community": 83,
+      "norm_label": "left-facing versions"
+    },
+    {
+      "label": "Visual acceptance before app integration",
+      "file_type": "document",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L71",
+      "id": "dog_animation_v2_grok_dog_animation_brief_visual_acceptance_before_app_integration",
+      "community": 83,
+      "norm_label": "visual acceptance before app integration"
+    },
+    {
+      "label": "Delivery",
+      "file_type": "document",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L84",
+      "id": "dog_animation_v2_grok_dog_animation_brief_delivery",
+      "community": 83,
+      "norm_label": "delivery"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "design/dog-animation-v2/README.md",
+      "source_location": "L1",
+      "id": "dog_animation_v2_readme",
+      "community": 92,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Natural dog replacement",
+      "file_type": "document",
+      "source_file": "design/dog-animation-v2/README.md",
+      "source_location": "L1",
+      "id": "dog_animation_v2_readme_natural_dog_replacement",
+      "community": 92,
+      "norm_label": "natural dog replacement"
     },
     {
       "label": "README.md",
@@ -11895,7 +12048,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L4",
+      "source_location": "L3",
       "weight": 1.0,
       "source": "static_sneak_peek",
       "target": "static_sneak_peek",
@@ -17308,6 +17461,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "VALIDATION.md",
+      "source_location": "L308",
+      "weight": 1.0,
+      "source": "validation_validation_record_october_14_2026",
+      "target": "validation_display_refresh_dog_rendering_and_video_edge_handoffs_2026_11_03",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "VALIDATION.md",
       "source_location": "L282",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -17627,6 +17790,146 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "dog_animation_v2_grok_dog_animation_brief",
+      "target": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
+      "target": "dog_animation_v2_grok_dog_animation_brief_1_happy_attentive_idle_idle_happy_right",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
+      "target": "dog_animation_v2_grok_dog_animation_brief_2_genuine_gentle_run_run_right",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
+      "target": "dog_animation_v2_grok_dog_animation_brief_3_calm_walk_walk_right",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
+      "target": "dog_animation_v2_grok_dog_animation_brief_4_planted_turn_turn_right_to_left",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
+      "target": "dog_animation_v2_grok_dog_animation_brief_5_sniff_and_look_up_sniff_right",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
+      "target": "dog_animation_v2_grok_dog_animation_brief_6_notice_the_next_scene_alert_right",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
+      "target": "dog_animation_v2_grok_dog_animation_brief_7_start_and_settle_start_run_right_run_stop_right",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
+      "target": "dog_animation_v2_grok_dog_animation_brief_delivery",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
+      "target": "dog_animation_v2_grok_dog_animation_brief_left_facing_versions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
+      "target": "dog_animation_v2_grok_dog_animation_brief_reference_to_attach",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
+      "target": "dog_animation_v2_grok_dog_animation_brief_shared_direction_prepend_to_every_prompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "dog_animation_v2_grok_dog_animation_brief_natural_dog_animation_replacement_asset_brief",
+      "target": "dog_animation_v2_grok_dog_animation_brief_visual_acceptance_before_app_integration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design/dog-animation-v2/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "dog_animation_v2_readme",
+      "target": "dog_animation_v2_readme_natural_dog_replacement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "design/roaming-dog-v1/README.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -17636,5 +17939,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "2afec07b4a5a633cf69bf731003a73595bd54ceb"
+  "built_at_commit": "04f117f9c255f37b71de29779f726ed15c9198a0"
 }

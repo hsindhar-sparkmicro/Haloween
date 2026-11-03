@@ -14,4 +14,4 @@ Research checked on 2026-11-03:
 - [Blender Studio DOGWALK animation process](https://studio.blender.org/blog/animations-for-dogwalk/): its deliberately held, stop-motion poses conflict with the requested fluid motion unless re-authored; do not adopt it unchanged as a smoothness fix.
 - [Border collie puppy model by Jack.LaLonde](https://sketchfab.com/3d-models/puppy-border-collie-poly-art-0a0b504f51a94d95a2d492d3c372ebe5): lists walk, run and idle under CC Attribution, but the listing does not establish facial controls or a matching appearance.
 
-No new animation quality claim or Pi qualification is made by this brief. The current live app is unchanged while the replacement-asset route is selected.
+No new animation quality claim or Pi qualification is made by this brief. The roaming overlay is now disabled at the user’s request; only the original dog video is active. This replacement brief is retained for later work.

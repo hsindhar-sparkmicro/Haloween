@@ -320,3 +320,9 @@ The final **600-second native Pi run** observed **14,799 active dog frames at 60
 Ten dog films and ten main arrivals completed, all muted at browser rate 1× (intended motion speeds remain encoded). Main start intervals ranged from 59.855 to 60.161 seconds. Across both film types, Chromium reported 46 dropped frames out of 5,490 (0.838%), including clip startup. The run included snow, autumn leaves and calm intervals, with no page errors. [Full native report](validation/roaming-handoffs/pi/ten-minute.json).
 
 The dog timing figures use Chromium animation timestamps, exclude deliberate offscreen/video/dialog pauses, and estimate missed refresh opportunities. They do not measure physical panel scanout or GPU completion. Video counters are separate from those animation estimates.
+
+## Dog video only — roaming overlay disabled (2026-11-03)
+
+Removed the roaming-dog import, construction and configuration from the live atmosphere. The prototype files remain archived, but no overlay canvas, module or sprite assets are loaded, including through old `?dog=both` and `?dog=roaming` links. The supplied dog film retains its encoded 0.80× speed, muted playback and return to the same still background. The background scheduler naturally resumes its five-second still gaps without the roaming character.
+
+A local Brave check passed default/legacy URLs, zero roaming module or asset requests, correct dog-film duration/rate/mute state, and return to the resting still, with no page errors. Evidence: `validation/dog-video-only/report.json`. The Pi received the matching runtime file and was restarted in normal kiosk mode; its backend and kiosk services are active. This removal does not make a new long-run performance claim.

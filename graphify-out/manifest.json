@@ -130,8 +130,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/VALIDATION.md": {
-    "mtime": 1793739707.6801288,
-    "ast_hash": "4792d2b0efcc9d6a25f31c8d31698bfc",
+    "mtime": 1793741931.547235,
+    "ast_hash": "42c7abcffb1698ed11a151fa0a500135",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/API.md": {
@@ -535,8 +535,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/sneak-peek.js": {
-    "mtime": 1793740525.061969,
-    "ast_hash": "cbbf294ef06abd9d9267994a6ef1385b",
+    "mtime": 1793743059.6413946,
+    "ast_hash": "55ae409fc31f6cdb9a12d9635c97e0d9",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/scripts/check_sneak_peek.py": {
@@ -752,6 +752,16 @@
   "/home/hsindhar/github/Haloween/scripts/check_roaming_video_handoffs.py": {
     "mtime": 1793741149.1289756,
     "ast_hash": "4165d12e2189cb2955d1c80b73d10a6a",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/design/dog-animation-v2/GROK-DOG-ANIMATION-BRIEF.md": {
+    "mtime": 1793742589.8926837,
+    "ast_hash": "1aacd4ac28f20653aadef7e8beebee30",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/design/dog-animation-v2/README.md": {
+    "mtime": 1793742589.8946838,
+    "ast_hash": "edbb8fc32abd6a96f5abedb591fceb01",
     "semantic_hash": ""
   }
 }

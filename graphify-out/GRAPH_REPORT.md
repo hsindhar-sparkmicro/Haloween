@@ -1,16 +1,16 @@
 # Graph Report - Haloween  (2026-11-03)
 
 ## Corpus Check
-- 105 files · ~1,550,142 words
+- 107 files · ~1,552,488 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 725 nodes · 1063 edges · 92 communities (33 shown, 59 thin omitted)
+- 742 nodes · 1078 edges · 93 communities (33 shown, 60 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 10 edges (avg confidence: 0.56)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `2afec07b`
+- Built from commit: `04f117f9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -102,6 +102,7 @@
 - [[_COMMUNITY_Community 89|Community 89]]
 - [[_COMMUNITY_Community 90|Community 90]]
 - [[_COMMUNITY_Community 91|Community 91]]
+- [[_COMMUNITY_Community 92|Community 92]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `$()` - 68 edges
@@ -130,7 +131,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (92 total, 59 thin omitted)
+## Communities (93 total, 60 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.22
@@ -157,16 +158,16 @@ Cohesion: 0.33
 Nodes (5): Artwork generation, Decorative night weather, Immersive scene backgrounds, Monster reveal atlas, SPARK product showcase
 
 ### Community 20 - "Community 20"
-Cohesion: 0.06
-Nodes (35): Added background and cutscene rotation, Added Dracula backgrounds and cutscene, Animated scene player correction, Camera orientation correction, Clearly visible floating weather, sound details and countdown, Completed checks, Dog visit between stable forest backgrounds (2026-11-03), Explicit validation boundaries (+27 more)
+Cohesion: 0.05
+Nodes (36): Added background and cutscene rotation, Added Dracula backgrounds and cutscene, Animated scene player correction, Camera orientation correction, Clearly visible floating weather, sound details and countdown, Completed checks, Display-refresh dog rendering and video edge handoffs (2026-11-03), Dog visit between stable forest backgrounds (2026-11-03) (+28 more)
 
 ### Community 21 - "Community 21"
 Cohesion: 0.29
 Nodes (6): Hidden motion camera and encounters, Local API, Local scene-effect library, Optional camera, Settings, Welcome cutscene
 
 ### Community 32 - "Community 32"
-Cohesion: 0.16
-Nodes (7): $(), riddles, stories, icon(), icons, monsterNames, Visitor
+Cohesion: 0.11
+Nodes (12): asset(), masthead(), productImage(), products, SparkShowcase, $(), riddles, stories (+4 more)
 
 ### Community 38 - "Community 38"
 Cohesion: 0.07
@@ -225,7 +226,7 @@ Cohesion: 0.31
 Nodes (3): Calendar facts for the isolated November sneak-peek edition., sneak_peek_calendar(), SneakPeekCalendarTests
 
 ### Community 81 - "Community 81"
-Cohesion: 0.32
+Cohesion: 0.38
 Nodes (3): data_directory(), Copy local PNG backgrounds into application data, deduplicated by content., Copy browser-compatible cutscene files into app data; preserve source files.
 
 ### Community 82 - "Community 82"
@@ -233,8 +234,8 @@ Cohesion: 0.15
 Nodes (12): animations, idle, lower, raise, sniff, walk, frames, height (+4 more)
 
 ### Community 83 - "Community 83"
-Cohesion: 0.39
-Nodes (5): asset(), masthead(), productImage(), products, SparkShowcase
+Cohesion: 0.14
+Nodes (13): 1. Happy, attentive idle — `idle-happy-right`, 2. Genuine gentle run — `run-right`, 3. Calm walk — `walk-right`, 4. Planted turn — `turn-right-to-left`, 5. Sniff and look up — `sniff-right`, 6. Notice the next scene — `alert-right`, 7. Start and settle — `start-run-right`, `run-stop-right`, Delivery (+5 more)
 
 ### Community 84 - "Community 84"
 Cohesion: 0.40
@@ -245,24 +246,24 @@ Cohesion: 0.40
 Nodes (4): frames, height, image, width
 
 ## Knowledge Gaps
-- **172 isolated node(s):** `image`, `width`, `height`, `frames`, `lastRotation` (+167 more)
+- **186 isolated node(s):** `image`, `width`, `height`, `frames`, `lastRotation` (+181 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **59 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **60 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `$()` connect `Community 2` to `Community 32`, `Community 3`, `Community 38`, `Community 90`, `Community 60`?**
-  _High betweenness centrality (0.077) - this node is a cross-community bridge._
+  _High betweenness centrality (0.073) - this node is a cross-community bridge._
 - **Why does `$()` connect `Community 60` to `Community 73`, `Community 2`, `Community 38`, `Community 70`?**
-  _High betweenness centrality (0.040) - this node is a cross-community bridge._
+  _High betweenness centrality (0.038) - this node is a cross-community bridge._
 - **Why does `create_app()` connect `Community 0` to `Community 1`, `Community 5`, `Community 78`, `Community 79`, `Community 80`, `Community 81`, `Community 55`, `Community 88`, `Community 26`, `Community 27`?**
-  _High betweenness centrality (0.020) - this node is a cross-community bridge._
+  _High betweenness centrality (0.019) - this node is a cross-community bridge._
 - **What connects `image`, `width`, `height` to the rest of the system?**
-  _239 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _253 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.059322033898305086 - nodes in this community are weakly interconnected._
 - **Should `Community 4` be split into smaller, more focused modules?**
   _Cohesion score 0.1 - nodes in this community are weakly interconnected._
 - **Should `Community 20` be split into smaller, more focused modules?**
-  _Cohesion score 0.05555555555555555 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05405405405405406 - nodes in this community are weakly interconnected._
