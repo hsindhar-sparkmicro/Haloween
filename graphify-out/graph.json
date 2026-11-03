@@ -1429,7 +1429,7 @@
       "label": ".eligible()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L22",
+      "source_location": "L23",
       "id": "static_sneak_arrival_sneakarrival_eligible",
       "community": 67,
       "norm_label": ".eligible()"
@@ -1438,7 +1438,7 @@
       "label": ".configure()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L26",
+      "source_location": "L27",
       "id": "static_sneak_arrival_sneakarrival_configure",
       "community": 67,
       "norm_label": ".configure()"
@@ -1447,7 +1447,7 @@
       "label": ".schedule()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L32",
+      "source_location": "L33",
       "id": "static_sneak_arrival_sneakarrival_schedule",
       "community": 67,
       "norm_label": ".schedule()"
@@ -1456,7 +1456,7 @@
       "label": ".check()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L37",
+      "source_location": "L38",
       "id": "static_sneak_arrival_sneakarrival_check",
       "community": 67,
       "norm_label": ".check()"
@@ -1465,7 +1465,7 @@
       "label": ".later()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L44",
+      "source_location": "L45",
       "id": "static_sneak_arrival_sneakarrival_later",
       "community": 67,
       "norm_label": ".later()"
@@ -1474,16 +1474,25 @@
       "label": ".clearCycle()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L45",
+      "source_location": "L46",
       "id": "static_sneak_arrival_sneakarrival_clearcycle",
       "community": 67,
       "norm_label": ".clearcycle()"
     },
     {
+      "label": ".returnToHalloween()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L47",
+      "id": "static_sneak_arrival_sneakarrival_returntohalloween",
+      "community": 67,
+      "norm_label": ".returntohalloween()"
+    },
+    {
       "label": ".start()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L46",
+      "source_location": "L66",
       "id": "static_sneak_arrival_sneakarrival_start",
       "community": 67,
       "norm_label": ".start()"
@@ -1492,7 +1501,7 @@
       "label": ".finish()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L73",
+      "source_location": "L100",
       "id": "static_sneak_arrival_sneakarrival_finish",
       "community": 67,
       "norm_label": ".finish()"
@@ -2709,6 +2718,33 @@
       "id": "scripts_check_final_ui_rationale_1",
       "community": 22,
       "norm_label": "modal error feedback, failed-edit rollback, countdown separation and effects."
+    },
+    {
+      "label": "check_halloween_return.py",
+      "file_type": "code",
+      "source_file": "scripts/check_halloween_return.py",
+      "source_location": "L1",
+      "id": "scripts_check_halloween_return",
+      "community": 64,
+      "norm_label": "check_halloween_return.py"
+    },
+    {
+      "label": "state()",
+      "file_type": "code",
+      "source_file": "scripts/check_halloween_return.py",
+      "source_location": "L19",
+      "id": "scripts_check_halloween_return_state",
+      "community": 64,
+      "norm_label": "state()"
+    },
+    {
+      "label": "Check the adventure link's slow return and seamless replay behind the dashboard.",
+      "file_type": "rationale",
+      "source_file": "scripts/check_halloween_return.py",
+      "source_location": "L1",
+      "id": "scripts_check_halloween_return_rationale_1",
+      "community": 64,
+      "norm_label": "check the adventure link's slow return and seamless replay behind the dashboard."
     },
     {
       "label": "check_hidden_camera.py",
@@ -8551,9 +8587,9 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_arrival_sneakarrival",
-      "target": "static_sneak_arrival_sneakarrival_clearcycle",
-      "confidence_score": 1.0
+      "target": "static_sneak_arrival_sneakarrival_clearcycle"
     },
     {
       "relation": "method",
@@ -8619,11 +8655,21 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "halloween_hub/static/sneak-arrival.js",
-      "source_location": "L32",
+      "source_location": "L47",
       "weight": 1.0,
       "source": "static_sneak_arrival_sneakarrival",
-      "target": "static_sneak_arrival_sneakarrival_schedule",
+      "target": "static_sneak_arrival_sneakarrival_returntohalloween",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "static_sneak_arrival_sneakarrival",
+      "target": "static_sneak_arrival_sneakarrival_schedule"
     },
     {
       "relation": "method",
@@ -8675,7 +8721,18 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_arrival_sneakarrival_finish",
+      "target": "static_sneak_arrival_sneakarrival_eligible"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival_returntohalloween",
       "target": "static_sneak_arrival_sneakarrival_eligible",
       "confidence_score": 1.0
     },
@@ -8730,9 +8787,9 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_arrival_sneakarrival_check",
-      "target": "static_sneak_arrival_sneakarrival_schedule",
-      "confidence_score": 1.0
+      "target": "static_sneak_arrival_sneakarrival_schedule"
     },
     {
       "relation": "calls",
@@ -8741,9 +8798,9 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_arrival_sneakarrival_start",
-      "target": "static_sneak_arrival_sneakarrival_schedule",
-      "confidence_score": 1.0
+      "target": "static_sneak_arrival_sneakarrival_schedule"
     },
     {
       "relation": "calls",
@@ -8783,6 +8840,17 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival_returntohalloween",
+      "target": "static_sneak_arrival_sneakarrival_later",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L51",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -8796,7 +8864,18 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_arrival_sneakarrival_finish",
+      "target": "static_sneak_arrival_sneakarrival_clearcycle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival_returntohalloween",
       "target": "static_sneak_arrival_sneakarrival_clearcycle",
       "confidence_score": 1.0
     },
@@ -8807,8 +8886,19 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_arrival_sneakarrival_start",
-      "target": "static_sneak_arrival_sneakarrival_clearcycle",
+      "target": "static_sneak_arrival_sneakarrival_clearcycle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-arrival.js",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "static_sneak_arrival_sneakarrival_returntohalloween",
+      "target": "static_sneak_arrival_sneakarrival_finish",
       "confidence_score": 1.0
     },
     {
@@ -11228,6 +11318,26 @@
       "target": "scripts_check_final_ui"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check_halloween_return.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "scripts_check_halloween_return",
+      "target": "scripts_check_halloween_return_state",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check_halloween_return.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_check_halloween_return_rationale_1",
+      "target": "scripts_check_halloween_return",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "scripts/check_hidden_camera.py",
@@ -11463,9 +11573,9 @@
       "source_file": "scripts/check_sneak_arrival.py",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_check_sneak_arrival",
-      "target": "scripts_check_sneak_arrival_start",
-      "confidence_score": 1.0
+      "target": "scripts_check_sneak_arrival_start"
     },
     {
       "relation": "contains",
@@ -11483,9 +11593,9 @@
       "source_file": "scripts/check_sneak_arrival.py",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_check_sneak_arrival",
-      "target": "scripts_check_sneak_arrival_still",
-      "confidence_score": 1.0
+      "target": "scripts_check_sneak_arrival_still"
     },
     {
       "relation": "rationale_for",
@@ -11515,9 +11625,9 @@
       "source_file": "scripts/check_sneak_arrival.py",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_check_sneak_arrival_start",
-      "target": "scripts_check_sneak_arrival_state",
-      "confidence_score": 1.0
+      "target": "scripts_check_sneak_arrival_state"
     },
     {
       "relation": "calls",
@@ -11526,9 +11636,9 @@
       "source_file": "scripts/check_sneak_arrival.py",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_check_sneak_arrival_still",
-      "target": "scripts_check_sneak_arrival_state",
-      "confidence_score": 1.0
+      "target": "scripts_check_sneak_arrival_state"
     },
     {
       "relation": "rationale_for",
@@ -13185,5 +13295,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "00890f313f259083bdfa5d0806a1588a4b68860c"
+  "built_at_commit": "30df221725f198e67bd21e885ae0d5c90d62aa93"
 }

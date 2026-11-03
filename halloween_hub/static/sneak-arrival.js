@@ -7,17 +7,18 @@ export class SneakArrival {
   constructor(){
     this.root=document.querySelector('#dashboard');
     this.layer=document.querySelector('#peek-arrival');
+    this.returnLayer=document.querySelector('#peek-halloween-return');
     this.video=this.layer.querySelector('video');
     this.motion=matchMedia('(prefers-reduced-motion: reduce)');
-    this.settings={};this.running=false;this.fading=false;this.generation=0;
+    this.settings={};this.running=false;this.fading=false;this.returning=false;this.generation=0;
     this.timers=[];this.next=0;this.configured=false;this.disposed=false;
     this.motion.addEventListener('change',()=>this.check());
     document.addEventListener('visibilitychange',()=>this.check());
     window.addEventListener('pagehide',()=>{this.disposed=true;this.check();});
     window.addEventListener('pageshow',()=>{this.disposed=false;this.check();});
     new MutationObserver(()=>this.check()).observe(document.body,{subtree:true,attributes:true,attributeFilter:['class','open']});
-    this.video.addEventListener('error',()=>{if(this.running)this.finish();});
-    this.video.addEventListener('ended',()=>{if(this.running)this.finish();});
+    this.video.addEventListener('error',()=>{if(this.running&&!this.returning)this.finish();});
+    this.video.addEventListener('ended',()=>{if(this.running&&!this.returning)this.finish();});
   }
   eligible(){
     return !this.disposed&&!document.hidden&&!this.motion.matches&&!this.settings.reduced_motion&&
@@ -43,10 +44,31 @@ export class SneakArrival {
   }
   later(callback,ms){this.timers.push(setTimeout(callback,ms));}
   clearCycle(){this.timers.forEach(clearTimeout);this.timers=[];clearInterval(this.watchdog);}
-  async start(){
+  async returnToHalloween(){
+    if(this.returning||!this.eligible())return;
+    clearTimeout(this.next);this.next=0;this.clearCycle();
+    const run=++this.generation;this.running=true;this.fading=false;this.returning=true;
+    // Preserve the current picture, even if clicked midway through a dissolve.
+    const opacity=getComputedStyle(this.layer).opacity;
+    this.layer.style.transition='none';this.layer.style.opacity=opacity;this.video.pause();
+    this.root.classList.add('arrival-playing');this.root.dataset.arrival='return-loading';
+    const poster=new Image();poster.src=ASSETS+'arrival-start.png';
+    this.later(()=>{if(this.returning)this.finish();},10000);
+    try{
+      await poster.decode();if(run!==this.generation||!this.returning)return;
+      this.clearCycle();this.returnLayer.hidden=false;
+      this.returnLayer.classList.remove('visible');
+      this.returnLayer.getBoundingClientRect(); // Establish the transparent starting frame.
+      this.returnLayer.classList.add('visible');this.root.dataset.arrival='returning';
+      this.later(()=>{this.running=false;this.returning=false;this.start(true);},DISSOLVE_MS+50);
+    }catch{if(run===this.generation)this.finish();}
+  }
+  async start(fromHalloween=false){
     if(this.running||this.fading||!this.eligible())return;
     this.clearCycle();this.schedule();
     const run=++this.generation;this.running=true;
+    this.layer.style.removeProperty('opacity');
+    this.layer.style.transition=fromHalloween?'none':'';
     this.layer.hidden=false;this.layer.classList.remove('settling','presented');
     this.root.classList.add('arrival-playing');this.root.dataset.arrival='loading';
     this.video.muted=true;this.video.playbackRate=1;this.video.loop=false;
@@ -60,6 +82,11 @@ export class SneakArrival {
       const present=()=>{
         if(run!==this.generation||!this.running)return;
         this.clearCycle();this.layer.classList.add('presented');this.root.dataset.arrival='playing';
+        if(fromHalloween){
+          // The poster and the first film frame match, so this handoff needs no cut to black.
+          this.layer.getBoundingClientRect();this.returnLayer.hidden=true;
+          this.returnLayer.classList.remove('visible');this.layer.style.removeProperty('transition');
+        }
         let last=this.video.currentTime,changed=performance.now();
         this.watchdog=setInterval(()=>{
           if(this.video.currentTime>last){last=this.video.currentTime;changed=performance.now();}
@@ -72,12 +99,14 @@ export class SneakArrival {
   }
   finish(immediate=false){
     if(!this.running&&!this.fading)return;
-    this.running=false;this.fading=true;++this.generation;this.clearCycle();this.video.pause();
+    this.running=false;this.fading=true;this.returning=false;++this.generation;this.clearCycle();this.video.pause();
     this.root.dataset.arrival='settling';
     // Keep the last decoded frame until the slow dissolve exposes the forest underneath.
-    this.layer.classList.add('settling');
+    this.layer.style.removeProperty('opacity');this.layer.style.removeProperty('transition');
+    this.layer.classList.add('settling');this.returnLayer.classList.remove('visible');
     const release=()=>{
       this.fading=false;this.layer.hidden=true;this.video.removeAttribute('src');this.video.load();
+      this.returnLayer.hidden=true;
       this.root.classList.remove('arrival-playing');this.root.dataset.arrival='resting';
     };
     if(immediate||!this.eligible())release();else this.later(release,DISSOLVE_MS+50);

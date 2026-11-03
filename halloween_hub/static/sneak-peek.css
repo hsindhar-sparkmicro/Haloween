@@ -23,3 +23,9 @@ body.sneak-peek{background:#0c1320;color:#f8eedb}.sneak-peek #app{height:100dvh;
 .sneak-peek .welcome-vignette{z-index:2}
 @media(max-width:600px){#peek-arrival{height:600px}#peek-arrival video{top:100px;height:500px;object-position:58% center}}
 @media(prefers-reduced-motion:reduce){#peek-arrival{transition:none}}.reduced-motion #peek-arrival{transition:none}
+
+/* Manual journey back to the exact opening picture, beneath the same foreground UI. */
+#peek-halloween-return{position:absolute;inset:0;z-index:1;pointer-events:none;background:url('/static/assets/sneak-peek/arrival-start.png') center/cover no-repeat;opacity:0;transition:opacity 4.8s ease}
+#peek-halloween-return[hidden]{display:none}#peek-halloween-return.visible{opacity:1}
+@media(max-width:600px){#peek-halloween-return{height:600px;background-size:auto 500px;background-position:58% 100px}}
+@media(prefers-reduced-motion:reduce){#peek-halloween-return{transition:none}}.reduced-motion #peek-halloween-return{transition:none}

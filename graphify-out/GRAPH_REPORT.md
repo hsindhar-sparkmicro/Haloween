@@ -1,16 +1,16 @@
 # Graph Report - Haloween  (2026-11-03)
 
 ## Corpus Check
-- 86 files · ~1,185,052 words
+- 87 files · ~1,185,430 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 543 nodes · 792 edges · 68 communities (22 shown, 46 thin omitted)
+- 547 nodes · 799 edges · 69 communities (22 shown, 47 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.65)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `00890f31`
+- Built from commit: `30df2217`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -74,6 +74,7 @@
 - [[_COMMUNITY_Community 61|Community 61]]
 - [[_COMMUNITY_Community 62|Community 62]]
 - [[_COMMUNITY_Community 63|Community 63]]
+- [[_COMMUNITY_Community 64|Community 64]]
 - [[_COMMUNITY_Community 65|Community 65]]
 - [[_COMMUNITY_Community 66|Community 66]]
 - [[_COMMUNITY_Community 67|Community 67]]
@@ -106,7 +107,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (68 total, 46 thin omitted)
+## Communities (69 total, 47 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -179,19 +180,19 @@ Nodes (5): Check real background video, a real one-minute repeat, and interrupti
 ## Knowledge Gaps
 - **110 isolated node(s):** `lastRotation`, `player`, `ambience`, `effect`, `cue` (+105 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **46 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **47 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `$()` connect `Community 2` to `Community 32`, `Community 3`, `Community 60`, `Community 38`?**
-  _High betweenness centrality (0.105) - this node is a cross-community bridge._
+  _High betweenness centrality (0.104) - this node is a cross-community bridge._
 - **Why does `$()` connect `Community 60` to `Community 2`, `Community 67`?**
   _High betweenness centrality (0.027) - this node is a cross-community bridge._
 - **Why does `Visitor` connect `Community 32` to `Community 2`?**
   _High betweenness centrality (0.023) - this node is a cross-community bridge._
 - **What connects `Halloween Hub: offline-first entertainment kiosk.`, `Hidden motion scans with physical capture shutdown between scan windows.`, `Hidden Pi motion scan. Only numerical scores leave this process.` to the rest of the system?**
-  _165 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _166 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06516290726817042 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

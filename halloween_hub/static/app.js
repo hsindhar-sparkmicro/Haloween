@@ -100,7 +100,7 @@ const expressions = [
 ];
 let expression = 0;
 function changeFace() {$('#face').innerHTML = $('#face-glow').innerHTML = expressions[expression++ % expressions.length];}
-changeFace(); $('#pumpkin').addEventListener('click', triggerVisitor);
+changeFace(); $('#pumpkin').addEventListener('click',()=>welcomeAtmosphere.arrival.returnToHalloween());
 setInterval(() => {if(currentScreen === 'dashboard' && !visitor.active && !document.hidden && !state?.settings.reduced_motion) changeFace();}, 10000);
 
 function unlockAudio() {
