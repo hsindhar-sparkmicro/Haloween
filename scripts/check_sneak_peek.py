@@ -13,7 +13,6 @@ with sync_playwright() as p:
     browser = p.chromium.launch()
     context = browser.new_context()
     context.add_init_script('''(() => {
-      localStorage.setItem('spark-sneak-arrival-v1','done');
       const Base=window.AudioContext; window.audioProbe={starts:0,ends:0};
       window.AudioContext=class extends Base {createOscillator(){const osc=super.createOscillator();
         const start=osc.start.bind(osc);osc.start=(...args)=>{audioProbe.starts++;return start(...args)};
@@ -56,6 +55,7 @@ with sync_playwright() as p:
     tab.set_viewport_size({'width':1280,'height':720})
     tab.goto(args.url)
     tab.wait_for_function('() => document.querySelector("#connection").textContent.includes("Connected")')
+    tab.wait_for_function('() => document.querySelector("#dashboard").dataset.arrival==="resting"',timeout=25000)
     tab.wait_for_function('() => document.querySelector("#night-weather-canvas").dataset.weather==="snow"',timeout=16000)
     tab.wait_for_timeout(2200)
     assert tab.locator('#night-weather-canvas').evaluate('(e)=>e.getContext("2d").getImageData(0,0,e.width,e.height).data.some((v,i)=>i%4===3&&v>0)')

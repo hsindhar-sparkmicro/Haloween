@@ -95,8 +95,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/index.html": {
-    "mtime": 1793725667.26897,
-    "ast_hash": "fba79132239b864bc27eb000ad0a877e",
+    "mtime": 1793726031.5323799,
+    "ast_hash": "af194873488d3a0bd58c12af9bda46dd",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/requirements-dev.txt": {
@@ -535,13 +535,13 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/sneak-peek.js": {
-    "mtime": 1793724226.8878362,
-    "ast_hash": "0974794869571b4148c96a579eca6a3f",
+    "mtime": 1793726066.5893767,
+    "ast_hash": "32145d2f888ed502d1c747b89e54128e",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/scripts/check_sneak_peek.py": {
-    "mtime": 1793724276.8527095,
-    "ast_hash": "9d707cfa209c28b752516b74357f61f3",
+    "mtime": 1793726066.5896559,
+    "ast_hash": "e3324edfa910f831fde794dd1ab71636",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/sneak-peek-artwork.json": {
@@ -555,8 +555,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/SNEAK-PEEK.md": {
-    "mtime": 1793725667.2698011,
-    "ast_hash": "1491233882f16b91aeec8ecc9af70edd",
+    "mtime": 1793726066.589993,
+    "ast_hash": "79ad3071116905837ebf2aeb6e406ae0",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/assets/sneak-peek/forest.png": {
@@ -575,13 +575,13 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/sneak-arrival.js": {
-    "mtime": 1793725667.2696135,
-    "ast_hash": "2f0452776600f6d45a1f6b7113ae08e8",
+    "mtime": 1793726031.4952443,
+    "ast_hash": "7603d33894b21e02453fc1224735c868",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/scripts/check_sneak_arrival.py": {
-    "mtime": 1793724371.188747,
-    "ast_hash": "0ca667069d2ef44eae33d152facb3c11",
+    "mtime": 1793726066.6468136,
+    "ast_hash": "864d6cfe3b26cc57595de715ecb2ed45",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/design-sneak-fusion-prompt.txt": {

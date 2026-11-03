@@ -60,7 +60,7 @@ export class SneakPeek {
     document.addEventListener('visibilitychange',()=>this.activity());
     window.addEventListener('pagehide',()=>this.stopJingles());
   }
-  active(){return !$('#dashboard').classList.contains('arrival-playing')&&!document.hidden&&$('#dashboard').classList.contains('active')&&!$('dialog[open]');}
+  active(){return !document.hidden&&$('#dashboard').classList.contains('active')&&!$('dialog[open]');}
   controls(){this.button.textContent=this.enabled?'♫ Pause festive jingles':'♫ Enable festive jingles';this.button.setAttribute('aria-pressed',String(this.enabled));}
   volumeChanged(){if(this.master){const audio=this.audio();this.master.gain.setTargetAtTime(audio.volume*.18,audio.context.currentTime,.03);}}
   silence(){
