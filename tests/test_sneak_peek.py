@@ -45,9 +45,22 @@ class SneakPeekCalendarTests(unittest.TestCase):
                 self.assertTrue(state['party_countdown']['target'].startswith('2030-10-20'))
                 self.assertIn('-10-31', state['countdown']['target'])
                 self.assertEqual(state['settings']['party_date'], '2030-10-20T20:00')
+                self.assertEqual(state['sneak_peek']['spark_party']['target'], '2026-12-09T17:00:00-05:00')
             finally:
                 app.extensions['camera'].close()
                 app.extensions['simulation'].close()
+
+    def test_spark_party_fixed_montreal_time_and_boundary(self):
+        before = datetime(2026, 12, 9, 21, 59, 59, tzinfo=timezone.utc)
+        party = sneak_peek_calendar('Europe/Paris', before)['spark_party']
+        self.assertEqual(party['target'], '2026-12-09T17:00:00-05:00')
+        self.assertEqual(party['seconds'], 1)
+        self.assertEqual(party['phase'], 'upcoming')
+        self.assertEqual(datetime.fromisoformat(party['target']).weekday(), 2)
+        at_start = sneak_peek_calendar('America/Toronto', datetime(2026, 12, 9, 22, tzinfo=timezone.utc))['spark_party']
+        self.assertEqual((at_start['seconds'], at_start['phase']), (0, 'today'))
+        next_year = sneak_peek_calendar('America/Toronto', datetime(2027, 1, 1, tzinfo=timezone.utc))['spark_party']
+        self.assertEqual((next_year['seconds'], next_year['phase']), (0, 'past'))
 
 
 if __name__ == '__main__':

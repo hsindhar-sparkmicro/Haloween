@@ -29,3 +29,22 @@ body.sneak-peek{background:#0c1320;color:#f8eedb}.sneak-peek #app{height:100dvh;
 #peek-halloween-return[hidden]{display:none}#peek-halloween-return.visible{opacity:1}
 @media(max-width:600px){#peek-halloween-return{height:600px;background-size:auto 500px;background-position:58% 100px}}
 @media(prefers-reduced-motion:reduce){#peek-halloween-return{transition:none}}.reduced-motion #peek-halloween-return{transition:none}
+
+/* Gifts join the lower cards, leaving the illustration open above them. */
+.peek-strip{grid-template-columns:1fr .95fr 1.25fr;align-items:center}
+.peek-strip .peek-gifts{position:static;transform:none;justify-self:center;max-width:100%;white-space:normal}
+.peek-party time{font-size:10px;color:#b2c8cf;line-height:1.4}.peek-party #peek-party-countdown{font-size:17px;letter-spacing:.3px;color:#f2d398;font-variant-numeric:tabular-nums;white-space:nowrap}
+.peek-card{min-height:126px}.sneak-peek #night-weather{bottom:166px}.sneak-peek #dashboard .pumpkin-stage{bottom:180px}
+.sneak-peek #peek-headline{min-height:2.16em;white-space:nowrap;transition:opacity .35s ease}.sneak-peek #peek-headline.headline-fading{opacity:0}
+@media(max-height:800px) and (min-width:601px),(max-width:1050px) and (min-width:601px){
+ .peek-strip{grid-template-columns:1fr .9fr 1.3fr;gap:8px}.peek-card{min-height:80px;padding:8px 10px;gap:3px}.peek-party strong{font-size:16px}.peek-party time{font-size:8px}.peek-party #peek-party-countdown{font-size:12px;letter-spacing:0}.peek-strip .peek-gifts{padding:9px 10px;font-size:10px}.peek-strip .peek-gifts small{font-size:7px}
+ .sneak-peek #night-weather{bottom:94px}.sneak-peek #dashboard .pumpkin-stage{bottom:110px}.peek-jingle{bottom:98px}.peek-defrost{height:64px}.peek-defrost .peek-kicker{display:none}
+}
+@media(min-width:1051px) and (max-height:800px){.peek-card{min-height:100px}.peek-party strong{font-size:21px}.peek-party time{font-size:10px}.peek-party #peek-party-countdown{font-size:16px}.peek-jingle{bottom:120px}.peek-defrost{height:86px}.peek-defrost .peek-kicker{display:block}.sneak-peek #night-weather{bottom:122px}.sneak-peek #dashboard .pumpkin-stage{bottom:138px}}
+@media(max-width:600px){
+ .peek-strip{grid-template-columns:1fr 1fr;align-items:stretch}.peek-full{grid-column:auto}.peek-party{grid-column:1/-1}.peek-card{min-height:85px}.peek-party time{font-size:10px}.peek-strip .peek-gifts{align-self:center;font-size:11px;padding:10px}.peek-strip .peek-gifts>span{font-size:16px}.peek-strip .peek-gifts small{font-size:8px}
+ .sneak-peek #dashboard .pumpkin-stage{bottom:auto}.sneak-peek #night-weather{bottom:auto}
+}
+@media(prefers-reduced-motion:reduce){.sneak-peek #peek-headline{transition:none}}.reduced-motion #peek-headline{transition:none}
+
+@media(max-width:600px){.sneak-peek .welcome-space{height:1180px;min-height:1180px}}

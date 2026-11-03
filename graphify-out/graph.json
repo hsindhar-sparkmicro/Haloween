@@ -1591,7 +1591,7 @@
       "label": ".active()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L63",
+      "source_location": "L64",
       "id": "static_sneak_peek_sneakpeek_active",
       "community": 60,
       "norm_label": ".active()"
@@ -1600,7 +1600,7 @@
       "label": ".controls()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L64",
+      "source_location": "L65",
       "id": "static_sneak_peek_sneakpeek_controls",
       "community": 60,
       "norm_label": ".controls()"
@@ -1609,7 +1609,7 @@
       "label": ".volumeChanged()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L65",
+      "source_location": "L66",
       "id": "static_sneak_peek_sneakpeek_volumechanged",
       "community": 60,
       "norm_label": ".volumechanged()"
@@ -1618,7 +1618,7 @@
       "label": ".silence()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L66",
+      "source_location": "L67",
       "id": "static_sneak_peek_sneakpeek_silence",
       "community": 60,
       "norm_label": ".silence()"
@@ -1627,7 +1627,7 @@
       "label": ".stopJingles()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L72",
+      "source_location": "L73",
       "id": "static_sneak_peek_sneakpeek_stopjingles",
       "community": 60,
       "norm_label": ".stopjingles()"
@@ -1636,7 +1636,7 @@
       "label": ".activity()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L73",
+      "source_location": "L74",
       "id": "static_sneak_peek_sneakpeek_activity",
       "community": 60,
       "norm_label": ".activity()"
@@ -1645,7 +1645,7 @@
       "label": ".schedule()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L76",
+      "source_location": "L77",
       "id": "static_sneak_peek_sneakpeek_schedule",
       "community": 60,
       "norm_label": ".schedule()"
@@ -1654,16 +1654,25 @@
       "label": ".playJingle()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L77",
+      "source_location": "L78",
       "id": "static_sneak_peek_sneakpeek_playjingle",
       "community": 60,
       "norm_label": ".playjingle()"
     },
     {
+      "label": ".rotateHeadline()",
+      "file_type": "code",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L95",
+      "id": "static_sneak_peek_sneakpeek_rotateheadline",
+      "community": 60,
+      "norm_label": ".rotateheadline()"
+    },
+    {
       "label": ".update()",
       "file_type": "code",
       "source_file": "halloween_hub/static/sneak-peek.js",
-      "source_location": "L94",
+      "source_location": "L113",
       "id": "static_sneak_peek_sneakpeek_update",
       "community": 60,
       "norm_label": ".update()"
@@ -3170,6 +3179,24 @@
       "norm_label": "check real background video, a real one-minute repeat, and interruption recovery"
     },
     {
+      "label": "check_sneak_party.py",
+      "file_type": "code",
+      "source_file": "scripts/check_sneak_party.py",
+      "source_location": "L1",
+      "id": "scripts_check_sneak_party",
+      "community": 69,
+      "norm_label": "check_sneak_party.py"
+    },
+    {
+      "label": "Verify the event card and every rotating headline at actual responsive sizes.",
+      "file_type": "rationale",
+      "source_file": "scripts/check_sneak_party.py",
+      "source_location": "L1",
+      "id": "scripts_check_sneak_party_rationale_1",
+      "community": 69,
+      "norm_label": "verify the event card and every rotating headline at actual responsive sizes."
+    },
+    {
       "label": "check_sneak_peek.py",
       "file_type": "code",
       "source_file": "scripts/check_sneak_peek.py",
@@ -4151,6 +4178,15 @@
       "norm_label": ".test_party_settings_and_halloween_countdown_preserved()"
     },
     {
+      "label": ".test_spark_party_fixed_montreal_time_and_boundary()",
+      "file_type": "code",
+      "source_file": "tests/test_sneak_peek.py",
+      "source_location": "L53",
+      "id": "tests_test_sneak_peek_sneakpeekcalendartests_test_spark_party_fixed_montreal_time_and_boundary",
+      "community": 0,
+      "norm_label": ".test_spark_party_fixed_montreal_time_and_boundary()"
+    },
+    {
       "label": "API.md",
       "file_type": "document",
       "source_file": "API.md",
@@ -4442,7 +4478,7 @@
       "label": "Local preview",
       "file_type": "document",
       "source_file": "SNEAK-PEEK.md",
-      "source_location": "L17",
+      "source_location": "L18",
       "id": "sneak_peek_local_preview",
       "community": 65,
       "norm_label": "local preview"
@@ -4451,7 +4487,7 @@
       "label": "Checks",
       "file_type": "document",
       "source_file": "SNEAK-PEEK.md",
-      "source_location": "L27",
+      "source_location": "L28",
       "id": "sneak_peek_checks",
       "community": 65,
       "norm_label": "checks"
@@ -4460,7 +4496,7 @@
       "label": "Dates and artwork sources",
       "file_type": "document",
       "source_file": "SNEAK-PEEK.md",
-      "source_location": "L40",
+      "source_location": "L41",
       "id": "sneak_peek_dates_and_artwork_sources",
       "community": 65,
       "norm_label": "dates and artwork sources"
@@ -4469,7 +4505,7 @@
       "label": "Supplied Halloween transition and fused forest",
       "file_type": "document",
       "source_file": "SNEAK-PEEK.md",
-      "source_location": "L48",
+      "source_location": "L49",
       "id": "sneak_peek_supplied_halloween_transition_and_fused_forest",
       "community": 65,
       "norm_label": "supplied halloween transition and fused forest"
@@ -6508,6 +6544,17 @@
       "source_location": "L11",
       "weight": 1.0,
       "source": "tests_test_sneak_peek_sneakpeekcalendartests_test_november_calendar",
+      "target": "halloween_hub_sneak_peek_sneak_peek_calendar"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_sneak_peek.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "tests_test_sneak_peek_sneakpeekcalendartests_test_spark_party_fixed_montreal_time_and_boundary",
       "target": "halloween_hub_sneak_peek_sneak_peek_calendar"
     },
     {
@@ -8657,9 +8704,9 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_arrival_sneakarrival",
-      "target": "static_sneak_arrival_sneakarrival_returntohalloween",
-      "confidence_score": 1.0
+      "target": "static_sneak_arrival_sneakarrival_returntohalloween"
     },
     {
       "relation": "method",
@@ -8732,9 +8779,9 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_arrival_sneakarrival_returntohalloween",
-      "target": "static_sneak_arrival_sneakarrival_eligible",
-      "confidence_score": 1.0
+      "target": "static_sneak_arrival_sneakarrival_eligible"
     },
     {
       "relation": "calls",
@@ -8842,9 +8889,9 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_arrival_sneakarrival_returntohalloween",
-      "target": "static_sneak_arrival_sneakarrival_later",
-      "confidence_score": 1.0
+      "target": "static_sneak_arrival_sneakarrival_later"
     },
     {
       "relation": "calls",
@@ -8875,9 +8922,9 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_arrival_sneakarrival_returntohalloween",
-      "target": "static_sneak_arrival_sneakarrival_clearcycle",
-      "confidence_score": 1.0
+      "target": "static_sneak_arrival_sneakarrival_clearcycle"
     },
     {
       "relation": "calls",
@@ -8897,9 +8944,9 @@
       "source_file": "halloween_hub/static/sneak-arrival.js",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_arrival_sneakarrival_returntohalloween",
-      "target": "static_sneak_arrival_sneakarrival_finish",
-      "confidence_score": 1.0
+      "target": "static_sneak_arrival_sneakarrival_finish"
     },
     {
       "relation": "calls",
@@ -9045,6 +9092,17 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek_rotateheadline",
+      "target": "static_sneak_peek",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L95",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -9167,6 +9225,16 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L95",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek",
+      "target": "static_sneak_peek_sneakpeek_rotateheadline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L74",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -9234,6 +9302,17 @@
       "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek_playjingle",
       "target": "static_sneak_peek_sneakpeek_active"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek_rotateheadline",
+      "target": "static_sneak_peek_sneakpeek_active",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -9322,6 +9401,17 @@
       "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek_playjingle",
       "target": "static_sneak_peek_sneakpeek_schedule"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "halloween_hub/static/sneak-peek.js",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "static_sneak_peek_sneakpeek_update",
+      "target": "static_sneak_peek_sneakpeek_rotateheadline",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -11323,9 +11413,9 @@
       "source_file": "scripts/check_halloween_return.py",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_check_halloween_return",
-      "target": "scripts_check_halloween_return_state",
-      "confidence_score": 1.0
+      "target": "scripts_check_halloween_return_state"
     },
     {
       "relation": "rationale_for",
@@ -11333,9 +11423,9 @@
       "source_file": "scripts/check_halloween_return.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_check_halloween_return_rationale_1",
-      "target": "scripts_check_halloween_return",
-      "confidence_score": 1.0
+      "target": "scripts_check_halloween_return"
     },
     {
       "relation": "rationale_for",
@@ -11639,6 +11729,16 @@
       "confidence_score": 1.0,
       "source": "scripts_check_sneak_arrival_still",
       "target": "scripts_check_sneak_arrival_state"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check_sneak_party.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_check_sneak_party_rationale_1",
+      "target": "scripts_check_sneak_party",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -12624,6 +12724,16 @@
       "target": "tests_test_sneak_peek_sneakpeekcalendartests_test_party_settings_and_halloween_countdown_preserved"
     },
     {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_sneak_peek.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "tests_test_sneak_peek_sneakpeekcalendartests",
+      "target": "tests_test_sneak_peek_sneakpeekcalendartests_test_spark_party_fixed_montreal_time_and_boundary",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "API.md",
@@ -13295,5 +13405,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "30df221725f198e67bd21e885ae0d5c90d62aa93"
+  "built_at_commit": "1761dace083a18c731678b60f32ced5a26f0b739"
 }

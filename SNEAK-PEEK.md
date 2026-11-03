@@ -11,7 +11,8 @@ Created November 3, 2026 on the separate local `christmas-sneak-peek` branch, ba
 - Mariah's playful defrost meter advances from November 1 to December 1. This is a calendar joke, not live artist information.
 - Quiet original bell motifs play only after **Enable festive jingles**. They respect global mute and volume. Repeats are spaced randomly 32–60 seconds apart, pause for dialogs/other screens/hidden tabs, and start disabled on reload.
 - Decorative flurries start after a random 5–12-second opening calm. Later 18–42-second calm gaps alternate with a random choice favoring snow over autumn leaves. The canvas uses bounded particles and a 30 FPS ceiling; dialogs, hidden tabs and reduced motion suppress it. Forecast data is independent.
-- Black Friday and Boxing Day are calendar teasers, not live offers or guaranteed discounts. The current-year dates become “today” or “wrapped for this year” instead of showing stale negative countdowns.
+- The bottom row now holds the Christmas House preview, the wrapped-gifts button and a SPARK Christmas Party card: **Dîner de fin d’année**, Wednesday, December 9, 2026 at 5:00 PM Montréal time. Its days/hours/minutes/seconds countdown is independent of saved custom party dates. The Black Friday and Boxing Day cards have been removed.
+- Four two-line headlines rotate every 12 active seconds with a gentle fade: Halloween fades / Christmas stirs; Santa’s on his way / With gifts for you; More festive magic / Stay for the reveal; The Christmas app / Arrives December 1. Rotation pauses for dialogs, hidden tabs, other screens and reduced motion.
 - The existing Halloween adventures, haunted controls, party management and simulated detector remain available. The main branch's backend and kiosk controls are retained.
 
 ## Local preview
@@ -39,7 +40,7 @@ Validated November 3, 2026: all 28 Python tests passed; the existing `scripts/ch
 
 ## Dates and artwork sources
 
-Black Friday is the Friday after the fourth Thursday of November: November 27 in 2026, as listed by [Best Buy Canada](https://www.bestbuy.ca/en-ca/collection/black-friday/413517). Boxing Day is December 26; use the calendar date rather than a substitute bank closure date. See [Time and Date's Canadian Boxing Day calendar](https://www.timeanddate.com/holidays/canada/boxing-day). Dates checked November 3, 2026.
+The SPARK event date and the December 1 full-app teaser were supplied by the user. The event is fixed to `2026-12-09T17:00:00-05:00` (`America/Toronto`), even if another display timezone is selected. It does not roll forward to another year. At the start time the card says “It’s time to celebrate!”; after the event day it says “Thank you for celebrating!”.
 
 The original generated prompt and asset provenance are in [sneak-peek-artwork.json](sneak-peek-artwork.json). The full-version preview images come from the committed review package, while product photos remain the existing main assets. No copied Mariah recording, song melody or generated singing is included.
 
@@ -72,3 +73,5 @@ The `--browser` path is optional and should point to an installed H.264-capable 
 Latest background-cycle validation: the measured start-to-start interval was 59.98 seconds. Text/cards remained visible and interactive at 800×480, 1280×720, 1920×1080 and phone size; keyboard focus stayed on the foreground control. The 4.8-second dissolve, dialogs/hidden tabs/navigation/reduced motion, and stalled/missing video checks passed. Brave reported 1 dropped frame out of 294 (0.34%) during a short run that also captured screenshots and resized the viewport. The existing app regression and teaser browser checks passed without page errors. Physical Pi qualification remains pending.
 
 The adventure-link sequence is checked with `.venv/bin/python scripts/check_halloween_return.py --browser /usr/bin/brave-browser`. The return took 4.917 seconds before presenting the new film. Resting/mid-film clicks, repeated clicks, foreground controls/focus, dialogs and reduced motion passed with no page errors or old encounter API requests.
+
+Party/headline validation: all 29 Python tests passed, including the fixed Montréal event timestamp, its Wednesday weekday, the start-time boundary, display-timezone independence and preservation of custom party dates. `scripts/check_sneak_party.py` verified the live countdown and all four naturally rotating headlines at 800×480, 1280×720, 1920×1080 and phone size, including reduced-motion pause. The teaser and existing app browser regressions passed without page errors or overflow.

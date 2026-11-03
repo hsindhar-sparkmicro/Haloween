@@ -393,7 +393,7 @@ function renderCountdown() {
     const countdown=el.closest('#party')?(state.party_countdown||state.countdown):(state.sneak_peek?.christmas||state.countdown);
     el.textContent=new Date(countdown.target).toLocaleDateString([],{timeZone:state.settings.timezone,month:'short',day:'numeric',year:'numeric'})+' · '+state.settings.timezone.split('/').pop().replaceAll('_',' ');
   });
-  sneakPeek.update(state.sneak_peek);
+  sneakPeek.update(state.sneak_peek,elapsed);
   $('#clock').textContent=new Date().toLocaleTimeString([],{timeZone:state.settings.timezone,hour:'2-digit',minute:'2-digit'});
 }
 function render() {

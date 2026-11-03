@@ -1,16 +1,16 @@
 # Graph Report - Haloween  (2026-11-03)
 
 ## Corpus Check
-- 87 files · ~1,185,430 words
+- 88 files · ~1,185,779 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 547 nodes · 799 edges · 69 communities (22 shown, 47 thin omitted)
-- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.65)
+- 551 nodes · 806 edges · 70 communities (22 shown, 48 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.65)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `30df2217`
+- Built from commit: `1761dace`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -79,6 +79,7 @@
 - [[_COMMUNITY_Community 66|Community 66]]
 - [[_COMMUNITY_Community 67|Community 67]]
 - [[_COMMUNITY_Community 68|Community 68]]
+- [[_COMMUNITY_Community 69|Community 69]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `$()` - 66 edges
@@ -89,8 +90,8 @@
 6. `CameraTests` - 18 edges
 7. `Hidden camera and visitor adventures (supersedes preview/mirror behavior above)` - 18 edges
 8. `ScenePlayer` - 17 edges
-9. `HubTests` - 16 edges
-10. `Halloween Hub` - 16 edges
+9. `$()` - 16 edges
+10. `HubTests` - 16 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `MediaTests` --uses--> `Store`  [INFERRED]
@@ -107,10 +108,10 @@
 ## Import Cycles
 - None detected.
 
-## Communities (69 total, 47 thin omitted)
+## Communities (70 total, 48 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.07
+Cohesion: 0.06
 Nodes (19): create_app(), countdown(), data_directory(), backgrounds(), cutscenes(), Discover only installed gallery media in app data., main(), import_audio() (+11 more)
 
 ### Community 1 - "Community 1"
@@ -180,21 +181,21 @@ Nodes (5): Check real background video, a real one-minute repeat, and interrupti
 ## Knowledge Gaps
 - **110 isolated node(s):** `lastRotation`, `player`, `ambience`, `effect`, `cue` (+105 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **47 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **48 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `$()` connect `Community 2` to `Community 32`, `Community 3`, `Community 60`, `Community 38`?**
-  _High betweenness centrality (0.104) - this node is a cross-community bridge._
+  _High betweenness centrality (0.103) - this node is a cross-community bridge._
 - **Why does `$()` connect `Community 60` to `Community 2`, `Community 67`?**
-  _High betweenness centrality (0.027) - this node is a cross-community bridge._
+  _High betweenness centrality (0.028) - this node is a cross-community bridge._
 - **Why does `Visitor` connect `Community 32` to `Community 2`?**
-  _High betweenness centrality (0.023) - this node is a cross-community bridge._
+  _High betweenness centrality (0.022) - this node is a cross-community bridge._
 - **What connects `Halloween Hub: offline-first entertainment kiosk.`, `Hidden motion scans with physical capture shutdown between scan windows.`, `Hidden Pi motion scan. Only numerical scores leave this process.` to the rest of the system?**
-  _166 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _167 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.06516290726817042 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06412583182093164 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.14624505928853754 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**

@@ -33,7 +33,7 @@ with sync_playwright() as p:
             assert tab.evaluate('document.documentElement.scrollHeight<=innerHeight')
             # The new action controls and seasonal cards must not overlap each other.
             overlaps=tab.evaluate('''() => {
-              const els=[...document.querySelectorAll('.peek-gifts,.peek-defrost,.peek-jingle,.peek-strip,.welcome-countdown,.welcome-weather')];
+              const els=[...document.querySelectorAll('.peek-strip > *, .peek-defrost,.peek-jingle,.welcome-countdown,.welcome-weather')];
               let bad=[];els.forEach((a,i)=>els.slice(i+1).forEach(b=>{let r=a.getBoundingClientRect(),s=b.getBoundingClientRect();
                 if(Math.min(r.right,s.right)-Math.max(r.left,s.left)>2 && Math.min(r.bottom,s.bottom)-Math.max(r.top,s.top)>2)bad.push([a.className,b.className]);}));return bad;}''')
             assert not overlaps, (w, overlaps)

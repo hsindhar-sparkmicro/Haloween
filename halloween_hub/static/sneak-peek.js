@@ -43,6 +43,7 @@ const gifts={
 
 export class SneakPeek {
   constructor({audio,unlock}){
+    this.headlineTick=performance.now();this.headlineElapsed=0;this.headlineTimer=0;this.headlineText="";
     this.audio=audio;this.unlock=unlock;this.enabled=false;this.timer=0;this.voices=[];this.master=null;
     this.button=$('#peek-jingle');this.button.addEventListener('click',()=>{
       if(this.enabled)this.stopJingles();else{this.unlock();this.enabled=true;this.controls();this.playJingle();}
@@ -91,18 +92,37 @@ export class SneakPeek {
       }
     });this.schedule();
   }
-  update(calendar){
+  rotateHeadline(christmas){
+    const now=performance.now();
+    const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches||document.body.classList.contains('reduced-motion');
+    if(this.active()&&!reduced)this.headlineElapsed+=Math.min(1000,now-this.headlineTick);
+    this.headlineTick=now;
+    const headlines=[
+      'Halloween fades.<br><em>Christmas stirs.</em>',
+      'Santa’s on his way.<br><em>With gifts for you.</em>',
+      'More festive magic.<br><em>Stay for the reveal.</em>',
+      'The Christmas app.<br><em>Arrives December 1.</em>'
+    ];
+    const text=christmas.phase==='today'?'Christmas is here.<br><em>Let the magic in.</em>':christmas.phase==='past'?'Keep the wonder.<br><em>Christmas lingers.</em>':headlines[Math.floor(this.headlineElapsed/12000)%headlines.length];
+    if(text===this.headlineText)return;
+    const initial=!this.headlineText;this.headlineText=text;clearTimeout(this.headlineTimer);
+    const heading=$('#peek-headline');
+    const show=()=>{heading.innerHTML=text;heading.classList.remove('headline-fading');};
+    if(initial||reduced)show();else{heading.classList.add('headline-fading');this.headlineTimer=setTimeout(show,350);}
+  }
+  update(calendar,elapsed=0){
     if(!calendar)return;
     const christmas=calendar.christmas;
-    $('#peek-headline').innerHTML=christmas.phase==='today'?'Christmas is here.<br><em>Let the magic in.</em>':christmas.phase==='past'?'Keep the wonder.<br><em>Christmas lingers.</em>':'Halloween fades.<br><em>Christmas stirs.</em>';
+    this.rotateHeadline(christmas);
     const percent=calendar.defrost_percent;
     $('#peek-defrost-value').textContent=percent+'%';$('.peek-meter').setAttribute('aria-valuenow',percent);$('.peek-meter span').style.width=percent+'%';
     $('.peek-defrost h2').textContent=percent===100?'Mariah has defrosted.':'Mariah is defrosting…';
     $('#peek-defrost-caption').textContent=percent===100?'December mode: unlocked':'warming up for December';
-    for(const [key,id,title] of [['black_friday','black-friday','Sales season is coming'],['boxing_day','boxing-day','Loading the next surprise…']]){
-      const event=calendar[key];const date=new Date(event.target).toLocaleDateString('en-CA',{timeZone:calendar.timezone,month:'short',day:'numeric'});
-      $('#peek-'+id).textContent=event.phase==='today'?(key==='black_friday'?'Black Friday is here':'Boxing Day unlocked'):event.phase==='past'?'Wrapped for this year':title;
-      $('#peek-'+id+'-date').textContent=date+' · '+(event.phase==='upcoming'?event.days+' days to go':event.phase==='today'?'Today':'Until next time');
+    const party=calendar.spark_party;
+    if(party){
+      const seconds=Math.max(0,Math.floor(party.seconds-elapsed));
+      const values=[Math.floor(seconds/86400),Math.floor(seconds/3600)%24,Math.floor(seconds/60)%60,seconds%60];
+      $('#peek-party-countdown').textContent=party.phase==='past'?'Thank you for celebrating!':seconds===0?'It’s time to celebrate!':values.map((n,i)=>String(n).padStart(2,'0')+['d','h','m','s'][i]).join(' · ');
     }
   }
 }
