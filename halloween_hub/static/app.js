@@ -2,6 +2,7 @@ import {ScenePlayer} from './scene-player.js';
 import {Visitor} from './visitor.js';
 import {SneakAtmosphere as WelcomeAtmosphere, SneakPeek} from './sneak-peek.js';
 import {EffectShuffle} from './effect-shuffle.js';
+import {setupWelcomeChrome} from './welcome-chrome.js';
 const $ = (q, root = document) => root.querySelector(q);
 const $$ = (q, root = document) => [...root.querySelectorAll(q)];
 let state, currentScreen = 'dashboard', lastInteraction = 0, lastRotation = Date.now();
@@ -13,7 +14,8 @@ const player = $('#music-player'), ambience = $('#ambience-player'), effect = $(
 const scenePlayer = new ScenePlayer($('#scene-canvas'));
 const welcomeAtmosphere=new WelcomeAtmosphere($('#welcome-atmosphere'));
 const ambientShuffle=new EffectShuffle();
-// The teaser keeps navigation visible; the full-screen Halloween chrome stays available in its own branch.
+// Keep the scene immersive; a tap or keyboard navigation reveals the bars.
+setupWelcomeChrome();
 const sneakPeek = new SneakPeek({audio:()=>({enabled:audioEnabled,context,volume:(state?.settings.volume??40)/100}),unlock:unlockAudio});
 let ambientGeneration=0;
 function showScene() {

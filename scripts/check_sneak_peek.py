@@ -72,6 +72,7 @@ with sync_playwright() as p:
     tab.wait_for_function('() => document.querySelector("#night-weather-canvas").dataset.weather==="still"')
     tab.wait_for_function('() => audioProbe.ends===audioProbe.starts')
     tab.keyboard.press('Escape')
+    tab.keyboard.press('Escape')
     tab.locator('#sound-toggle').click()
     assert tab.locator('#peek-jingle').get_attribute('aria-pressed') == 'false'
     tab.emulate_media(reduced_motion='reduce')
@@ -79,6 +80,7 @@ with sync_playwright() as p:
     assert tab.locator('#night-weather-canvas').evaluate('(e)=>!e.getContext("2d").getImageData(0,0,e.width,e.height).data.some((v,i)=>i%4===3&&v>0)')
     tab.emulate_media(reduced_motion='no-preference')
     for screen in ['haunt','party','detector','dashboard']:
+        tab.keyboard.press('Escape')
         tab.locator(f'[data-screen="{screen}"]').click()
         assert tab.locator('#'+screen).evaluate('(e)=>e.classList.contains("active")')
     # Reload preserves opt-in silence, even after an enabled audio session.

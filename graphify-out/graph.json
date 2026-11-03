@@ -493,7 +493,7 @@
       "label": "$()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L5",
+      "source_location": "L6",
       "id": "static_app",
       "community": 2,
       "norm_label": "$()"
@@ -502,7 +502,7 @@
       "label": "lastRotation",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L7",
+      "source_location": "L8",
       "id": "static_app_lastrotation",
       "community": 2,
       "norm_label": "lastrotation"
@@ -511,7 +511,7 @@
       "label": "player",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L12",
+      "source_location": "L13",
       "id": "static_app_player",
       "community": 2,
       "norm_label": "player"
@@ -520,7 +520,7 @@
       "label": "ambience",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L12",
+      "source_location": "L13",
       "id": "static_app_ambience",
       "community": 2,
       "norm_label": "ambience"
@@ -529,7 +529,7 @@
       "label": "effect",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L12",
+      "source_location": "L13",
       "id": "static_app_effect",
       "community": 2,
       "norm_label": "effect"
@@ -538,7 +538,7 @@
       "label": "cue",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L12",
+      "source_location": "L13",
       "id": "static_app_cue",
       "community": 2,
       "norm_label": "cue"
@@ -547,7 +547,7 @@
       "label": "scenePlayer",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L13",
+      "source_location": "L14",
       "id": "static_app_sceneplayer",
       "community": 2,
       "norm_label": "sceneplayer"
@@ -556,7 +556,7 @@
       "label": "welcomeAtmosphere",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L14",
+      "source_location": "L15",
       "id": "static_app_welcomeatmosphere",
       "community": 2,
       "norm_label": "welcomeatmosphere"
@@ -565,7 +565,7 @@
       "label": "ambientShuffle",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L15",
+      "source_location": "L16",
       "id": "static_app_ambientshuffle",
       "community": 2,
       "norm_label": "ambientshuffle"
@@ -574,7 +574,7 @@
       "label": "sneakPeek",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L17",
+      "source_location": "L19",
       "id": "static_app_sneakpeek",
       "community": 2,
       "norm_label": "sneakpeek"
@@ -583,7 +583,7 @@
       "label": "showScene()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L19",
+      "source_location": "L21",
       "id": "static_app_showscene",
       "community": 2,
       "norm_label": "showscene()"
@@ -592,7 +592,7 @@
       "label": "introResume",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L28",
+      "source_location": "L30",
       "id": "static_app_introresume",
       "community": 2,
       "norm_label": "introresume"
@@ -601,7 +601,7 @@
       "label": "visitor",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L29",
+      "source_location": "L31",
       "id": "static_app_visitor",
       "community": 2,
       "norm_label": "visitor"
@@ -610,7 +610,7 @@
       "label": "triggerVisitor()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L38",
+      "source_location": "L40",
       "id": "static_app_triggervisitor",
       "community": 2,
       "norm_label": "triggervisitor()"
@@ -619,7 +619,7 @@
       "label": "screens",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L43",
+      "source_location": "L45",
       "id": "static_app_screens",
       "community": 2,
       "norm_label": "screens"
@@ -628,7 +628,7 @@
       "label": "recipes",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L44",
+      "source_location": "L46",
       "id": "static_app_recipes",
       "community": 2,
       "norm_label": "recipes"
@@ -637,7 +637,7 @@
       "label": "toast()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L55",
+      "source_location": "L57",
       "id": "static_app_toast",
       "community": 2,
       "norm_label": "toast()"
@@ -646,7 +646,7 @@
       "label": "api()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L60",
+      "source_location": "L62",
       "id": "static_app_api",
       "community": 2,
       "norm_label": "api()"
@@ -655,7 +655,7 @@
       "label": "action()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L69",
+      "source_location": "L71",
       "id": "static_app_action",
       "community": 2,
       "norm_label": "action()"
@@ -664,7 +664,7 @@
       "label": "navigate()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L72",
+      "source_location": "L74",
       "id": "static_app_navigate",
       "community": 2,
       "norm_label": "navigate()"
@@ -673,7 +673,7 @@
       "label": "openDialog()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L80",
+      "source_location": "L82",
       "id": "static_app_opendialog",
       "community": 2,
       "norm_label": "opendialog()"
@@ -682,7 +682,7 @@
       "label": "expressions",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L95",
+      "source_location": "L97",
       "id": "static_app_expressions",
       "community": 2,
       "norm_label": "expressions"
@@ -691,7 +691,7 @@
       "label": "changeFace()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L102",
+      "source_location": "L104",
       "id": "static_app_changeface",
       "community": 2,
       "norm_label": "changeface()"
@@ -700,7 +700,7 @@
       "label": "unlockAudio()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L106",
+      "source_location": "L108",
       "id": "static_app_unlockaudio",
       "community": 2,
       "norm_label": "unlockaudio()"
@@ -709,7 +709,7 @@
       "label": "updateVolume()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L123",
+      "source_location": "L125",
       "id": "static_app_updatevolume",
       "community": 2,
       "norm_label": "updatevolume()"
@@ -718,7 +718,7 @@
       "label": "muteAudio()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L131",
+      "source_location": "L133",
       "id": "static_app_muteaudio",
       "community": 2,
       "norm_label": "muteaudio()"
@@ -727,7 +727,7 @@
       "label": "ambientControl()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L142",
+      "source_location": "L144",
       "id": "static_app_ambientcontrol",
       "community": 2,
       "norm_label": "ambientcontrol()"
@@ -736,7 +736,7 @@
       "label": "stopAmbience()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L146",
+      "source_location": "L148",
       "id": "static_app_stopambience",
       "community": 2,
       "norm_label": "stopambience()"
@@ -745,7 +745,7 @@
       "label": "nextAmbientEffect()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L147",
+      "source_location": "L149",
       "id": "static_app_nextambienteffect",
       "community": 2,
       "norm_label": "nextambienteffect()"
@@ -754,7 +754,7 @@
       "label": "startEqualizer()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L161",
+      "source_location": "L163",
       "id": "static_app_startequalizer",
       "community": 2,
       "norm_label": "startequalizer()"
@@ -763,7 +763,7 @@
       "label": "stopCues()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L172",
+      "source_location": "L174",
       "id": "static_app_stopcues",
       "community": 2,
       "norm_label": "stopcues()"
@@ -772,7 +772,7 @@
       "label": "playRandomCue()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L173",
+      "source_location": "L175",
       "id": "static_app_playrandomcue",
       "community": 2,
       "norm_label": "playrandomcue()"
@@ -781,7 +781,7 @@
       "label": "renderEffects()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L193",
+      "source_location": "L195",
       "id": "static_app_rendereffects",
       "community": 2,
       "norm_label": "rendereffects()"
@@ -790,7 +790,7 @@
       "label": "nextTrackIndex()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L206",
+      "source_location": "L208",
       "id": "static_app_nexttrackindex",
       "community": 2,
       "norm_label": "nexttrackindex()"
@@ -799,7 +799,7 @@
       "label": "playTrack()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L213",
+      "source_location": "L215",
       "id": "static_app_playtrack",
       "community": 2,
       "norm_label": "playtrack()"
@@ -808,7 +808,7 @@
       "label": "playScene()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L240",
+      "source_location": "L242",
       "id": "static_app_playscene",
       "community": 2,
       "norm_label": "playscene()"
@@ -817,7 +817,7 @@
       "label": "stopScene()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L248",
+      "source_location": "L250",
       "id": "static_app_stopscene",
       "community": 2,
       "norm_label": "stopscene()"
@@ -826,7 +826,7 @@
       "label": "fillCamera()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L260",
+      "source_location": "L262",
       "id": "static_app_fillcamera",
       "community": 2,
       "norm_label": "fillcamera()"
@@ -835,7 +835,7 @@
       "label": "saveCamera()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L268",
+      "source_location": "L270",
       "id": "static_app_savecamera",
       "community": 2,
       "norm_label": "savecamera()"
@@ -844,7 +844,7 @@
       "label": "renderCamera()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L275",
+      "source_location": "L277",
       "id": "static_app_rendercamera",
       "community": 2,
       "norm_label": "rendercamera()"
@@ -853,7 +853,7 @@
       "label": "fillSettings()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L283",
+      "source_location": "L285",
       "id": "static_app_fillsettings",
       "community": 2,
       "norm_label": "fillsettings()"
@@ -862,7 +862,7 @@
       "label": "renderRecords()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L316",
+      "source_location": "L318",
       "id": "static_app_renderrecords",
       "community": 2,
       "norm_label": "renderrecords()"
@@ -871,7 +871,7 @@
       "label": "renderTracks()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L339",
+      "source_location": "L341",
       "id": "static_app_rendertracks",
       "community": 2,
       "norm_label": "rendertracks()"
@@ -880,7 +880,7 @@
       "label": "renderLogRows()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L350",
+      "source_location": "L352",
       "id": "static_app_renderlogrows",
       "community": 2,
       "norm_label": "renderlogrows()"
@@ -889,7 +889,7 @@
       "label": "renderLogs()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L362",
+      "source_location": "L364",
       "id": "static_app_renderlogs",
       "community": 2,
       "norm_label": "renderlogs()"
@@ -898,7 +898,7 @@
       "label": "temperature()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L363",
+      "source_location": "L365",
       "id": "static_app_temperature",
       "community": 2,
       "norm_label": "temperature()"
@@ -907,7 +907,7 @@
       "label": "renderWeather()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L364",
+      "source_location": "L366",
       "id": "static_app_renderweather",
       "community": 2,
       "norm_label": "renderweather()"
@@ -916,7 +916,7 @@
       "label": "renderCountdown()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L382",
+      "source_location": "L384",
       "id": "static_app_rendercountdown",
       "community": 2,
       "norm_label": "rendercountdown()"
@@ -925,7 +925,7 @@
       "label": "render()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L399",
+      "source_location": "L401",
       "id": "static_app_render",
       "community": 2,
       "norm_label": "render()"
@@ -934,7 +934,7 @@
       "label": "sync()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L465",
+      "source_location": "L467",
       "id": "static_app_sync",
       "community": 2,
       "norm_label": "sync()"
@@ -943,7 +943,7 @@
       "label": "discoverWindowControls()",
       "file_type": "code",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L483",
+      "source_location": "L485",
       "id": "static_app_discoverwindowcontrols",
       "community": 2,
       "norm_label": "discoverwindowcontrols()"
@@ -1143,7 +1143,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L1",
       "id": "static_night_weather",
-      "community": 60,
+      "community": 38,
       "norm_label": "night-weather.js"
     },
     {
@@ -1152,7 +1152,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L2",
       "id": "static_night_weather_random",
-      "community": 60,
+      "community": 38,
       "norm_label": "random()"
     },
     {
@@ -1161,7 +1161,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L3",
       "id": "static_night_weather_smooth",
-      "community": 60,
+      "community": 38,
       "norm_label": "smooth()"
     },
     {
@@ -1170,7 +1170,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L4",
       "id": "static_night_weather_nightweather",
-      "community": 60,
+      "community": 38,
       "norm_label": "nightweather"
     },
     {
@@ -1179,7 +1179,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L5",
       "id": "static_night_weather_nightweather_constructor",
-      "community": 60,
+      "community": 38,
       "norm_label": ".constructor()"
     },
     {
@@ -1188,7 +1188,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L13",
       "id": "static_night_weather_nightweather_leaf",
-      "community": 60,
+      "community": 38,
       "norm_label": ".leaf()"
     },
     {
@@ -1197,7 +1197,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L22",
       "id": "static_night_weather_nightweather_change",
-      "community": 60,
+      "community": 38,
       "norm_label": ".change()"
     },
     {
@@ -1206,7 +1206,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L27",
       "id": "static_night_weather_nightweather_advance",
-      "community": 60,
+      "community": 38,
       "norm_label": ".advance()"
     },
     {
@@ -1215,7 +1215,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L46",
       "id": "static_night_weather_nightweather_spawn",
-      "community": 60,
+      "community": 38,
       "norm_label": ".spawn()"
     },
     {
@@ -1224,7 +1224,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L50",
       "id": "static_night_weather_nightweather_describe",
-      "community": 60,
+      "community": 38,
       "norm_label": ".describe()"
     },
     {
@@ -1233,7 +1233,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L54",
       "id": "static_night_weather_nightweather_draw",
-      "community": 60,
+      "community": 38,
       "norm_label": ".draw()"
     },
     {
@@ -1242,7 +1242,7 @@
       "source_file": "halloween_hub/static/night-weather.js",
       "source_location": "L66",
       "id": "static_night_weather_nightweather_winter",
-      "community": 60,
+      "community": 38,
       "norm_label": ".winter()"
     },
     {
@@ -2043,7 +2043,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L7",
       "id": "static_welcome_atmosphere_welcomeatmosphere",
-      "community": 38,
+      "community": 70,
       "norm_label": "welcomeatmosphere"
     },
     {
@@ -2052,7 +2052,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L8",
       "id": "static_welcome_atmosphere_welcomeatmosphere_constructor",
-      "community": 38,
+      "community": 70,
       "norm_label": ".constructor()"
     },
     {
@@ -2061,7 +2061,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L20",
       "id": "static_welcome_atmosphere_welcomeatmosphere_configure",
-      "community": 38,
+      "community": 70,
       "norm_label": ".configure()"
     },
     {
@@ -2070,7 +2070,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L21",
       "id": "static_welcome_atmosphere_welcomeatmosphere_resize",
-      "community": 38,
+      "community": 70,
       "norm_label": ".resize()"
     },
     {
@@ -2079,7 +2079,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L22",
       "id": "static_welcome_atmosphere_welcomeatmosphere_refresh",
-      "community": 38,
+      "community": 70,
       "norm_label": ".refresh()"
     },
     {
@@ -2088,7 +2088,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L35",
       "id": "static_welcome_atmosphere_welcomeatmosphere_glow",
-      "community": 38,
+      "community": 70,
       "norm_label": ".glow()"
     },
     {
@@ -2097,7 +2097,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L39",
       "id": "static_welcome_atmosphere_welcomeatmosphere_spawnghost",
-      "community": 38,
+      "community": 70,
       "norm_label": ".spawnghost()"
     },
     {
@@ -2106,7 +2106,7 @@
       "source_file": "halloween_hub/static/welcome-atmosphere.js",
       "source_location": "L40",
       "id": "static_welcome_atmosphere_welcomeatmosphere_draw",
-      "community": 38,
+      "community": 70,
       "norm_label": ".draw()"
     },
     {
@@ -3177,6 +3177,24 @@
       "id": "scripts_check_sneak_arrival_rationale_1",
       "community": 68,
       "norm_label": "check real background video, a real one-minute repeat, and interruption recovery"
+    },
+    {
+      "label": "check_sneak_chrome.py",
+      "file_type": "code",
+      "source_file": "scripts/check_sneak_chrome.py",
+      "source_location": "L1",
+      "id": "scripts_check_sneak_chrome",
+      "community": 71,
+      "norm_label": "check_sneak_chrome.py"
+    },
+    {
+      "label": "Validate immersive dashboard bars, input, focus, and phone scroll reachability.",
+      "file_type": "rationale",
+      "source_file": "scripts/check_sneak_chrome.py",
+      "source_location": "L1",
+      "id": "scripts_check_sneak_chrome_rationale_1",
+      "community": 71,
+      "norm_label": "validate immersive dashboard bars, input, focus, and phone scroll reachability."
     },
     {
       "label": "check_sneak_party.py",
@@ -4509,6 +4527,15 @@
       "id": "sneak_peek_supplied_halloween_transition_and_fused_forest",
       "community": 65,
       "norm_label": "supplied halloween transition and fused forest"
+    },
+    {
+      "label": "Immersive dashboard bars",
+      "file_type": "document",
+      "source_file": "SNEAK-PEEK.md",
+      "source_location": "L79",
+      "id": "sneak_peek_immersive_dashboard_bars",
+      "community": 65,
+      "norm_label": "immersive dashboard bars"
     },
     {
       "label": "VALIDATION.md",
@@ -6561,7 +6588,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "halloween_hub/static/app.js",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0,
       "source": "static_app",
       "target": "static_app",
@@ -9094,9 +9121,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek_rotateheadline",
-      "target": "static_sneak_peek",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek"
     },
     {
       "relation": "calls",
@@ -9227,9 +9254,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L95",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek",
-      "target": "static_sneak_peek_sneakpeek_rotateheadline",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek_rotateheadline"
     },
     {
       "relation": "method",
@@ -9310,9 +9337,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L98",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek_rotateheadline",
-      "target": "static_sneak_peek_sneakpeek_active",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek_active"
     },
     {
       "relation": "calls",
@@ -9409,9 +9436,9 @@
       "source_file": "halloween_hub/static/sneak-peek.js",
       "source_location": "L116",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "static_sneak_peek_sneakpeek_update",
-      "target": "static_sneak_peek_sneakpeek_rotateheadline",
-      "confidence_score": 1.0
+      "target": "static_sneak_peek_sneakpeek_rotateheadline"
     },
     {
       "relation": "contains",
@@ -11733,12 +11760,22 @@
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/check_sneak_chrome.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_check_sneak_chrome_rationale_1",
+      "target": "scripts_check_sneak_chrome",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
       "source_file": "scripts/check_sneak_party.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_check_sneak_party_rationale_1",
-      "target": "scripts_check_sneak_party",
-      "confidence_score": 1.0
+      "target": "scripts_check_sneak_party"
     },
     {
       "relation": "rationale_for",
@@ -12729,9 +12766,9 @@
       "source_file": "tests/test_sneak_peek.py",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_sneak_peek_sneakpeekcalendartests",
-      "target": "tests_test_sneak_peek_sneakpeekcalendartests_test_spark_party_fixed_montreal_time_and_boundary",
-      "confidence_score": 1.0
+      "target": "tests_test_sneak_peek_sneakpeekcalendartests_test_spark_party_fixed_montreal_time_and_boundary"
     },
     {
       "relation": "contains",
@@ -13052,6 +13089,16 @@
       "confidence_score": 1.0,
       "source": "sneak_peek_after_the_haunt_christmas_sneak_peek",
       "target": "sneak_peek_dates_and_artwork_sources"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SNEAK-PEEK.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "sneak_peek_after_the_haunt_christmas_sneak_peek",
+      "target": "sneak_peek_immersive_dashboard_bars",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -13405,5 +13452,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "1761dace083a18c731678b60f32ced5a26f0b739"
+  "built_at_commit": "16ccd0f71e24bfb0a2d7e225f793d4b616864f24"
 }

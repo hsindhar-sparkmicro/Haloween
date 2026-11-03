@@ -75,3 +75,7 @@ Latest background-cycle validation: the measured start-to-start interval was 59.
 The adventure-link sequence is checked with `.venv/bin/python scripts/check_halloween_return.py --browser /usr/bin/brave-browser`. The return took 4.917 seconds before presenting the new film. Resting/mid-film clicks, repeated clicks, foreground controls/focus, dialogs and reduced motion passed with no page errors or old encounter API requests.
 
 Party/headline validation: all 29 Python tests passed, including the fixed Montréal event timestamp, its Wednesday weekday, the start-time boundary, display-timezone independence and preservation of custom party dates. `scripts/check_sneak_party.py` verified the live countdown and all four naturally rotating headlines at 800×480, 1280×720, 1920×1080 and phone size, including reduced-motion pause. The teaser and existing app browser regressions passed without page errors or overflow.
+
+## Immersive dashboard bars
+
+The header and navigation are hidden on the dashboard, giving the scene the full viewport. Tap/click anywhere outside a dialog, or press Tab/Escape, to reveal both as overlays. They hide after seven seconds without another interaction; keyboard focus within a bar keeps it available. Other screens retain their normal bars. On phones the dashboard itself scrolls so the gift/party cards remain reachable while the bars stay anchored to the viewport.

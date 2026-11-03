@@ -48,3 +48,8 @@ body.sneak-peek{background:#0c1320;color:#f8eedb}.sneak-peek #app{height:100dvh;
 @media(prefers-reduced-motion:reduce){.sneak-peek #peek-headline{transition:none}}.reduced-motion #peek-headline{transition:none}
 
 @media(max-width:600px){.sneak-peek .welcome-space{height:1180px;min-height:1180px}}
+
+/* Full-screen scene with temporary navigation overlays; phone content still scrolls. */
+body.sneak-peek.welcome-fullscreen #app>header{background:#0d1623ef}
+body.sneak-peek.welcome-fullscreen #app>nav{background:#0c1d25ef}
+@media(max-width:600px){body.sneak-peek.welcome-fullscreen #dashboard{overflow-y:auto;overscroll-behavior:contain}.sneak-peek.welcome-fullscreen .welcome-space{flex-shrink:0}}

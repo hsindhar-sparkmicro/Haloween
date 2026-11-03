@@ -1,16 +1,16 @@
 # Graph Report - Haloween  (2026-11-03)
 
 ## Corpus Check
-- 88 files · ~1,185,779 words
+- 89 files · ~1,186,045 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 551 nodes · 806 edges · 70 communities (22 shown, 48 thin omitted)
+- 554 nodes · 808 edges · 72 communities (22 shown, 50 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.65)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1761dace`
+- Built from commit: `16ccd0f7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -80,6 +80,8 @@
 - [[_COMMUNITY_Community 67|Community 67]]
 - [[_COMMUNITY_Community 68|Community 68]]
 - [[_COMMUNITY_Community 69|Community 69]]
+- [[_COMMUNITY_Community 70|Community 70]]
+- [[_COMMUNITY_Community 71|Community 71]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `$()` - 66 edges
@@ -108,7 +110,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (70 total, 48 thin omitted)
+## Communities (72 total, 50 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -148,7 +150,7 @@ Nodes (7): $(), riddles, stories, icon(), icons, monsterNames, Visitor
 
 ### Community 38 - "Community 38"
 Cohesion: 0.07
-Nodes (11): BackgroundRotation, IdleBackgroundVideo, WelcomeAtmosphere, ease(), random(), selectors, WelcomeFloat, EFFECTS (+3 more)
+Nodes (13): BackgroundRotation, IdleBackgroundVideo, NightWeather, random(), smooth(), ease(), random(), selectors (+5 more)
 
 ### Community 52 - "Community 52"
 Cohesion: 0.67
@@ -163,37 +165,37 @@ Cohesion: 0.50
 Nodes (3): assets, images_unmodified, retrieved
 
 ### Community 60 - "Community 60"
-Cohesion: 0.12
-Nodes (7): NightWeather, random(), smooth(), $(), gifts, SneakAtmosphere, SneakPeek
+Cohesion: 0.21
+Nodes (4): $(), gifts, SneakAtmosphere, SneakPeek
 
 ### Community 63 - "Community 63"
 Cohesion: 0.07
 Nodes (28): arrival_media, audio, browser_playback_rate, delivery_duration_seconds, encode, file, filter, fps (+20 more)
 
 ### Community 65 - "Community 65"
-Cohesion: 0.29
-Nodes (6): After the haunt — Christmas sneak peek, Checks, Dates and artwork sources, Local preview, Supplied Halloween transition and fused forest, What works
+Cohesion: 0.25
+Nodes (7): After the haunt — Christmas sneak peek, Checks, Dates and artwork sources, Immersive dashboard bars, Local preview, Supplied Halloween transition and fused forest, What works
 
 ### Community 68 - "Community 68"
 Cohesion: 0.53
 Nodes (5): Check real background video, a real one-minute repeat, and interruption recovery, replay(), start(), state(), still()
 
 ## Knowledge Gaps
-- **110 isolated node(s):** `lastRotation`, `player`, `ambience`, `effect`, `cue` (+105 more)
+- **111 isolated node(s):** `lastRotation`, `player`, `ambience`, `effect`, `cue` (+106 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **48 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **50 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `$()` connect `Community 2` to `Community 32`, `Community 3`, `Community 60`, `Community 38`?**
-  _High betweenness centrality (0.103) - this node is a cross-community bridge._
-- **Why does `$()` connect `Community 60` to `Community 2`, `Community 67`?**
-  _High betweenness centrality (0.028) - this node is a cross-community bridge._
+- **Why does `$()` connect `Community 2` to `Community 32`, `Community 3`, `Community 70`, `Community 38`, `Community 60`?**
+  _High betweenness centrality (0.102) - this node is a cross-community bridge._
+- **Why does `$()` connect `Community 60` to `Community 2`, `Community 67`, `Community 38`?**
+  _High betweenness centrality (0.027) - this node is a cross-community bridge._
 - **Why does `Visitor` connect `Community 32` to `Community 2`?**
   _High betweenness centrality (0.022) - this node is a cross-community bridge._
 - **What connects `Halloween Hub: offline-first entertainment kiosk.`, `Hidden motion scans with physical capture shutdown between scan windows.`, `Hidden Pi motion scan. Only numerical scores leave this process.` to the rest of the system?**
-  _167 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _169 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06412583182093164 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

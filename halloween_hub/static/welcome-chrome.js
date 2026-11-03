@@ -24,7 +24,7 @@ export function setupWelcomeChrome() {
  }
  new MutationObserver(sync).observe(dashboard,{attributes:true,attributeFilter:['class']});
  document.addEventListener('pointerdown',event=>{
-  if(!welcome()||event.target.closest('#pumpkin,dialog'))return;
+  if(!welcome()||event.target.closest('dialog'))return;
   reveal();
  });
  document.addEventListener('keydown',event=>{

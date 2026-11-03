@@ -20,8 +20,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/app.js": {
-    "mtime": 1793727107.738227,
-    "ast_hash": "7616452f0a549c887c25d0f13361d27b",
+    "mtime": 1793727361.4484634,
+    "ast_hash": "5fced833872fffbf00754422ae0455cd",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/weather.py": {
@@ -45,8 +45,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/scripts/check_browser.py": {
-    "mtime": 1793723326.4113123,
-    "ast_hash": "15a9ef563f79574c5d9e9ed39285a13b",
+    "mtime": 1793727391.9780476,
+    "ast_hash": "6200604d4d935156738bbbb9c7ad026a",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/scripts/check_dependencies.py": {
@@ -370,8 +370,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/welcome-chrome.js": {
-    "mtime": 1793723326.4063122,
-    "ast_hash": "542277dba30e91b7fccc8ab09166c588",
+    "mtime": 1793727361.4486897,
+    "ast_hash": "c999f18793dea0778635f52e76265e7f",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/scripts/check_welcome_chrome.py": {
@@ -540,8 +540,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/scripts/check_sneak_peek.py": {
-    "mtime": 1793727129.7133622,
-    "ast_hash": "45275522c7a4c101026e9269c4c25312",
+    "mtime": 1793727391.9782164,
+    "ast_hash": "9a234d8f657a8ff8b3a89d8771db0b71",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/sneak-peek-artwork.json": {
@@ -555,8 +555,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/SNEAK-PEEK.md": {
-    "mtime": 1793727185.0468915,
-    "ast_hash": "a099b5c41bc1d11d1193b8fd860c6657",
+    "mtime": 1793727361.4489813,
+    "ast_hash": "1d5b6f7a5b13f3bae34e18977f458499",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/halloween_hub/static/assets/sneak-peek/forest.png": {
@@ -580,8 +580,8 @@
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/scripts/check_sneak_arrival.py": {
-    "mtime": 1793726066.6468136,
-    "ast_hash": "864d6cfe3b26cc57595de715ecb2ed45",
+    "mtime": 1793727391.9783149,
+    "ast_hash": "261f16a9b7f0412cc8ac8dff34997797",
     "semantic_hash": ""
   },
   "/home/hsindhar/github/Haloween/design-sneak-fusion-prompt.txt": {
@@ -622,6 +622,11 @@
   "/home/hsindhar/github/Haloween/scripts/check_sneak_party.py": {
     "mtime": 1793727150.726014,
     "ast_hash": "d2749ace0f3f955d4f6829eb21430357",
+    "semantic_hash": ""
+  },
+  "/home/hsindhar/github/Haloween/scripts/check_sneak_chrome.py": {
+    "mtime": 1793727431.0635328,
+    "ast_hash": "0166b9532425122be5ac223f27fc4fd1",
     "semantic_hash": ""
   }
 }
