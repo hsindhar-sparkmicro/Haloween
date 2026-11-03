@@ -78,6 +78,6 @@ export class SneakArrival {
       this.root.classList.remove('arrival-playing');this.root.dataset.arrival='resting';
       if(document.activeElement===this.skip)document.querySelector('#peek-gifts').focus({preventScroll:true});
     };
-    if(immediate||this.reduced())release();else this.later(release,1250);
+    if(immediate||this.reduced())release();else this.later(release,2450);
   }
 }
