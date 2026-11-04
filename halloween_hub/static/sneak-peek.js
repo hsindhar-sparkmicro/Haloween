@@ -50,6 +50,7 @@ export class SneakPeek {
     this.headlineTick=performance.now();this.headlineElapsed=0;this.headlineTimer=0;this.headlineText="";
     this.audio=audio;this.unlock=unlock;this.enabled=false;this.musicOn=false;this.bellsOn=false;this.timer=0;this.voices=[];this.master=null;
     this.musicEl=$('#christmas-music');this.jingleEl=$('#sleigh-jingle');this.bellsEl=$('#christmas-bells');
+    this.buffers={};this.beds={};this.bedToken={music:0,jingle:0,bells:0};
     this.button=$('#peek-jingle');
     $('#peek-music').addEventListener('click',()=>this.toggleMusic());
     this.button.addEventListener('click',()=>this.toggleJingle());
@@ -76,10 +77,50 @@ export class SneakPeek {
   level(){return (this.audio().volume??.4);}
   volumeChanged(){
     const level=this.level();
-    if(this.master){const audio=this.audio();if(audio.context)this.master.gain.setTargetAtTime(level*.22,audio.context.currentTime,.03);}
-    this.musicEl.volume=Math.min(1,level*.9);
-    this.jingleEl.volume=Math.min(1,level*.8);
-    this.bellsEl.volume=Math.min(1,level*.75);
+    const audio=this.audio();
+    if(this.master&&audio.context)this.master.gain.setTargetAtTime(Math.max(.2,level),audio.context.currentTime,.03);
+    for(const [kind,gain] of [['music',1],['bells',.8],['jingle',.85]]){
+      const bed=this.beds[kind];
+      if(bed&&audio.context)bed.gain.gain.setTargetAtTime(level*gain,audio.context.currentTime,.03);
+    }
+  }
+  async loadBed(kind){
+    if(this.buffers[kind])return this.buffers[kind];
+    const file={music:'christmas-music.wav',jingle:'sleigh-jingle.wav',bells:'christmas-bells.wav'}[kind];
+    const response=await fetch('/static/assets/sneak-peek/'+file);
+    if(!response.ok)throw Error('Christmas audio missing');
+    const ctx=this.audio().context;
+    this.buffers[kind]=await ctx.decodeAudioData(await response.arrayBuffer());
+    return this.buffers[kind];
+  }
+  stopBed(kind){
+    const bed=this.beds[kind];
+    if(!bed)return;
+    try{bed.src.stop();}catch{}
+    try{bed.src.disconnect();bed.gain.disconnect();}catch{}
+    delete this.beds[kind];
+  }
+  async startBed(kind,loop){
+    const token=++this.bedToken[kind];
+    this.unlock();
+    const audio=this.audio();
+    if(!audio.context)return;
+    if(audio.context.state==='suspended')await audio.context.resume();
+    const wanted=kind==='music'?this.musicOn:kind==='bells'?this.bellsOn:this.enabled;
+    if(!wanted||token!==this.bedToken[kind])return;
+    const buffer=await this.loadBed(kind);
+    if(token!==this.bedToken[kind])return;
+    if(!(kind==='music'?this.musicOn:kind==='bells'?this.bellsOn:this.enabled))return;
+    if(!this.active())return;
+    this.stopBed(kind);
+    const ctx=audio.context;
+    const src=ctx.createBufferSource(),gain=ctx.createGain();
+    src.buffer=buffer;src.loop=loop;
+    const amount=this.level()*(kind==='music'?1:kind==='bells'?.8:.85);
+    gain.gain.value=Math.max(.05,amount);
+    src.connect(gain);gain.connect(ctx.destination);src.start();
+    this.beds[kind]={src,gain};
+    if(!loop)src.onended=()=>{if(this.beds[kind]?.src===src)delete this.beds[kind];};
   }
   silence(){
     clearTimeout(this.timer);this.timer=0;
@@ -88,28 +129,28 @@ export class SneakPeek {
     for(const {osc,gain} of this.voices){try{gain.gain.cancelScheduledValues(ctx.currentTime);gain.gain.setTargetAtTime(0,ctx.currentTime,.015);osc.stop(ctx.currentTime+.08);}catch{}}
     this.voices=[];
   }
-  stopJingles(){this.enabled=false;this.silence();this.jingleEl.pause();this.controls();}
-  mute(){this.musicOn=false;this.bellsOn=false;this.musicEl.pause();this.bellsEl.pause();this.stopJingles();}
-  pauseBeds(){this.musicEl.pause();this.bellsEl.pause();this.jingleEl.pause();}
+  stopJingles(){this.enabled=false;this.bedToken.jingle++;this.silence();this.stopBed('jingle');this.controls();}
+  mute(){this.musicOn=false;this.bellsOn=false;this.bedToken.music++;this.bedToken.bells++;this.stopBed('music');this.stopBed('bells');this.stopJingles();}
+  pauseBeds(){this.stopBed('music');this.stopBed('bells');this.stopBed('jingle');}
   resumeBeds(){
-    if(!this.audio().enabled)return;
-    if(this.musicOn)this.musicEl.play().catch(()=>{});
-    if(this.bellsOn)this.bellsEl.play().catch(()=>{});
+    if(!this.audio().enabled||!this.active())return;
+    if(this.musicOn)this.startBed('music',true);
+    if(this.bellsOn)this.startBed('bells',true);
   }
   toggleMusic(){
-    if(this.musicOn){this.musicOn=false;this.musicEl.pause();this.controls();return;}
-    this.unlock();this.musicOn=true;this.volumeChanged();this.controls();
-    this.musicEl.play().catch(()=>{this.musicOn=false;this.controls();});
+    if(this.musicOn){this.musicOn=false;this.bedToken.music++;this.stopBed('music');this.controls();return;}
+    this.musicOn=true;this.controls();
+    this.startBed('music',true).catch(()=>{this.musicOn=false;this.controls();});
   }
   toggleBells(){
-    if(this.bellsOn){this.bellsOn=false;this.bellsEl.pause();this.controls();return;}
-    this.unlock();this.bellsOn=true;this.volumeChanged();this.bellsEl.currentTime=0;this.controls();
-    this.bellsEl.play().catch(()=>{this.bellsOn=false;this.controls();});
+    if(this.bellsOn){this.bellsOn=false;this.bedToken.bells++;this.stopBed('bells');this.controls();return;}
+    this.bellsOn=true;this.controls();
+    this.startBed('bells',true).catch(()=>{this.bellsOn=false;this.controls();});
   }
   toggleJingle(){
     if(this.enabled){this.stopJingles();return;}
-    this.unlock();this.enabled=true;this.volumeChanged();this.controls();this.playJingle();
-    this.jingleEl.currentTime=0;this.jingleEl.play().catch(()=>{});
+    this.unlock();this.enabled=true;this.controls();this.playJingle();
+    this.startBed('jingle',false).catch(()=>{});
   }
   activity(){const active=this.active();if(active===this.wasActive)return;this.wasActive=active;
     if(!active){this.silence();this.pauseBeds();}else{if(this.enabled)this.schedule();this.resumeBeds();}
@@ -154,12 +195,15 @@ export class SneakPeek {
     if(!calendar)return;
     const christmas=calendar.christmas;
     this.rotateHeadline(christmas);
-    const percent=calendar.defrost_percent;
-    if(this.defrostPercent!==percent){
+    const percent=Math.max(0,Math.min(100,Number(calendar.defrost_percent)||0));
+    const fill=$('.peek-meter span');
+    if(this.defrostPercent!==percent||fill.style.width!==percent+'%'){
       this.defrostPercent=percent;
-      $('#peek-defrost-value').textContent=percent+'%';$('.peek-meter').setAttribute('aria-valuenow',percent);$('.peek-meter span').style.width=percent+'%';
+      $('#peek-defrost-value').textContent=percent+'%';
+      $('.peek-meter').setAttribute('aria-valuenow',String(percent));
+      fill.style.width=percent+'%';
       $('.peek-defrost h2').textContent=percent===100?'Mariah has defrosted.':'Mariah is defrosting…';
-      $('#peek-defrost-caption').textContent=percent===100?'December mode: unlocked':'ready on December 1';
+      $('#peek-defrost-caption').textContent=percent===100?'December 1 · fully thawed':'thaws through November, full on December 1';
     }
     const party=calendar.spark_party;
     if(party){
