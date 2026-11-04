@@ -48,10 +48,12 @@ const gifts={
 export class SneakPeek {
   constructor({audio,unlock}){
     this.headlineTick=performance.now();this.headlineElapsed=0;this.headlineTimer=0;this.headlineText="";
-    this.audio=audio;this.unlock=unlock;this.enabled=false;this.timer=0;this.voices=[];this.master=null;
-    this.button=$('#peek-jingle');this.button.addEventListener('click',()=>{
-      if(this.enabled)this.stopJingles();else{this.unlock();this.enabled=true;this.controls();this.playJingle();}
-    });
+    this.audio=audio;this.unlock=unlock;this.enabled=false;this.musicOn=false;this.bellsOn=false;this.timer=0;this.voices=[];this.master=null;
+    this.musicEl=$('#christmas-music');this.jingleEl=$('#sleigh-jingle');this.bellsEl=$('#christmas-bells');
+    this.button=$('#peek-jingle');
+    $('#peek-music').addEventListener('click',()=>this.toggleMusic());
+    this.button.addEventListener('click',()=>this.toggleJingle());
+    $('#peek-bells').addEventListener('click',()=>this.toggleBells());
     document.querySelectorAll('[data-gift]').forEach(button=>button.addEventListener('click',()=>{
       const gift=gifts[button.dataset.gift];$('#peek-unwrapped').hidden=false;
       $('#peek-product-image').src='/static/assets/spark/'+gift.image;$('#peek-product-image').alt=gift.title;
@@ -63,20 +65,54 @@ export class SneakPeek {
     this.wasActive=true;
     new MutationObserver(()=>this.activity()).observe(document.body,{subtree:true,attributes:true,attributeFilter:['class','open']});
     document.addEventListener('visibilitychange',()=>this.activity());
-    window.addEventListener('pagehide',()=>this.stopJingles());
+    window.addEventListener('pagehide',()=>this.mute());
   }
   active(){return !document.hidden&&$('#dashboard').classList.contains('active')&&!$('dialog[open]');}
-  controls(){this.button.textContent=this.enabled?'♫ Pause festive jingles':'♫ Enable festive jingles';this.button.setAttribute('aria-pressed',String(this.enabled));}
-  volumeChanged(){if(this.master){const audio=this.audio();this.master.gain.setTargetAtTime(audio.volume*.18,audio.context.currentTime,.03);}}
+  controls(){
+    this.button.setAttribute('aria-pressed',String(this.enabled));
+    $('#peek-music').setAttribute('aria-pressed',String(this.musicOn));
+    $('#peek-bells').setAttribute('aria-pressed',String(this.bellsOn));
+  }
+  level(){return (this.audio().volume??.4);}
+  volumeChanged(){
+    const level=this.level();
+    if(this.master){const audio=this.audio();if(audio.context)this.master.gain.setTargetAtTime(level*.22,audio.context.currentTime,.03);}
+    this.musicEl.volume=Math.min(1,level*.9);
+    this.jingleEl.volume=Math.min(1,level*.8);
+    this.bellsEl.volume=Math.min(1,level*.75);
+  }
   silence(){
     clearTimeout(this.timer);this.timer=0;
     const ctx=this.audio().context;
+    if(!ctx){this.voices=[];return;}
     for(const {osc,gain} of this.voices){try{gain.gain.cancelScheduledValues(ctx.currentTime);gain.gain.setTargetAtTime(0,ctx.currentTime,.015);osc.stop(ctx.currentTime+.08);}catch{}}
     this.voices=[];
   }
-  stopJingles(){this.enabled=false;this.silence();this.controls();}
+  stopJingles(){this.enabled=false;this.silence();this.jingleEl.pause();this.controls();}
+  mute(){this.musicOn=false;this.bellsOn=false;this.musicEl.pause();this.bellsEl.pause();this.stopJingles();}
+  pauseBeds(){this.musicEl.pause();this.bellsEl.pause();this.jingleEl.pause();}
+  resumeBeds(){
+    if(!this.audio().enabled)return;
+    if(this.musicOn)this.musicEl.play().catch(()=>{});
+    if(this.bellsOn)this.bellsEl.play().catch(()=>{});
+  }
+  toggleMusic(){
+    if(this.musicOn){this.musicOn=false;this.musicEl.pause();this.controls();return;}
+    this.unlock();this.musicOn=true;this.volumeChanged();this.controls();
+    this.musicEl.play().catch(()=>{this.musicOn=false;this.controls();});
+  }
+  toggleBells(){
+    if(this.bellsOn){this.bellsOn=false;this.bellsEl.pause();this.controls();return;}
+    this.unlock();this.bellsOn=true;this.volumeChanged();this.bellsEl.currentTime=0;this.controls();
+    this.bellsEl.play().catch(()=>{this.bellsOn=false;this.controls();});
+  }
+  toggleJingle(){
+    if(this.enabled){this.stopJingles();return;}
+    this.unlock();this.enabled=true;this.volumeChanged();this.controls();this.playJingle();
+    this.jingleEl.currentTime=0;this.jingleEl.play().catch(()=>{});
+  }
   activity(){const active=this.active();if(active===this.wasActive)return;this.wasActive=active;
-    if(!active)this.silence();else if(this.enabled)this.schedule();
+    if(!active){this.silence();this.pauseBeds();}else{if(this.enabled)this.schedule();this.resumeBeds();}
   }
   schedule(){clearTimeout(this.timer);if(this.enabled&&this.active())this.timer=setTimeout(()=>this.playJingle(),32000+Math.random()*28000);}
   playJingle(){

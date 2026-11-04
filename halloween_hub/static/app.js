@@ -133,7 +133,7 @@ function updateVolume() {
   if (effectGain) effectGain.gain.value = (state?.haunt.sound ?? 40)/100;
 }
 function muteAudio() {
-  sneakPeek.stopJingles();
+  sneakPeek.mute();
   stopCues();stopAmbience();
   player.pause(); effect.pause(); audioEnabled = false;
   visitor.setVideoAudio(false,(state?.settings.volume??40)/100);
